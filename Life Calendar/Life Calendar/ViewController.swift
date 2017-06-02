@@ -9,6 +9,13 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var eventNameTextField: NSTextField!
+    @IBOutlet weak var eventDateTextField: NSTextField!
+    
+    @IBAction func enterButton(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
