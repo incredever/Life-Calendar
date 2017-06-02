@@ -11,6 +11,7 @@
 		DED97A3D1EDE0C3A00F2100B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3C1EDE0C3A00F2100B /* ViewController.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
+		DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED97A411EDE0C3A00F2100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A3C1EDE0C3A00F2100B /* ViewController.swift */,
+				DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */,
 				DED97A3D1EDE0C3A00F2100B /* ViewController.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
 			);
@@ -290,6 +294,7 @@
 				DED97A481EDE0C3A00F2100B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
