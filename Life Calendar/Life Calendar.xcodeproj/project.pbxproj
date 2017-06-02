@@ -12,6 +12,8 @@
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
 		DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */; };
+		DEFE7F661EE1EC98008CDF63 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F651EE1EC98008CDF63 /* Event.swift */; };
+		DEFE7F681EE1ECAA008CDF63 /* TimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DED97A411EDE0C3A00F2100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		DEFE7F651EE1EC98008CDF63 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A3C1EDE0C3A00F2100B /* ViewController.swift */,
 				DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */,
+				DEFE7F651EE1EC98008CDF63 /* Event.swift */,
+				DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */,
+				DEFE7F661EE1EC98008CDF63 /* Event.swift in Sources */,
+				DEFE7F681EE1ECAA008CDF63 /* TimeRange.swift in Sources */,
 				DED97A3D1EDE0C3A00F2100B /* ViewController.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
 			);

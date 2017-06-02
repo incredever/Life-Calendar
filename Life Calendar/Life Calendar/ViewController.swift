@@ -13,7 +13,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var eventDateTextField: NSTextField!
     
     @IBAction func enterButton(_ sender: Any) {
-        
+        print(eventDateTextField.stringValue)
     }
     
     override func viewDidLoad() {

@@ -8,14 +8,6 @@
 
 import AppKit
 
-protocol TimeRange {
-    
-}
-
-protocol Event {
-    
-}
-
 struct Timeline {
     
     var ranges: [TimeRange]?
