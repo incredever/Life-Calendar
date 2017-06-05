@@ -6,8 +6,9 @@
 //
 //
 
-import Foundation
+import AppKit
 
 protocol Event {
-    
+    var date: Date { get }
+//    var title: String
 }
