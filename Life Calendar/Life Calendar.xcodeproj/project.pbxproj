@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE63F89D1EEA53A300B2BF05 /* GridOfCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */; };
 		DEC6A1131EE60BD2006B9397 /* DEVLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEC6A1121EE60BD2006B9397 /* DEVLOG.txt */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3D1EDE0C3A00F2100B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3C1EDE0C3A00F2100B /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOfCellsViewController.swift; sourceTree = "<group>"; };
 		DEC6A1121EE60BD2006B9397 /* DEVLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DEVLOG.txt; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
+				DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
 			path = "Life Calendar";
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */,
+				DE63F89D1EEA53A300B2BF05 /* GridOfCellsViewController.swift in Sources */,
 				DEFE7F661EE1EC98008CDF63 /* Event.swift in Sources */,
 				DEFE7F681EE1ECAA008CDF63 /* TimeRange.swift in Sources */,
 				DED97A3D1EDE0C3A00F2100B /* ViewController.swift in Sources */,
