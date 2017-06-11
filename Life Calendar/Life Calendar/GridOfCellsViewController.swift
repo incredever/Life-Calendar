@@ -17,14 +17,15 @@ class GridOfCellsViewController: NSViewController {
         
         let scene = SCNScene()
         
-        // http://ronnqvi.st/custom-scenekit-geometry/
-//        
-//        let cellGeometrySource = SCNGeometrySource(normals: [SCNVector3])
-//        let cellGeometry = SCNGeometry(sources: [SCNGeometrySource], elements: nil)
-//        let cell = SCNNode(geometry: <#T##SCNGeometry?#>)
-//        
-//        scene.rootNode.addChildNode(<#T##child: SCNNode##SCNNode#>)
+        let cameraNode = SCNNode()
+        cameraNode.camera = SCNCamera()
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 10)
+        scene.rootNode.addChildNode(cameraNode)
         
+        let box = SCNBox(width: 10, height: 10, length: 10, chamferRadius: 0)
+        let node = SCNNode(geometry: box)
+        
+        scene.rootNode.addChildNode(node)
         
     }
     
