@@ -715,10 +715,10 @@
             </objects>
             <point key="canvasLocation" x="1156" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Scene Kit Scene View Controller-->
         <scene sceneID="anC-Za-DuO">
             <objects>
-                <viewController id="3Uf-6f-LXD" sceneMemberID="viewController">
+                <viewController id="3Uf-6f-LXD" customClass="SceneKitSceneViewController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="eKg-2f-lDz">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -730,6 +730,9 @@
                             </sceneView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="bOE-ZJ-wDN" id="iM8-8k-hcZ"/>
+                    </connections>
                 </viewController>
                 <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
