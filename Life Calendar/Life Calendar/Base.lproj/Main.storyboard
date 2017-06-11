@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Uag-BO-ujL">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="de2-Yx-xsl">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.17"/>
@@ -696,6 +696,44 @@
                 <customObject id="iyS-yi-XyQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="615" y="250"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="uLs-Vd-vzC">
+            <objects>
+                <windowController id="de2-Yx-xsl" sceneMemberID="viewController">
+                    <window key="window" title="SceneKit Scene" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="N5N-R9-3c4">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                    </window>
+                    <connections>
+                        <segue destination="3Uf-6f-LXD" kind="relationship" relationship="window.shadowedContentViewController" id="cNy-Wj-bjd"/>
+                    </connections>
+                </windowController>
+                <customObject id="4Bp-df-CR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="anC-Za-DuO">
+            <objects>
+                <viewController id="3Uf-6f-LXD" sceneMemberID="viewController">
+                    <view key="view" id="eKg-2f-lDz">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <sceneView fixedFrame="YES" sceneName="SceneKit Scene.scn" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-ZJ-wDN">
+                                <rect key="frame" x="20" y="20" width="440" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </sceneView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="655"/>
         </scene>
         <!--Grid Of Cells View Controller-->
         <scene sceneID="ufm-oc-GDf">
