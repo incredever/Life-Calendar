@@ -24,6 +24,7 @@
 		DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOfCellsViewController.swift; sourceTree = "<group>"; };
 		DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
+		DE63F8A31EED87F600B2BF05 /* 2017-06-11T07-12-00-0800 INITIAL ENTRY.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11T07-12-00-0800 INITIAL ENTRY.md"; sourceTree = "<group>"; };
 		DEC6A1121EE60BD2006B9397 /* DEVLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DEVLOG.txt; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE63F8A21EED86DE00B2BF05 /* Dev log */ = {
+			isa = PBXGroup;
+			children = (
+				DE63F8A31EED87F600B2BF05 /* 2017-06-11T07-12-00-0800 INITIAL ENTRY.md */,
+			);
+			path = "Dev log";
+			sourceTree = "<group>";
+		};
 		DED97A2E1EDE0C3A00F2100B = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +75,7 @@
 		DED97A391EDE0C3A00F2100B /* Life Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				DE63F8A21EED86DE00B2BF05 /* Dev log */,
 				DEC6A1121EE60BD2006B9397 /* DEVLOG.txt */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A3C1EDE0C3A00F2100B /* ViewController.swift */,
