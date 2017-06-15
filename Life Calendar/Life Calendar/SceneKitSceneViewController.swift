@@ -24,6 +24,8 @@ class SceneKitSceneViewController: NSViewController {
         scene.rootNode.addChildNode(codeBox)
         
         
+        
+        
     }
     
 }
