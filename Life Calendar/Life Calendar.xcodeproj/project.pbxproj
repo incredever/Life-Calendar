@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5038271EF3469700A78DAE /* SceneKit Scene 2.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE5038261EF3469700A78DAE /* SceneKit Scene 2.scn */; };
 		DE63F89D1EEA53A300B2BF05 /* GridOfCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */; };
 		DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */; };
 		DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE5038261EF3469700A78DAE /* SceneKit Scene 2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene 2.scn"; sourceTree = "<group>"; };
+		DE5038281EF3478000A78DAE /* Body6.stl */ = {isa = PBXFileReference; lastKnownFileType = file; name = Body6.stl; path = ../../../../Desktop/Body6.stl; sourceTree = "<group>"; };
 		DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOfCellsViewController.swift; sourceTree = "<group>"; };
 		DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
@@ -93,10 +96,12 @@
 				DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */,
 				DEFE7F651EE1EC98008CDF63 /* Event.swift */,
 				DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */,
+				DE5038281EF3478000A78DAE /* Body6.stl */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
 				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
+				DE5038261EF3469700A78DAE /* SceneKit Scene 2.scn */,
 				DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
@@ -162,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE5038271EF3469700A78DAE /* SceneKit Scene 2.scn in Resources */,
 				DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */,
 				DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */,
 				DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */,
