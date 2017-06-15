@@ -14,15 +14,14 @@ class SceneKitSceneViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
         
         let scene = sceneView.scene!
         
         let theBox = scene.rootNode.childNode(withName: "theBox", recursively: true)!
         
-        theBox.rotation = SCNVector4(x: 0, y: 0, z: 0, w: 50)
+        let codeBox = SCNNode(geometry: theBox.geometry)
         
-        
+        scene.rootNode.addChildNode(codeBox)
         
         
     }
