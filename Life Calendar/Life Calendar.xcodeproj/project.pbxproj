@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE5038271EF3469700A78DAE /* SceneKit Scene 2.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE5038261EF3469700A78DAE /* SceneKit Scene 2.scn */; };
+		DE50382A1EF46A4E00A78DAE /* Cube.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE5038291EF46A4E00A78DAE /* Cube.scn */; };
 		DE63F89D1EEA53A300B2BF05 /* GridOfCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */; };
 		DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */; };
 		DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		DE5038261EF3469700A78DAE /* SceneKit Scene 2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene 2.scn"; sourceTree = "<group>"; };
+		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOfCellsViewController.swift; sourceTree = "<group>"; };
 		DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				DE5038261EF3469700A78DAE /* SceneKit Scene 2.scn */,
 				DE63F89C1EEA53A300B2BF05 /* GridOfCellsViewController.swift */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
+				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 			);
 			path = "Life Calendar";
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5038271EF3469700A78DAE /* SceneKit Scene 2.scn in Resources */,
+				DE50382A1EF46A4E00A78DAE /* Cube.scn in Resources */,
 				DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */,
 				DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */,
 				DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */,
