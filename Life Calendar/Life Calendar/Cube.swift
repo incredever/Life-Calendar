@@ -6,3 +6,14 @@
 //
 
 import SceneKit
+
+class Cube {
+    init() {
+        let scene = SCNScene(named: "Cube.scn")
+        let sceneTopLevelNode = scene?.rootNode.childNodes[0]
+        
+        node = sceneTopLevelNode
+    }
+    
+    var node: SCNNode!
+}
