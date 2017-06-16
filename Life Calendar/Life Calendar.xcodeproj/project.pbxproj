@@ -26,7 +26,7 @@
 		DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
 		DE63F8A31EED87F600B2BF05 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
-		DE63F8A81EF09D7F00B2BF05 /* 2017-06-11T07-12-00-0800 Fig1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11T07-12-00-0800 Fig1.png"; sourceTree = "<group>"; };
+		DE63F8A81EF09D7F00B2BF05 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
 		DE63F8A91EF09E7200B2BF05 /* 2017-06-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-13.md"; sourceTree = "<group>"; };
 		DE63F8AE1EF0A35100B2BF05 /* Grid of red squares.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid of red squares.png"; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				DE63F8AE1EF0A35100B2BF05 /* Grid of red squares.png */,
-				DE63F8A81EF09D7F00B2BF05 /* 2017-06-11T07-12-00-0800 Fig1.png */,
+				DE63F8A81EF09D7F00B2BF05 /* 2017-06-11 Fig 1.png */,
 			);
 			path = "embed images";
 			sourceTree = "<group>";
@@ -75,6 +75,7 @@
 			children = (
 				DED97A391EDE0C3A00F2100B /* Life Calendar */,
 				DED97A381EDE0C3A00F2100B /* Products */,
+				DE63F8A21EED86DE00B2BF05 /* Developer's log */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +102,6 @@
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
-				DE63F8A21EED86DE00B2BF05 /* Developer's log */,
 			);
 			path = "Life Calendar";
 			sourceTree = "<group>";
