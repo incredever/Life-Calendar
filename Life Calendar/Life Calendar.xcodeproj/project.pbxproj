@@ -27,8 +27,7 @@
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
 		DE63F8A31EED87F600B2BF05 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
 		DE63F8A81EF09D7F00B2BF05 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
-		DE63F8A91EF09E7200B2BF05 /* 2017-06-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-13.md"; sourceTree = "<group>"; };
-		DE63F8AE1EF0A35100B2BF05 /* Grid of red squares.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid of red squares.png"; sourceTree = "<group>"; };
+		DE63F8A91EF09E7200B2BF05 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED97A3C1EDE0C3A00F2100B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				DE63F8A31EED87F600B2BF05 /* 2017-06-11.md */,
-				DE63F8A91EF09E7200B2BF05 /* 2017-06-13.md */,
+				DE63F8A91EF09E7200B2BF05 /* 2017-06-16.md */,
 				DE63F8A41EEFA08F00B2BF05 /* embed images */,
 			);
 			path = "Developer's log";
@@ -64,7 +63,6 @@
 		DE63F8A41EEFA08F00B2BF05 /* embed images */ = {
 			isa = PBXGroup;
 			children = (
-				DE63F8AE1EF0A35100B2BF05 /* Grid of red squares.png */,
 				DE63F8A81EF09D7F00B2BF05 /* 2017-06-11 Fig 1.png */,
 			);
 			path = "embed images";
