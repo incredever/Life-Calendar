@@ -23,7 +23,9 @@ class SceneKitSceneViewController: NSViewController {
         
         scene.rootNode.addChildNode(codeBox)
         
+        let cube = Cube()
         
+        scene.rootNode.addChildNode(cube.node)
         
         
     }
