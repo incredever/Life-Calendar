@@ -21,18 +21,18 @@ class SceneKitSceneViewController: NSViewController {
 //        let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
 //        cube.node.transform = startingPoint!.transform
         
-        let cube = Cube()
-        
         let numberOfRows = 10
         let numberOfColumns = 10
+        let rowHeight = 10
+        let columnHeight = 10
+        
         for row in 0...numberOfRows {
             for column in 0...numberOfColumns {
-//                createCell(x: row * rowHight, y: column * columnHight)
-                print("row: \(row), column: \(column)")
+                let cube = Cube(x: row * rowHeight, y: column * columnHeight, z: 0)
+                
+                scene.rootNode.addChildNode(cube.node)
             }
         }
-        
-        scene.rootNode.addChildNode(cube.node)
     }
     
 }
