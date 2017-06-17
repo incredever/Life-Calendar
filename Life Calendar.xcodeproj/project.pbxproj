@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DE10292B1EF4ACFB008E894E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		DE10292B1EF4ACFB008E894E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar.sketch"; sourceTree = "<group>"; };
 		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
