@@ -17,7 +17,10 @@ class SceneKitSceneViewController: NSViewController {
         
         let scene = sceneView.scene!
         
-        let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
+        // Use the starting point node as the begining location for the top left cube
+//        let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
+//        cube.node.transform = startingPoint!.transform
+        
         let cube = Cube()
         
         let numberOfRows = 10
@@ -29,7 +32,6 @@ class SceneKitSceneViewController: NSViewController {
             }
         }
         
-//        cube.node.transform = startingPoint!.transform
         
         scene.rootNode.addChildNode(cube.node)
     }
