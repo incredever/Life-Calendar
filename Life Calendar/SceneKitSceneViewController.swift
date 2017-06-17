@@ -25,10 +25,13 @@ class SceneKitSceneViewController: NSViewController {
         let numberOfColumns = 10
         let rowHeight = 1
         let columnHeight = 1
+        let padding = CGFloat(0.5)
         
         for row in 0...numberOfRows {
             for column in 0...numberOfColumns {
-                let cube = Cube(x: row * rowHeight, y: column * columnHeight, z: 0)
+                let x = CGFloat(row * rowHeight) + padding
+                let y = CGFloat(column * columnHeight) + padding
+                let cube = Cube(x: x, y: y, z: 0)
                 
                 scene.rootNode.addChildNode(cube.node)
             }

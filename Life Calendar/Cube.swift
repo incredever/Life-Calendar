@@ -15,10 +15,10 @@ class Cube {
         node = sceneTopLevelNode
     }
     
-    convenience init(x: Int, y: Int, z: Int) {
+    convenience init(x: CGFloat, y: CGFloat, z: CGFloat) {
         self.init()
         
-        node.position = SCNVector3(x: CGFloat(x), y: CGFloat(y), z: CGFloat(z))
+        node.position = SCNVector3(x: x, y: y, z: z)
     }
     
     var node: SCNNode!
