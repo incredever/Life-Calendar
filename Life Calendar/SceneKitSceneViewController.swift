@@ -19,10 +19,6 @@ class SceneKitSceneViewController: NSViewController {
         
         sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
         
-        // Use the starting point node as the begining location for the top left cube
-//        let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
-//        cube.node.transform = startingPoint!.transform
-        
         let numberOfRows = 10
         let numberOfColumns = 10
         let rowHeight = CGFloat(1)
