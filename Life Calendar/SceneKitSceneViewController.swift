@@ -23,8 +23,8 @@ class SceneKitSceneViewController: NSViewController {
         
         let numberOfRows = 10
         let numberOfColumns = 10
-        let rowHeight = 10
-        let columnHeight = 10
+        let rowHeight = 1
+        let columnHeight = 1
         
         for row in 0...numberOfRows {
             for column in 0...numberOfColumns {
