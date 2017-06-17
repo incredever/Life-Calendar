@@ -25,7 +25,7 @@ class SceneKitSceneViewController: NSViewController {
         let numberOfColumns = 10
         let rowHeight = CGFloat(1)
         let columnHeight = CGFloat(1)
-        let padding = CGFloat(0.1)
+        let padding = CGFloat(0.5)
         
         for row in 0...numberOfRows {
             for column in 0...numberOfColumns {
