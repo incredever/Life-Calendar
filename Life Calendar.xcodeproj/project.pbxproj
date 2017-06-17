@@ -56,8 +56,8 @@
 		DE63F8A21EED86DE00B2BF05 /* Developer's log */ = {
 			isa = PBXGroup;
 			children = (
-				DE63F8A31EED87F600B2BF05 /* 2017-06-11.md */,
 				DE63F8A91EF09E7200B2BF05 /* 2017-06-16.md */,
+				DE63F8A31EED87F600B2BF05 /* 2017-06-11.md */,
 				DE63F8A41EEFA08F00B2BF05 /* embed images */,
 			);
 			path = "Developer's log";
