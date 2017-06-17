@@ -23,7 +23,10 @@ class SceneKitSceneViewController: NSViewController {
         
         scene.rootNode.addChildNode(codeBox)
         
+        let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
         let cube = Cube()
+        
+        cube.node.transform = startingPoint!.transform
         
         scene.rootNode.addChildNode(cube.node)
         
