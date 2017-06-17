@@ -32,7 +32,6 @@ class SceneKitSceneViewController: NSViewController {
             }
         }
         
-        
         scene.rootNode.addChildNode(cube.node)
     }
     
