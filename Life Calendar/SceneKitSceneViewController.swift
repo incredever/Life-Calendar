@@ -17,6 +17,8 @@ class SceneKitSceneViewController: NSViewController {
         
         let scene = sceneView.scene!
         
+        sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
+        
         // Use the starting point node as the begining location for the top left cube
 //        let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
 //        cube.node.transform = startingPoint!.transform
@@ -39,6 +41,10 @@ class SceneKitSceneViewController: NSViewController {
                 scene.rootNode.addChildNode(cube.node)
             }
         }
+    }
+    
+    @objc func sceneClicked() {
+        print("click detected")
     }
     
 }
