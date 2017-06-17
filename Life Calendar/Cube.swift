@@ -10,7 +10,7 @@ import SceneKit
 class Cube {
     init() {
         let scene = SCNScene(named: "Cube.scn")
-        let sceneTopLevelNode = scene?.rootNode.childNodes[0]
+        let sceneTopLevelNode = scene?.rootNode.childNode(withName: "Cube", recursively: true)
         
         node = sceneTopLevelNode
     }
