@@ -17,12 +17,6 @@ class SceneKitSceneViewController: NSViewController {
         
         let scene = sceneView.scene!
         
-        let theBox = scene.rootNode.childNode(withName: "theBox", recursively: true)!
-        
-        let codeBox = SCNNode(geometry: theBox.geometry)
-        
-        scene.rootNode.addChildNode(codeBox)
-        
         let startingPoint = scene.rootNode.childNode(withName: "StartingPoint", recursively: true)
         let cube = Cube()
         
@@ -35,7 +29,7 @@ class SceneKitSceneViewController: NSViewController {
             }
         }
         
-        cube.node.transform = startingPoint!.transform
+//        cube.node.transform = startingPoint!.transform
         
         scene.rootNode.addChildNode(cube.node)
     }
