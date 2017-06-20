@@ -82,7 +82,7 @@
 				DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */,
 				DE10292B1EF4ACFB008E894E /* MyPlayground.playground */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
-				DED97A391EDE0C3A00F2100B /* Life Calendar */,
+				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
 				DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */,
 				DED97A381EDE0C3A00F2100B /* Products */,
 			);
@@ -96,7 +96,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DED97A391EDE0C3A00F2100B /* Life Calendar */ = {
+		DED97A391EDE0C3A00F2100B /* macOS Codebase */ = {
 			isa = PBXGroup;
 			children = (
 				DEE136841EF9EC8300F2BFE9 /* Screenshots and mockups */,
@@ -112,7 +112,7 @@
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
 			);
-			path = "Life Calendar";
+			path = "macOS Codebase";
 			sourceTree = "<group>";
 		};
 		DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */ = {
