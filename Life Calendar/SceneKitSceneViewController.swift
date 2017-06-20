@@ -23,6 +23,10 @@ class SceneKitSceneViewController: NSViewController {
         drawGridOfCubes(rows: 8, columns: 20)
     }
     
+    override func viewDidAppear() {
+        view.window?.title = "Life Calendar"
+    }
+    
     func drawGridOfCubes(rows: Int, columns: Int) {
         let numberOfRows = rows
         let numberOfColumns = columns
