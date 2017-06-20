@@ -38,6 +38,7 @@
 		DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED97A411EDE0C3A00F2100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		DEFE7F651EE1EC98008CDF63 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRange.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 				DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */,
 				DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */,
 				DE0ADCA31EF5ECC30021BDFD /* 2017-06-17.md */,
+				DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
