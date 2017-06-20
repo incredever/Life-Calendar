@@ -680,24 +680,6 @@
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
         <!--Window Controller-->
-        <scene sceneID="AUj-YY-dsw">
-            <objects>
-                <windowController id="Uag-BO-ujL" sceneMemberID="viewController">
-                    <window key="window" title="Grid of cells" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="X8p-0I-XAF">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-                    </window>
-                    <connections>
-                        <segue destination="7iC-LM-F78" kind="relationship" relationship="window.shadowedContentViewController" id="b5z-5f-7HC"/>
-                    </connections>
-                </windowController>
-                <customObject id="iyS-yi-XyQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="615" y="250"/>
-        </scene>
-        <!--Window Controller-->
         <scene sceneID="uLs-Vd-vzC">
             <objects>
                 <windowController id="de2-Yx-xsl" sceneMemberID="viewController">
@@ -713,7 +695,7 @@
                 </windowController>
                 <customObject id="4Bp-df-CR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="250"/>
+            <point key="canvasLocation" x="674" y="250"/>
         </scene>
         <!--Scene Kit Scene View Controller-->
         <scene sceneID="anC-Za-DuO">
@@ -723,12 +705,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <sceneView fixedFrame="YES" sceneName="SceneKit Scene.scn" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-ZJ-wDN">
-                                <rect key="frame" x="20" y="20" width="440" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <sceneView sceneName="SceneKit Scene.scn" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-ZJ-wDN">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </sceneView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bOE-ZJ-wDN" secondAttribute="trailing" id="Fdm-UK-dY9"/>
+                            <constraint firstItem="bOE-ZJ-wDN" firstAttribute="top" secondItem="eKg-2f-lDz" secondAttribute="top" id="LCY-uw-CjR"/>
+                            <constraint firstAttribute="bottom" secondItem="bOE-ZJ-wDN" secondAttribute="bottom" id="roq-Xi-WDC"/>
+                            <constraint firstItem="bOE-ZJ-wDN" firstAttribute="leading" secondItem="eKg-2f-lDz" secondAttribute="leading" id="y7o-sk-6En"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="bOE-ZJ-wDN" id="iM8-8k-hcZ"/>
@@ -736,29 +723,7 @@
                 </viewController>
                 <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1156" y="655"/>
-        </scene>
-        <!--Grid Of Cells View Controller-->
-        <scene sceneID="ufm-oc-GDf">
-            <objects>
-                <viewController id="7iC-LM-F78" customClass="GridOfCellsViewController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="nWM-Kz-5Q7">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <sceneView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3G-Ql-2ne">
-                                <rect key="frame" x="20" y="20" width="440" height="230"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </sceneView>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="n3G-Ql-2ne" id="jWD-7S-7TE"/>
-                    </connections>
-                </viewController>
-                <customObject id="CFg-mX-Qq5" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="615" y="655"/>
+            <point key="canvasLocation" x="674" y="655"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
