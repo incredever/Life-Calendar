@@ -16,11 +16,11 @@ class SceneKitSceneViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scene = sceneView.scene!
         sceneView.allowsCameraControl = true
         sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
+        scene = sceneView.scene!
         
-        drawGridOfCubes(rows: 8, columns: 10)
+        drawGridOfCubes(rows: 8, columns: 20)
     }
     
     func drawGridOfCubes(rows: Int, columns: Int) {
