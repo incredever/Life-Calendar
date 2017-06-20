@@ -11,18 +11,21 @@ import SceneKit
 class SceneKitSceneViewController: NSViewController {
 
     @IBOutlet weak var sceneView: SCNView!
+    var scene: SCNScene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scene = sceneView.scene!
         sceneView.allowsCameraControl = true
-
-        let scene = sceneView.scene!
-        
         sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
         
-        let numberOfRows = 10
-        let numberOfColumns = 10
+        drawGridOfCubes(rows: 8, columns: 10)
+    }
+    
+    func drawGridOfCubes(rows: Int, columns: Int) {
+        let numberOfRows = rows
+        let numberOfColumns = columns
         let rowHeight = CGFloat(1)
         let columnHeight = CGFloat(1)
         let padding = CGFloat(0.5)
