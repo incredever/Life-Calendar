@@ -15,6 +15,8 @@ class SceneKitSceneViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        sceneView.allowsCameraControl = true
+
         let scene = sceneView.scene!
         
         sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
