@@ -45,11 +45,11 @@ class SceneKitSceneViewController: NSViewController {
         let location = gestureRecognizer.location(in: sceneView)
         let hitResults = sceneView.hitTest(location, options: nil)
         
-//        if hitResults?.count > 0 {
-//            let result = hitResults![0] as! SCNHitTestResult
-//            let node = result.node
-//            node.removeFromParentNode()
-//        }
+        if hitResults.count > 0 {
+            let result = hitResults[0]
+            let node = result.node
+            node.removeFromParentNode()
+        }
         
     }
     
