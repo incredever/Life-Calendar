@@ -1,3 +1,3 @@
 # Life-Calendar
 
-![Mockups 1](./Mockups%201.png)
+![Mockups 1](./Screenshots%20and%20mockups/Mockups%201.png)
