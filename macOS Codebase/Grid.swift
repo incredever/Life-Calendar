@@ -8,7 +8,7 @@
 import Cocoa
 import SceneKit
 
-class Grid {
+struct Grid {
     
     var node: SCNNode!
     
@@ -16,7 +16,7 @@ class Grid {
         node = SCNNode()
     }
     
-    convenience init(x: CGFloat, y: CGFloat, z: CGFloat) {
+    init(x: CGFloat, y: CGFloat, z: CGFloat) {
         self.init()
         
         node.position = SCNVector3(x: x, y: y, z: z)
