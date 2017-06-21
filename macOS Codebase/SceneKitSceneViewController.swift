@@ -37,7 +37,10 @@ class SceneKitSceneViewController: NSViewController {
         if hitResults.count > 0 {
             let result = hitResults[0]
             let node = result.node
-            node.removeFromParentNode()
+            
+            node.geometry?.firstMaterial?.diffuse.contents = NSColor.green
+            
+//            node.removeFromParentNode()
         }
     }
     
