@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				DE10292A1EF4ACF7008E894E /* README.md */,
-				DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */,
 				DE10292B1EF4ACFB008E894E /* MyPlayground.playground */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
@@ -118,6 +117,7 @@
 		DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */ = {
 			isa = PBXGroup;
 			children = (
+				DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */,
 				DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */,
 			);
 			path = "Screenshots and mockups";
