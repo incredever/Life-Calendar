@@ -101,13 +101,13 @@
 				DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */,
 				DEFE7F651EE1EC98008CDF63 /* Event.swift */,
 				DEFE7F671EE1ECAA008CDF63 /* TimeRange.swift */,
-				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
 				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
-				DED97A431EDE0C3A00F2100B /* Info.plist */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
+				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
+				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
 			path = "macOS Codebase";
 			sourceTree = "<group>";
