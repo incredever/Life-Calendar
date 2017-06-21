@@ -20,7 +20,6 @@ class SceneKitSceneViewController: NSViewController {
         sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
         scene = sceneView.scene!
         
-//        drawGridOfCubes(rows: 8, columns: 20)
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
     }
@@ -28,27 +27,6 @@ class SceneKitSceneViewController: NSViewController {
     override func viewDidAppear() {
         view.window?.title = "Life Calendar"
     }
-    
-//    func drawGridOfCubes(rows: Int, columns: Int) {
-//        let numberOfRows = rows
-//        let numberOfColumns = columns
-//        let rowHeight = CGFloat(1)
-//        let columnHeight = CGFloat(1)
-//        let padding = CGFloat(0.5)
-//
-//        for row in 0...numberOfRows {
-//            for column in 0...numberOfColumns {
-//                let rowNumberAsCGFloat = CGFloat(row)
-//                let columnNumberAsCGFloat = CGFloat(column)
-//
-//                let x = (rowNumberAsCGFloat * rowHeight) + (rowNumberAsCGFloat * padding)
-//                let y = (columnNumberAsCGFloat * columnHeight) + (columnNumberAsCGFloat * padding)
-//                let cube = Cube(x: x, y: y, z: 0)
-//
-//                scene.rootNode.addChildNode(cube.node)
-//            }
-//        }
-//    }
     
     @objc func sceneClicked(gestureRecognizer: NSGestureRecognizer) {
         print("click detected")
@@ -61,7 +39,6 @@ class SceneKitSceneViewController: NSViewController {
             let node = result.node
             node.removeFromParentNode()
         }
-        
     }
     
 }
