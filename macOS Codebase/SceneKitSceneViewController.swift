@@ -27,6 +27,10 @@ class SceneKitSceneViewController: NSViewController {
         scene.rootNode.addChildNode(grid.node)
     }
     
+    override func viewDidAppear() {
+        view.window?.title = "Life Calendar"
+    }
+    
     @objc func panning(gestureRecognizer: NSGestureRecognizer) {
         let location = gestureRecognizer.location(in: sceneView)
         let hitResults = sceneView.hitTest(location, options: nil)
@@ -40,9 +44,6 @@ class SceneKitSceneViewController: NSViewController {
         print(location)
     }
     
-    override func viewDidAppear() {
-        view.window?.title = "Life Calendar"
-    }
     
     @objc func sceneClicked(gestureRecognizer: NSGestureRecognizer) {
         let location = gestureRecognizer.location(in: sceneView)
