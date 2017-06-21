@@ -37,7 +37,6 @@
 		DED97A411EDE0C3A00F2100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
-		DEE136841EF9EC8300F2BFE9 /* Screenshots and mockups */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Screenshots and mockups"; sourceTree = SOURCE_ROOT; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
 		DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		DEFE7F651EE1EC98008CDF63 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 		DED97A391EDE0C3A00F2100B /* macOS Codebase */ = {
 			isa = PBXGroup;
 			children = (
-				DEE136841EF9EC8300F2BFE9 /* Screenshots and mockups */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */,
 				DEFE7F651EE1EC98008CDF63 /* Event.swift */,
@@ -330,7 +328,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B2HHR6H4K6;
 				INFOPLIST_FILE = "$(SRCROOT)/macOS Codebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.Life-Calendar";
@@ -347,7 +345,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = B2HHR6H4K6;
 				INFOPLIST_FILE = "$(SRCROOT)/macOS Codebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.Life-Calendar";
