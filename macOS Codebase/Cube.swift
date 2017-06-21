@@ -8,6 +8,9 @@
 import SceneKit
 
 class Cube {
+    
+    var node: SCNNode!
+    
     init() {
         let scene = SCNScene(named: "Cube.scn")
         let sceneTopLevelNode = scene?.rootNode.childNode(withName: "Cube", recursively: true)
@@ -21,5 +24,4 @@ class Cube {
         node.position = SCNVector3(x: x, y: y, z: z)
     }
     
-    var node: SCNNode!
 }
