@@ -35,7 +35,7 @@ class SceneKitSceneViewController: NSViewController {
             let result = hitResults[0]
             let node = result.node
             
-            node.geometry?.firstMaterial?.diffuse.contents = NSColor.blue
+            node.geometry?.firstMaterial?.diffuse.contents = NSColor.green
         }
         print(location)
     }
@@ -52,7 +52,7 @@ class SceneKitSceneViewController: NSViewController {
             let result = hitResults[0]
             let node = result.node
             
-            node.geometry?.firstMaterial?.diffuse.contents = NSColor.green
+            node.geometry?.firstMaterial?.diffuse.contents = NSColor.blue
         }
     }
     
