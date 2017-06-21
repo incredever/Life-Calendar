@@ -7,7 +7,7 @@
 
 import SceneKit
 
-class Cube {
+struct Cube {
     
     var node: SCNNode!
     
@@ -18,7 +18,7 @@ class Cube {
         node = sceneTopLevelNode
     }
     
-    convenience init(x: CGFloat, y: CGFloat, z: CGFloat) {
+    init(x: CGFloat, y: CGFloat, z: CGFloat) {
         self.init()
         
         node.position = SCNVector3(x: x, y: y, z: z)
