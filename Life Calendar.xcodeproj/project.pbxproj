@@ -329,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
-				INFOPLIST_FILE = "Life Calendar/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/macOS Codebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.Life-Calendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -343,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B2HHR6H4K6;
-				INFOPLIST_FILE = "Life Calendar/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/macOS Codebase/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "vdk.wes.Life-Calendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
