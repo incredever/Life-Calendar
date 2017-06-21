@@ -17,11 +17,27 @@ class SceneKitSceneViewController: NSViewController {
         super.viewDidLoad()
         
         sceneView.allowsCameraControl = true
-        sceneView.gestureRecognizers = [NSClickGestureRecognizer(target: self, action: #selector(sceneClicked))]
+        sceneView.gestureRecognizers.append(NSClickGestureRecognizer(target: self, action: #selector(sceneClicked)))
         scene = sceneView.scene!
+        
+        let panGesture = NSPanGestureRecognizer(target: self, action: #selector(panning))
+        sceneView.gestureRecognizers.append(panGesture)
         
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
+    }
+    
+    @objc func panning(gestureRecognizer: NSGestureRecognizer) {
+        let location = gestureRecognizer.location(in: sceneView)
+        let hitResults = sceneView.hitTest(location, options: nil)
+        
+        if hitResults.count > 0 {
+            let result = hitResults[0]
+            let node = result.node
+            
+            node.geometry?.firstMaterial?.diffuse.contents = NSColor.blue
+        }
+        print(location)
     }
     
     override func viewDidAppear() {
@@ -29,8 +45,6 @@ class SceneKitSceneViewController: NSViewController {
     }
     
     @objc func sceneClicked(gestureRecognizer: NSGestureRecognizer) {
-        print("click detected")
-        
         let location = gestureRecognizer.location(in: sceneView)
         let hitResults = sceneView.hitTest(location, options: nil)
         
@@ -39,8 +53,6 @@ class SceneKitSceneViewController: NSViewController {
             let node = result.node
             
             node.geometry?.firstMaterial?.diffuse.contents = NSColor.green
-            
-//            node.removeFromParentNode()
         }
     }
     

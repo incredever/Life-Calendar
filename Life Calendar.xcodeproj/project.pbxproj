@@ -25,6 +25,7 @@
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE10292B1EF4ACFB008E894E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar.sketch"; sourceTree = "<group>"; };
+		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		DE587D691EF9F33C00C9C53E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 				DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */,
 				DE0ADCA31EF5ECC30021BDFD /* 2017-06-17.md */,
 				DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */,
+				DE137D441EFAD48C001C2E05 /* 2017-06-21.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
