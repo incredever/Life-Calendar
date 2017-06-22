@@ -668,7 +668,7 @@
                     <window key="window" title="SceneKit Scene" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="N5N-R9-3c4">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
+                        <rect key="contentRect" x="294" y="362" width="510" height="290"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
                     </window>
                     <connections>
@@ -677,7 +677,7 @@
                 </windowController>
                 <customObject id="4Bp-df-CR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="241"/>
+            <point key="canvasLocation" x="100" y="251"/>
         </scene>
         <!--Scene Kit Scene View Controller-->
         <scene sceneID="anC-Za-DuO">
@@ -691,6 +691,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </sceneView>
+                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycS-zf-gJp">
+                                <rect key="frame" x="372" y="0.0" width="108" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <connections>
+                                    <segue destination="FUz-UK-miy" kind="embed" id="QiD-dT-H5R"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bOE-ZJ-wDN" secondAttribute="trailing" id="Fdm-UK-dY9"/>
@@ -705,7 +712,27 @@
                 </viewController>
                 <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="631"/>
+            <point key="canvasLocation" x="100" y="666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="B5b-QM-XHU">
+            <objects>
+                <viewController id="FUz-UK-miy" sceneMemberID="viewController">
+                    <view key="view" id="dXm-E2-yKo">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="0uS-4W-fbj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="4sq-et-9lM">
+            <objects>
+                <controllerPlaceholder id="EaQ-22-Png" sceneMemberID="viewController"/>
+                <customObject id="iaE-Za-IGy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571" y="682"/>
         </scene>
     </scenes>
 </document>

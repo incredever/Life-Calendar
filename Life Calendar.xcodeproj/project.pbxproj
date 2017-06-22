@@ -39,6 +39,7 @@
 		DE9966A21EFC768B00A69EDB /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		DE9966A51EFC76ED00A69EDB /* ColorPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
+		DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPickerViewController.storyboard; sourceTree = "<group>"; };
 		DEA8DE5D1EF4C0170054CAF0 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
 				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
 				DE9966A21EFC768B00A69EDB /* ColorPickerController.swift */,
+				DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */,
 				DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */,
 				DE9966A51EFC76ED00A69EDB /* ColorPickerViewController.xib */,
 				DE587D691EF9F33C00C9C53E /* Grid.swift */,
