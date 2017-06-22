@@ -691,13 +691,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </sceneView>
-                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycS-zf-gJp">
-                                <rect key="frame" x="372" y="0.0" width="108" height="270"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <segue destination="FUz-UK-miy" kind="embed" id="QiD-dT-H5R"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bOE-ZJ-wDN" secondAttribute="trailing" id="Fdm-UK-dY9"/>
@@ -712,27 +705,7 @@
                 </viewController>
                 <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="666"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="B5b-QM-XHU">
-            <objects>
-                <viewController id="FUz-UK-miy" sceneMemberID="viewController">
-                    <view key="view" id="dXm-E2-yKo">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="0uS-4W-fbj" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="4sq-et-9lM">
-            <objects>
-                <controllerPlaceholder id="EaQ-22-Png" sceneMemberID="viewController"/>
-                <customObject id="iaE-Za-IGy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="571" y="682"/>
+            <point key="canvasLocation" x="100" y="729"/>
         </scene>
     </scenes>
 </document>
