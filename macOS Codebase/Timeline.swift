@@ -10,7 +10,6 @@ import AppKit
 
 struct Timeline {
     
-    var ranges: [TimeRange]?
     var events: [Event]?
     
     var jsonRepersentation: String {
