@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Color Picker View Controller-->
         <scene sceneID="TMc-gI-gs4">
             <objects>
-                <viewController id="twW-sc-28q" sceneMemberID="viewController">
+                <viewController id="twW-sc-28q" customClass="ColorPickerViewController" customModule="Life_Calendar" sceneMemberID="viewController">
                     <view key="view" id="bkr-wi-Cdx">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
