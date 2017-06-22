@@ -22,10 +22,10 @@ class SceneKitSceneViewController: NSViewController {
         sceneView.gestureRecognizers.append(NSPanGestureRecognizer(target: self, action: #selector(panning)))
         scene = sceneView.scene!
         
-        
-        let overlay = sceneView.overlaySKScene
-        overlay?.addChild(<#T##node: SKNode##SKNode#>)
-        
+//        let testImage = SKSpriteNode(imageNamed: "sprite kit test image.png")
+//        let overlay = sceneView.overlaySKScene
+//        overlay?.addChild(testImage)
+//        
         
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
