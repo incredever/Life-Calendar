@@ -15,7 +15,6 @@
 		DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */; };
 		DE9966A31EFC768B00A69EDB /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9966A21EFC768B00A69EDB /* ColorPickerController.swift */; };
 		DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */; };
-		DE9966A71EFC76ED00A69EDB /* ColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE9966A51EFC76ED00A69EDB /* ColorPickerViewController.xib */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
 		DE9966A21EFC768B00A69EDB /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
-		DE9966A51EFC76ED00A69EDB /* ColorPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPickerViewController.xib; sourceTree = "<group>"; };
 		DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPickerViewController.storyboard; sourceTree = "<group>"; };
 		DEA8DE5D1EF4C0170054CAF0 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 				DE9966A21EFC768B00A69EDB /* ColorPickerController.swift */,
 				DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */,
 				DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */,
-				DE9966A51EFC76ED00A69EDB /* ColorPickerViewController.xib */,
 				DE587D691EF9F33C00C9C53E /* Grid.swift */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
@@ -198,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE9966A71EFC76ED00A69EDB /* ColorPickerViewController.xib in Resources */,
 				DE50382A1EF46A4E00A78DAE /* Cube.scn in Resources */,
 				DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */,
 				DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */,
