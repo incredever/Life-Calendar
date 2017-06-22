@@ -22,10 +22,21 @@ class SceneKitSceneViewController: NSViewController {
         sceneView.gestureRecognizers.append(NSPanGestureRecognizer(target: self, action: #selector(panning)))
         scene = sceneView.scene!
         
-//        let testImage = SKSpriteNode(imageNamed: "sprite kit test image.png")
-//        let overlay = sceneView.overlaySKScene
-//        overlay?.addChild(testImage)
-//        
+        
+        let w = sceneView.bounds.size.width
+        let h = sceneView.bounds.size.height
+        
+        // Setup the game overlays using SpriteKit.
+        let skScene = SKScene(size: CGSize(width: w, height: h))
+        skScene.scaleMode = .resizeFill
+        
+        sceneView.overlaySKScene = skScene
+        
+        let testImage = SKSpriteNode(imageNamed: "water")
+        testImage.position = CGPoint(x: 100, y: 100)
+        
+        let overlay = sceneView.overlaySKScene!
+        overlay.addChild(testImage)
         
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
