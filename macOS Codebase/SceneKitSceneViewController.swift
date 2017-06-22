@@ -7,6 +7,7 @@
 
 import Cocoa
 import SceneKit
+import SpriteKit
 
 class SceneKitSceneViewController: NSViewController {
 
@@ -20,6 +21,11 @@ class SceneKitSceneViewController: NSViewController {
         sceneView.gestureRecognizers.append(NSClickGestureRecognizer(target: self, action: #selector(sceneClicked)))
         sceneView.gestureRecognizers.append(NSPanGestureRecognizer(target: self, action: #selector(panning)))
         scene = sceneView.scene!
+        
+        
+        let overlay = sceneView.overlaySKScene
+        overlay?.addChild(<#T##node: SKNode##SKNode#>)
+        
         
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
