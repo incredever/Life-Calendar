@@ -22,11 +22,10 @@ class SceneKitSceneViewController: NSViewController {
         sceneView.gestureRecognizers.append(NSPanGestureRecognizer(target: self, action: #selector(panning)))
         scene = sceneView.scene!
         
-        
+        // Add overlay
         let w = sceneView.bounds.size.width
         let h = sceneView.bounds.size.height
         
-        // Setup the game overlays using SpriteKit.
         let skScene = SKScene(size: CGSize(width: w, height: h))
         skScene.scaleMode = .resizeFill
         
@@ -66,6 +65,8 @@ class SceneKitSceneViewController: NSViewController {
         if hitResults.count > 0 {
             let result = hitResults[0]
             let node = result.node
+            
+            node.removeFromParentNode()
             
             node.geometry?.firstMaterial?.diffuse.contents = NSColor.blue
         }
