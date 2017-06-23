@@ -13,9 +13,12 @@ class SceneKitSceneViewController: NSViewController {
 
     @IBOutlet weak var sceneView: SCNView!
     var scene: SCNScene!
+    @IBOutlet weak var box: NSBox!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         sceneView.allowsCameraControl = true
         sceneView.gestureRecognizers.append(NSClickGestureRecognizer(target: self, action: #selector(sceneClicked)))
