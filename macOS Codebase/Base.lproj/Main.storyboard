@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="A2Q-sm-rtY">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XB1-Es-4nk">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.17"/>
-        <plugIn identifier="com.apple.SceneKitIBPlugin" version="13122.17"/>
-        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -662,97 +660,40 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="uLs-Vd-vzC">
-            <objects>
-                <windowController id="de2-Yx-xsl" sceneMemberID="viewController">
-                    <window key="window" title="SceneKit Scene" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="N5N-R9-3c4">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="362" width="510" height="290"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-                    </window>
-                    <connections>
-                        <segue destination="3Uf-6f-LXD" kind="relationship" relationship="window.shadowedContentViewController" id="cNy-Wj-bjd"/>
-                    </connections>
-                </windowController>
-                <customObject id="4Bp-df-CR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="511" y="690"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="tmy-f9-1Hf">
-            <objects>
-                <windowController id="A2Q-sm-rtY" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="3gu-CM-evw">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-                    </window>
-                    <connections>
-                        <segue destination="DjB-d7-59p" kind="relationship" relationship="window.shadowedContentViewController" id="NkK-4f-scZ"/>
-                    </connections>
-                </windowController>
-                <customObject id="H6o-A3-6f0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="93" y="239"/>
-        </scene>
         <!--View Controller-->
-        <scene sceneID="hOM-Pm-tzb">
+        <scene sceneID="qAg-JB-VhT">
             <objects>
-                <viewController id="DjB-d7-59p" sceneMemberID="viewController">
-                    <view key="view" id="1N9-Zw-T77">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="CN9-tw-Twb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="668" y="136"/>
-        </scene>
-        <!--Scene Kit Scene View Controller-->
-        <scene sceneID="anC-Za-DuO">
-            <objects>
-                <viewController id="3Uf-6f-LXD" customClass="SceneKitSceneViewController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="eKg-2f-lDz">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="XB1-Es-4nk" sceneMemberID="viewController">
+                    <view key="view" id="VrQ-ef-hSz">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-py-sp9">
-                                <rect key="frame" x="158" y="78" width="164" height="114"/>
-                                <view key="contentView" id="DUe-iq-rBa">
-                                    <rect key="frame" x="1" y="1" width="162" height="112"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="Rv6-HI-fLC"/>
-                                    <constraint firstAttribute="width" constant="164" id="sad-uX-ROs"/>
-                                </constraints>
-                                <color key="fillColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </box>
-                            <sceneView sceneName="SceneKit Scene.scn" translatesAutoresizingMaskIntoConstraints="NO" id="bOE-ZJ-wDN">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
-                            </sceneView>
+                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZ9-Nf-IXX">
+                                <rect key="frame" x="177" y="175" width="96" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="uDq-Fp-j78">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="takeIntValueFrom:" target="d9w-Tc-2mI" id="yPh-gd-b0J"/>
+                                </connections>
+                            </textField>
+                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-Tc-2mI">
+                                <rect key="frame" x="168" y="231" width="115" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="2Sz-e6-v2i"/>
+                                <connections>
+                                    <action selector="takeIntValueFrom:" target="TZ9-Nf-IXX" id="sbp-ve-mql"/>
+                                </connections>
+                            </slider>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="TlQ-py-sp9" firstAttribute="centerY" secondItem="bOE-ZJ-wDN" secondAttribute="centerY" id="60a-px-ckZ"/>
-                            <constraint firstAttribute="trailing" secondItem="bOE-ZJ-wDN" secondAttribute="trailing" id="Fdm-UK-dY9"/>
-                            <constraint firstItem="TlQ-py-sp9" firstAttribute="centerX" secondItem="bOE-ZJ-wDN" secondAttribute="centerX" id="IWd-iM-BUu"/>
-                            <constraint firstItem="bOE-ZJ-wDN" firstAttribute="top" secondItem="eKg-2f-lDz" secondAttribute="top" id="LCY-uw-CjR"/>
-                            <constraint firstAttribute="bottom" secondItem="bOE-ZJ-wDN" secondAttribute="bottom" id="roq-Xi-WDC"/>
-                            <constraint firstItem="bOE-ZJ-wDN" firstAttribute="leading" secondItem="eKg-2f-lDz" secondAttribute="leading" id="y7o-sk-6En"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="box" destination="TlQ-py-sp9" id="tv6-LS-fUW"/>
-                        <outlet property="sceneView" destination="bOE-ZJ-wDN" id="iM8-8k-hcZ"/>
-                    </connections>
                 </viewController>
-                <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="E3s-K4-8An" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="511" y="1173"/>
+            <point key="canvasLocation" x="75" y="261"/>
         </scene>
     </scenes>
 </document>
