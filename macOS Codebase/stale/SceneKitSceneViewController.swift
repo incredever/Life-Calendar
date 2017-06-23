@@ -18,13 +18,10 @@ class SceneKitSceneViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         sceneView.allowsCameraControl = true
         sceneView.gestureRecognizers.append(NSClickGestureRecognizer(target: self, action: #selector(sceneClicked)))
         sceneView.gestureRecognizers.append(NSPanGestureRecognizer(target: self, action: #selector(panning)))
         scene = sceneView.scene!
-        
         
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
@@ -46,7 +43,6 @@ class SceneKitSceneViewController: NSViewController {
         }
     }
     
-    
     @objc func sceneClicked(gestureRecognizer: NSGestureRecognizer) {
         let location = gestureRecognizer.location(in: sceneView)
         let hitResults = sceneView.hitTest(location, options: nil)
@@ -54,8 +50,6 @@ class SceneKitSceneViewController: NSViewController {
         if hitResults.count > 0 {
             let result = hitResults[0]
             let node = result.node
-            
-            node.removeFromParentNode()
             
             node.geometry?.firstMaterial?.diffuse.contents = NSColor.blue
         }

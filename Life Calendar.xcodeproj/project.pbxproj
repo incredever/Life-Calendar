@@ -79,6 +79,17 @@
 			path = "embed images";
 			sourceTree = "<group>";
 		};
+		DED78FB01EFD770000F860BF /* stale */ = {
+			isa = PBXGroup;
+			children = (
+				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
+				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
+				DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */,
+				DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */,
+			);
+			path = stale;
+			sourceTree = "<group>";
+		};
 		DED97A2E1EDE0C3A00F2100B = {
 			isa = PBXGroup;
 			children = (
@@ -102,12 +113,9 @@
 		DED97A391EDE0C3A00F2100B /* macOS Codebase */ = {
 			isa = PBXGroup;
 			children = (
+				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
-				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
-				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
-				DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */,
-				DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */,
 				DE587D691EF9F33C00C9C53E /* Grid.swift */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
