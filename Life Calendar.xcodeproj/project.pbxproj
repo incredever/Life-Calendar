@@ -17,7 +17,6 @@
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
 		DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */; };
-		DEFE7F661EE1EC98008CDF63 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F651EE1EC98008CDF63 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +45,6 @@
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
 		DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		DEFE7F651EE1EC98008CDF63 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 			children = (
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DEFE7F631EE1DFA4008CDF63 /* Timeline.swift */,
-				DEFE7F651EE1EC98008CDF63 /* Event.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
 				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
@@ -206,7 +203,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFE7F641EE1DFA4008CDF63 /* Timeline.swift in Sources */,
-				DEFE7F661EE1EC98008CDF63 /* Event.swift in Sources */,
 				DE50382C1EF46AB200A78DAE /* Cube.swift in Sources */,
 				DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */,
 				DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */,
