@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XB1-Es-4nk">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="5uL-nc-VUp">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.17"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -694,7 +694,40 @@
                 </viewController>
                 <customObject id="E3s-K4-8An" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="261"/>
+            <point key="canvasLocation" x="431" y="279"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="HWU-aa-eJX">
+            <objects>
+                <windowController id="5uL-nc-VUp" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Xka-09-j0o">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                        <toolbar key="toolbar" implicitIdentifier="57455916-3076-40BC-BD96-67D7BD7B39BD" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="small" id="PaY-xw-yis">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="g58-Id-GhR"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="XQq-Bl-ZYA"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Sbk-wa-BWy"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="z2G-sQ-ali"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="RSp-ri-Pj3"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="g58-Id-GhR"/>
+                                <toolbarItem reference="XQq-Bl-ZYA"/>
+                                <toolbarItem reference="RSp-ri-Pj3"/>
+                                <toolbarItem reference="Sbk-wa-BWy"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                    </window>
+                    <connections>
+                        <segue destination="XB1-Es-4nk" kind="relationship" relationship="window.shadowedContentViewController" id="dUt-d7-bW4"/>
+                    </connections>
+                </windowController>
+                <customObject id="9s5-Bx-RGo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113" y="279"/>
         </scene>
     </scenes>
 </document>
