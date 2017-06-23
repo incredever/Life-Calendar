@@ -25,15 +25,6 @@ class SceneKitSceneViewController: NSViewController {
         sceneView.gestureRecognizers.append(NSPanGestureRecognizer(target: self, action: #selector(panning)))
         scene = sceneView.scene!
         
-        // Add overlay
-        let w = sceneView.bounds.size.width
-        let h = sceneView.bounds.size.height
-        
-        let skScene = SKScene(fileNamed: "Overlay")!
-        skScene.size = CGSize(width: w, height: h)
-        skScene.scaleMode = .resizeFill
-        
-        sceneView.overlaySKScene = skScene
         
         let grid = Grid()
         scene.rootNode.addChildNode(grid.node)
