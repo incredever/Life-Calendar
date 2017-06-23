@@ -685,6 +685,14 @@
                                     <action selector="sliderUpdated:" target="XB1-Es-4nk" id="D79-U5-cfO"/>
                                 </connections>
                             </slider>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgZ-at-huJ">
+                                <rect key="frame" x="102" y="108" width="61" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="t9A-Wj-6lQ">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -693,8 +701,9 @@
                     </connections>
                 </viewController>
                 <customObject id="E3s-K4-8An" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <objectController id="loz-lh-7nf"/>
             </objects>
-            <point key="canvasLocation" x="431" y="279"/>
+            <point key="canvasLocation" x="501" y="279"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="HWU-aa-eJX">
