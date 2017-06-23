@@ -9,9 +9,13 @@ import Cocoa
 
 class ExampleController: NSViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do view setup here.
+    @IBOutlet weak var slider: NSSlider!
+    @IBOutlet weak var testField: NSTextField!
+    var number = 0
+    
+    @IBAction func sliderUpdated(_ sender: NSSlider) {
+        number = sender.integerValue
+        testField.takeIntValueFrom(sender)
     }
     
 }

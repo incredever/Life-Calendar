@@ -660,10 +660,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Example Controller-->
         <scene sceneID="qAg-JB-VhT">
             <objects>
-                <viewController id="XB1-Es-4nk" sceneMemberID="viewController">
+                <viewController id="XB1-Es-4nk" customClass="ExampleController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="VrQ-ef-hSz">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -676,20 +676,21 @@
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
-                                <connections>
-                                    <action selector="takeIntValueFrom:" target="d9w-Tc-2mI" id="yPh-gd-b0J"/>
-                                </connections>
                             </textField>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-Tc-2mI">
                                 <rect key="frame" x="168" y="231" width="115" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="2Sz-e6-v2i"/>
                                 <connections>
-                                    <action selector="takeIntValueFrom:" target="TZ9-Nf-IXX" id="sbp-ve-mql"/>
+                                    <action selector="sliderUpdated:" target="XB1-Es-4nk" id="D79-U5-cfO"/>
                                 </connections>
                             </slider>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="slider" destination="d9w-Tc-2mI" id="zDB-1M-23k"/>
+                        <outlet property="testField" destination="TZ9-Nf-IXX" id="jih-jV-DkL"/>
+                    </connections>
                 </viewController>
                 <customObject id="E3s-K4-8An" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
