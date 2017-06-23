@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="de2-Yx-xsl">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="A2Q-sm-rtY">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.17"/>
@@ -678,7 +678,38 @@
                 </windowController>
                 <customObject id="4Bp-df-CR6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="251"/>
+            <point key="canvasLocation" x="511" y="690"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="tmy-f9-1Hf">
+            <objects>
+                <windowController id="A2Q-sm-rtY" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="3gu-CM-evw">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                    </window>
+                    <connections>
+                        <segue destination="DjB-d7-59p" kind="relationship" relationship="window.shadowedContentViewController" id="NkK-4f-scZ"/>
+                    </connections>
+                </windowController>
+                <customObject id="H6o-A3-6f0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="239"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hOM-Pm-tzb">
+            <objects>
+                <viewController id="DjB-d7-59p" sceneMemberID="viewController">
+                    <view key="view" id="1N9-Zw-T77">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="CN9-tw-Twb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="136"/>
         </scene>
         <!--Scene Kit Scene View Controller-->
         <scene sceneID="anC-Za-DuO">
@@ -721,7 +752,7 @@
                 </viewController>
                 <customObject id="j4c-tx-qYf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="680"/>
+            <point key="canvasLocation" x="511" y="1173"/>
         </scene>
     </scenes>
 </document>
