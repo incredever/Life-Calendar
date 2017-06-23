@@ -16,6 +16,7 @@
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
+		DEDA82DA1EFD86BF00E53EB1 /* ExampleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDA82D91EFD86BF00E53EB1 /* ExampleController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED97A411EDE0C3A00F2100B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEDA82D91EFD86BF00E53EB1 /* ExampleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleController.swift; sourceTree = "<group>"; };
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
+				DEDA82D91EFD86BF00E53EB1 /* ExampleController.swift */,
 				DE587D691EF9F33C00C9C53E /* Grid.swift */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
@@ -211,6 +214,7 @@
 				DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */,
 				DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */,
 				DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */,
+				DEDA82DA1EFD86BF00E53EB1 /* ExampleController.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
