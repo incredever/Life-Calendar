@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2B20CF1EFD953400447CAC /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2B20CE1EFD953400447CAC /* AppController.swift */; };
 		DE50382A1EF46A4E00A78DAE /* Cube.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE5038291EF46A4E00A78DAE /* Cube.scn */; };
 		DE50382C1EF46AB200A78DAE /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50382B1EF46AB200A78DAE /* Cube.swift */; };
 		DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE587D691EF9F33C00C9C53E /* Grid.swift */; };
@@ -26,6 +27,7 @@
 		DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar.sketch"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE1B440C1EFC24440025CF83 /* 2017-06-22.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-22.md"; sourceTree = "<group>"; };
+		DE2B20CE1EFD953400447CAC /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
 		DE587D691EF9F33C00C9C53E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
+				DE2B20CE1EFD953400447CAC /* AppController.swift */,
 				DEDA82D91EFD86BF00E53EB1 /* ExampleController.swift */,
 				DE587D691EF9F33C00C9C53E /* Grid.swift */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
@@ -216,6 +219,7 @@
 				DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */,
 				DEDA82DA1EFD86BF00E53EB1 /* ExampleController.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
+				DE2B20CF1EFD953400447CAC /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
