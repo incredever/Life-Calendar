@@ -8,5 +8,5 @@
 import Cocoa
 
 struct Timeline {
-    
+    let events: [Event]
 }
