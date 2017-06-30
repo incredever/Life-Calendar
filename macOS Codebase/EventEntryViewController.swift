@@ -22,6 +22,8 @@ class EventEntryViewController: NSViewController {
         let title = titleField.stringValue
         let startDate = startDatePicker.dateValue
         let endDate = endDatePicker.dateValue
+        
+        let newEvent = Event(title: title, starting: startDate, ending: endDate)
     }
     
     override func viewDidLoad() {
