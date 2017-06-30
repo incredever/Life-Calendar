@@ -8,5 +8,7 @@
 import Cocoa
 
 struct Event {
-    
+    let title: String
+    let starting: Date
+    let ending: Date
 }
