@@ -7,6 +7,6 @@
 
 import Cocoa
 
-class Event {
+struct Event {
     
 }
