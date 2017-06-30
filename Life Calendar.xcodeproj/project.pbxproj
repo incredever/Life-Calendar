@@ -18,6 +18,7 @@
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
 		DEFD71171F063A8D00AF4373 /* EventEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
+		DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711A1F06459500AF4373 /* Timeline.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
 		DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEntryViewController.swift; sourceTree = "<group>"; };
 		DEFD71181F0644BD00AF4373 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DEFD711A1F06459500AF4373 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DEFD71181F0644BD00AF4373 /* Event.swift */,
 				DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */,
+				DEFD711A1F06459500AF4373 /* Timeline.swift */,
 				DE587D691EF9F33C00C9C53E /* Grid.swift */,
 				DE5038291EF46A4E00A78DAE /* Cube.scn */,
 				DE50382B1EF46AB200A78DAE /* Cube.swift */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */,
 				DE50382C1EF46AB200A78DAE /* Cube.swift in Sources */,
 				DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */,
 				DEFD71171F063A8D00AF4373 /* EventEntryViewController.swift in Sources */,
