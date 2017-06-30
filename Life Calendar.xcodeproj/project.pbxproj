@@ -26,7 +26,6 @@
 /* Begin PBXFileReference section */
 		DE0ADCA31EF5ECC30021BDFD /* 2017-06-17.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-17.md"; sourceTree = "<group>"; };
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DE10292B1EF4ACFB008E894E /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar.sketch"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE1B440C1EFC24440025CF83 /* 2017-06-22.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-22.md"; sourceTree = "<group>"; };
@@ -109,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				DE10292A1EF4ACF7008E894E /* README.md */,
-				DE10292B1EF4ACFB008E894E /* MyPlayground.playground */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
 				DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */,
