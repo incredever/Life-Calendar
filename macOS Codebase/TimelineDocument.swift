@@ -15,13 +15,6 @@ class TimelineDocument: NSDocument {
         self.addWindowController(windowController)
         
     }
-    /*
-    override var windowNibName: String? {
-        // Override returning the nib file name of the document
-        // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
-        return "TimelineDocument"
-    }
-    */
 
     override func windowControllerDidLoadNib(_ aController: NSWindowController) {
         super.windowControllerDidLoadNib(aController)
@@ -40,9 +33,5 @@ class TimelineDocument: NSDocument {
         // If you override either of these, you should also override -isEntireFileLoaded to return false if the contents are lazily loaded.
         throw NSError(domain: NSOSStatusErrorDomain, code: unimpErr, userInfo: nil)
     }
-
-//    override class func autosavesInPlace() -> Bool {
-//        return true
-//    }
 
 }
