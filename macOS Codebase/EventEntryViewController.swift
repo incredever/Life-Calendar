@@ -14,6 +14,14 @@ class EventEntryViewController: NSViewController {
     @IBOutlet weak var endDatePicker: NSDatePicker!
     
     @IBAction func addToTimeline(_ sender: NSButton) {
+        guard titleField.stringValue != "" else {
+            print("no title")
+            return
+        }
+        
+        let title = titleField.stringValue
+        let startDate = startDatePicker.dateValue
+        let endDate = endDatePicker.dateValue
     }
     
     override func viewDidLoad() {
