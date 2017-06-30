@@ -94,6 +94,9 @@
 		DED78FB01EFD770000F860BF /* stale */ = {
 			isa = PBXGroup;
 			children = (
+				DE587D691EF9F33C00C9C53E /* Grid.swift */,
+				DE5038291EF46A4E00A78DAE /* Cube.scn */,
+				DE50382B1EF46AB200A78DAE /* Cube.swift */,
 				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
 				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
 				DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */,
@@ -133,9 +136,6 @@
 				DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */,
 				DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */,
 				DEFD711A1F06459500AF4373 /* Timeline.swift */,
-				DE587D691EF9F33C00C9C53E /* Grid.swift */,
-				DE5038291EF46A4E00A78DAE /* Cube.scn */,
-				DE50382B1EF46AB200A78DAE /* Cube.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
