@@ -663,7 +663,7 @@
         <!--Window Controller-->
         <scene sceneID="IiL-Uy-XnN">
             <objects>
-                <windowController id="nNa-vC-TuE" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="BasicTimelineWindow" id="nNa-vC-TuE" customClass="BasicTimelineWindowController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="pdm-Sq-87N">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
