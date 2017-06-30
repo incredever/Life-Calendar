@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="5uL-nc-VUp">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -659,83 +658,6 @@
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
-        </scene>
-        <!--Example Controller-->
-        <scene sceneID="qAg-JB-VhT">
-            <objects>
-                <viewController id="XB1-Es-4nk" customClass="ExampleController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="VrQ-ef-hSz">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZ9-Nf-IXX">
-                                <rect key="frame" x="177" y="175" width="96" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="uDq-Fp-j78">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-Tc-2mI">
-                                <rect key="frame" x="168" y="231" width="115" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="2Sz-e6-v2i"/>
-                                <connections>
-                                    <action selector="sliderUpdated:" target="XB1-Es-4nk" id="D79-U5-cfO"/>
-                                </connections>
-                            </slider>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UgZ-at-huJ">
-                                <rect key="frame" x="102" y="108" width="61" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="t9A-Wj-6lQ">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                            </button>
-                        </subviews>
-                    </view>
-                    <connections>
-                        <outlet property="slider" destination="d9w-Tc-2mI" id="zDB-1M-23k"/>
-                        <outlet property="testField" destination="TZ9-Nf-IXX" id="jih-jV-DkL"/>
-                    </connections>
-                </viewController>
-                <customObject id="E3s-K4-8An" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="501" y="279"/>
-        </scene>
-        <!--Window Controller-->
-        <scene sceneID="HWU-aa-eJX">
-            <objects>
-                <windowController id="5uL-nc-VUp" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Xka-09-j0o">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="362" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
-                        <toolbar key="toolbar" implicitIdentifier="57455916-3076-40BC-BD96-67D7BD7B39BD" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="small" id="PaY-xw-yis">
-                            <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="g58-Id-GhR"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="XQq-Bl-ZYA"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Sbk-wa-BWy"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="z2G-sQ-ali"/>
-                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="RSp-ri-Pj3"/>
-                            </allowedToolbarItems>
-                            <defaultToolbarItems>
-                                <toolbarItem reference="g58-Id-GhR"/>
-                                <toolbarItem reference="XQq-Bl-ZYA"/>
-                                <toolbarItem reference="RSp-ri-Pj3"/>
-                                <toolbarItem reference="Sbk-wa-BWy"/>
-                            </defaultToolbarItems>
-                        </toolbar>
-                    </window>
-                    <connections>
-                        <segue destination="XB1-Es-4nk" kind="relationship" relationship="window.shadowedContentViewController" id="dUt-d7-bW4"/>
-                    </connections>
-                </windowController>
-                <customObject id="9s5-Bx-RGo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-113" y="279"/>
         </scene>
     </scenes>
 </document>
