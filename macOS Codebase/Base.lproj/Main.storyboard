@@ -719,8 +719,8 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mYQ-aD-Ue7">
-                                <rect key="frame" x="18" y="204" width="40" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Name" id="gP9-5m-YGJ">
+                                <rect key="frame" x="18" y="204" width="31" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Title" id="gP9-5m-YGJ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -754,7 +754,7 @@
                                 </datePickerCell>
                             </datePicker>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eI6-kk-tzr">
-                                <rect key="frame" x="76" y="201" width="354" height="22"/>
+                                <rect key="frame" x="67" y="201" width="363" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Yxx-2U-vdg">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -767,6 +767,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="addToTimeline:" target="WJl-oe-OUv" id="uqE-Kv-4Oe"/>
+                                </connections>
                             </button>
                             <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-jM-NVi">
                                 <rect key="frame" x="234" y="171" width="97" height="27"/>
@@ -800,6 +803,11 @@
                             <constraint firstItem="5jU-G2-HGa" firstAttribute="leading" secondItem="J8Z-wI-R3A" secondAttribute="trailing" constant="26" id="xyf-4C-YLJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="endDatePicker" destination="DtS-jM-NVi" id="y0w-8q-efj"/>
+                        <outlet property="startDatePicker" destination="5jU-G2-HGa" id="EDF-3V-NCy"/>
+                        <outlet property="titleField" destination="eI6-kk-tzr" id="1xu-be-bPR"/>
+                    </connections>
                 </viewController>
                 <customObject id="jgo-B9-awg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
