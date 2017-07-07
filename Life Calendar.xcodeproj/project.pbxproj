@@ -21,7 +21,6 @@
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
 		DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711A1F06459500AF4373 /* Timeline.swift */; };
 		DEFD711D1F06472A00AF4373 /* BasicTimelineWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */; };
-		DEFD715F1F06520D00AF4373 /* TimelineDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD715E1F06520D00AF4373 /* TimelineDocument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +58,6 @@
 		DEFD71181F0644BD00AF4373 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DEFD711A1F06459500AF4373 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTimelineWindowController.swift; sourceTree = "<group>"; };
-		DEFD715E1F06520D00AF4373 /* TimelineDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +146,6 @@
 				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
-				DEFD715E1F06520D00AF4373 /* TimelineDocument.swift */,
 				DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */,
 				DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */,
 				DEFD71181F0644BD00AF4373 /* Event.swift */,
@@ -249,7 +246,6 @@
 				DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */,
 				DEFD71171F063A8D00AF4373 /* EventEntryViewController.swift in Sources */,
 				DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */,
-				DEFD715F1F06520D00AF4373 /* TimelineDocument.swift in Sources */,
 				DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
 				DEFD711D1F06472A00AF4373 /* BasicTimelineWindowController.swift in Sources */,
