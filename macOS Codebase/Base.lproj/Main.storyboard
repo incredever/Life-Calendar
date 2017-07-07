@@ -679,10 +679,10 @@
             </objects>
             <point key="canvasLocation" x="39" y="305.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Weeks View Controller-->
         <scene sceneID="hUL-OT-ova">
             <objects>
-                <viewController id="YtD-rh-aU1" sceneMemberID="viewController">
+                <viewController id="YtD-rh-aU1" customClass="WeeksViewController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4j3-EC-aLJ">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -693,10 +693,13 @@
                             </skView>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="skView" destination="jdf-RF-FKM" id="k1v-bA-Yfg"/>
+                    </connections>
                 </viewController>
                 <customObject id="Agr-ez-q7H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="653"/>
+            <point key="canvasLocation" x="39" y="718"/>
         </scene>
     </scenes>
 </document>

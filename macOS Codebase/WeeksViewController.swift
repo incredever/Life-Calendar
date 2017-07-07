@@ -6,12 +6,17 @@
 //
 
 import Cocoa
+import SpriteKit
 
 class WeeksViewController: NSViewController {
 
+    @IBOutlet weak var skView: SKView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        
+        
+        
     }
     
 }
