@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		DE0ADCA31EF5ECC30021BDFD /* 2017-06-17.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-17.md"; sourceTree = "<group>"; };
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar.sketch"; sourceTree = "<group>"; };
+		DE10292C1EF4AD1A008E894E /* Life Calendar Mockups.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar Mockups.sketch"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE1B440C1EFC24440025CF83 /* 2017-06-22.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-22.md"; sourceTree = "<group>"; };
 		DE4676E31F0634BA004C7D9B /* 2017-06-30.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-30.md"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */ = {
 			isa = PBXGroup;
 			children = (
-				DE10292C1EF4AD1A008E894E /* Life Calendar.sketch */,
+				DE10292C1EF4AD1A008E894E /* Life Calendar Mockups.sketch */,
 				DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */,
 				DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */,
 			);
