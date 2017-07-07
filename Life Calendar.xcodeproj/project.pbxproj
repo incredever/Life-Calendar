@@ -17,10 +17,8 @@
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
-		DEFD71171F063A8D00AF4373 /* EventEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
 		DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711A1F06459500AF4373 /* Timeline.swift */; };
-		DEFD711D1F06472A00AF4373 /* BasicTimelineWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +52,8 @@
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
-		DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEntryViewController.swift; sourceTree = "<group>"; };
 		DEFD71181F0644BD00AF4373 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DEFD711A1F06459500AF4373 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTimelineWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +142,6 @@
 				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
-				DEFD71161F063A8D00AF4373 /* EventEntryViewController.swift */,
-				DEFD711C1F06472A00AF4373 /* BasicTimelineWindowController.swift */,
 				DEFD71181F0644BD00AF4373 /* Event.swift */,
 				DEFD711A1F06459500AF4373 /* Timeline.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
@@ -244,11 +238,9 @@
 				DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */,
 				DE50382C1EF46AB200A78DAE /* Cube.swift in Sources */,
 				DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */,
-				DEFD71171F063A8D00AF4373 /* EventEntryViewController.swift in Sources */,
 				DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */,
 				DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
-				DEFD711D1F06472A00AF4373 /* BasicTimelineWindowController.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
