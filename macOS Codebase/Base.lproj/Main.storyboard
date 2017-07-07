@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
+        <plugIn identifier="com.apple.SpriteKitIBPlugin" version="13122.19"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -671,123 +672,31 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
                     </window>
                     <connections>
-                        <segue destination="WJl-oe-OUv" kind="relationship" relationship="window.shadowedContentViewController" id="xZ8-Kh-3YT"/>
+                        <segue destination="YtD-rh-aU1" kind="relationship" relationship="window.shadowedContentViewController" id="RuV-j0-Fy3"/>
                     </connections>
                 </windowController>
                 <customObject id="mSq-XN-st6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="39" y="305.5"/>
         </scene>
-        <!--Event Entry View Controller-->
-        <scene sceneID="hfy-hy-oX1">
+        <!--View Controller-->
+        <scene sceneID="hUL-OT-ova">
             <objects>
-                <viewController id="WJl-oe-OUv" customClass="EventEntryViewController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="nHA-Qe-R2x">
+                <viewController id="YtD-rh-aU1" sceneMemberID="viewController">
+                    <view key="view" id="4j3-EC-aLJ">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Nzw-pZ-ZFp">
-                                <rect key="frame" x="188" y="263" width="74" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Event Entry" id="rKz-J2-gvJ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mYQ-aD-Ue7">
-                                <rect key="frame" x="18" y="204" width="31" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Title" id="gP9-5m-YGJ">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J8Z-wI-R3A">
-                                <rect key="frame" x="18" y="174" width="34" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Start" id="aq8-CS-QRn">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O2P-Ul-25A">
-                                <rect key="frame" x="188" y="174" width="28" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="End" id="W5c-0p-CcL">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5jU-G2-HGa">
-                                <rect key="frame" x="76" y="171" width="97" height="27"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="QPP-lv-ZoY">
-                                    <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
-                                        <!--1982-02-12 16:00:00 +0000-->
-                                    </date>
-                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                </datePickerCell>
-                            </datePicker>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eI6-kk-tzr">
-                                <rect key="frame" x="67" y="201" width="363" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Yxx-2U-vdg">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="W6U-Oz-AOR">
-                                <rect key="frame" x="160" y="13" width="131" height="32"/>
-                                <buttonCell key="cell" type="push" title="Add to timeline" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yMF-A9-BAR">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="addToTimeline:" target="WJl-oe-OUv" id="uqE-Kv-4Oe"/>
-                                </connections>
-                            </button>
-                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-jM-NVi">
-                                <rect key="frame" x="234" y="171" width="97" height="27"/>
-                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" id="dQq-ht-I6y">
-                                    <font key="font" metaFont="system"/>
-                                    <date key="date" timeIntervalSinceReferenceDate="-595929600">
-                                        <!--1982-02-12 16:00:00 +0000-->
-                                    </date>
-                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                </datePickerCell>
-                            </datePicker>
+                            <skView fixedFrame="YES" asynchronous="NO" shouldCullNonVisibleNodes="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-RF-FKM">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </skView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="W6U-Oz-AOR" firstAttribute="centerX" secondItem="nHA-Qe-R2x" secondAttribute="centerX" id="3uL-Br-ZLs"/>
-                            <constraint firstItem="Nzw-pZ-ZFp" firstAttribute="centerX" secondItem="nHA-Qe-R2x" secondAttribute="centerX" id="A4N-qb-yyn"/>
-                            <constraint firstItem="5jU-G2-HGa" firstAttribute="centerY" secondItem="J8Z-wI-R3A" secondAttribute="centerY" id="BE6-i2-B2b"/>
-                            <constraint firstItem="eI6-kk-tzr" firstAttribute="leading" secondItem="mYQ-aD-Ue7" secondAttribute="trailing" constant="20" id="EPh-TD-8fF"/>
-                            <constraint firstItem="J8Z-wI-R3A" firstAttribute="top" secondItem="mYQ-aD-Ue7" secondAttribute="bottom" constant="13" id="H99-2a-tpY"/>
-                            <constraint firstItem="J8Z-wI-R3A" firstAttribute="leading" secondItem="nHA-Qe-R2x" secondAttribute="leading" constant="20" id="HOv-j8-Hay"/>
-                            <constraint firstAttribute="bottom" secondItem="W6U-Oz-AOR" secondAttribute="bottom" constant="20" id="Ofb-5b-VMJ"/>
-                            <constraint firstItem="O2P-Ul-25A" firstAttribute="leading" secondItem="5jU-G2-HGa" secondAttribute="trailing" constant="20" id="PjM-2I-sXH"/>
-                            <constraint firstItem="mYQ-aD-Ue7" firstAttribute="top" secondItem="nHA-Qe-R2x" secondAttribute="top" constant="79" id="S7T-Xt-nno"/>
-                            <constraint firstItem="DtS-jM-NVi" firstAttribute="centerY" secondItem="O2P-Ul-25A" secondAttribute="centerY" id="jE2-UK-iXY"/>
-                            <constraint firstItem="Nzw-pZ-ZFp" firstAttribute="top" secondItem="nHA-Qe-R2x" secondAttribute="top" constant="20" id="k70-0b-gQ4"/>
-                            <constraint firstItem="eI6-kk-tzr" firstAttribute="centerY" secondItem="mYQ-aD-Ue7" secondAttribute="centerY" id="nfb-3Q-Uc9"/>
-                            <constraint firstItem="mYQ-aD-Ue7" firstAttribute="leading" secondItem="nHA-Qe-R2x" secondAttribute="leading" constant="20" id="tbY-PJ-FA9"/>
-                            <constraint firstItem="O2P-Ul-25A" firstAttribute="centerY" secondItem="J8Z-wI-R3A" secondAttribute="centerY" id="uvi-bB-wIB"/>
-                            <constraint firstAttribute="trailing" secondItem="eI6-kk-tzr" secondAttribute="trailing" constant="20" id="vUQ-hW-CP5"/>
-                            <constraint firstItem="DtS-jM-NVi" firstAttribute="leading" secondItem="O2P-Ul-25A" secondAttribute="trailing" constant="20" id="wE8-lE-2vP"/>
-                            <constraint firstItem="5jU-G2-HGa" firstAttribute="leading" secondItem="J8Z-wI-R3A" secondAttribute="trailing" constant="26" id="xyf-4C-YLJ"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="endDatePicker" destination="DtS-jM-NVi" id="y0w-8q-efj"/>
-                        <outlet property="startDatePicker" destination="5jU-G2-HGa" id="EDF-3V-NCy"/>
-                        <outlet property="titleField" destination="eI6-kk-tzr" id="1xu-be-bPR"/>
-                    </connections>
                 </viewController>
-                <customObject id="jgo-B9-awg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="Agr-ez-q7H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39" y="737"/>
+            <point key="canvasLocation" x="40" y="653"/>
         </scene>
     </scenes>
 </document>
