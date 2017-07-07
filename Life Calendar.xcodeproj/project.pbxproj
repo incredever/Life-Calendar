@@ -123,10 +123,10 @@
 		DED97A2E1EDE0C3A00F2100B = {
 			isa = PBXGroup;
 			children = (
-				DE1EC1351F0FBE8500302401 /* Design Files */,
 				DE10292A1EF4ACF7008E894E /* README.md */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
+				DE1EC1351F0FBE8500302401 /* Design Files */,
 				DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */,
 				DED97A381EDE0C3A00F2100B /* Products */,
 			);
