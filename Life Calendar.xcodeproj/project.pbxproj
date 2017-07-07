@@ -29,7 +29,6 @@
 		DE10292C1EF4AD1A008E894E /* Life Calendar Mockups.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar Mockups.sketch"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE1B440C1EFC24440025CF83 /* 2017-06-22.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-22.md"; sourceTree = "<group>"; };
-		DE1EC1361F0FBE9F00302401 /* Life Calendar 1.0 Designs.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Life Calendar 1.0 Designs.sketch"; path = "../../Desktop/Life Calendar 1.0 Designs.sketch"; sourceTree = "<group>"; };
 		DE4676E31F0634BA004C7D9B /* 2017-06-30.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-30.md"; sourceTree = "<group>"; };
 		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
@@ -71,14 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE1EC1351F0FBE8500302401 /* Design Files */ = {
-			isa = PBXGroup;
-			children = (
-				DE1EC1361F0FBE9F00302401 /* Life Calendar 1.0 Designs.sketch */,
-			);
-			name = "Design Files";
-			sourceTree = "<group>";
-		};
 		DE63F8A21EED86DE00B2BF05 /* Developer's Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +117,6 @@
 				DE10292A1EF4ACF7008E894E /* README.md */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
-				DE1EC1351F0FBE8500302401 /* Design Files */,
 				DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */,
 				DED97A381EDE0C3A00F2100B /* Products */,
 			);
