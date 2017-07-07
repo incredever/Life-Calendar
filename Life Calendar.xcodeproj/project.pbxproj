@@ -44,6 +44,7 @@
 		DEA8DE5D1EF4C0170054CAF0 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
+		DED30F071F0FC0CB00B299C9 /* Life Calendar 1.0 Designs.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar 1.0 Designs.sketch"; sourceTree = "<group>"; };
 		DED78FAF1EFD74F700F860BF /* 2017-06-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-23.md"; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +98,14 @@
 			path = "embed images";
 			sourceTree = "<group>";
 		};
+		DED30F061F0FC0A500B299C9 /* Design Files */ = {
+			isa = PBXGroup;
+			children = (
+				DED30F071F0FC0CB00B299C9 /* Life Calendar 1.0 Designs.sketch */,
+			);
+			path = "Design Files";
+			sourceTree = "<group>";
+		};
 		DED78FB01EFD770000F860BF /* stale */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +126,7 @@
 				DE10292A1EF4ACF7008E894E /* README.md */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
+				DED30F061F0FC0A500B299C9 /* Design Files */,
 				DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */,
 				DED97A381EDE0C3A00F2100B /* Products */,
 			);
