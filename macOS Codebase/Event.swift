@@ -6,9 +6,11 @@
 //
 
 import Cocoa
+import SpriteKit
 
 struct Event {
     let title: String
+    let color: SKColor?
     let starting: Date
     let ending: Date
 }
