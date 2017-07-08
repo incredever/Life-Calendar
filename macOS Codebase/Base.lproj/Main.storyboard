@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
-        <plugIn identifier="com.apple.SpriteKitIBPlugin" version="13122.19"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -683,18 +682,12 @@
         <scene sceneID="hUL-OT-ova">
             <objects>
                 <viewController id="YtD-rh-aU1" customClass="WeeksViewController" customModule="Life_Calendar" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="4j3-EC-aLJ">
+                    <view key="view" id="4j3-EC-aLJ" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <subviews>
-                            <skView fixedFrame="YES" asynchronous="NO" shouldCullNonVisibleNodes="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdf-RF-FKM">
-                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </skView>
-                        </subviews>
                     </view>
                     <connections>
-                        <outlet property="skView" destination="jdf-RF-FKM" id="bih-7C-xko"/>
+                        <outlet property="skView" destination="4j3-EC-aLJ" id="Th9-XC-AoV"/>
                     </connections>
                 </viewController>
                 <customObject id="Agr-ez-q7H" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
