@@ -13,7 +13,18 @@ class WeeksScene: SKScene {
     override func didMove(to view: SKView) {
         print("did move to view")
         
-        addTile(at: CGPoint(x: 0, y: 0))
+        createGridOfTiles(rows: 100, columns: 52)
+    }
+    
+    func createGridOfTiles(rows: Int, columns: Int) {
+        let padding = 5
+        let SIZEOFTILE = 20
+        
+        for rowNumber in 0...rows {
+            for columnNumber in 0...columns {
+                addTile(at: CGPoint(x: (SIZEOFTILE * rowNumber) + padding, y: (SIZEOFTILE + columnNumber) + padding))
+            }
+        }
     }
     
     func addTile(at position: CGPoint) {
