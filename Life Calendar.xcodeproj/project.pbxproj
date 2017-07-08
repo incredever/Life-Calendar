@@ -34,6 +34,7 @@
 		DE3B81251F10ABA90051A3A6 /* WeeksScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WeeksScene.sks; sourceTree = "<group>"; };
 		DE3B81271F10B8940051A3A6 /* WeeksScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksScene.swift; sourceTree = "<group>"; };
 		DE3B81291F10BCF00051A3A6 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-08.md"; sourceTree = "<group>"; };
 		DE4676E31F0634BA004C7D9B /* 2017-06-30.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-30.md"; sourceTree = "<group>"; };
 		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 				DE4676E31F0634BA004C7D9B /* 2017-06-30.md */,
 				DE603A2F1F0B8C0800C8C88D /* 2017-07-04.md */,
 				DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */,
+				DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
