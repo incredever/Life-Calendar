@@ -9,5 +9,8 @@ import Cocoa
 import SpriteKit
 
 class WeeksScene: SKScene {
-
+    
+    override func didMove(to view: SKView) {
+        print("did move to view")
+    }
 }
