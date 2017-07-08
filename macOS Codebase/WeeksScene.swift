@@ -18,11 +18,11 @@ class WeeksScene: SKScene {
     
     func createGridOfTiles(rows: Int, columns: Int) {
         let padding = 5
-        let SIZEOFTILE = 20
+        let SIZEOFTILE = 35
         
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
-                addTile(at: CGPoint(x: (SIZEOFTILE * rowNumber) + padding, y: (SIZEOFTILE + columnNumber) + padding))
+                addTile(at: CGPoint(x: (SIZEOFTILE * rowNumber) + padding, y: (SIZEOFTILE * columnNumber) + padding))
             }
         }
     }
