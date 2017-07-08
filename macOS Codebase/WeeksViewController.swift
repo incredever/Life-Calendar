@@ -11,16 +11,24 @@ import SpriteKit
 class WeeksViewController: NSViewController {
     
     @IBOutlet weak var skView: SKView!
+    var skScene: SKScene?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         skView.showsNodeCount = true
         
-        if let scene = SKScene(fileNamed: "WeeksScene") {
-            scene.scaleMode = .aspectFill
-            skView.presentScene(scene)
-        }
+        
+        skScene = SKScene(fileNamed: "WeeksScene")
+        skScene?.scaleMode = .aspectFill
+        
+        skView.presentScene(skScene)
+        
+    }
+    
+    func addTilesToScene() {
+        let tileScene = SKScene(fileNamed: "Tile")
+        let tileNode = tileScene?.childNode(withName: "Tile")
         
     }
     
