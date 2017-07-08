@@ -15,6 +15,12 @@ class WeeksViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        skView.showsNodeCount = true
+        
+        if let scene = SKScene(fileNamed: "WeeksScene") {
+            scene.scaleMode = .aspectFill
+            skView.presentScene(scene)
+        }
         
     }
     
