@@ -13,4 +13,11 @@ class WeeksScene: SKScene {
     override func didMove(to view: SKView) {
         print("did move to view")
     }
+    
+    func addTiles() {
+        let tileScene = SKScene(fileNamed: "Tile")
+        let tileNode = tileScene?.childNode(withName: "Tile")
+        
+        
+    }
 }
