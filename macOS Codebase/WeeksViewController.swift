@@ -18,11 +18,12 @@ class WeeksViewController: NSViewController {
         
         skView.showsNodeCount = true
         
-        
         skScene = SKScene(fileNamed: "WeeksScene")
         skScene?.scaleMode = .aspectFill
         
         skView.presentScene(skScene)
+        
+        addTilesToScene()
         
     }
     
@@ -30,6 +31,13 @@ class WeeksViewController: NSViewController {
         let tileScene = SKScene(fileNamed: "Tile")
         let tileNode = tileScene?.childNode(withName: "Tile")
         
+        
+        
+        if let tileNode = tileNode {
+            skScene?.addChild(tileNode)
+        }
+        
+        skScene?.addChild(SKNode())
     }
     
 }
