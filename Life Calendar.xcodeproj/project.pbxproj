@@ -152,11 +152,11 @@
 		DED97A391EDE0C3A00F2100B /* macOS Codebase */ = {
 			isa = PBXGroup;
 			children = (
-				DE3B81251F10ABA90051A3A6 /* WeeksScene.sks */,
 				DE3B81241F10AB4F0051A3A6 /* Model */,
 				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
+				DE3B81251F10ABA90051A3A6 /* WeeksScene.sks */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
