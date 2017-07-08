@@ -17,9 +17,8 @@ class WeeksScene: SKScene {
     }
     
     func addTiles() {
-        let tileScene = SKScene(fileNamed: "Tile")
-        let tileNode = tileScene?.childNode(withName: "Tile")
+        let tile = Tile()
         
-//        addChild(tileNode!.remo)
+        addChild(tile)
     }
 }
