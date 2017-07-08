@@ -20,6 +20,6 @@ class WeeksScene: SKScene {
         let tileScene = SKScene(fileNamed: "Tile")
         let tileNode = tileScene?.childNode(withName: "Tile")
         
-        addChild(tileNode!)
+//        addChild(tileNode!.remo)
     }
 }
