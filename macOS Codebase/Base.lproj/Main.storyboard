@@ -667,8 +667,10 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="pdm-Sq-87N">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="294" y="361" width="480" height="271"/>
+                        <rect key="contentRect" x="294" y="361" width="1000" height="700"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+                        <value key="minSize" type="size" width="1000" height="700"/>
+                        <value key="maxSize" type="size" width="1000" height="700"/>
                     </window>
                     <connections>
                         <segue destination="YtD-rh-aU1" kind="relationship" relationship="window.shadowedContentViewController" id="RuV-j0-Fy3"/>
