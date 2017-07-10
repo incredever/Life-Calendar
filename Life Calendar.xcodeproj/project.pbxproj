@@ -35,6 +35,8 @@
 		DE3B81271F10B8940051A3A6 /* WeeksScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksScene.swift; sourceTree = "<group>"; };
 		DE3B81291F10BCF00051A3A6 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-08.md"; sourceTree = "<group>"; };
+		DE3B812C1F1365280051A3A6 /* 2017-07-10.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-10.md"; sourceTree = "<group>"; };
+		DE3B812D1F13675C0051A3A6 /* 2017-07-10 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-10 Fig 1.png"; sourceTree = "<group>"; };
 		DE4676E31F0634BA004C7D9B /* 2017-06-30.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-30.md"; sourceTree = "<group>"; };
 		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
 		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				DE603A2F1F0B8C0800C8C88D /* 2017-07-04.md */,
 				DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */,
 				DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */,
+				DE3B812C1F1365280051A3A6 /* 2017-07-10.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
@@ -107,6 +110,7 @@
 			children = (
 				DEA8DE5D1EF4C0170054CAF0 /* 2017-06-11 Fig 1.png */,
 				DE9C8D8A1F0F86A6001F05A0 /* 2017-07-07 Fig 1.png */,
+				DE3B812D1F13675C0051A3A6 /* 2017-07-10 Fig 1.png */,
 			);
 			path = "embed images";
 			sourceTree = "<group>";
@@ -160,10 +164,10 @@
 				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
+				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
 				DE3B81251F10ABA90051A3A6 /* WeeksScene.sks */,
 				DE3B81271F10B8940051A3A6 /* WeeksScene.swift */,
 				DE3B81291F10BCF00051A3A6 /* Tile.swift */,
-				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
