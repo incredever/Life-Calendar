@@ -13,7 +13,7 @@ class WeeksScene: SKScene {
     override func didMove(to view: SKView) {
         print("did move to view")
         
-        createGridOfTiles(rows: 100, columns: 52)
+//        createGridOfTiles(rows: 100, columns: 52)
     }
     
     func createGridOfTiles(rows: Int, columns: Int) {
