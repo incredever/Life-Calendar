@@ -22,7 +22,7 @@ class WeeksScene: SKScene {
         
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
-                addTile(at: CGPoint(x: (SIZEOFTILE * rowNumber) + padding, y: (SIZEOFTILE * columnNumber) + padding))
+                addTile(at: CGPoint(x: ((SIZEOFTILE * rowNumber) + padding), y: ((SIZEOFTILE * columnNumber) + padding) * -1))
             }
         }
     }
