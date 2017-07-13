@@ -1,4 +1,4 @@
-Developer's Log, 2017-07-13
+Developer's Log, Supplemental, 2017-07-13
 
 10:21 AM: It's my goal to be an Ultra Productive Developer™,  but some days I miss that by a long mile. Some thinking needs to be done on the subject because I absolutely hate those days. So, without further ado, here's what I've just started calling my ***Unqualified General Principles of Productive Software Development***:
 
