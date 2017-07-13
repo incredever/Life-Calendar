@@ -47,6 +47,7 @@
 		DE603A2F1F0B8C0800C8C88D /* 2017-07-04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-04.md"; sourceTree = "<group>"; };
 		DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
 		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
+		DE73E3F81F17B1EF00D8EB54 /* 2017-07-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13.md"; sourceTree = "<group>"; };
 		DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPickerViewController.storyboard; sourceTree = "<group>"; };
 		DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-07.md"; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */,
 				DE3B812C1F1365280051A3A6 /* 2017-07-10.md */,
 				DEB7601A1F16758A009B742F /* 2017-07-13 Supplemental.md */,
+				DE73E3F81F17B1EF00D8EB54 /* 2017-07-13.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
