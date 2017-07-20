@@ -8,7 +8,7 @@ I don't know yet.
 
 If you'd like to follow along with the development you can read the [Developer's Log](https://github.com/wvdk/Life-Calendar/tree/master/Developer's%20Log) and watch the [Project boards](https://github.com/wvdk/Life-Calendar/projects).
 
-## Roadmap
+## Future Roadmap
 
 ###  Something Basic (July – August)
 Create a basic interface for adding data to a model which saves to disk. Any amount of actual functionality, regardless of scope or polish, is a win at this stage. Just some foundation that can (in the future) be iterated upon until it becomes something worthwhile. Then I should make a beta release and share it with friends and family.
