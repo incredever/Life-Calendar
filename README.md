@@ -14,7 +14,7 @@ Create a basic interface for adding data a basic model which saves to disk. Any 
 ### August - September: Something With Promise
 Begin sharing the beta with anyone willing to take a look. Getting ready for a the App Store.
 
-<insert latest mockup>
+![Life In Weeks Mockup](./Screenshots%20and%20mockups/Mockup%202%20-%20Basic%20%22Life%20In%20Weeks%22%20Idea.png)
 
 ### Late 2017: Something Releasable
 
