@@ -17,6 +17,9 @@ Begin sharing the beta with anyone willing to take a look. Getting ready for a t
 ![Life In Weeks Mockup](./Screenshots%20and%20mockups/Mockup%202%20-%20Basic%20%22Life%20In%20Weeks%22%20Idea.png)
 
 ### Late 2017: Something Releasable
+- [ ] Document based app.
+- [ ] Easy to use UI - mostly pretty, but probably nothing impressive yet.
+- [ ] Life Expectancy Estimator.
 
 ### Something With Polish and Style
 
