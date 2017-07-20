@@ -6,6 +6,8 @@ What is Life Calendar? Short answer...
 
 I don't know yet.
 
+If you're like to follow along with the development you can read the [Developer's Log](https://github.com/wvdk/Life-Calendar/tree/master/Developer's%20Log).
+
 ## Roadmap
 
 ### July – Early August: 0.1 Release, Codename "Something Basic"
