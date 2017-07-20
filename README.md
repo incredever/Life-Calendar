@@ -8,13 +8,16 @@ I don't know yet. If you're like to follow along with the development you can re
 
 ## Roadmap
 
-### July – August: "Something Basic"
-Create a basic interface for effecting a basic data model which saves to disk. Then release this beta to friends and family.
+### July – August: Something Basic
+Create a basic interface for adding data a basic model which saves to disk. Any amount of actual functionality, regardless of scope or polish, is a win at this stage. Just some foundation that can (in the future) be iterated upon, hopefully into something worthwhile. Then I should make a beta release and share it with friends and family.
 
 ### August - September: Something With Promise
+Begin sharing the beta with anyone willing to take a look. Getting ready for a the App Store.
+
+<insert latest mockup>
 
 ### Late 2017: Something Releasable
 
-### Something With Polish
+### Something With Polish and Style
 
-### Something Actually Cool
+### Something Actually Good
