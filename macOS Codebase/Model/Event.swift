@@ -10,7 +10,7 @@ import SpriteKit
 
 struct Event: Codable {
     let title: String
-//    let color: SKColor?
+    let colorHex: String
     let starting: Date
     let ending: Date
 }
