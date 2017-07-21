@@ -14,9 +14,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         print("Launched")
         
-        let timeline = Timeline(events: [])
+//        let timeline = Timeline(events: [])
         
-        timeline.saveToDesktop()
+//        timeline.saveToDesktop()
     }
     
 }
