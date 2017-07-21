@@ -15,6 +15,8 @@ struct Timeline: Codable {
         let encoder = JSONEncoder()
         let json = try? encoder.encode(self)
         
-        FileManager.default.createFile(atPath: "/Users/wes/Desktop/\(name).txt", contents: json, attributes: nil)
+        let dir = "/Users/wes/Documents/Life Calendar/"
+        try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true, attributes: nil)
+        FileManager.default.createFile(atPath: "\(dir)\(name).txt", contents: json, attributes: nil)
     }
 }
