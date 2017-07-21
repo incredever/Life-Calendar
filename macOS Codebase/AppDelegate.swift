@@ -12,9 +12,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let timeline = Timeline(name: "Testing")
+        let timeline = Timeline(name: "Testing 123")
         
-        timeline.saveToDesktop()
+        timeline.saveToDisk()
     }
     
 }

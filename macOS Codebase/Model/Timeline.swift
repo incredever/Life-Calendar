@@ -11,7 +11,7 @@ struct Timeline: Codable {
 //    let events: [Event]
     let name: String
     
-    func saveToDesktop() {
+    func saveToDisk() {
         let encoder = JSONEncoder()
         let json = try? encoder.encode(self)
         
