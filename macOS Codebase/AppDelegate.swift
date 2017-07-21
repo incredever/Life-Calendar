@@ -12,11 +12,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        print("Launched")
+        let timeline = Timeline(name: "Testing")
         
-//        let timeline = Timeline(events: [])
-        
-//        timeline.saveToDesktop()
+        timeline.saveToDesktop()
     }
     
 }
