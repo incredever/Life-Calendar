@@ -11,22 +11,10 @@ struct Timeline: Codable {
 //    let events: [Event]
     let name: String
     
-//    func encode(to encoder: Encoder) throws {
-//
-//    }
-//
-//    init(from decoder: Decoder) throws {
-//
-//    }
-    
-    
-
-    
     func saveToDesktop() {
-        
         let encoder = JSONEncoder()
         let json = try? encoder.encode(self)
         
-        FileManager.default.createFile(atPath: "/Users/wes/Desktop/test.txt", contents: json, attributes: nil)
+        FileManager.default.createFile(atPath: "/Users/wes/Desktop/\(name).txt", contents: json, attributes: nil)
     }
 }
