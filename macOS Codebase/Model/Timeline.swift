@@ -9,4 +9,8 @@ import Cocoa
 
 struct Timeline {
     let events: [Event]
+    
+    func saveToDesktop() {
+        FileManager.default.createFile(atPath: "/Users/wes/Desktop/test.txt", contents: nil, attributes: nil)
+    }
 }

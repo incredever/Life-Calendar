@@ -9,4 +9,14 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate { }
+class AppDelegate: NSObject, NSApplicationDelegate {
+    
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        print("Launched")
+        
+        let timeline = Timeline(events: [])
+        
+        timeline.saveToDesktop()
+    }
+    
+}
