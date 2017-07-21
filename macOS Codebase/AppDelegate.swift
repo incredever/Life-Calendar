@@ -12,7 +12,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let timeline = Timeline(name: "Testing 123")
+        let timeline = Timeline(events: [], name: "Testing ABC")
         
         timeline.saveToDisk()
     }

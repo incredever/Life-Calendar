@@ -8,9 +8,9 @@
 import Cocoa
 import SpriteKit
 
-struct Event {
+struct Event: Codable {
     let title: String
-    let color: SKColor?
+//    let color: SKColor?
     let starting: Date
     let ending: Date
 }
