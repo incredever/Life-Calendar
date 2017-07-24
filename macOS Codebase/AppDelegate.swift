@@ -14,15 +14,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var controller: ViewController?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let windowSize = NSRect(x: 0, y: 0, width: 600, height: 600)
-        newWindow = NSWindow(contentRect: windowSize, styleMask: .closable, backing: .buffered, defer: false)
+        let windowSize = NSRect(x: 10, y: 10, width: 600, height: 600)
+        let windowStyle: NSWindow.StyleMask = [.titled, .resizable , .closable, .miniaturizable]
+        newWindow = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
         
         controller = ViewController()
         let content = newWindow!.contentView! as NSView
         let view = controller!.view
         content.addSubview(view)
-        
-        
         
         newWindow!.makeKeyAndOrderFront(nil)
         
