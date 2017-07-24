@@ -15,10 +15,10 @@ class WeeksViewController: NSViewController {
     var skScene: SKScene?
     
     override func loadView() {
-        let rect = NSRect(x: 0, y: 0, width: 600, height: 600)
+        
 
-        view = NSView(frame: rect)
-        skView = SKView(frame: rect)
+        view = NSView(frame: NSRect(x: 0, y: -22, width: 600, height: 600))
+        skView = SKView(frame: NSRect(x: 0, y: -22, width: 600, height: 600))
         
         view.addSubview(skView)
     }
