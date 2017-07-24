@@ -16,17 +16,8 @@ class WeeksViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Set up view and scene
-        skView.showsNodeCount = true
-//        skScene = SKScene(fileNamed: "WeeksScene")
-        
         skScene = WeeksScene(size: CGSize(width: 300, height: 300))
-        
-
-        
-        
-        skScene?.backgroundColor = NSColor.blue
-        skScene?.scaleMode = .aspectFill
+        skScene?.scaleMode = .aspectFit
         skView.presentScene(skScene)
     }
     
