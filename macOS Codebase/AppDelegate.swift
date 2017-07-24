@@ -22,10 +22,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func setupWindow() {
         let windowSize = NSRect(x: 10, y: 10, width: 600, height: 600)
-        let windowStyle: NSWindow.StyleMask = [.titled, .resizable , .closable, .miniaturizable]
+        let windowStyle: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .fullSizeContentView]
         
         window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
         
+        window.titlebarAppearsTransparent = true
+        window.isMovableByWindowBackground = true
+        window.titleVisibility = .visible
+        window.title = "test"
+
         window.contentViewController = WeeksViewController()
         window.makeKeyAndOrderFront(nil)
     }
