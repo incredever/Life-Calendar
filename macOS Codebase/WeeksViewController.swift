@@ -18,7 +18,8 @@ class WeeksViewController: NSViewController {
         
         // Set up view and scene
         skView.showsNodeCount = true
-        skScene = SKScene(fileNamed: "WeeksScene")
+//        skScene = SKScene(fileNamed: "WeeksScene")
+        skScene = WeeksScene()
 //        skScene?.scaleMode = .aspectFill
         skView.presentScene(skScene)
     }
