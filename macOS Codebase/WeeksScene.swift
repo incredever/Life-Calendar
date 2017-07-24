@@ -17,7 +17,7 @@ class WeeksScene: SKScene {
         testNode.fillColor = NSColor.red
         addChild(testNode)
         
-//        createGridOfTiles(rows: 100, columns: 52)
+        createGridOfTiles(rows: 100, columns: 52)
     }
     
     func createGridOfTiles(rows: Int, columns: Int) {
