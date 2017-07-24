@@ -11,11 +11,14 @@ import SpriteKit
 class WeeksViewController: NSViewController {
     
     private let rect = NSRect(x: 0, y: 0, width: 600, height: 600)
-    @IBOutlet weak var skView: SKView!
+    var skView: SKView!
     var skScene: SKScene?
     
     override func loadView() {
-        self.view = NSView(frame: rect)
+        view = NSView(frame: rect)
+        skView = SKView(frame: rect)
+        
+        view.addSubview(skView)
     }
     
     override func viewDidLoad() {
