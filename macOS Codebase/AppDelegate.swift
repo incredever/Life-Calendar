@@ -9,18 +9,17 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    
     var window: NSWindow!
-    var controller: ViewController?
+    var weeksViewController: WeeksViewController?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         let windowSize = NSRect(x: 10, y: 10, width: 600, height: 600)
         let windowStyle: NSWindow.StyleMask = [.titled, .resizable , .closable, .miniaturizable]
         window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
         
-        controller = ViewController()
+        weeksViewController = WeeksViewController()
         let content = window.contentView! as NSView
-        let view = controller!.view
+        let view = weeksViewController!.view
         content.addSubview(view)
         
         window.makeKeyAndOrderFront(nil)
