@@ -20,6 +20,9 @@ class WeeksViewController: NSViewController {
         view = NSView(frame: NSRect(x: 0, y: -22, width: 600, height: 600))
         skView = SKView(frame: NSRect(x: 0, y: -22, width: 600, height: 600))
         
+        view.mouseDownCanMoveWindow = true
+        skView.mouseDownCanMoveWindow = true
+        
         view.addSubview(skView)
     }
     
