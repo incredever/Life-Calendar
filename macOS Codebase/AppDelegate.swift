@@ -9,6 +9,7 @@
 import Cocoa
 
 class AppDelegate: NSObject, NSApplicationDelegate {
+    
     var window: NSWindow!
     var weeksViewController: WeeksViewController?
     
@@ -18,9 +19,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
         
         weeksViewController = WeeksViewController()
+        
+        
         let content = window.contentView! as NSView
         let view = weeksViewController!.view
         content.addSubview(view)
+        
+        window.contentViewController = weeksViewController
         
         window.makeKeyAndOrderFront(nil)
         
