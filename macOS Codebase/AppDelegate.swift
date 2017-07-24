@@ -13,8 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         let exampleEvent = Event(title: "ABC", colorHex: "000000", starting: Date(), ending: Date())
-        let timeline = Timeline(events: [exampleEvent], name: "Testing ABC")
-        
+        let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
+
         timeline.saveToDisk()
     }
     

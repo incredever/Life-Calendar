@@ -13,6 +13,10 @@ class WeeksScene: SKScene {
     override func didMove(to view: SKView) {
         print("did move to view")
         
+        let testNode = SKShapeNode(circleOfRadius: 10.0)
+        testNode.fillColor = NSColor.red
+        addChild(testNode)
+        
 //        createGridOfTiles(rows: 100, columns: 52)
     }
     
