@@ -11,26 +11,22 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     
     var window: NSWindow!
-    var weeksViewController: WeeksViewController?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        let windowSize = NSRect(x: 10, y: 10, width: 600, height: 600)
-        let windowStyle: NSWindow.StyleMask = [.titled, .resizable , .closable, .miniaturizable]
-        window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
-        
-        weeksViewController = WeeksViewController()
-        
-        
-        let content = window.contentView! as NSView
-        let view = weeksViewController!.view
-        content.addSubview(view)
-        
-        window.contentViewController = weeksViewController
-        
-        window.makeKeyAndOrderFront(nil)
+        setupWindow()
         
 //        let exampleEvent = Event(title: "ABC", colorHex: "000000", starting: Date(), ending: Date())
 //        let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
 //        timeline.saveToDisk()
+    }
+    
+    func setupWindow() {
+        let windowSize = NSRect(x: 10, y: 10, width: 600, height: 600)
+        let windowStyle: NSWindow.StyleMask = [.titled, .resizable , .closable, .miniaturizable]
+        
+        window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
+        
+        window.contentViewController = WeeksViewController()
+        window.makeKeyAndOrderFront(nil)
     }
 }
