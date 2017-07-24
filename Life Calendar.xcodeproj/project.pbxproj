@@ -10,12 +10,6 @@
 		DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */; };
 		DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B81271F10B8940051A3A6 /* WeeksScene.swift */; };
 		DE3B812A1F10BCF00051A3A6 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B81291F10BCF00051A3A6 /* Tile.swift */; };
-		DE50382A1EF46A4E00A78DAE /* Cube.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE5038291EF46A4E00A78DAE /* Cube.scn */; };
-		DE50382C1EF46AB200A78DAE /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE50382B1EF46AB200A78DAE /* Cube.swift */; };
-		DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE587D691EF9F33C00C9C53E /* Grid.swift */; };
-		DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */; };
-		DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */; };
-		DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED97A401EDE0C3A00F2100B /* Main.storyboard */; };
@@ -38,15 +32,8 @@
 		DE3B812C1F1365280051A3A6 /* 2017-07-10.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-10.md"; sourceTree = "<group>"; };
 		DE3B812D1F13675C0051A3A6 /* 2017-07-10 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-10 Fig 1.png"; sourceTree = "<group>"; };
 		DE4676E31F0634BA004C7D9B /* 2017-06-30.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-30.md"; sourceTree = "<group>"; };
-		DE5038291EF46A4E00A78DAE /* Cube.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Cube.scn; sourceTree = "<group>"; };
-		DE50382B1EF46AB200A78DAE /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
-		DE587D691EF9F33C00C9C53E /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		DE603A2F1F0B8C0800C8C88D /* 2017-07-04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-04.md"; sourceTree = "<group>"; };
-		DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "SceneKit Scene.scn"; sourceTree = "<group>"; };
-		DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitSceneViewController.swift; sourceTree = "<group>"; };
 		DE73E3F81F17B1EF00D8EB54 /* 2017-07-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13.md"; sourceTree = "<group>"; };
-		DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
-		DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorPickerViewController.storyboard; sourceTree = "<group>"; };
 		DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-07.md"; sourceTree = "<group>"; };
 		DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockup 2 - Basic \"Life In Weeks\" Idea.png"; sourceTree = "<group>"; };
 		DE9C8D8A1F0F86A6001F05A0 /* 2017-07-07 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-07 Fig 1.png"; sourceTree = "<group>"; };
@@ -129,20 +116,6 @@
 			path = "Design Files";
 			sourceTree = "<group>";
 		};
-		DED78FB01EFD770000F860BF /* stale */ = {
-			isa = PBXGroup;
-			children = (
-				DE587D691EF9F33C00C9C53E /* Grid.swift */,
-				DE5038291EF46A4E00A78DAE /* Cube.scn */,
-				DE50382B1EF46AB200A78DAE /* Cube.swift */,
-				DE63F89E1EECD1C600B2BF05 /* SceneKit Scene.scn */,
-				DE63F8A01EECD57E00B2BF05 /* SceneKitSceneViewController.swift */,
-				DE9966A41EFC76ED00A69EDB /* ColorPickerViewController.swift */,
-				DE9966AD1EFC78F900A69EDB /* ColorPickerViewController.storyboard */,
-			);
-			path = stale;
-			sourceTree = "<group>";
-		};
 		DED97A2E1EDE0C3A00F2100B = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				DE3B81241F10AB4F0051A3A6 /* Model */,
-				DED78FB01EFD770000F860BF /* stale */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DED97A401EDE0C3A00F2100B /* Main.storyboard */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
@@ -248,8 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE50382A1EF46A4E00A78DAE /* Cube.scn in Resources */,
-				DE63F89F1EECD1C600B2BF05 /* SceneKit Scene.scn in Resources */,
 				DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */,
 				DED97A421EDE0C3A00F2100B /* Main.storyboard in Resources */,
 			);
@@ -263,11 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */,
-				DE50382C1EF46AB200A78DAE /* Cube.swift in Sources */,
 				DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */,
-				DE63F8A11EECD57E00B2BF05 /* SceneKitSceneViewController.swift in Sources */,
-				DE587D6A1EF9F33C00C9C53E /* Grid.swift in Sources */,
-				DE9966A61EFC76ED00A69EDB /* ColorPickerViewController.swift in Sources */,
 				DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */,
 				DE3B812A1F10BCF00051A3A6 /* Tile.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
