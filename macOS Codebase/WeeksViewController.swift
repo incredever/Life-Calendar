@@ -20,11 +20,8 @@ class WeeksViewController: NSViewController {
         
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
         
-        view = NSView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height - 22))
-        skView = SKView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height - 22))
-        
-//        view.mouseDownCanMoveWindow = true
-//        skView.mouseDownCanMoveWindow = true
+        view = NSView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height + 22))
+        skView = SKView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height))
         
         view.addSubview(skView)
     }
@@ -32,9 +29,9 @@ class WeeksViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        skScene = WeeksScene(size: view.frame.size)
+        skScene = WeeksScene(size: skView.frame.size)
         skScene?.backgroundColor = NSColor(colorLiteralRed: 246/255, green: 244/255, blue: 241/255, alpha: 1)
-        skScene?.scaleMode = .aspectFit
+        skScene?.scaleMode = .aspectFill
         skView.presentScene(skScene)
     }
     

@@ -22,7 +22,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func setupWindow() {
         let windowSize = NSRect(x: 0, y: 0, width: 600, height: 600)
-
         let windowStyle: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .fullSizeContentView]
         
         window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
@@ -35,6 +34,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         let weeksViewController = WeeksViewController()
         weeksViewController.window = window
+        
+        window.backgroundColor = NSColor.red
+        
         window.contentViewController = weeksViewController
         window.makeKeyAndOrderFront(nil)
     }
