@@ -56,6 +56,7 @@
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
 		DEF8624B1F277C0400335DCF /* 2017-07-25 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-25 Fig 1.png"; sourceTree = "<group>"; };
+		DEF8624C1F277C3B00335DCF /* 2017-07-25.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-25.md"; sourceTree = "<group>"; };
 		DEFD71181F0644BD00AF4373 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DEFD711A1F06459500AF4373 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +92,7 @@
 				DE73E3F81F17B1EF00D8EB54 /* 2017-07-13.md */,
 				DE1ED4371F20CC1A00678787 /* 2017-07-20.md */,
 				DE6A830B1F2613520088DBA3 /* 2017-07-24.md */,
+				DEF8624C1F277C3B00335DCF /* 2017-07-25.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
