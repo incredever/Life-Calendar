@@ -20,10 +20,10 @@ func makeMainMenu() -> NSMenu {
     let appMenu = NSMenu()
     mainAppMenuItem.submenu = appMenu
 
-    let appServicesMenu     = NSMenu()
-    NSApp.servicesMenu      = appServicesMenu
+    let appServicesMenu = NSMenu()
+    NSApp.servicesMenu = appServicesMenu
 
-    appMenu.addItem(withTitle: "About Me", action: nil, keyEquivalent: "")
+    appMenu.addItem(withTitle: "About Life Calendar", action: nil, keyEquivalent: "")
     appMenu.addItem(NSMenuItem.separator())
     appMenu.addItem(withTitle: "Preferences...", action: nil, keyEquivalent: ",")
     appMenu.addItem(NSMenuItem.separator())
