@@ -35,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let weeksViewController = WeeksViewController()
         weeksViewController.window = window
         
-        window.backgroundColor = NSColor(hexString: "F6F4F1")
+        window.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         
         window.contentViewController = weeksViewController
         window.makeKeyAndOrderFront(nil)

@@ -46,22 +46,7 @@ extension NSColor {
     }
 }
 
-//extension NSColor {
-//    static func fromHex(string: String) -> NSColor? {
-//        return nil
-//    }
-//
-//    convenience from(hex6: Int, alpha: Float) {
-//        self.init(red:   CGFloat( (hex6 & 0xFF0000) >> 16 ) / 255.0,
-//                  green: CGFloat( (hex6 & 0x00FF00) >> 8 ) / 255.0,
-//                  blue:  CGFloat( (hex6 & 0x0000FF) >> 0 ) / 255.0, alpha: CGFloat(alpha))
-//    }
-//
-//
-//}
-//
-//enum Colors: String {
-//
-//    case sceneBackground: "F6F4F1"
-//}
+enum Colors: String {
+    case sceneBackground = "F6F4F1"
+}
 
