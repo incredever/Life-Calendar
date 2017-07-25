@@ -49,7 +49,6 @@ let delegate = AppDelegate()
 
 NSApplication.shared.mainMenu = makeMainMenu()
 NSApplication.shared.delegate = delegate
-NSApplication.shared.setActivationPolicy(.regular)
 NSApplication.shared.run()
 
 
