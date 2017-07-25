@@ -36,7 +36,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         weeksViewController.window = window
         
         window.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
-        
         window.contentViewController = weeksViewController
         window.makeKeyAndOrderFront(nil)
     }
