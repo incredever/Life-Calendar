@@ -34,9 +34,7 @@ func makeMainMenu() -> NSMenu {
     appMenu.addItem(withTitle: "Show All", action: #selector(NSApplication.unhideAllApplications(_:)), keyEquivalent: "")
 
     appMenu.addItem(NSMenuItem.separator())
-    appMenu.addItem(withTitle: "Services", action: nil, keyEquivalent: "").submenu = appServicesMenu
-    appMenu.addItem(NSMenuItem.separator())
-    appMenu.addItem(withTitle: "Quit Me", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+    appMenu.addItem(withTitle: "Quit Life Calendar", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
 
     let fileMenu = NSMenu(title: "File")
     mainFileMenuItem.submenu = fileMenu
