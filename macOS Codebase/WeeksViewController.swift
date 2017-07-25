@@ -16,12 +16,11 @@ class WeeksViewController: NSViewController {
     
     override func loadView() {
         
-
-        view = NSView(frame: NSRect(x: 0, y: -22, width: 600, height: 600))
-        skView = SKView(frame: NSRect(x: 0, y: -22, width: 600, height: 600))
+        view = NSView(frame: NSRect(x: 0, y: 0, width: 600, height: 1000 - 220))
+        skView = SKView(frame: NSRect(x: 0, y: 0, width: 600, height: 600 - 22))
         
-        view.mouseDownCanMoveWindow = true
-        skView.mouseDownCanMoveWindow = true
+//        view.mouseDownCanMoveWindow = true
+//        skView.mouseDownCanMoveWindow = true
         
         view.addSubview(skView)
     }
