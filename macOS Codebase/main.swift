@@ -7,8 +7,6 @@
 
 import Cocoa
 
-let delegate = AppDelegate()
-
 func makeMainMenu() -> NSMenu {
     let mainMenu = NSMenu()
     let mainAppMenuItem = NSMenuItem(title: "Application", action: nil, keyEquivalent: "")
@@ -47,8 +45,11 @@ func makeMainMenu() -> NSMenu {
     return mainMenu
 }
 
+let delegate = AppDelegate()
+
 NSApplication.shared.mainMenu = makeMainMenu()
 NSApplication.shared.delegate = delegate
 NSApplication.shared.setActivationPolicy(.regular)
 NSApplication.shared.run()
+
 
