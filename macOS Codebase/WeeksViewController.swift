@@ -30,7 +30,7 @@ class WeeksViewController: NSViewController {
         super.viewDidLoad()
         
         skScene = WeeksScene(size: skView.frame.size)
-        skScene?.backgroundColor = NSColor(colorLiteralRed: 246/255, green: 244/255, blue: 241/255, alpha: 1)
+        skScene?.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
         skView.presentScene(skScene)
     }
