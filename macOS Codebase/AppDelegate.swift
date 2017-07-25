@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func setupWindow() {
         let windowSize = NSRect(x: 0, y: 0, width: 600, height: 600)
 
-        let windowStyle: NSWindow.StyleMask = [.titled, .resizable, .closable, .miniaturizable, .fullSizeContentView]
+        let windowStyle: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .fullSizeContentView]
         
         window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
         
@@ -33,7 +33,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.title = "Life Calendar"
         window.center()
 
-        window.contentViewController = WeeksViewController()
+        let weeksViewController = WeeksViewController()
+        weeksViewController.window = window
+        window.contentViewController = weeksViewController
         window.makeKeyAndOrderFront(nil)
     }
     

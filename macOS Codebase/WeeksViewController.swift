@@ -13,11 +13,15 @@ class WeeksViewController: NSViewController {
     
     var skView: SKView!
     var skScene: SKScene?
+    weak var window: NSWindow?
+    
     
     override func loadView() {
         
-        view = NSView(frame: NSRect(x: 0, y: 0, width: 600, height: 1000 - 220))
-        skView = SKView(frame: NSRect(x: 0, y: 0, width: 600, height: 600 - 22))
+        let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
+        
+        view = NSView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height - 22))
+        skView = SKView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height - 22))
         
 //        view.mouseDownCanMoveWindow = true
 //        skView.mouseDownCanMoveWindow = true
