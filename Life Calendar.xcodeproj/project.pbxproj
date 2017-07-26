@@ -112,6 +112,7 @@
 		DED30F061F0FC0A500B299C9 /* Design Files */ = {
 			isa = PBXGroup;
 			children = (
+				DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */,
 				DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */,
 			);
 			path = "Design Files";
@@ -158,7 +159,6 @@
 		DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */ = {
 			isa = PBXGroup;
 			children = (
-				DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */,
 				DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */,
 				DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */,
 			);
