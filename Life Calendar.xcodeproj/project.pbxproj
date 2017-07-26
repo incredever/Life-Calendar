@@ -47,7 +47,7 @@
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
 		DEB7601A1F16758A009B742F /* 2017-07-13 Supplemental.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13 Supplemental.md"; sourceTree = "<group>"; };
-		DED30F071F0FC0CB00B299C9 /* Life Calendar 1.0 Designs.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Life Calendar 1.0 Designs.sketch"; sourceTree = "<group>"; };
+		DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1.0 Designs and Ideas.sketch"; sourceTree = "<group>"; };
 		DED78FAF1EFD74F700F860BF /* 2017-06-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-23.md"; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		DED30F061F0FC0A500B299C9 /* Design Files */ = {
 			isa = PBXGroup;
 			children = (
-				DED30F071F0FC0CB00B299C9 /* Life Calendar 1.0 Designs.sketch */,
+				DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */,
 			);
 			path = "Design Files";
 			sourceTree = "<group>";
