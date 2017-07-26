@@ -29,6 +29,7 @@
 		DE1D716D1F177F0F00F6B962 /* 2017-07-13 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-13 Fig 1.png"; sourceTree = "<group>"; };
 		DE1ED4371F20CC1A00678787 /* 2017-07-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-20.md"; sourceTree = "<group>"; };
 		DE23A9CF1F28C579002C156D /* Tile2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile2.swift; sourceTree = "<group>"; };
+		DE23A9D11F28CB70002C156D /* Mockups 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 3.png"; sourceTree = "<group>"; };
 		DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksViewController.swift; sourceTree = "<group>"; };
 		DE3B81271F10B8940051A3A6 /* WeeksScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksScene.swift; sourceTree = "<group>"; };
 		DE3B81291F10BCF00051A3A6 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 			children = (
 				DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */,
 				DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */,
+				DE23A9D11F28CB70002C156D /* Mockups 3.png */,
 			);
 			path = "Screenshots and mockups";
 			sourceTree = "<group>";
