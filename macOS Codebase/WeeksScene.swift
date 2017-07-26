@@ -17,6 +17,10 @@ class WeeksScene: SKScene {
         testNode.fillColor = NSColor.red
         addChild(testNode)
         
+        let tile2 = Tile2()
+        tile2.position = CGPoint(x: 100, y: 100)
+        addChild(tile2)
+        
         createGridOfTiles(rows: 100, columns: 52)
     }
     
