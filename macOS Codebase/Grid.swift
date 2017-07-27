@@ -23,6 +23,10 @@ class Grid: SKNode {
         print("found mouse hover")
     }
     
+    override func mouseMoved(with event: NSEvent) {
+        print("Grid - mouse moved: \(event.location(in: self))")
+    }
+    
     override func mouseDown(with event: NSEvent) {
         print("Mouse down")
     }

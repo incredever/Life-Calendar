@@ -31,7 +31,7 @@ class WeeksScene: SKScene {
     }
     
     override func mouseMoved(with event: NSEvent) {
-        print("mouse moved")
+        print("Scene - mouse moved: \(event.location(in: self))")
     }
     
 }
