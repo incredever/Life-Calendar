@@ -13,7 +13,7 @@ class Grid: SKNode {
     let ultimateSize = CGSize(width: 330, height: 574)
     
     /*********
-    size of grid
+     size of grid
      positioning entire grid
      flip the grid so the tiles can be generated with increasing values
     
