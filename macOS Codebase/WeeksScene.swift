@@ -15,11 +15,18 @@ class WeeksScene: SKScene {
         let grid = Grid()
         let gridLeftSidePadding = 60
         let gridTopPadding = 5
+        
         grid.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.ultimateSize.height) - gridTopPadding)
+        
         addChild(grid)
         
         // Create Labels
         let labels = YearLabels()
+        let labelsLeftSidePadding = 10
+        let labelsTopPadding = 5
+        
+        labels.position = CGPoint(x: labelsLeftSidePadding, y: Int(labels.ultimiteSize.height) - labelsTopPadding)
+        
         addChild(labels)
     }
     

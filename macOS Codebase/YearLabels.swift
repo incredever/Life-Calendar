@@ -9,6 +9,9 @@ import Cocoa
 import SpriteKit
 
 class YearLabels: SKNode {
+    
+    let ultimiteSize = CGSize(width: 30, height: 500)
+    
     override init() {
         super.init()
         
