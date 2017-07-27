@@ -12,7 +12,9 @@ class YearLabels: SKNode {
     override init() {
         super.init()
         
-        createLabel(at: CGPoint(x: 10, y: 10), with: "1995")
+        for n in 0...10 {
+            createLabel(at: CGPoint(x: 10, y: 10), with: "1995")
+        }
         
     }
     
@@ -22,7 +24,7 @@ class YearLabels: SKNode {
         firstLabel.text = string
         firstLabel.fontColor = NSColor.darkGray
         firstLabel.fontSize = 14
-        firstLabel.position = pos
+        firstLabel.position = position
         
         addChild(firstLabel)
     }
