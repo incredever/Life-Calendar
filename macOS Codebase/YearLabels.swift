@@ -24,7 +24,6 @@ class YearLabels: SKNode {
             let originalNumber = 1950
             let incrementedNumber = originalNumber + (increment * n)
             
-            
             createLabel(at: CGPoint(x: x, y: y), with: incrementedNumber.description)
         }
     }
@@ -33,7 +32,7 @@ class YearLabels: SKNode {
         let firstLabel = SKLabelNode(fontNamed: "Avenir Next")
         
         firstLabel.text = string
-        firstLabel.fontColor = NSColor.darkGray
+        firstLabel.fontColor = NSColor.black
         firstLabel.fontSize = 14
         firstLabel.position = position
         
