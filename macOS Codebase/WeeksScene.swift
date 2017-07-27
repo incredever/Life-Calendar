@@ -21,24 +21,13 @@ class WeeksScene: SKScene {
         tile2.position = CGPoint(x: 100, y: 100)
         addChild(tile2)
         
-        createGridOfTiles(rows: 100, columns: 52)
+        let grid = Grid()
+        grid.position = CGPoint(x: 100, y: 100)
+        addChild(grid)
     }
     
-    func createGridOfTiles(rows: Int, columns: Int) {
-        let padding = 5
-        let SIZEOFTILE = 35
-        
-        for rowNumber in 0...rows {
-            for columnNumber in 0...columns {
-                addTile(at: CGPoint(x: ((SIZEOFTILE * rowNumber) + padding), y: ((SIZEOFTILE * columnNumber) + padding) * -1))
-            }
-        }
-    }
+
     
-    func addTile(at position: CGPoint) {
-        let tile = Tile()
-        tile.position = position
-        addChild(tile)
-    }
+
     
 }
