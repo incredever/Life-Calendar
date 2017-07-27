@@ -12,10 +12,18 @@ class YearLabels: SKNode {
     override init() {
         super.init()
         
+        createLabel(at: CGPoint(x: 10, y: 10), with: "1995")
+        
+    }
+    
+    func createLabel(at position: CGPoint, with string: String) {
         let firstLabel = SKLabelNode(fontNamed: "Avenir Next")
-        firstLabel.text = "Hello World"
+        
+        firstLabel.text = string
         firstLabel.fontColor = NSColor.darkGray
-        firstLabel.fontSize = 14.0
+        firstLabel.fontSize = 14
+        firstLabel.position = pos
+        
         addChild(firstLabel)
     }
     
