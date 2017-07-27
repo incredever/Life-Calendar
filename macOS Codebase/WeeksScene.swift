@@ -13,8 +13,9 @@ class WeeksScene: SKScene {
     override func didMove(to view: SKView) {
         let grid = Grid()
         
-        grid.position = CGPoint(x: 100, y: 100)
-        
+        let gridLeftSidePadding = 30
+        let gridTopPadding = 30
+        grid.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.ultimateSize.height) - gridTopPadding)
         addChild(grid)
     }
     
