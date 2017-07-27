@@ -16,6 +16,10 @@ class Tile: SKShapeNode {
         fillColor = NSColor.lightGray
     }
     
+    override func mouseEntered(with event: NSEvent) {
+        print("found mouse hover")
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }

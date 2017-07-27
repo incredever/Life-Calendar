@@ -15,7 +15,16 @@ class Grid: SKNode {
     override init() {
         super.init()
         
+        isUserInteractionEnabled = true
         createGridOfTiles(rows: 90, columns: 52)
+    }
+    
+    override func mouseEntered(with event: NSEvent) {
+        print("found mouse hover")
+    }
+    
+    override func mouseDown(with event: NSEvent) {
+        print("Mouse down")
     }
     
     func createGridOfTiles(rows: Int, columns: Int) {
