@@ -5,4 +5,9 @@
 //  Created by Wesley Van der Klomp on 7/27/17.
 //
 
-import Foundation
+import Cocoa
+import SpriteKit
+
+class Grid: SKNode {
+    
+}
