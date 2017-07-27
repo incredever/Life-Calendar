@@ -31,6 +31,8 @@ class WeeksViewController: NSViewController {
         skScene?.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
         skView.presentScene(skScene)
+        skView.showsNodeCount = true
+        skView.showsFPS = true
     }
     
 }
