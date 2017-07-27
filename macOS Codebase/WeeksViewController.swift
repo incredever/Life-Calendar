@@ -15,9 +15,7 @@ class WeeksViewController: NSViewController {
     var skScene: SKScene?
     weak var window: NSWindow?
     
-    
     override func loadView() {
-        
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
         
         view = NSView(frame: NSRect(x: 0, y: 0, width: windowSize.width, height: windowSize.height + 22))
