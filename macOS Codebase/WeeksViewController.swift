@@ -33,6 +33,7 @@ class WeeksViewController: NSViewController {
         skView.presentScene(skScene)
         skView.showsNodeCount = true
         skView.showsFPS = true
+        
     }
     
 }

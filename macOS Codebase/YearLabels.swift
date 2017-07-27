@@ -11,6 +11,12 @@ import SpriteKit
 class YearLabels: SKNode {
     override init() {
         super.init()
+        
+        let firstLabel = SKLabelNode(fontNamed: "Avenir Next")
+        firstLabel.text = "Hello World"
+        firstLabel.fontColor = NSColor.darkGray
+        firstLabel.fontSize = 14.0
+        addChild(firstLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
