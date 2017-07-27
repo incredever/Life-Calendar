@@ -11,23 +11,11 @@ import SpriteKit
 class WeeksScene: SKScene {
     
     override func didMove(to view: SKView) {
-        print("did move to view")
-        
-        let testNode = SKShapeNode(circleOfRadius: 10.0)
-        testNode.fillColor = NSColor.red
-        addChild(testNode)
-        
-        let tile2 = Tile2()
-        tile2.position = CGPoint(x: 100, y: 100)
-        addChild(tile2)
-        
         let grid = Grid()
+        
         grid.position = CGPoint(x: 100, y: 100)
+        
         addChild(grid)
     }
-    
-
-    
-
     
 }
