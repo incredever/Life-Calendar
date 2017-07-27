@@ -15,10 +15,18 @@ class YearLabels: SKNode {
     override init() {
         super.init()
         
-        for n in 0...10 {
-            createLabel(at: CGPoint(x: 10, y: 10), with: "1995")
+        for n in 1...10 {
+            let x = 20
+            let ySpacing = 50
+            let y = (((ySpacing * n) * -1) + ySpacing + 25)
+            
+            let increment = 10
+            let originalNumber = 1950
+            let incrementedNumber = originalNumber + (increment * n)
+            
+            
+            createLabel(at: CGPoint(x: x, y: y), with: incrementedNumber.description)
         }
-        
     }
     
     func createLabel(at position: CGPoint, with string: String) {
