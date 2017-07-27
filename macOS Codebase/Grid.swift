@@ -28,7 +28,7 @@ class Grid: SKNode {
     }
     
     func addTile(at position: CGPoint) {
-        let tile = Tile()
+        let tile = Tile2()
         tile.position = position
         addChild(tile)
     }
