@@ -14,7 +14,7 @@ class WeeksScene: SKScene {
         let grid = Grid()
         
         let gridLeftSidePadding = 60
-        let gridTopPadding = 10
+        let gridTopPadding = 5
         grid.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.ultimateSize.height) - gridTopPadding)
         addChild(grid)
     }
