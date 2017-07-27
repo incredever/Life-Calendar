@@ -12,7 +12,7 @@ class Tile: SKShapeNode {
     override init() {
         super.init()
         
-        self.path = CGPath(rect: CGRect(x: 0, y: 0, width: 10, height: 10), transform: nil)
+        self.path = CGPath(rect: CGRect(x: 0, y: 0, width: 4, height: 4), transform: nil)
         fillColor = NSColor.red
     }
     

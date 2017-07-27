@@ -28,16 +28,18 @@ class Grid: SKNode {
     override init() {
         super.init()
         
-        createGridOfTiles(rows: 10, columns: 10)
+        createGridOfTiles(rows: 90, columns: 52)
     }
     
     func createGridOfTiles(rows: Int, columns: Int) {
-        let padding = 5
-        let SIZEOFTILE = 35
+        let padding = 2
+        let tileSize = 4
         
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
-                addTile(at: CGPoint(x: ((SIZEOFTILE * rowNumber) + padding), y: ((SIZEOFTILE * columnNumber) + padding) * -1))
+                let x = (tileSize + padding) * columnNumber
+                let y = (tileSize + padding) * rowNumber * -1
+                addTile(at: CGPoint(x: x, y: y))
             }
         }
     }
