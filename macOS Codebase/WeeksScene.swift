@@ -29,9 +29,5 @@ class WeeksScene: SKScene {
         
         addChild(labels)
     }
-    
-    override func mouseMoved(with event: NSEvent) {
-        print("Scene - mouse moved: \(event.location(in: self))")
-    }
-    
+        
 }
