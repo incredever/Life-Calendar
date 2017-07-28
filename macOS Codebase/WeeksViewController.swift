@@ -30,7 +30,7 @@ class WeeksViewController: NSViewController {
         skScene = WeeksScene(size: skView.frame.size)
         skScene?.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
-        skScene?.isUserInteractionEnabled = true
+//        skScene?.isUserInteractionEnabled = true
         skView.presentScene(skScene)
         skView.showsNodeCount = true
         skView.showsFPS = true
