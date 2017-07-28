@@ -14,10 +14,22 @@ class Tile: SKShapeNode {
         
         self.path = CGPath(rect: CGRect(x: 0, y: 0, width: 4, height: 4), transform: nil)
         fillColor = NSColor.lightGray
+        
+        isUserInteractionEnabled = true
     }
     
+
     override func mouseEntered(with event: NSEvent) {
         print("found mouse hover")
+    }
+    
+    override func mouseMoved(with event: NSEvent) {
+        print("tile - mouse moved: \(event.location(in: self))")
+        fillColor = NSColor.red
+    }
+    
+    override func mouseDown(with event: NSEvent) {
+        print("Mouse down")
     }
     
     required init?(coder aDecoder: NSCoder) {

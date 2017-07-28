@@ -15,21 +15,21 @@ class Grid: SKNode {
     override init() {
         super.init()
         
-        isUserInteractionEnabled = true
+//        isUserInteractionEnabled = true
         createGridOfTiles(rows: 90, columns: 52)
     }
     
-    override func mouseEntered(with event: NSEvent) {
-        print("found mouse hover")
-    }
-    
-    override func mouseMoved(with event: NSEvent) {
-        print("Grid - mouse moved: \(event.location(in: self))")
-    }
-    
-    override func mouseDown(with event: NSEvent) {
-        print("Mouse down")
-    }
+//    override func mouseEntered(with event: NSEvent) {
+//        print("found mouse hover")
+//    }
+//    
+//    override func mouseMoved(with event: NSEvent) {
+//        print("Grid - mouse moved: \(event.location(in: self))")
+//    }
+//    
+//    override func mouseDown(with event: NSEvent) {
+//        print("Mouse down")
+//    }
     
     func createGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
