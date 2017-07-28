@@ -21,23 +21,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func setupWindow() {
+        
+        // Create the window
         let windowSize = NSRect(x: 0, y: 0, width: 600, height: 600)
         let windowStyle: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .fullSizeContentView]
         
         window = NSWindow(contentRect: windowSize, styleMask: windowStyle, backing: .buffered, defer: false)
         
+        window.makeKeyAndOrderFront(nil)
+
+        // Style the window
         window.titlebarAppearsTransparent = true
         window.isMovableByWindowBackground = true
         window.titleVisibility = .visible
         window.title = "Life Calendar"
+        window.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         window.center()
-
+        
+        // Set the VC
         let weeksViewController = WeeksViewController()
+        
         weeksViewController.window = window
         
-        window.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         window.contentViewController = weeksViewController
-        window.makeKeyAndOrderFront(nil)
     }
     
 }
