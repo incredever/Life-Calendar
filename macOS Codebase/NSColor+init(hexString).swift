@@ -10,8 +10,8 @@ import Cocoa
 // TODO: Rewrite this to be cleaner.
 // Credit: https://gist.github.com/yannickl/16f0ed38f0698d9a8ae7
 extension NSColor {
+    
     convenience init(hexString:String) {
-        
         let scanner = Scanner(string: hexString)
         
         if (hexString.hasPrefix("#")) {
@@ -19,6 +19,7 @@ extension NSColor {
         }
         
         var color:UInt32 = 0
+        
         scanner.scanHexInt32(&color)
         
         let mask = 0x000000FF
@@ -32,5 +33,6 @@ extension NSColor {
         
         self.init(red:red, green:green, blue:blue, alpha:1)
     }
+    
 }
 

@@ -21,7 +21,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func setupWindow() {
-        
         // Create the window
         let windowSize = NSRect(x: 0, y: 0, width: 600, height: 600)
         let windowStyle: NSWindow.StyleMask = [.titled, .closable, .miniaturizable, .fullSizeContentView]

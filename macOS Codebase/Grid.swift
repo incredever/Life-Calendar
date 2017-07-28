@@ -39,6 +39,7 @@ class Grid: SKNode {
             for columnNumber in 0...columns {
                 let x = (tileSize + padding) * columnNumber
                 let y = (tileSize + padding) * rowNumber * -1
+                
                 addTile(at: CGPoint(x: x, y: y))
             }
         }
@@ -46,7 +47,9 @@ class Grid: SKNode {
     
     func addTile(at position: CGPoint) {
         let tile = Tile()
+        
         tile.position = position
+        
         addChild(tile)
     }
     

@@ -27,8 +27,6 @@ class WeeksViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        
         skScene = WeeksScene(size: skView.frame.size)
         skScene?.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
@@ -39,7 +37,6 @@ class WeeksViewController: NSViewController {
         
         window?.acceptsMouseMovedEvents = true
         window?.makeFirstResponder(skScene)
-        
     }
     
 }
