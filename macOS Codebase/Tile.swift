@@ -25,6 +25,9 @@ class Tile: SKShapeNode {
     
     override func mouseMoved(with event: NSEvent) {
         print("tile - mouse moved: \(event.location(in: self))")
+        let testNode = SKShapeNode(circleOfRadius: 30.0)
+        testNode.fillColor = NSColor.green
+        addChild(testNode)
         fillColor = NSColor.red
     }
     
