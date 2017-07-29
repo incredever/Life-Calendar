@@ -16,6 +16,7 @@
 		DE65D6A81F273EC000B97F22 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A71F273EC000B97F22 /* Colors.swift */; };
 		DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */; };
 		DE6A83081F2607BB0088DBA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A83071F2607BB0088DBA3 /* main.swift */; };
+		DE924B081F2C859C0055C91A /* DataModelWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE924B071F2C859C0055C91A /* DataModelWindow.swift */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
@@ -50,6 +51,7 @@
 		DE6A83071F2607BB0088DBA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DE6A830B1F2613520088DBA3 /* 2017-07-24.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-24.md"; sourceTree = "<group>"; };
 		DE73E3F81F17B1EF00D8EB54 /* 2017-07-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13.md"; sourceTree = "<group>"; };
+		DE924B071F2C859C0055C91A /* DataModelWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelWindow.swift; sourceTree = "<group>"; };
 		DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-07.md"; sourceTree = "<group>"; };
 		DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockup 2 - Basic \"Life In Weeks\" Idea.png"; sourceTree = "<group>"; };
 		DE9C8D8A1F0F86A6001F05A0 /* 2017-07-07 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-07 Fig 1.png"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				DE3443FE1F29DCF1001DAE8F /* YearLabels.swift */,
 				DE3444031F2C67D6001DAE8F /* TilePopup.swift */,
 				DE23A9CF1F28C579002C156D /* Tile.swift */,
+				DE924B071F2C859C0055C91A /* DataModelWindow.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
@@ -262,6 +265,7 @@
 				DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */,
 				DE3443FF1F29DCF1001DAE8F /* YearLabels.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
+				DE924B081F2C859C0055C91A /* DataModelWindow.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
 				DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */,
 			);
