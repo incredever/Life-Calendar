@@ -15,7 +15,7 @@ class Grid: SKNode {
     override init() {
         super.init()
         
-//        isUserInteractionEnabled = true
+        isUserInteractionEnabled = true
         createGridOfTiles(rows: 90, columns: 52)
     }
     
@@ -23,10 +23,20 @@ class Grid: SKNode {
 //        print("found mouse hover")
 //    }
 //    
-//    override func mouseMoved(with event: NSEvent) {
-//        print("Grid - mouse moved: \(event.location(in: self))")
-//    }
-//    
+    override func mouseMoved(with event: NSEvent) {
+        print("Grid - mouse moved: \(event.location(in: self))")
+        
+        let nodes = self.nodes(at: event.location(in: self))
+        
+        for node in nodes {
+            if let tile = node as? Tile {
+                print("foundTile")
+                tile.fillColor = NSColor.blue
+            }
+        }
+        
+    }
+//
 //    override func mouseDown(with event: NSEvent) {
 //        print("Mouse down")
 //    }
