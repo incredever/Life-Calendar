@@ -11,7 +11,8 @@ import SpriteKit
 class Grid: SKNode {
     
     let ultimateSize = CGSize(width: 330, height: 574)
-    
+    private var currentTilePopup = TilePopup()
+
     override init() {
         super.init()
         
@@ -19,27 +20,20 @@ class Grid: SKNode {
         createGridOfTiles(rows: 90, columns: 52)
     }
     
-//    override func mouseEntered(with event: NSEvent) {
-//        print("found mouse hover")
-//    }
-//    
     override func mouseMoved(with event: NSEvent) {
         print("Grid - mouse moved: \(event.location(in: self))")
-        
+        currentTilePopup.removeFromParent()
+
         let nodes = self.nodes(at: event.location(in: self))
         
         for node in nodes {
             if let tile = node as? Tile {
-                print("foundTile")
-                tile.fillColor = NSColor.blue
+                
+                tile.addChild(currentTilePopup)
             }
         }
         
     }
-//
-//    override func mouseDown(with event: NSEvent) {
-//        print("Mouse down")
-//    }
     
     func createGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
