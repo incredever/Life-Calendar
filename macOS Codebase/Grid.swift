@@ -32,7 +32,7 @@ struct Grid {
         }
     }
     
-    func addTile(at position: CGPoint) {
+    private func addTile(at position: CGPoint) {
         let tile = Tile()
         
         tile.node.position = position
