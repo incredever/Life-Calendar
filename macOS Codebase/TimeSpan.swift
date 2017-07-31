@@ -7,7 +7,7 @@
 
 import Cocoa
 
-struct TimeSpan {
+struct TimeSpan: Codable {
     let start: Date
     let end: Date
 }
