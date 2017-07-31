@@ -9,41 +9,45 @@ import Cocoa
 import SpriteKit
 
 class GridNode: SKNode {
+    
+    private var currentTilePopup = TilePopup()
+
     override init() {
         super.init()
+        
+        isUserInteractionEnabled = true
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    override func mouseMoved(with event: NSEvent) {
+        print("Grid - mouse moved: \(event.location(in: self))")
+        currentTilePopup.node.removeFromParent()
+
+        let nodes = self.nodes(at: event.location(in: self))
+
+        for node in nodes {
+            if let tile = node as? Tile {
+
+                tile.node?.addChild(currentTilePopup.node)
+            }
+        }
+
+    }
+    
 }
 
 struct Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
-    private var currentTilePopup = TilePopup()
-    let node: SKNode!
+    let node: GridNode!
     
     init() {
-        node = SKNode()
-        node.isUserInteractionEnabled = true
+        node = GridNode()
         createGridOfTiles(rows: 90, columns: 52)
     }
-    
-//    override func mouseMoved(with event: NSEvent) {
-//        print("Grid - mouse moved: \(event.location(in: self))")
-//        currentTilePopup.removeFromParent()
-//
-//        let nodes = self.nodes(at: event.location(in: self))
-//
-//        for node in nodes {
-//            if let tile = node as? Tile {
-//
-//                tile.node?.addChild(currentTilePopup)
-//            }
-//        }
-//
-//    }
     
     private func createGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
