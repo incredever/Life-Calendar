@@ -8,35 +8,34 @@
 import Cocoa
 import SpriteKit
 
-class Grid: SKNode {
+class Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
     private var currentTilePopup = TilePopup()
     let node: SKNode!
     
-    override init() {
-        super.init()
-        
-        isUserInteractionEnabled = true
+    init() {
+        node = SKNode()
+        node.isUserInteractionEnabled = true
         createGridOfTiles(rows: 90, columns: 52)
     }
     
-    override func mouseMoved(with event: NSEvent) {
-        print("Grid - mouse moved: \(event.location(in: self))")
-        currentTilePopup.removeFromParent()
-
-        let nodes = self.nodes(at: event.location(in: self))
-        
-        for node in nodes {
-            if let tile = node as? Tile {
-                
-                tile.node?.addChild(currentTilePopup)
-            }
-        }
-        
-    }
+//    override func mouseMoved(with event: NSEvent) {
+//        print("Grid - mouse moved: \(event.location(in: self))")
+//        currentTilePopup.removeFromParent()
+//
+//        let nodes = self.nodes(at: event.location(in: self))
+//
+//        for node in nodes {
+//            if let tile = node as? Tile {
+//
+//                tile.node?.addChild(currentTilePopup)
+//            }
+//        }
+//
+//    }
     
-    func createGridOfTiles(rows: Int, columns: Int) {
+    private func createGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
         let tileSize = 4
         
@@ -53,9 +52,9 @@ class Grid: SKNode {
     func addTile(at position: CGPoint) {
         let tile = Tile()
         
-        tile.position = position
+        tile.node.position = position
         
-        addChild(tile)
+        addChild(tile.node)
     }
     
     required init?(coder aDecoder: NSCoder) {
