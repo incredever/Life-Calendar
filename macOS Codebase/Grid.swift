@@ -40,4 +40,9 @@ struct Grid {
         node.addChild(tile.node)
     }
     
+    // Go through every tile and check if it falls under an event in timeline. And if so, update the color of tile.
+    func updateTiles(for timeline: Timeline) {
+        
+    }
+    
 }
