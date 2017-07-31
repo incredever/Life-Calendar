@@ -8,7 +8,7 @@
 import Cocoa
 import SpriteKit
 
-class Grid {
+struct Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
     private var currentTilePopup = TilePopup()
