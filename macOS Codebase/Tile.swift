@@ -15,7 +15,9 @@ class Tile: SKShapeNode {
         // Create square
         let rect = CGRect(x: 0, y: 0, width: 4, height: 4)
         self.path = CGPath(rect: rect, transform: nil)
-        fillColor = NSColor.lightGray
+        fillColor = NSColor.clear
+        strokeColor = NSColor.darkGray
+        lineWidth = 0.1
         
         // Settings
 //        isUserInteractionEnabled = true
