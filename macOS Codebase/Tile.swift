@@ -18,25 +18,8 @@ class Tile: SKShapeNode {
         fillColor = NSColor.clear
         strokeColor = NSColor.darkGray
         lineWidth = 0.1
-        
-        // Settings
-//        isUserInteractionEnabled = true
-    }
-    
 
-//    override func mouseEntered(with event: NSEvent) {
-//        print("found mouse hover")
-//    }
-    
-//    override func mouseMoved(with event: NSEvent) {
-//        let popup = TilePopup()
-//
-//        addChild(popup)
-//    }
-//
-//    override func mouseDown(with event: NSEvent) {
-//        print("Mouse down")
-//    }
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
