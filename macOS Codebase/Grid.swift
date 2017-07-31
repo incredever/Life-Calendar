@@ -54,11 +54,7 @@ class Grid {
         
         tile.node.position = position
         
-        addChild(tile.node)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        node.addChild(tile.node)
     }
     
 }

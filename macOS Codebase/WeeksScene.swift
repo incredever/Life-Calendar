@@ -16,9 +16,9 @@ class WeeksScene: SKScene {
         let gridLeftSidePadding = 90
         let gridTopPadding = 5
         
-        grid.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.ultimateSize.height) - gridTopPadding)
+        grid.node.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.ultimateSize.height) - gridTopPadding)
         
-        addChild(grid)
+        addChild(grid.node)
         
         // Create Labels
         let labels = YearLabels()
