@@ -8,20 +8,21 @@
 import Cocoa
 import SpriteKit
 
-class Tile: SKShapeNode {
-    override init() {
-        super.init()
-        
-        // Create square
-        let rect = CGRect(x: 0, y: 0, width: 4, height: 4)
-        self.path = CGPath(rect: rect, transform: nil)
-        fillColor = NSColor.clear
-        strokeColor = NSColor.darkGray
-        lineWidth = 0.1
+class Tile {
+    
+    let span: TimeSpan?
+    let node: SKShapeNode?
+    
+    init() {
+        span = nil
 
+        // Create node
+        node = SKShapeNode()
+        let rect = CGRect(x: 0, y: 0, width: 4, height: 4)
+        node?.path = CGPath(rect: rect, transform: nil)
+        node?.fillColor = NSColor.clear
+        node?.strokeColor = NSColor.darkGray
+        node?.lineWidth = 0.1
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
 }
