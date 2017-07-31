@@ -29,12 +29,8 @@ class GridNode: SKNode {
         let nodes = self.nodes(at: event.location(in: self))
 
         for node in nodes {
-            if let tile = node as? Tile {
-
-                tile.node?.addChild(currentTilePopup.node)
-            }
+            node.addChild(currentTilePopup.node)
         }
-
     }
     
 }
