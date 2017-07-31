@@ -11,7 +11,7 @@ import SpriteKit
 class Tile {
     
     let span: TimeSpan?
-    let node: SKShapeNode?
+    let node: SKShapeNode!
     
     init() {
         span = nil
@@ -19,10 +19,10 @@ class Tile {
         // Create node
         node = SKShapeNode()
         let rect = CGRect(x: 0, y: 0, width: 4, height: 4)
-        node?.path = CGPath(rect: rect, transform: nil)
-        node?.fillColor = NSColor.clear
-        node?.strokeColor = NSColor.darkGray
-        node?.lineWidth = 0.1
+        node.path = CGPath(rect: rect, transform: nil)
+        node.fillColor = NSColor.clear
+        node.strokeColor = NSColor.darkGray
+        node.lineWidth = 0.1
     }
     
 }

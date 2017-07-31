@@ -12,7 +12,8 @@ class Grid: SKNode {
     
     let ultimateSize = CGSize(width: 330, height: 574)
     private var currentTilePopup = TilePopup()
-
+    let node: SKNode!
+    
     override init() {
         super.init()
         
@@ -29,7 +30,7 @@ class Grid: SKNode {
         for node in nodes {
             if let tile = node as? Tile {
                 
-                tile.addChild(currentTilePopup)
+                tile.node?.addChild(currentTilePopup)
             }
         }
         
