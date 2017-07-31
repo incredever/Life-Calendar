@@ -8,6 +8,16 @@
 import Cocoa
 import SpriteKit
 
+class GridNode: SKNode {
+    override init() {
+        super.init()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+}
+
 struct Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
