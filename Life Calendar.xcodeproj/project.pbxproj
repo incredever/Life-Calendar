@@ -160,6 +160,7 @@
 			children = (
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
+				DEEE10FC1F2F4A3700C8953F /* TimeSpan.swift */,
 				DEFD711A1F06459500AF4373 /* Timeline.swift */,
 				DEFD71181F0644BD00AF4373 /* Event.swift */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
@@ -170,7 +171,6 @@
 				DE3443FE1F29DCF1001DAE8F /* YearLabels.swift */,
 				DE3444031F2C67D6001DAE8F /* TilePopup.swift */,
 				DE23A9CF1F28C579002C156D /* Tile.swift */,
-				DEEE10FC1F2F4A3700C8953F /* TimeSpan.swift */,
 				DE924B071F2C859C0055C91A /* DataModelWindow.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
