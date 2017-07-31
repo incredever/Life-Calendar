@@ -8,7 +8,7 @@
 import Cocoa
 import SpriteKit
 
-class Tile {
+struct Tile {
     
     let span: TimeSpan?
     let node: SKShapeNode!
