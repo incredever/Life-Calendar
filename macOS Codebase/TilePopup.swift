@@ -8,21 +8,20 @@
 import Cocoa
 import SpriteKit
 
-class TilePopup: SKNode {
+struct TilePopup {
     
-    override init() {
-        super.init()
+    let node: SKNode!
+    
+    init() {
+        
+        node = SKNode()
         
         // Create background
         let background = SKShapeNode(rect: CGRect(x: 0, y: 0, width: 20, height: 10))
         
         background.fillColor = NSColor.lightGray
         
-        addChild(background)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        node.addChild(background)
     }
     
 }
