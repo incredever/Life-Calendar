@@ -12,6 +12,8 @@ struct Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
     let node: GridNode!
+    let startDate = birth!
+    let endDate = death!
     
     init() {
         node = GridNode()
