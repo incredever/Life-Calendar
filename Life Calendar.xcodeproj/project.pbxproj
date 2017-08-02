@@ -30,6 +30,7 @@
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Early Mockups.sketch"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
+		DE1383001F31BA8100EA1238 /* 2017-08-02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-02.md"; sourceTree = "<group>"; };
 		DE1B440C1EFC24440025CF83 /* 2017-06-22.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-22.md"; sourceTree = "<group>"; };
 		DE1D716D1F177F0F00F6B962 /* 2017-07-13 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-13 Fig 1.png"; sourceTree = "<group>"; };
 		DE1ED4371F20CC1A00678787 /* 2017-07-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-20.md"; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 				DE6A830B1F2613520088DBA3 /* 2017-07-24.md */,
 				DEF8624C1F277C3B00335DCF /* 2017-07-25.md */,
 				DE3444001F2B29A1001DAE8F /* 2017-07-28.md */,
+				DE1383001F31BA8100EA1238 /* 2017-08-02.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
