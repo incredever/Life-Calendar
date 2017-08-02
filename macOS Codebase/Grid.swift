@@ -17,10 +17,10 @@ struct Grid {
     
     init() {
         node = GridNode()
-        createGridOfTiles(rows: 90, columns: 52)
+        generateGridOfTiles(rows: 90, columns: 52)
     }
     
-    private func createGridOfTiles(rows: Int, columns: Int) {
+    private func generateGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
         let tileSize = 4
         
