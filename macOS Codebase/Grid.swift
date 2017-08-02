@@ -11,12 +11,12 @@ import SpriteKit
 struct Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
-    let node: GridNode!
+    let node: SKNode!
     let startDate = birth!
     let endDate = death!
     
     init() {
-        node = GridNode()
+        node = SKNode()
         
         generateGridOfTiles(rows: 90, columns: 52)
     }
