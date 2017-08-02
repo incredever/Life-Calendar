@@ -26,7 +26,10 @@ class WeeksScene: SKScene {
         grid.generateGridOfTiles(rows: 90, columns: 52)
         
         // Create Labels
+        
+        /// A YearLabels instance for displaying the years spanning the human's life.
         let labels = YearLabels()
+        
         let labelsLeftSidePadding = 25
         let labelsTopPadding = 5
         
