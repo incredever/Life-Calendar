@@ -8,12 +8,14 @@
 import Cocoa
 import SpriteKit
 
+/// A small square the represents one week of a human life.
 struct Tile {
     
     let span: TimeSpan?
     let node: SKShapeNode!
     private var popup: TilePopup?
     
+    /// Creates an instance with a blank grey `node` and `span` set to nil.
     init() {
         span = nil
 
