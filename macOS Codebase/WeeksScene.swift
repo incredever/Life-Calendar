@@ -10,7 +10,7 @@ import SpriteKit
 
 /// A SpriteKit scene that contains a grid of tiles, each representing one week of a human life.
 ///
-/// Tiles have colors showing indicating a certain time of the human's life. Every tile is interactive, showing a small popup when the mouse hovers over it. Tiles are also selectable by clicking and dragging - the selection is turned into a new "event", which the user can choose to dismiss or fill out information for and save for posterity.
+/// Tiles have colors indicating a certain time of the human's life. Every tile is interactive, showing a small popup when the mouse hovers over it. Tiles are also selectable by clicking and dragging - the selection is turned into a new "event", which the user can choose to dismiss or fill out information for and save for posterity.
 class WeeksScene: SKScene {
     
     override func didMove(to view: SKView) {
@@ -25,9 +25,7 @@ class WeeksScene: SKScene {
         
         grid.generateGridOfTiles(rows: 90, columns: 52)
         
-        // Create Labels
-        
-        /// A YearLabels instance for displaying the years spanning the human's life.
+        /// A `YearLabels` instance for displaying the year spanning the human's life.
         let labels = YearLabels()
         
         let labelsLeftSidePadding = 25
