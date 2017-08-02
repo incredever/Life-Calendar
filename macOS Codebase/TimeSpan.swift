@@ -12,4 +12,8 @@ import Cocoa
 struct TimeSpan: Codable {
     let start: Date
     let end: Date
+    
+    var prettyDescription: String {
+        return "\(start) - \(end)"
+    }
 }
