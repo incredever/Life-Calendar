@@ -34,6 +34,12 @@ struct Grid {
         }
     }
     
+    private func next7Days(from: Date) -> TimeSpan {
+        let to = from.addingTimeInterval(604800)
+        
+        return TimeSpan(start: from, end: to)
+    }
+    
     private func addTile(at position: CGPoint) {
         let tile = Tile()
         
