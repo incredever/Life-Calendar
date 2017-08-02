@@ -12,6 +12,7 @@ struct Tile {
     
     let span: TimeSpan?
     let node: SKShapeNode!
+    private var popup: TilePopup?
     
     init() {
         span = nil
@@ -25,4 +26,18 @@ struct Tile {
         node.lineWidth = 0.1
     }
     
+    mutating func displayPopup() {
+        popup = TilePopup()
+        popup?.displayText = "testing 123"
+        
+        node.addChild(popup!.node)
+    }
+    
+    mutating func hidePopup() {
+        if let popup = popup {
+            popup.node.removeFromParent()
+        }
+        
+        popup = nil
+    }
 }

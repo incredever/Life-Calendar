@@ -11,7 +11,7 @@ import SpriteKit
 struct TilePopup {
     
     let node: SKNode!
-    let displayText: String?
+    var displayText: String?
     
     init() {
         node = SKNode()
