@@ -8,20 +8,26 @@
 import Cocoa
 import SpriteKit
 
-struct Grid {
+class Grid: NSResponder {
     
     let ultimateSize = CGSize(width: 330, height: 574)
     let node: SKNode!
     let startDate = birth!
     let endDate = death!
     
-    init() {
+    override init() {
         node = SKNode()
+
+        super.init()
         
-        generateGridOfTiles(rows: 90, columns: 52)
+//        generateGridOfTiles(rows: 90, columns: 52)
     }
     
-    private func generateGridOfTiles(rows: Int, columns: Int) {
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func generateGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
         let tileSize = 4
         var currentSpan = next7Days(from: Date())
@@ -49,7 +55,26 @@ struct Grid {
         
         tile.node.position = position
         
+        let trackingArea = NSTrackingArea(rect: self.node.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
+
+//        self.node.scene?.view?.addTrackingArea(trackingArea)
+        if let scene = node.scene {
+            print("found scene")
+            
+            if let view = scene.view {
+                print("found view")
+                
+                view.addTrackingArea(trackingArea)
+            }
+        }
+        
         node.addChild(tile.node)
+    }
+    
+    override func mouseMoved(with theEvent: NSEvent) {
+        let location = theEvent.location(in: self.node)
+        
+        print(location)
     }
     
 }
