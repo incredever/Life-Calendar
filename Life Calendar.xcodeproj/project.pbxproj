@@ -134,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				DE4DEF8F1F3075C70059956D /* Untitled.pcvd */,
-				DEDCC8A61F32FC920072F141 /* Mockups of August.sketch */,
 				DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */,
+				DEDCC8A61F32FC920072F141 /* Mockups of August.sketch */,
 				DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */,
 			);
 			path = "Design Files";
