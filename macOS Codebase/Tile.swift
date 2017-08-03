@@ -21,7 +21,9 @@ struct Tile {
 
         // Create node
         node = SKShapeNode()
+        
         let rect = CGRect(x: 0, y: 0, width: 4, height: 4)
+        
         node.path = CGPath(rect: rect, transform: nil)
         node.fillColor = NSColor.clear
         node.strokeColor = NSColor.darkGray
