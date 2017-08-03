@@ -31,7 +31,7 @@ class Grid: NSResponder {
         let padding = 2
         let tileSize = 4
         var currentSpan = next7Days(from: Date())
-        
+
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
                 let x = (tileSize + padding) * columnNumber
@@ -55,15 +55,10 @@ class Grid: NSResponder {
         
         tile.node.position = position
         
-        let trackingArea = NSTrackingArea(rect: self.node.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
+        let trackingArea = NSTrackingArea(rect: tile.node.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
 
-//        self.node.scene?.view?.addTrackingArea(trackingArea)
         if let scene = node.scene {
-            print("found scene")
-            
             if let view = scene.view {
-                print("found view")
-                
                 view.addTrackingArea(trackingArea)
             }
         }
