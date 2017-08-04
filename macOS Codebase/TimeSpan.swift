@@ -7,7 +7,7 @@
 
 import Cocoa
 
-// TODO: This little structure is a basically the same as DateInterval. So it's probably smart to eventually just use that with extentions as needed.
+// TODO: This little structure is a basically the same as DateInterval. So it's probably smart to eventually just use that with extensions as needed.
 
 struct TimeSpan: Codable {
     let start: Date

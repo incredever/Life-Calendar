@@ -55,13 +55,13 @@ class Grid: NSResponder {
         
         tile.node.position = position
         
-        let trackingArea = NSTrackingArea(rect: tile.node.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
-
-        if let scene = node.scene {
-            if let view = scene.view {
-                view.addTrackingArea(trackingArea)
-            }
-        }
+//        let trackingArea = NSTrackingArea(rect: tile.node.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
+//
+//        if let scene = node.scene {
+//            if let view = scene.view {
+//                view.addTrackingArea(trackingArea)
+//            }
+//        }
         
         node.addChild(tile.node)
     }
