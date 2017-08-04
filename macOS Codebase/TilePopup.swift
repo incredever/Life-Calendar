@@ -10,15 +10,21 @@ import SpriteKit
 
 struct TilePopup {
     
-    let node: SKNode!
-    var displayText: String?
+    /// The popup's top level node for adding to the scene hierarchy.
+    let node = SKNode()
     
+    /// The text that the popup displays. Automatically updates the view when set.
+    var displayText: String? {
+        didSet {
+            label.text = displayText ?? "Hello World!"
+        }
+    }
+    
+    /// The main display label. Automatically updated by setting `displayText`.
+    private var label = SKLabelNode(fileNamed: "Avenir Next")!
+    
+    /// Creates a popup with default "Hello World!" display text. Set the `displayText` property to change.
     init() {
-        node = SKNode()
-        
-        // Create label
-        let label = SKLabelNode(fontNamed: "Avenir Next")
-        label.text = displayText ?? "Hello"
         label.fontColor = NSColor.red
         label.fontSize = 14
         label.position = CGPoint(x: -10, y: 5)
