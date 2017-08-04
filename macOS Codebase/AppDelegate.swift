@@ -15,9 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         setupWindow()
         
-//        let exampleEvent = Event(title: "ABC", colorHex: "000000", starting: Date(), ending: Date())
-//        let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
-//        timeline.saveToDisk()
+        // TEST
+        let span = TimeSpan(start: Date(), end: Date())
+        let exampleEvent = Event(title: "ABC", colorHex: "000000", span: span)
+        let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
+        timeline.saveToDisk()
     }
     
     func setupWindow() {
