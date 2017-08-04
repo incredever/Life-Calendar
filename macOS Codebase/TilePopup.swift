@@ -8,6 +8,7 @@
 import Cocoa
 import SpriteKit
 
+/// A small popup that displays information about it's respective tile.
 struct TilePopup {
     
     /// The popup's top level node for adding to the scene hierarchy.
