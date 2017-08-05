@@ -12,8 +12,16 @@ import SpriteKit
 class Tile {
     
     var span: DateInterval?
-    let node: SKShapeNode!
+    var node: SKShapeNode!
     private var popup: TilePopup?
+    
+    /// Creates a tile representing a span of time with it's node as a particular position.
+    convenience init(span: DateInterval, nodePosition: CGPoint) {
+        self.init()
+        
+        self.span = span
+        node.position = nodePosition
+    }
     
     /// Creates an instance with a blank grey `node` and `span` set to nil.
     init() {
