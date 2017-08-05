@@ -19,8 +19,6 @@ class Grid: NSResponder {
         node = SKNode()
 
         super.init()
-        
-//        generateGridOfTiles(rows: 90, columns: 52)
     }
     
     required init?(coder: NSCoder) {
@@ -52,14 +50,6 @@ class Grid: NSResponder {
         let tile = Tile()
         
         tile.node.position = position
-        
-//        let trackingArea = NSTrackingArea(rect: tile.node.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
-//
-//        if let scene = node.scene {
-//            if let view = scene.view {
-//                view.addTrackingArea(trackingArea)
-//            }
-//        }
         
         node.addChild(tile.node)
     }

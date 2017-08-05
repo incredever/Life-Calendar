@@ -34,17 +34,6 @@ class WeeksScene: SKScene {
         labels.position = CGPoint(x: labelsLeftSidePadding, y: Int(labels.ultimiteSize.height) - labelsTopPadding)
         
         addChild(labels)
-        
-//        // add test tracking area
-//        let trackingArea = NSTrackingArea(rect: view.frame, options: [NSTrackingArea.Options.activeInKeyWindow, NSTrackingArea.Options.mouseMoved], owner: self, userInfo: nil)
-//        // Add the tracking area to the view
-//        view.addTrackingArea(trackingArea)
     }
-    
-//    override func mouseMoved(with theEvent: NSEvent) {
-//        let location = theEvent.location(in: self)
-//
-//        print(location)
-//    }
     
 }
