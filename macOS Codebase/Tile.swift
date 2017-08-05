@@ -9,9 +9,9 @@ import Cocoa
 import SpriteKit
 
 /// A small square the represents one week of a human life.
-struct Tile {
+class Tile {
     
-    let span: DateInterval?
+    var span: DateInterval?
     let node: SKShapeNode!
     private var popup: TilePopup?
     
@@ -30,14 +30,14 @@ struct Tile {
         node.lineWidth = 0.1
     }
     
-    mutating func displayPopup() {
+    func displayPopup() {
         popup = TilePopup()
         popup?.displayText = "testing 123"
         
         node.addChild(popup!.node)
     }
     
-    mutating func hidePopup() {
+    func hidePopup() {
         if let popup = popup {
             popup.node.removeFromParent()
         }

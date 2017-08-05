@@ -14,6 +14,7 @@ class Grid: NSResponder {
     let node: SKNode!
     let startDate = birth!
     let endDate = death!
+    var tiles: [Tile] = []
     
     override init() {
         node = SKNode()
@@ -50,6 +51,9 @@ class Grid: NSResponder {
         let tile = Tile()
         
         tile.node.position = position
+        tile.span = span
+        
+        tiles.append(tile)
         
         node.addChild(tile.node)
     }
