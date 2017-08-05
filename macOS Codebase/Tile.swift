@@ -11,7 +11,7 @@ import SpriteKit
 /// A small square the represents one week of a human life.
 struct Tile {
     
-    let span: TimeSpan?
+    let span: DateInterval?
     let node: SKShapeNode!
     private var popup: TilePopup?
     

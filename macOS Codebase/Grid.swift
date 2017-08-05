@@ -44,13 +44,13 @@ class Grid: NSResponder {
         }
     }
     
-    private func next7Days(from: Date) -> TimeSpan {
+    private func next7Days(from: Date) -> DateInterval {
         let to = from.addingTimeInterval(604800)
         
-        return TimeSpan(start: from, end: to)
+        return DateInterval(start: from, end: to)
     }
     
-    private func addTile(at position: CGPoint, span: TimeSpan) {
+    private func addTile(at position: CGPoint, span: DateInterval) {
         let tile = Tile()
         
         tile.node.position = position

@@ -12,5 +12,5 @@ import SpriteKit
 struct Event: Codable {
     let title: String
     let colorHex: String
-    let span: TimeSpan
+    let span: DateInterval
 }

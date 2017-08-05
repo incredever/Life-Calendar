@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupWindow()
         
         // Testing creating and saving main data model to disk.
-        let span = TimeSpan(start: Date(), end: Date())
+        let span = DateInterval(start: Date(), end: Date())
         let exampleEvent = Event(title: "ABC", colorHex: "000000", span: span)
         let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
         timeline.saveToDisk()
