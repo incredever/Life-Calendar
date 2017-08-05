@@ -48,13 +48,9 @@ class Grid: NSResponder {
     }
     
     private func addTile(at position: CGPoint, span: DateInterval) {
-        let tile = Tile()
-        
-        tile.node.position = position
-        tile.span = span
+        let tile = Tile(span: span, nodePosition: position)
         
         tiles.append(tile)
-        
         node.addChild(tile.node)
     }
     
