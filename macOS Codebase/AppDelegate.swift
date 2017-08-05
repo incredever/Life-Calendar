@@ -15,11 +15,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ notification: Notification) {
         setupWindow()
         
-        // TEST
+        // Testing creating and saving main data model to disk.
         let span = TimeSpan(start: Date(), end: Date())
         let exampleEvent = Event(title: "ABC", colorHex: "000000", span: span)
         let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
         timeline.saveToDisk()
+        
+        dump(timeline)
     }
     
     func setupWindow() {
