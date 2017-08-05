@@ -8,7 +8,7 @@
 import Cocoa
 import SpriteKit
 
-/// The hierarchy: NSViewController > NSView > SKView > SKScene. All this is acheved inside the `loadView` and `viewDidLoad` methods.
+/// A VC that contains an NSView > SKView > SKScene hierarchy for displaying a human life in weeks. All this is setup inside the `loadView` and `viewDidLoad` methods.
 class WeeksViewController: NSViewController {
     
     var skView: SKView!
