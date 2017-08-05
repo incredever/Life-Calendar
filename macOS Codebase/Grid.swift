@@ -45,9 +45,7 @@ class Grid: NSResponder {
     }
     
     private func next7Days(from: Date) -> DateInterval {
-        let to = from.addingTimeInterval(604800)
-        
-        return DateInterval(start: from, end: to)
+        return DateInterval(start: from, duration: 604800)
     }
     
     private func addTile(at position: CGPoint, span: DateInterval) {
