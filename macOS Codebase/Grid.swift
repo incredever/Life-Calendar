@@ -49,10 +49,4 @@ class Grid: NSResponder {
         return DateInterval(start: from, duration: 604800)
     }
     
-    override func mouseMoved(with theEvent: NSEvent) {
-        let location = theEvent.location(in: self.node)
-        
-        print(location)
-    }
-    
 }
