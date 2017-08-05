@@ -35,8 +35,10 @@ class Grid: NSResponder {
             for columnNumber in 0...columns {
                 let x = (tileSize + padding) * columnNumber
                 let y = (tileSize + padding) * rowNumber * -1
+                let tile = Tile(span: currentSpan, nodePosition: CGPoint(x: x, y: y))
                 
-                addTile(at: CGPoint(x: x, y: y), span: currentSpan)
+                tiles.append(tile)
+                node.addChild(tile.node)
                 
                 currentSpan = next7Days(from: currentSpan.end)
             }
@@ -45,13 +47,6 @@ class Grid: NSResponder {
     
     private func next7Days(from: Date) -> DateInterval {
         return DateInterval(start: from, duration: 604800)
-    }
-    
-    private func addTile(at position: CGPoint, span: DateInterval) {
-        let tile = Tile(span: span, nodePosition: position)
-        
-        tiles.append(tile)
-        node.addChild(tile.node)
     }
     
     override func mouseMoved(with theEvent: NSEvent) {
