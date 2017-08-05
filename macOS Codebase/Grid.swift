@@ -8,23 +8,13 @@
 import Cocoa
 import SpriteKit
 
-class Grid: NSResponder {
+class Grid {
     
     let ultimateSize = CGSize(width: 330, height: 574)
-    let node: SKNode!
+    let node = SKNode()
     let startDate = birth!
     let endDate = death!
     var tiles: [Tile] = []
-    
-    override init() {
-        node = SKNode()
-
-        super.init()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     func generateGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
