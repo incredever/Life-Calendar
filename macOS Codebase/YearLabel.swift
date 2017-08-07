@@ -24,9 +24,14 @@ struct YearLabel {
         node.position = position
     }
     
-    /// Creates a year label with default styling.
+    /// Creates a year label with default styling and position.
     init(text: String) {
         self.init(text: text, font: .yearLabel, size: 14, color: .yearLabelBlack, position: CGPoint(x: 0, y: 0))
+    }
+    
+    /// Creates a year label with default styling at a custom position.
+    init(text: String, position: CGPoint) {
+        self.init(text: text, font: .yearLabel, size: 14, color: .yearLabelBlack, position: position)
     }
     
 }
