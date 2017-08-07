@@ -22,7 +22,7 @@ struct Grid {
         let n = SKNode()
         
         for tile in tiles {
-            a.addChild(tile)
+            n.addChild(tile.node)
         }
 
         return n
