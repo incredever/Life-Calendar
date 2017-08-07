@@ -8,6 +8,7 @@
 import Cocoa
 import SpriteKit
 
+/// A grid of tiles, each representing one week of a human life.
 struct Grid {
     
     /// The date for the first tile in the grid.
@@ -18,13 +19,12 @@ struct Grid {
     
     /// A SpriteKit node for use in the scene.
     var node: SKNode {
-        
-        // TODO: finish this generator
-        
         let n = SKNode()
         
-        // go through each item in tiles, and create a node for it
-        
+        for tile in tiles {
+            a.addChild(tile)
+        }
+
         return n
     }
 
@@ -54,7 +54,6 @@ struct Grid {
                 let tile = Tile(span: currentSpan, nodePosition: CGPoint(x: x, y: y))
                 
                 tiles.append(tile)
-                node.addChild(tile.node)
                 
                 currentSpan = next7Days(from: currentSpan.end)
             }
