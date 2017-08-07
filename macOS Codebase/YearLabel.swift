@@ -24,7 +24,7 @@ struct YearLabel {
     var fontColor: Colors
     
     /// The size in points the text should display at.
-    var fontSize: CGFloat
+    var fontSize: Double
     
     /// A SpriteKit node for use in the scene.
     var node: SKLabelNode {
@@ -32,14 +32,14 @@ struct YearLabel {
         
         node.text = self.text
         node.fontColor = NSColor(hexString: self.fontColor.rawValue)
-        node.fontSize = self.fontSize
+        node.fontSize = CGFloat(self.fontSize)
         node.position = self.position
         
         return node
     }
     
     /// The primary initializer, containing parameters for all pertinent variables.
-    private init(text: String, font: Fonts, size: CGFloat, color: Colors, position: CGPoint) {
+    private init(text: String, font: Fonts, size: Double, color: Colors, position: CGPoint) {
 
         self.text = text
         self.position = position
