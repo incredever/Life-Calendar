@@ -12,7 +12,9 @@ import SpriteKit
 class Tile {
     
     var span: DateInterval?
+    
     var node: SKShapeNode!
+    
     private var popup: TilePopup?
     
     /// Creates a tile representing a span of time with it's node as a particular position.

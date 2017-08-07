@@ -10,11 +10,26 @@ import SpriteKit
 
 class Grid {
     
-    let ultimateSize = CGSize(width: 330, height: 574)
+    
+    /// A SpriteKit node for use in the scene.
     let node = SKNode()
-    let startDate = birth!
-    let endDate = death!
+    
+    /// The date for the first tile in the grid.
+    let start: Date
+    
+    /// The date for the last tile in the grid.
+    let end: Date
+    
+    /// An array of tiles spanning from the `start` date to `end` date - each representing a one week span of timne.
     var tiles: [Tile] = []
+    
+    /// The dimensions at which the grid will be generated.
+    let size: CGSize // TODO: initialize as CGSize(width: 330, height: 574)
+
+    
+//    init(start: Date, end: Date) {
+//        
+//    }
     
     func generateGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
