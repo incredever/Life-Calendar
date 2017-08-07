@@ -30,8 +30,8 @@ struct Grid {
         return n
     }
 
-    /// An array of tiles spanning from the `start` date to `end` date - each representing a one week span of timne.
-    var tiles: [Tile]
+    /// A two dimensional array of rows of tiles spanning from the `start` date to `end` date. Each tile represents a one week and each row contains 52 tiles, making a full year. The number of rows depends on the number of years are in the lifespan we are working with.
+    var tiles: [[Tile]]
     
     /// The dimensions at which the grid will be generated.
     let size: CGSize // TODO: initialize as CGSize(width: 330, height: 574)
@@ -54,6 +54,9 @@ struct Grid {
         
         var currentSpan = next7Days(from: Date())
         
+        let rows = 80
+        let columns = 52
+        
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
                 let x = (tileSize + tilePadding) * columnNumber
@@ -68,6 +71,11 @@ struct Grid {
         
         self.tiles = tilesInProgress
 
+    }
+    
+    private generateRowOfTiles(starting: Date, ending: Date) -> [Tile] {
+    
+        return []
     }
     
     private func next7Days(from: Date) -> DateInterval {
