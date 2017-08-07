@@ -10,28 +10,39 @@ import SpriteKit
 
 struct Grid {
     
-    
-    /// A SpriteKit node for use in the scene.
-    let node = SKNode()
-    
     /// The date for the first tile in the grid.
     let start: Date
     
     /// The date for the last tile in the grid.
     let end: Date
     
+    /// A SpriteKit node for use in the scene.
+    var node: SKNode {
+        
+        // TODO: finish this generator
+        
+        let n = SKNode()
+        
+        // go through each item in tiles, and create a node for it
+        
+        return n
+    }
+
     /// An array of tiles spanning from the `start` date to `end` date - each representing a one week span of timne.
-    var tiles: [Tile] = []
+    var tiles: [Tile]
     
     /// The dimensions at which the grid will be generated.
     let size: CGSize // TODO: initialize as CGSize(width: 330, height: 574)
 
+    init(start: Date, end: Date, size: CGSize) {
+        self.start = start
+        self.end = end
+        self.size = size
+        self.tiles = []
+        // TODO: Generate tiles using start and end info
+    }
     
-//    init(start: Date, end: Date) {
-//        
-//    }
-    
-    func generateGridOfTiles(rows: Int, columns: Int) {
+    mutating private func generateGridOfTiles(rows: Int, columns: Int) {
         let padding = 2
         let tileSize = 4
         var currentSpan = next7Days(from: Date())
