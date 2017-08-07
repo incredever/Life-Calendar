@@ -8,15 +8,17 @@
 import Foundation
 import SpriteKit
 
-enum Fonts: String {
-    case yearLabel = "Avenir Next"
-}
 
 struct YearLabel {
     
     var node: SKLabelNode!
     
-    init(text: String, font: Fonts, color: Colors) {
-        node = SKLabelNode()
+    init(text: String, font: Fonts, size: Int, color: Colors, position: CGPoint) {
+        node = SKLabelNode(fileNamed: font.rawValue)
+        
+        node.text = text
+        node.fontColor = NSColor(hexString: color.rawValue)
+        node.fontSize = CGFloat(size)
+        node.position = position
     }
 }
