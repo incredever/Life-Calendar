@@ -18,6 +18,7 @@
 		DE6A83081F2607BB0088DBA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A83071F2607BB0088DBA3 /* main.swift */; };
 		DED586E71F38A62E00B30888 /* YearLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E61F38A62E00B30888 /* YearLabel.swift */; };
 		DED586E91F38A72500B30888 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E81F38A72500B30888 /* Fonts.swift */; };
+		DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
@@ -66,6 +67,7 @@
 		DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1.0 Designs and Ideas.sketch"; sourceTree = "<group>"; };
 		DED586E61F38A62E00B30888 /* YearLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearLabel.swift; sourceTree = "<group>"; };
 		DED586E81F38A72500B30888 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval Extensions.swift"; sourceTree = "<group>"; };
 		DED78FAF1EFD74F700F860BF /* 2017-06-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-23.md"; sourceTree = "<group>"; };
 		DED97A371EDE0C3A00F2100B /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				DE65D6A71F273EC000B97F22 /* Colors.swift */,
 				DED586E81F38A72500B30888 /* Fonts.swift */,
 				DE52C9811F29C4BC00BA1143 /* Grid.swift */,
+				DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */,
 				DE3443FE1F29DCF1001DAE8F /* YearLabels.swift */,
 				DED586E61F38A62E00B30888 /* YearLabel.swift */,
 				DE23A9CF1F28C579002C156D /* Tile.swift */,
@@ -274,6 +277,7 @@
 				DE6A83081F2607BB0088DBA3 /* main.swift in Sources */,
 				DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */,
 				DE3444041F2C67D6001DAE8F /* TilePopup.swift in Sources */,
+				DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */,
 				DE52C9821F29C4BC00BA1143 /* Grid.swift in Sources */,
 				DE23A9D01F28C579002C156D /* Tile.swift in Sources */,
 				DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */,
