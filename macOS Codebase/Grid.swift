@@ -24,7 +24,7 @@ struct Grid {
         n.position = position
         
         for tile in tiles {
-            n.addChild(tile.node)
+//            n.addChild(tile.node)
         }
 
         return n
@@ -45,14 +45,17 @@ struct Grid {
     /// The number of points to put between each tile.
     private let tilePadding = 2
     
-    init(start: Date, end: Date, size: CGSize) {
+    init(start: Date, end: Date, size: CGSize, position: CGPoint) {
         self.start = start
         self.end = end
         self.size = size
+        self.position = position
+        
+        
         
         var tilesInProgress: [Tile] = []
         
-        var currentSpan = next7Days(from: Date())
+//        var currentSpan = next7Days(from: Date())
         
         let numberOfYears = 50
         // TODO: Figure out how man
@@ -74,6 +77,8 @@ struct Grid {
 //        }
 //
 //        self.tiles = tilesInProgress
+        
+        self.tiles = []
 
     }
     

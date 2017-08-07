@@ -15,15 +15,15 @@ class WeeksScene: SKScene {
     
     override func didMove(to view: SKView) {
         // Create Grid
-        let grid = Grid()
-        let gridLeftSidePadding = 90
-        let gridTopPadding = 5
-        
-        grid.node.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.size.height) - gridTopPadding)
-        
-        addChild(grid.node)
-        
-        grid.generateGridOfTiles(rows: 90, columns: 52)
+//        let grid = Grid()
+//        let gridLeftSidePadding = 90
+//        let gridTopPadding = 5
+//        
+//        grid.node.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.size.height) - gridTopPadding)
+//        
+//        addChild(grid.node)
+//        
+//        grid.generateGridOfTiles(rows: 90, columns: 52)
         
         /// A `YearLabels` instance for displaying the year spanning the human's life.
         let labels = YearLabels()
