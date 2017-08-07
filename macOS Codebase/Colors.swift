@@ -9,5 +9,6 @@ import Cocoa
 
 enum Colors: String {
     case sceneBackground = "F6F4F1"
+    case yearLabelBlack = "000000"
 }
 
