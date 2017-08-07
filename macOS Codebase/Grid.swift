@@ -39,8 +39,11 @@ struct Grid {
     /// The point at which the grid will position itself within the scene.
     var position: CGPoint
     
-//    /// The number of points to put between each tile.
-//    private let tilePadding = 2
+    /// The size each square tile should be in points.
+    private let tileSize = 4
+    
+    /// The number of points to put between each tile.
+    private let tilePadding = 2
     
     init(start: Date, end: Date, size: CGSize) {
         self.start = start
@@ -49,14 +52,12 @@ struct Grid {
         
         var tilesInProgress: [Tile] = []
         
-        let padding = 2
-        let tileSize = 4
         var currentSpan = next7Days(from: Date())
         
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
-                let x = (tileSize + padding) * columnNumber
-                let y = (tileSize + padding) * rowNumber * -1
+                let x = (tileSize + tilePadding) * columnNumber
+                let y = (tileSize + tilePadding) * rowNumber * -1
                 let tile = Tile(span: currentSpan, nodePosition: CGPoint(x: x, y: y))
                 
                 tiles.append(tile)
