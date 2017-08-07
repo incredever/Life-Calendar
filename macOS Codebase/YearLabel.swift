@@ -11,6 +11,13 @@ import SpriteKit
 /// A label for indicating the year for a particular row of the grid.
 struct YearLabel {
     
+    /// The text displayed by the label. Since this is a *Year*Label, it should probably be a year, as in "1900" or "2017".
+    var text: String
+    var position: CGPoint
+    var fontName: Fonts
+    var fontColor: Colors
+    var fontSize: Int
+    
     /// A SpriteKit node for use in the scene.
     var node: SKLabelNode {
         let node = SKLabelNode(fontNamed: self.fontName.rawValue)
@@ -22,12 +29,6 @@ struct YearLabel {
         
         return node
     }
-    
-    var text: String
-    var position: CGPoint
-    var fontName: Fonts
-    var fontColor: Colors
-    var fontSize: Int
     
     /// The primary initializer, containing parameters for all pertinent variables.
     private init(text: String, font: Fonts, size: Int, color: Colors, position: CGPoint) {
@@ -41,7 +42,6 @@ struct YearLabel {
 
     /// Creates a year label with default styling and position.
     init(text: String) {
-        
         self.init(text: text, font: .yearLabel, size: 14, color: .yearLabelBlack, position: CGPoint(x: 0, y: 0))
     }
     
