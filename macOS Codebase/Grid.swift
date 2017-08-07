@@ -8,7 +8,7 @@
 import Cocoa
 import SpriteKit
 
-class Grid {
+struct Grid {
     
     
     /// A SpriteKit node for use in the scene.
