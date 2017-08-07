@@ -14,4 +14,14 @@ extension DateInterval {
         return DateInterval(start: start, duration: 604800)
     }
     
+    func numberOfYearsWithin() -> Int {
+        let calendar = Calendar.current
+        
+        let components = calendar.dateComponents([.year], from: start, to: end)
+        
+        dump(components)
+        
+        return 0
+    }
+    
 }
