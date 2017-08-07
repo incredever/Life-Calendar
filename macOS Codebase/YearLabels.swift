@@ -32,23 +32,10 @@ class YearLabels: SKNode {
             let increment = 10
             let originalNumber = 1950
             let incrementedNumber = originalNumber + (increment * n)
-            
-//            createLabel(at: CGPoint(x: x, y: y), with: incrementedNumber.description)
-            
+                        
             let label = YearLabel(text: incrementedNumber.description, position: CGPoint(x: x, y: y))
             addChild(label.node)
         }
-    }
-    
-    func createLabel(at position: CGPoint, with string: String) {
-        let label = SKLabelNode(fontNamed: "Avenir Next")
-        
-        label.text = string
-        label.fontColor = NSColor.black
-        label.fontSize = 14
-        label.position = position
-        
-        addChild(label)
     }
     
     required init?(coder aDecoder: NSCoder) {
