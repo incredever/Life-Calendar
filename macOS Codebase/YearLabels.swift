@@ -33,7 +33,10 @@ class YearLabels: SKNode {
             let originalNumber = 1950
             let incrementedNumber = originalNumber + (increment * n)
             
-            createLabel(at: CGPoint(x: x, y: y), with: incrementedNumber.description)
+//            createLabel(at: CGPoint(x: x, y: y), with: incrementedNumber.description)
+            
+            let label = YearLabel(text: incrementedNumber.description, position: CGPoint(x: x, y: y))
+            addChild(label.node)
         }
     }
     
