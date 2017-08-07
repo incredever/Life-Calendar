@@ -16,7 +16,7 @@ struct YearLabel {
     
     /// The primary initializer, containing parameters for all pertinent variables.
     init(text: String, font: Fonts, size: Int, color: Colors, position: CGPoint) {
-        node = SKLabelNode(fileNamed: font.rawValue)
+        node = SKLabelNode(fontNamed: font.rawValue)
         
         node.text = text
         node.fontColor = NSColor(hexString: color.rawValue)
