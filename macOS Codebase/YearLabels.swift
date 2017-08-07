@@ -8,6 +8,14 @@
 import Cocoa
 import SpriteKit
 
+/*
+ 
+  the years need to be at the vertical position relative to the rows of the years listed in the grid
+ 
+ how tall is each row of the grid
+ what the start and end years of the grid are
+ 
+*/
 
 class YearLabels: SKNode {
     
@@ -30,14 +38,14 @@ class YearLabels: SKNode {
     }
     
     func createLabel(at position: CGPoint, with string: String) {
-        let firstLabel = SKLabelNode(fontNamed: "Avenir Next")
+        let label = SKLabelNode(fontNamed: "Avenir Next")
         
-        firstLabel.text = string
-        firstLabel.fontColor = NSColor.black
-        firstLabel.fontSize = 14
-        firstLabel.position = position
+        label.text = string
+        label.fontColor = NSColor.black
+        label.fontSize = 14
+        label.position = position
         
-        addChild(firstLabel)
+        addChild(label)
     }
     
     required init?(coder aDecoder: NSCoder) {
