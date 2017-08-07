@@ -21,6 +21,8 @@ struct Grid {
     var node: SKNode {
         let n = SKNode()
         
+        n.position = position
+        
         for tile in tiles {
             n.addChild(tile.node)
         }
@@ -33,20 +35,24 @@ struct Grid {
     
     /// The dimensions at which the grid will be generated.
     let size: CGSize // TODO: initialize as CGSize(width: 330, height: 574)
-
+    
+    /// The point at which the grid will position itself within the scene.
+    var position: CGPoint
+    
+//    /// The number of points to put between each tile.
+//    private let tilePadding = 2
+    
     init(start: Date, end: Date, size: CGSize) {
         self.start = start
         self.end = end
         self.size = size
-        self.tiles = []
-        // TODO: Generate tiles using start and end info
-    }
-    
-    mutating private func generateGridOfTiles(rows: Int, columns: Int) {
+        
+        var tilesInProgress: [Tile] = []
+        
         let padding = 2
         let tileSize = 4
         var currentSpan = next7Days(from: Date())
-
+        
         for rowNumber in 0...rows {
             for columnNumber in 0...columns {
                 let x = (tileSize + padding) * columnNumber
@@ -58,6 +64,9 @@ struct Grid {
                 currentSpan = next7Days(from: currentSpan.end)
             }
         }
+        
+        self.tiles = tilesInProgress
+
     }
     
     private func next7Days(from: Date) -> DateInterval {
