@@ -17,6 +17,7 @@ import SpriteKit
  
 */
 
+@available(*, deprecated: 0.1, message: "I'm thinking about doing this a different way. Work in progress. Probably take a look at Grid.")
 class YearLabels: SKNode {
     
     let ultimiteSize = CGSize(width: 30, height: 500)
