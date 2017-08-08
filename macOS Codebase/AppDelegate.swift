@@ -21,7 +21,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
         timeline.saveToDisk()
         
-        dump(timeline)
+        // Testing DateInterval extension
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-mm-dd"
+        
+        let myBirth = dateFormatter.date(from: "1993-01-05")!
+        let possibleDeath = dateFormatter.date(from: "2073-01-04")!
+        let dateInterval = DateInterval(start: myBirth, end: possibleDeath)
+        
+        print("dateInterval.numberOfYearsWithin() => \(dateInterval.numberOfYearsWithin())")
     }
     
     func setupWindow() {

@@ -19,9 +19,11 @@ extension DateInterval {
         
         let components = calendar.dateComponents([.year], from: start, to: end)
         
-        dump(components)
-        
-        return 0
+        if let numberOfYears = components.year {
+            return numberOfYears
+        } else {
+            return 0
+        }
     }
     
 }
