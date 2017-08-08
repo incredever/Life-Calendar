@@ -56,38 +56,14 @@ struct Grid {
         self.size = size
         self.position = position
         
-        
-        /// TEMP:
         self.tiles = []
-
-        
-        
-        var tilesInProgress: [Tile] = []
-        
-//        var currentSpan = next7Days(from: Date())
+        // ^ Delete me
         
         let numberOfYears = span.numberOfYearsWithin()
-        // TODO: Figure out how man
         
         for yearNumber in 0...numberOfYears {
-            
+            // create a row and add it to `tiles`
         }
-        
-//        for rowNumber in 0...rows {
-//            for columnNumber in 0...columns {
-//                let x = (tileSize + tilePadding) * columnNumber
-//                let y = (tileSize + tilePadding) * rowNumber * -1
-//                let tile = Tile(span: currentSpan, nodePosition: CGPoint(x: x, y: y))
-//
-//                tiles.append(tile)
-//
-//                currentSpan = next7Days(from: currentSpan.end)
-//            }
-//        }
-//
-//        self.tiles = tilesInProgress
-        
-
     }
     
     /// Returns an array containing tiles, each representing one week, spanning from `start` to `end`.
