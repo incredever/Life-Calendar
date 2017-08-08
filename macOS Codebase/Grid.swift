@@ -58,6 +58,7 @@ struct Grid {
         self.position = position
         self.tiles = []
         
+        /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
         
         for yearNumber in 0...span.numberOfYearsWithin() {
@@ -77,22 +78,5 @@ struct Grid {
                 currentSpan = DateInterval.oneWeek(startingFom: span.end)
             }
         }
-        
-        print("currentSpan: \(currentSpan)")
-        print("span.end: \(span.end)")
-        print("tiles.last!.span: \(tiles.last!.span)")
-
-        
-            //        for rowNumber in 0...rows {
-            //            for columnNumber in 0...columns {
-            //                let x = (tileSize + tilePadding) * columnNumber
-            //                let y = (tileSize + tilePadding) * rowNumber * -1
-            //                let tile = Tile(span: currentSpan, nodePosition: CGPoint(x: x, y: y))
-            //
-            //                tiles.append(tile)
-            //
-            //                currentSpan = next7Days(from: currentSpan.end)
-            //            }
-            //        }
     }
 }
