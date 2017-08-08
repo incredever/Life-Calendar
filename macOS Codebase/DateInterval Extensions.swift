@@ -14,6 +14,7 @@ extension DateInterval {
         return DateInterval(start: start, duration: 604800)
     }
     
+    /// Returns the number of years between the `start` and `end` dates of this `DateInterval`.
     func numberOfYearsWithin() -> Int {
         let calendar = Calendar.current
         
