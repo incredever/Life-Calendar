@@ -58,16 +58,41 @@ struct Grid {
         self.position = position
         self.tiles = []
         
+        var currentSpan = DateInterval.oneWeek(startingFom: start)
+        
         for yearNumber in 0...span.numberOfYearsWithin() {
             for weekNumber in 1...52 {
-                let span = DateInterval.oneWeek(startingFom: start) // TODO: calculate incrementing start date
+                
+                //                let x = (tileSize + tilePadding) * columnNumber
+                //                let y = (tileSize + tilePadding) * rowNumber * -1
+                
+                
                 let position = CGPoint(x: 0, y: 0) // TODO: Calculate incremention position
                 let tSize = CGSize(width: tileSize, height: tileSize)
                 let tColor = Colors.blankTile
-                let t = Tile(span: span, position: position, size: tSize, color: tColor)
+                let t = Tile(span: currentSpan, position: position, size: tSize, color: tColor)
                 
                 tiles.append(t)
+                
+                currentSpan = DateInterval.oneWeek(startingFom: span.end)
             }
         }
+        
+        print("currentSpan: \(currentSpan)")
+        print("span.end: \(span.end)")
+        print("tiles.last!.span: \(tiles.last!.span)")
+
+        
+            //        for rowNumber in 0...rows {
+            //            for columnNumber in 0...columns {
+            //                let x = (tileSize + tilePadding) * columnNumber
+            //                let y = (tileSize + tilePadding) * rowNumber * -1
+            //                let tile = Tile(span: currentSpan, nodePosition: CGPoint(x: x, y: y))
+            //
+            //                tiles.append(tile)
+            //
+            //                currentSpan = next7Days(from: currentSpan.end)
+            //            }
+            //        }
     }
 }
