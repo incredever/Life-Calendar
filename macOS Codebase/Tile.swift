@@ -17,8 +17,17 @@ struct Tile {
     /// The point at which the tile will position itself within its parent's coordinate system.
     var position: CGPoint
     
+    /// The size in points of the square tile.
+    let size: CGSize
+    
+    /// The color of the tile.
+    let color: Colors
+    
     /// An SKShapeNode for use in a SpriteKit scene.
     var node: SKShapeNode {
-        return SKShapeNode()
+        let n = SKShapeNode(rect: CGRect(origin: position, size: size))
+        n.fillColor = NSColor(hexString: color.rawValue)
+        
+        return n
     }
 }
