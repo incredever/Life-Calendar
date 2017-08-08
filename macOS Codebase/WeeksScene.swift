@@ -15,15 +15,18 @@ class WeeksScene: SKScene {
     
     override func didMove(to view: SKView) {
         // Create Grid
-//        let grid = Grid()
-//        let gridLeftSidePadding = 90
-//        let gridTopPadding = 5
-//        
-//        grid.node.position = CGPoint(x: gridLeftSidePadding, y: Int(grid.size.height) - gridTopPadding)
-//        
-//        addChild(grid.node)
-//        
-//        grid.generateGridOfTiles(rows: 90, columns: 52)
+        let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-mm-dd"
+        let myBirth = dateFormatter.date(from: "1993-01-05")!
+        let possibleDeath = dateFormatter.date(from: "2073-01-04")!
+        let size = CGSize(width: 200, height: 400)
+        let gridLeftSidePadding = 90
+        let gridTopPadding = 5
+        let gridPosition = CGPoint(x: gridLeftSidePadding, y: Int(size.height) - gridTopPadding)
+
+        let grid = Grid(start: myBirth, end: possibleDeath, size: size, position: gridPosition)
+
+        addChild(grid.node)
         
         /// A `YearLabels` instance for displaying the year spanning the human's life.
         let labels = YearLabels()
