@@ -62,18 +62,9 @@ struct Grid {
         let numberOfYears = span.numberOfYearsWithin()
         
         for yearNumber in 0...numberOfYears {
-            // create a row and add it to `tiles`
+            for weekNumber in 0...52 {
+                // create a Tile with proper span and position
+            }
         }
     }
-    
-    /// Returns an array containing tiles, each representing one week, spanning from `start` to `end`.
-    private func generateRowOfTiles(start: Date, end: Date) -> [Tile] {
-        
-        return []
-    }
-    
-    private func next7Days(from: Date) -> DateInterval {
-        return DateInterval(start: from, duration: 604800)
-    }
-    
 }
