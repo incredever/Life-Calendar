@@ -57,11 +57,10 @@ struct Grid {
         self.position = position
         self.tiles = []
         
-        let numberOfYears = span.numberOfYearsWithin()
-        
-        for yearNumber in 0...numberOfYears {
-            for weekNumber in 0...52 {
+        for yearNumber in 0...span.numberOfYearsWithin() {
+            for weekNumber in 1...52 {
                 // TODO: create a Tile with proper span and position. Then add it to `tiles`.
+                print("yearNumber: \(yearNumber)\nweekNumber: \(weekNumber)")
             }
         }
     }
