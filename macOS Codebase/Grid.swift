@@ -17,7 +17,7 @@ struct Grid {
     /// The date for the last tile in the grid.
     let end: Date
     
-    /// A SpriteKit node for use in the scene.
+    /// An SKNode for use in a SpriteKit scene.
     var node: SKNode {
         let n = SKNode()
         

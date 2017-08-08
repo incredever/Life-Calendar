@@ -26,7 +26,7 @@ struct YearLabel {
     /// The size in points the text should display at.
     var fontSize: Double
     
-    /// A SpriteKit node for use in the scene.
+    /// An SKLabelNode for use in a SpriteKit scene.
     var node: SKLabelNode {
         let node = SKLabelNode(fontNamed: self.fontName.rawValue)
         
