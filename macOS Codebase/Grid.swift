@@ -50,6 +50,7 @@ struct Grid {
         return DateInterval(start: start, end: end)
     }
     
+    /// Creates a grid which shows tiles for every week between `start` and `end`.
     init(start: Date, end: Date, size: CGSize, position: CGPoint) {
         self.start = start
         self.end = end
