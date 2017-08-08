@@ -24,7 +24,7 @@ struct Grid {
         n.position = position
         
         for tile in tiles {
-//            n.addChild(tile.node)
+            n.addChild(tile.node)
         }
 
         return n
