@@ -49,11 +49,4 @@ NSApplication.shared.mainMenu = makeMainMenu()
 NSApplication.shared.delegate = delegate
 NSApplication.shared.run()
 
-let dateFormatter = DateFormatter()
-dateFormatter.dateFormat = "yyyy-mm-dd"
-
-let birth = dateFormatter.date(from: "1993-01-05")
-let death = dateFormatter.date(from: "2090-01-01")
-
-
 
