@@ -14,7 +14,7 @@ struct YearLabel {
     /// The text displayed by the label. Since this is a *Year*Label, it should probably be a year, as in "1900" or "2017".
     var text: String
     
-    /// The point at which the label will position itself within the scene.
+    /// The point at which the label will position itself within its parent's coordinate system.
     var position: CGPoint
     
     /// The font to be used for displaying text.

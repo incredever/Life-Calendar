@@ -13,6 +13,9 @@ struct Tile {
     
     let span: DateInterval
     
+    /// The point at which the tile will position itself within its parent's coordinate system.
+    var position: CGPoint
+    
     var node: SKShapeNode {
         return SKShapeNode()
     }
