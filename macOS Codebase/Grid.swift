@@ -60,8 +60,13 @@ struct Grid {
         
         for yearNumber in 0...span.numberOfYearsWithin() {
             for weekNumber in 1...52 {
-                // TODO: create a Tile with proper span and position. Then add it to `tiles`.
-                print("yearNumber: \(yearNumber)\nweekNumber: \(weekNumber)")
+                let span = DateInterval.oneWeek(startingFom: start) // TODO: calculate incrementing start date
+                let position = CGPoint(x: 0, y: 0) // TODO: Calculate incremention position
+                let tSize = CGSize(width: tileSize, height: tileSize)
+                let tColor = Colors.blankTile
+                let t = Tile(span: span, position: position, size: tSize, color: tColor)
+                
+                tiles.append(t)
             }
         }
     }
