@@ -161,6 +161,7 @@
 				DED30F061F0FC0A500B299C9 /* Design Files */,
 				DEE136851EF9ECA300F2BFE9 /* Screenshots and mockups */,
 				DED97A381EDE0C3A00F2100B /* Products */,
+				DE12329A1F42F68D001E46D4 /* Life Calendar.entitlements */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,7 +193,6 @@
 				DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
-				DE12329A1F42F68D001E46D4 /* Life Calendar.entitlements */,
 			);
 			path = "macOS Codebase";
 			sourceTree = "<group>";
