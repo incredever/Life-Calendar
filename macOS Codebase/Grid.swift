@@ -34,7 +34,7 @@ struct Grid {
     var tiles: [Tile]
     
     /// The dimensions at which the grid will be generated.
-    let size: CGSize // TODO: initialize as CGSize(width: 330, height: 574)
+    let size: CGSize
     
     /// The point at which the grid will position itself within its parent's coordinate system.
     var position: CGPoint
