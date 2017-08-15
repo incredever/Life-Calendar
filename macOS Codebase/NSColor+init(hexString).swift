@@ -1,14 +1,14 @@
 //
 //  NSColor+init(hexString).swift
-//  Life Calendar
+//  https://github.com/wvdk/A-Swift-Vocabulary
+//
+//  Thanks https://gist.github.com/yannickl/16f0ed38f0698d9a8ae7
 //
 //  Created by Wesley Van der Klomp on 7/25/17.
 //
 
 import Cocoa
 
-// TODO: Rewrite this to be cleaner.
-// Credit: https://gist.github.com/yannickl/16f0ed38f0698d9a8ae7
 extension NSColor {
     
     convenience init(hexString:String) {
