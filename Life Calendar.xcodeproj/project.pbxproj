@@ -30,6 +30,7 @@
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Early Mockups.sketch"; sourceTree = "<group>"; };
 		DE1232991F42E66F001E46D4 /* 2017-08-15.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-15.md"; sourceTree = "<group>"; };
+		DE12329A1F42F68D001E46D4 /* Life Calendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Life Calendar.entitlements"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE1383001F31BA8100EA1238 /* 2017-08-02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-02.md"; sourceTree = "<group>"; };
 		DE1482311F35FBE20078B268 /* 2017-08-05.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-05.md"; sourceTree = "<group>"; };
@@ -152,6 +153,7 @@
 		DED97A2E1EDE0C3A00F2100B = {
 			isa = PBXGroup;
 			children = (
+				DE12329A1F42F68D001E46D4 /* Life Calendar.entitlements */,
 				DE10292A1EF4ACF7008E894E /* README.md */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
@@ -236,6 +238,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = B2HHR6H4K6;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -402,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Life Calendar.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -419,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Life Calendar.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
