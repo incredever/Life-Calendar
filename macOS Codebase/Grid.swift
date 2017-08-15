@@ -65,10 +65,9 @@ struct Grid {
             for weekNumber in 1...52 {
                 let y = (tileSize + tilePadding) * yearNumber * -1
                 let x = (tileSize + tilePadding) * weekNumber
-                let position = CGPoint(x: x, y: y) // TODO: Calculate incremention position
                 let tSize = CGSize(width: tileSize, height: tileSize)
                 let tColor = Colors.blankTile
-                let t = Tile(span: currentSpan, position: position, size: tSize, color: tColor)
+                let t = Tile(span: currentSpan, position: CGPoint(x: x, y: y), size: tSize, color: tColor)
                 
                 tiles.append(t)
                 
