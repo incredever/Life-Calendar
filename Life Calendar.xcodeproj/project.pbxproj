@@ -155,7 +155,6 @@
 		DED97A2E1EDE0C3A00F2100B = {
 			isa = PBXGroup;
 			children = (
-				DE12329A1F42F68D001E46D4 /* Life Calendar.entitlements */,
 				DE10292A1EF4ACF7008E894E /* README.md */,
 				DE63F8A21EED86DE00B2BF05 /* Developer's Log */,
 				DED97A391EDE0C3A00F2100B /* macOS Codebase */,
@@ -193,6 +192,7 @@
 				DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
+				DE12329A1F42F68D001E46D4 /* Life Calendar.entitlements */,
 			);
 			path = "macOS Codebase";
 			sourceTree = "<group>";
