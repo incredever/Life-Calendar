@@ -29,6 +29,7 @@
 		DE0ADCA31EF5ECC30021BDFD /* 2017-06-17.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-17.md"; sourceTree = "<group>"; };
 		DE10292A1EF4ACF7008E894E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Early Mockups.sketch"; sourceTree = "<group>"; };
+		DE1232991F42E66F001E46D4 /* 2017-08-15.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-15.md"; sourceTree = "<group>"; };
 		DE137D441EFAD48C001C2E05 /* 2017-06-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-21.md"; sourceTree = "<group>"; };
 		DE1383001F31BA8100EA1238 /* 2017-08-02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-02.md"; sourceTree = "<group>"; };
 		DE1482311F35FBE20078B268 /* 2017-08-05.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-05.md"; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				DE1383001F31BA8100EA1238 /* 2017-08-02.md */,
 				DE1482311F35FBE20078B268 /* 2017-08-05.md */,
 				DE96B5931F36F6ED00B24FF3 /* 2017-08-06.md */,
+				DE1232991F42E66F001E46D4 /* 2017-08-15.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
