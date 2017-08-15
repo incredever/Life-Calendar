@@ -6,7 +6,7 @@ What is Life Calendar? Short answer...
 
 I don't know yet.
 
-If you'd like to follow along with the development you can read the [Developer's Log](https://github.com/wvdk/Life-Calendar/tree/master/Developer's%20Log) and watch this repo.
+If you'd like to follow along you can read the [Developer's Log](https://github.com/wvdk/Life-Calendar/tree/master/Developer's%20Log).
 
 ## Future Roadmap
 
