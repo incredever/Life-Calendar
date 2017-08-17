@@ -13,4 +13,3 @@ enum Color: String {
     case blankTile = "000001"
     case red = "FF0000"
 }
-

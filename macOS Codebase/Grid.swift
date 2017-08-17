@@ -18,17 +18,7 @@ struct Grid {
     let end: Date
     
     /// An SKNode for use in a SpriteKit scene.
-    var node: SKNode {
-        let n = SKNode()
-        
-        n.position = position
-        
-        for tile in tiles {
-            n.addChild(tile.node)
-        }
-
-        return n
-    }
+    var node: SKNode
 
     /// An array of tiles spanning from the `start` date to `end` date. Each tile represents a one week.
     var tiles: [Tile]
@@ -57,6 +47,8 @@ struct Grid {
         self.size = size
         self.position = position
         self.tiles = []
+        node = SKNode()
+
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
@@ -76,5 +68,13 @@ struct Grid {
                 currentSpan = DateInterval.oneWeek(startingFom: span.end)
             }
         }
+        
+        
+        node.position = position
+        
+        for tile in tiles {
+            node.addChild(tile.node)
+        }
+        
     }
 }
