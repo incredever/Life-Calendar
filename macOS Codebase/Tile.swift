@@ -24,7 +24,10 @@ struct Tile {
     /// The size in points of the square tile.
     var size = CGSize(width: 10, height: 10) {
         didSet {
-            // TODO: update the nodes with new size
+            let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+            let path = CGPath(rect: rect, transform: nil)
+
+            node.path = path
         }
     }
     
