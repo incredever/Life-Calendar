@@ -67,9 +67,13 @@ struct Grid {
                 let x = (tileSize + tilePadding) * weekNumber
                 let tSize = CGSize(width: tileSize, height: tileSize)
                 let tColor = Color.blankTile
-                let t = Tile(span: currentSpan, position: CGPoint(x: x, y: y), size: tSize, color: tColor)
+                var tile = Tile(span: currentSpan)
                 
-                tiles.append(t)
+                tile.position = CGPoint(x: x, y: y)
+                tile.size = tSize
+                tile.color = tColor
+
+                tiles.append(tile)
                 
                 currentSpan = DateInterval.oneWeek(startingFom: span.end)
             }
