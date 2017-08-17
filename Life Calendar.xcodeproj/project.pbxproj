@@ -66,6 +66,7 @@
 		DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-07.md"; sourceTree = "<group>"; };
 		DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockup 2 - Basic \"Life In Weeks\" Idea.png"; sourceTree = "<group>"; };
 		DE9C8D8A1F0F86A6001F05A0 /* 2017-07-07 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-07 Fig 1.png"; sourceTree = "<group>"; };
+		DEA6857C1F45AF5800E7EE02 /* 2017-08-17 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-17 Fig 1.png"; sourceTree = "<group>"; };
 		DEA8DE5D1EF4C0170054CAF0 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 				DE3444011F2B570F001DAE8F /* 2017-07-28 Fig 1.png */,
 				DE3444021F2B5711001DAE8F /* 2017-07-28 Fig 2.png */,
 				DE2472901F42FA6A00F39F58 /* 2017-08-15 Fig 1.png */,
+				DEA6857C1F45AF5800E7EE02 /* 2017-08-17 Fig 1.png */,
 			);
 			path = "embed images";
 			sourceTree = "<group>";
