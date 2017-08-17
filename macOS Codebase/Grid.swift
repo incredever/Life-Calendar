@@ -74,6 +74,7 @@ struct Grid {
         
         
         node.position = position
+        node.isUserInteractionEnabled = true
         
         for tile in tiles {
             node.addChild(tile.node)
