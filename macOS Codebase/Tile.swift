@@ -15,19 +15,31 @@ struct Tile {
     let span: DateInterval
     
     /// The point at which the tile will position itself within its parent's coordinate system.
-    var position: CGPoint
+    var position = CGPoint(x: 0, y: 0) {
+        didSet {
+            node.position = position
+        }
+    }
     
     /// The size in points of the square tile.
-    let size: CGSize
+    var size = CGSize(width: 10, height: 10) {
+        didSet {
+            // TODO: update the nodes with new size
+        }
+    }
     
     /// The color of the tile.
     let color: Colors
     
     /// An SKShapeNode for use in a SpriteKit scene.
-    var node: SKShapeNode {
-        let n = SKShapeNode(rect: CGRect(origin: position, size: size))
-        n.fillColor = NSColor(hexString: color.rawValue)
+    var node: SKShapeNode
+    
+    /// Creates a Tile with default values.
+    init() {
+        node = SKShapeNode(rect: CGRect(origin: position, size: size))
         
-        return n
+        node.fillColor = NSColor(hexString: color.rawValue)
+        node.lineWidth = 0.0
+        node.position = position
     }
 }
