@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Fonts: String {
+enum Font: String {
     case yearLabel = "Avenir Next"
 }
