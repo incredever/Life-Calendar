@@ -13,13 +13,9 @@ class GridNode: SKNode {
     var owner: Grid? = nil
     
     override func mouseDown(with event: NSEvent) {
-        guard let owner = owner else {
-            print("No owner for GridNode found.")
-            return
-        }
+        guard let owner = owner else { return }
         
-       owner.click(at: event.location(in: self))
-        
+        owner.click(at: event.location(in: self))
     }
     
 }
