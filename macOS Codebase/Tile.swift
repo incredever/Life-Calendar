@@ -39,11 +39,14 @@ struct Tile {
     var node: SKShapeNode
     
     /// Creates a Tile with default values.
-    init() {
+    init(span: DateInterval) {
         node = SKShapeNode(rect: CGRect(origin: position, size: size))
         
         node.fillColor = NSColor(hexString: color.rawValue)
         node.lineWidth = 0.0
         node.position = position
+        
+        self.span = span
     }
+    
 }
