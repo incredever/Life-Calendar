@@ -24,10 +24,14 @@ struct Grid {
     var tiles: [Tile]
     
     /// The dimensions at which the grid will be generated.
-    let size: CGSize
+    var size: CGSize
     
     /// The point at which the grid will position itself within its parent's coordinate system.
-    var position: CGPoint
+    var position: CGPoint {
+        didSet {
+            node.position = position
+        }
+    }
     
     /// The size each square tile should be in points.
     private let tileSize = 4
@@ -47,8 +51,7 @@ struct Grid {
         self.size = size
         self.position = position
         self.tiles = []
-        node = SKNode()
-
+        self.node = SKNode()
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
