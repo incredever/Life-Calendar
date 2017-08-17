@@ -29,7 +29,11 @@ struct Tile {
     }
     
     /// The color of the tile.
-    let color: Colors
+    var color = Colors.blankTile {
+        didSet {
+            node.fillColor = NSColor(hexString: color.rawValue)
+        }
+    }
     
     /// An SKShapeNode for use in a SpriteKit scene.
     var node: SKShapeNode
