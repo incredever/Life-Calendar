@@ -75,10 +75,15 @@ struct Grid {
         
         node.position = position
         node.isUserInteractionEnabled = true
+        node.owner = self
         
         for tile in tiles {
             node.addChild(tile.node)
         }
         
+    }
+    
+    func click(at point: CGPoint) {
+        print("Grid: Got click at point: \(point)")
     }
 }
