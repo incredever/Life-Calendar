@@ -12,4 +12,5 @@ enum Color: String {
     case yearLabelBlack = "000000"
     case blankTile = "000001"
     case red = "FF0000"
+    case blue = "0000FF"
 }
