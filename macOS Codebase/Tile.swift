@@ -29,7 +29,7 @@ struct Tile {
     }
     
     /// The color of the tile.
-    var color = Colors.blankTile {
+    var color = Color.blankTile {
         didSet {
             node.fillColor = NSColor(hexString: color.rawValue)
         }

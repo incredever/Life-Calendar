@@ -46,7 +46,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.isMovableByWindowBackground = true
         window.titleVisibility = .visible
         window.title = "Life Calendar"
-        window.backgroundColor = NSColor(hexString: Colors.sceneBackground.rawValue)
+        window.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         window.center()
         
         // Set the VC

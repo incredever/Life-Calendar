@@ -21,7 +21,7 @@ struct YearLabel {
     var fontName: Fonts
     
     /// The color the text should display as.
-    var fontColor: Colors
+    var fontColor: Color
     
     /// The size in points the text should display at.
     var fontSize: Double
@@ -39,7 +39,7 @@ struct YearLabel {
     }
     
     /// The primary initializer, containing parameters for all pertinent variables.
-    private init(text: String, font: Fonts, size: Double, color: Colors, position: CGPoint) {
+    private init(text: String, font: Fonts, size: Double, color: Color, position: CGPoint) {
 
         self.text = text
         self.position = position

@@ -66,7 +66,7 @@ struct Grid {
                 let y = (tileSize + tilePadding) * yearNumber * -1
                 let x = (tileSize + tilePadding) * weekNumber
                 let tSize = CGSize(width: tileSize, height: tileSize)
-                let tColor = Colors.blankTile
+                let tColor = Color.blankTile
                 let t = Tile(span: currentSpan, position: CGPoint(x: x, y: y), size: tSize, color: tColor)
                 
                 tiles.append(t)
