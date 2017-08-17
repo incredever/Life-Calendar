@@ -84,6 +84,21 @@ struct Grid {
     }
     
     func click(at point: CGPoint) {
+        
+        for i in 0..<tiles.count {
+            let currentTile = tiles[i]
+            
+            let topY = currentTile.position.y
+            let bottomY = topY - currentTile.size.height
+            
+            if point.y > bottomY && point.y < topY {
+                print("found a tile")
+                
+                var newTile = currentTile
+                newTile.color = .blue
+            }
+        }
+        
         print("Grid: Got click at point: \(point)")
     }
 }
