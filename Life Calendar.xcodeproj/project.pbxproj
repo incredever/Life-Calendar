@@ -59,6 +59,7 @@
 		DE6A83071F2607BB0088DBA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DE6A830B1F2613520088DBA3 /* 2017-07-24.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-24.md"; sourceTree = "<group>"; };
 		DE73E3F81F17B1EF00D8EB54 /* 2017-07-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13.md"; sourceTree = "<group>"; };
+		DE7F51CE1F4576D50096854F /* 2017-08-17.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-17.md"; sourceTree = "<group>"; };
 		DE96B5931F36F6ED00B24FF3 /* 2017-08-06.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-06.md"; sourceTree = "<group>"; };
 		DE9C8D861F0F6242001F05A0 /* 2017-07-07.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-07.md"; sourceTree = "<group>"; };
 		DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockup 2 - Basic \"Life In Weeks\" Idea.png"; sourceTree = "<group>"; };
@@ -122,6 +123,7 @@
 				DE1482311F35FBE20078B268 /* 2017-08-05.md */,
 				DE96B5931F36F6ED00B24FF3 /* 2017-08-06.md */,
 				DE1232991F42E66F001E46D4 /* 2017-08-15.md */,
+				DE7F51CE1F4576D50096854F /* 2017-08-17.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
