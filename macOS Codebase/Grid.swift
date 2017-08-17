@@ -65,13 +65,11 @@ struct Grid {
             for weekNumber in 1...52 {
                 let y = (tileSize + tilePadding) * yearNumber * -1
                 let x = (tileSize + tilePadding) * weekNumber
-                let tSize = CGSize(width: tileSize, height: tileSize)
-                let tColor = Color.blankTile
                 var tile = Tile(span: currentSpan)
                 
                 tile.position = CGPoint(x: x, y: y)
-                tile.size = tSize
-                tile.color = tColor
+                tile.size =  CGSize(width: tileSize, height: tileSize)
+                tile.color = Color.red
 
                 tiles.append(tile)
                 

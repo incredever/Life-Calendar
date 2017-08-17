@@ -11,5 +11,6 @@ enum Color: String {
     case sceneBackground = "F6F4F1"
     case yearLabelBlack = "000000"
     case blankTile = "000001"
+    case red = "FF0000"
 }
 
