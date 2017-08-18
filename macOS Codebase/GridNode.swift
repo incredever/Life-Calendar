@@ -18,4 +18,10 @@ class GridNode: SKNode {
         }
     }
     
+    override func mouseDragged(with event: NSEvent) {
+        if owner != nil {
+            owner?.drag(at: event.location(in: self))
+        }
+    }
+    
 }
