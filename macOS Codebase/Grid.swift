@@ -82,33 +82,26 @@ struct Grid {
         }
         
     }
-//
-//    private func rowOfTiles(at point: CGPoint) -> [Tile] {
-//        for i in 0..<tiles.count {
-//            var currentTile = tiles[i]
-//
-//            let topY = currentTile.position.y
-//            let bottomY = topY - currentTile.size.height
-//
-//            if point.y > bottomY && point.y < topY {
-//                print("found a tile")
-//
-//                currentTile.color = .blue
-//
-//                print("test")
-//            }
-//        }
-//    }
-//
-    mutating func click(at point: CGPoint) {
+
+    private func rowOfTiles(at point: CGPoint) -> [Tile] {
+        var foundTiles: [Tile] = []
+        
         for tile in tiles {
             let topY = tile.position.y
             let bottomY = topY - tile.size.height
             
             if point.y > bottomY && point.y < topY {
-                tile.color = .blue
+                foundTiles.append(tile)
             }
         }
+        
+        return foundTiles
+    }
+
+    mutating func click(at point: CGPoint) {
+        let row = rowOfTiles(at: point)
+        
+        let _ = row.map { $0.color = .blue }
     }
     
 }
