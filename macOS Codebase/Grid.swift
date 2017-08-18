@@ -125,4 +125,12 @@ struct Grid {
         }
     }
     
+    func drag(at point: CGPoint) {
+        let tile = tileAt(point)
+        
+        if let tile = tile {
+            tile.color = .blue
+        }
+    }
+    
 }
