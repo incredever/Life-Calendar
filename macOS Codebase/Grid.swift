@@ -84,18 +84,7 @@ struct Grid {
     }
 
     private func rowOfTiles(at point: CGPoint) -> [Tile] {
-        var foundTiles: [Tile] = []
-        
-        for tile in tiles {
-            let topY = tile.position.y
-            let bottomY = topY - tile.size.height
-            
-            if point.y > bottomY && point.y < topY {
-                foundTiles.append(tile)
-            }
-        }
-        
-        return foundTiles
+        return tiles.filter { point.y > ($0.position.y - $0.size.height) && point.y < $0.position.y }
     }
     
     private func tileAt(_ point: CGPoint) -> Tile? {
@@ -145,6 +134,10 @@ struct Grid {
             
             tile.color = .blue
         }
+        
+        let row = rowOfTiles(at: point)
+        
+        let _ = row.map { $0.color = .blankTile }
     }
     
     func mouseDragged(at point: CGPoint) {
