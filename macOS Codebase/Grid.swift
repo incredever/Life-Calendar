@@ -68,7 +68,7 @@ struct Grid {
 
                 tiles.append(tile)
                 
-                currentSpan = DateInterval.oneWeek(startingFom: span.end)
+                currentSpan = DateInterval.oneWeek(startingFom: span.start)
             }
         }
         
