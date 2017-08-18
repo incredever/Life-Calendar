@@ -14,7 +14,7 @@ class GridNode: SKNode {
     
     override func mouseDown(with event: NSEvent) {
         if owner != nil {
-            owner?.click(at: event.location(in: self))
+            owner?.mouseDown(at: event.location(in: self))
         }
     }
     

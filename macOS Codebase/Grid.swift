@@ -117,7 +117,7 @@ struct Grid {
         return foundTile
     }
 
-    mutating func click(at point: CGPoint) {
+    mutating func mouseDown(at point: CGPoint) {
         let tile = tileAt(point)
         
         if let tile = tile {
