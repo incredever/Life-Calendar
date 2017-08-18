@@ -97,11 +97,32 @@ struct Grid {
         
         return foundTiles
     }
+    
+    private func tileAt(_ point: CGPoint) -> Tile? {
+        var foundTile: Tile? = nil
+        
+        for tile in tiles {
+            let topY = tile.position.y
+            let bottomY = topY - tile.size.height
+            
+            let leftX = tile.position.x
+            let rightX = leftX + tile.size.width
+            
+            if point.y > bottomY && point.y < topY &&
+                point.x > leftX && point.x < rightX {
+                foundTile = tile
+            }
+        }
+        
+        return foundTile
+    }
 
     mutating func click(at point: CGPoint) {
-        let row = rowOfTiles(at: point)
+        let tile = tileAt(point)
         
-        let _ = row.map { $0.color = .blue }
+        if let tile = tile {
+            tile.color = .blue
+        }
     }
     
 }
