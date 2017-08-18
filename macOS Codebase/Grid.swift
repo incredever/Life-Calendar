@@ -100,15 +100,7 @@ struct Grid {
         let startDate = firstTile.span.start
         let endDate = secondTile.span.end
         
-        var foundTiles: [Tile] = []
-        
-        for tile in tiles {
-            if tile.span.start > endDate && tile.span.end > startDate {
-                foundTiles.append(tile)
-            }
-        }
-        
-        return foundTiles
+        return tiles.filter { $0.span.start > endDate && $0.span.end > startDate }
     }
 
     
