@@ -9,7 +9,7 @@ import Cocoa
 import SpriteKit
 
 /// A small square that represents one week of a human life.
-struct Tile {
+class Tile {
     
     /// The span of time which the tile represents.
     let span: DateInterval
