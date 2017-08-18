@@ -70,6 +70,7 @@
 		DEA8DE5D1EF4C0170054CAF0 /* 2017-06-11 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-06-11 Fig 1.png"; sourceTree = "<group>"; };
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
+		DEA938501F46C39100089539 /* 2017-08-18.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-18.md"; sourceTree = "<group>"; };
 		DEB7601A1F16758A009B742F /* 2017-07-13 Supplemental.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13 Supplemental.md"; sourceTree = "<group>"; };
 		DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1.0 Designs and Ideas.sketch"; sourceTree = "<group>"; };
 		DED586E61F38A62E00B30888 /* YearLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearLabel.swift; sourceTree = "<group>"; };
@@ -127,6 +128,7 @@
 				DE96B5931F36F6ED00B24FF3 /* 2017-08-06.md */,
 				DE1232991F42E66F001E46D4 /* 2017-08-15.md */,
 				DE7F51CE1F4576D50096854F /* 2017-08-17.md */,
+				DEA938501F46C39100089539 /* 2017-08-18.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
