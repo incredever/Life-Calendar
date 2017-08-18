@@ -116,11 +116,33 @@ struct Grid {
         
         return foundTile
     }
+    
+    private func tilesBetween(firstTile: Tile, secondTile: Tile) -> [Tile] {
+        let startDate = firstTile.span.start
+        let endDate = secondTile.span.end
+        
+        var foundTiles: [Tile] = []
+        
+        for tile in tiles {
+            if tile.span.start > endDate && tile.span.end > startDate {
+                foundTiles.append(tile)
+            }
+        }
+        
+        return foundTiles
+    }
 
+    
+    // MARK: Interaction handling
+    
+    private var firstTileInSelection: Tile? = nil
+    
     mutating func mouseDown(at point: CGPoint) {
         let tile = tileAt(point)
         
         if let tile = tile {
+            firstTileInSelection = tile
+            
             tile.color = .blue
         }
     }
