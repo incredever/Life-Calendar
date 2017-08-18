@@ -125,7 +125,15 @@ struct Grid {
         }
     }
     
-    func drag(at point: CGPoint) {
+    func mouseDragged(at point: CGPoint) {
+        let tile = tileAt(point)
+        
+        if let tile = tile {
+            tile.color = .green
+        }
+    }
+
+    func mouseUp(at point: CGPoint) {
         let tile = tileAt(point)
         
         if let tile = tile {
