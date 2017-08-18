@@ -89,16 +89,10 @@ struct Grid {
     
     private func tileAt(_ point: CGPoint) -> Tile? {
         return tiles.filter({ tile in
-            let topY = tile.position.y
-            let bottomY = topY - tile.size.height
-            let leftX = tile.position.x
-            let rightX = leftX + tile.size.width
-            
-            if point.y > bottomY && point.y < topY && point.x > leftX && point.x < rightX {
-                return true
-            }
-            
-            return false
+            let yRange = (tile.position.y - tile.size.height)...tile.position.y
+            let xRange = tile.position.x...(tile.position.x + tile.size.width)
+
+            return yRange.contains(point.y) && xRange.contains(point.x)
         }).first
     }
     
