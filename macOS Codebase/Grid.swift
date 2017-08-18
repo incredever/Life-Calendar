@@ -88,22 +88,18 @@ struct Grid {
     }
     
     private func tileAt(_ point: CGPoint) -> Tile? {
-        var foundTile: Tile? = nil
-        
-        for tile in tiles {
+        return tiles.filter({ tile in
             let topY = tile.position.y
             let bottomY = topY - tile.size.height
-            
             let leftX = tile.position.x
             let rightX = leftX + tile.size.width
             
-            if point.y > bottomY && point.y < topY &&
-                point.x > leftX && point.x < rightX {
-                foundTile = tile
+            if point.y > bottomY && point.y < topY && point.x > leftX && point.x < rightX {
+                return true
             }
-        }
-        
-        return foundTile
+            
+            return false
+        }).first
     }
     
     private func tilesBetween(firstTile: Tile, secondTile: Tile) -> [Tile] {
