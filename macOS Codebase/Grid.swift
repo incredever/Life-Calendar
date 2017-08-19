@@ -141,8 +141,9 @@ struct Grid {
             }
 
             currentTile.color = .blue
-            firstTileInSelection = nil
         }
+        
+        firstTileInSelection = nil
     }
     
 }
