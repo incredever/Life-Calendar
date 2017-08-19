@@ -114,7 +114,6 @@ struct Grid {
         }
     }
 
-    
     // MARK: Interaction handling
     
     private var firstTileInSelection: Tile? = nil
@@ -135,13 +134,14 @@ struct Grid {
         }
     }
 
-    func mouseUp(at point: CGPoint) {
+    mutating func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             if let startingTile = firstTileInSelection {
                 let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .blankTile }
             }
 
             currentTile.color = .blue
+            firstTileInSelection = nil
         }
     }
     
