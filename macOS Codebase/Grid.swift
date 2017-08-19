@@ -98,11 +98,8 @@ struct Grid {
         let start = firstTile.span.start
         let end = secondTile.span.end
         
-        return tiles.filter { tileFromArray in
-            let tileFromArrayStart = tileFromArray.span.start
-            let tileFromArrayEnd = tileFromArray.span.end
-            
-            if tileFromArrayStart >= start && tileFromArrayEnd <= end {
+        return tiles.filter { tileFromArray in            
+            if tileFromArray.span.start >= start && tileFromArray.span.end <= end {
                 return true
             } else {
                 return false
