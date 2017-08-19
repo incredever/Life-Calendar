@@ -102,15 +102,11 @@ struct Grid {
             let tileFromArrayStart = tileFromArray.span.start
             let tileFromArrayEnd = tileFromArray.span.end
             
-            
             if tileFromArrayStart >= start && tileFromArrayEnd <= end {
                 return true
             } else {
                 return false
             }
-            
-            
-            
         }
     }
 
