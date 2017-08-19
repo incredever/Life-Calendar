@@ -65,10 +65,10 @@ struct Grid {
                 tile.position = CGPoint(x: x, y: y)
                 tile.size =  CGSize(width: tileSize, height: tileSize)
                 tile.color = Color.red
-
+                
                 tiles.append(tile)
                 
-                currentSpan = DateInterval.oneWeek(startingFom: span.start)
+                currentSpan = DateInterval.oneWeek(startingFom: currentSpan.end)
             }
         }
         
