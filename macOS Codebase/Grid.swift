@@ -60,7 +60,7 @@ struct Grid {
             for weekNumber in 1...52 {
                 let y = (tileSize + tilePadding) * yearNumber * -1
                 let x = (tileSize + tilePadding) * weekNumber
-                var tile = Tile(span: currentSpan)
+                let tile = Tile(span: currentSpan)
                 
                 tile.position = CGPoint(x: x, y: y)
                 tile.size =  CGSize(width: tileSize, height: tileSize)
@@ -72,7 +72,6 @@ struct Grid {
             }
         }
         
-        
         node.position = position
         node.isUserInteractionEnabled = true
         node.owner = self
@@ -80,7 +79,6 @@ struct Grid {
         for tile in tiles {
             node.addChild(tile.node)
         }
-        
     }
 
     private func rowOfTiles(at point: CGPoint) -> [Tile] {
@@ -97,44 +95,53 @@ struct Grid {
     }
     
     private func tilesBetween(firstTile: Tile, secondTile: Tile) -> [Tile] {
-        let startDate = firstTile.span.start
-        let endDate = secondTile.span.end
+        let start = firstTile.span.start
+        let end = secondTile.span.end
         
-        return tiles.filter { $0.span.start > endDate && $0.span.end > startDate }
+        return tiles.filter { tileFromArray in
+            let tileFromArrayStart = tileFromArray.span.start
+            let tileFromArrayEnd = tileFromArray.span.end
+            
+            
+            if tileFromArrayStart >= start && tileFromArrayEnd <= end {
+                return true
+            } else {
+                return false
+            }
+            
+            
+            
+        }
     }
 
     
     // MARK: Interaction handling
     
     private var firstTileInSelection: Tile? = nil
-    
+
     mutating func mouseDown(at point: CGPoint) {
-        let tile = tileAt(point)
-        
-        if let tile = tile {
+        if let tile = tileAt(point) {
             firstTileInSelection = tile
-            
+
             tile.color = .blue
         }
-        
-        let row = rowOfTiles(at: point)
-        
-        let _ = row.map { $0.color = .blankTile }
     }
-    
+
     func mouseDragged(at point: CGPoint) {
         let tile = tileAt(point)
-        
+
         if let tile = tile {
             tile.color = .green
         }
     }
 
     func mouseUp(at point: CGPoint) {
-        let tile = tileAt(point)
-        
-        if let tile = tile {
-            tile.color = .blue
+        if let currentTile = tileAt(point) {
+            if let startingTile = firstTileInSelection {
+                let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .blankTile }
+            }
+
+            currentTile.color = .blue
         }
     }
     
