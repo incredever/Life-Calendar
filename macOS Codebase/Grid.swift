@@ -94,11 +94,12 @@ struct Grid {
         }).first
     }
     
+    /// Returns an array of tiles that fall between the `firstTile`'s start date and the `secondTile`'s end date.
     private func tilesBetween(firstTile: Tile, secondTile: Tile) -> [Tile] {
         let start = firstTile.span.start
         let end = secondTile.span.end
         
-        return tiles.filter { tileFromArray in            
+        return tiles.filter { tileFromArray in
             if tileFromArray.span.start >= start && tileFromArray.span.end <= end {
                 return true
             } else {
