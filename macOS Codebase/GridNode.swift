@@ -12,6 +12,18 @@ class GridNode: SKNode {
     
     var owner: Grid? = nil
     
+    init(position: CGPoint, owner: Grid? = nil) {
+        super.init()
+        
+        self.position = position
+        self.owner = owner
+        self.isUserInteractionEnabled = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func mouseDown(with event: NSEvent) {
         if owner != nil {
             owner?.mouseDown(at: event.location(in: self))

@@ -21,13 +21,13 @@ struct Grid {
     var node: GridNode
 
     /// An array of tiles spanning from the `start` date to `end` date. Each tile represents a one week.
-    var tiles: [Tile]
+    var tiles: [Tile] = []
     
     /// The dimensions at which the grid will be generated.
     let size: CGSize
     
     /// The point at which the grid will position itself within its parent's coordinate system.
-    var position: CGPoint {
+    var position = CGPoint(x: 0, y: 0) {
         didSet {
             node.position = position
         }
@@ -51,7 +51,7 @@ struct Grid {
         self.size = size
         self.position = position
         self.tiles = []
-        self.node = GridNode()
+        self.node = GridNode.init(position: position)
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
@@ -72,8 +72,6 @@ struct Grid {
             }
         }
         
-        node.position = position
-        node.isUserInteractionEnabled = true
         node.owner = self
         
         for tile in tiles {
