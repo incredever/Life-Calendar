@@ -1,5 +1,5 @@
 //
-//  YearLabel.swift
+//  Label.swift
 //  Life Calendar
 //
 //  Created by Wesley Van der Klomp on 8/7/17.
@@ -9,7 +9,7 @@ import Foundation
 import SpriteKit
 
 /// A label for indicating the year for a particular row of the grid.
-struct YearLabel {
+struct Label {
     
     /// The text displayed by the label. Since this is a *Year*Label, it should probably be a year, as in "1900" or "2017".
     var text: String

@@ -17,7 +17,7 @@
 		DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */; };
 		DE6A83081F2607BB0088DBA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A83071F2607BB0088DBA3 /* main.swift */; };
 		DE7F51D01F45A9110096854F /* GridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F51CF1F45A9110096854F /* GridNode.swift */; };
-		DED586E71F38A62E00B30888 /* YearLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E61F38A62E00B30888 /* YearLabel.swift */; };
+		DED586E71F38A62E00B30888 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E61F38A62E00B30888 /* Label.swift */; };
 		DED586E91F38A72500B30888 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E81F38A72500B30888 /* Font.swift */; };
 		DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
@@ -75,7 +75,7 @@
 		DEA938501F46C39100089539 /* 2017-08-18.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-18.md"; sourceTree = "<group>"; };
 		DEB7601A1F16758A009B742F /* 2017-07-13 Supplemental.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13 Supplemental.md"; sourceTree = "<group>"; };
 		DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1.0 Designs and Ideas.sketch"; sourceTree = "<group>"; };
-		DED586E61F38A62E00B30888 /* YearLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearLabel.swift; sourceTree = "<group>"; };
+		DED586E61F38A62E00B30888 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		DED586E81F38A72500B30888 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateInterval Extensions.swift"; sourceTree = "<group>"; };
 		DED78FAF1EFD74F700F860BF /* 2017-06-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-23.md"; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 				DE7F51CF1F45A9110096854F /* GridNode.swift */,
 				DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */,
 				DE3443FE1F29DCF1001DAE8F /* YearLabels.swift */,
-				DED586E61F38A62E00B30888 /* YearLabel.swift */,
+				DED586E61F38A62E00B30888 /* Label.swift */,
 				DE23A9CF1F28C579002C156D /* Tile.swift */,
 				DE3444031F2C67D6001DAE8F /* TilePopup.swift */,
 				DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */,
@@ -306,7 +306,7 @@
 				DE52C9821F29C4BC00BA1143 /* Grid.swift in Sources */,
 				DE23A9D01F28C579002C156D /* Tile.swift in Sources */,
 				DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */,
-				DED586E71F38A62E00B30888 /* YearLabel.swift in Sources */,
+				DED586E71F38A62E00B30888 /* Label.swift in Sources */,
 				DE3443FF1F29DCF1001DAE8F /* YearLabels.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
