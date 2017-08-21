@@ -126,6 +126,7 @@ struct WeeksGrid {
         }
     }
     
+    /// Handles mouse down events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseDown(at point: CGPoint) {
         if let tile = tileAt(point) {
             firstTileInSelection = tile
@@ -134,6 +135,7 @@ struct WeeksGrid {
         }
     }
 
+    /// Handles mouse dragging events passed from some NSResponder subclass - usually GridNode.
     func mouseDragged(at point: CGPoint) {
         let tile = tileAt(point)
 
@@ -142,6 +144,7 @@ struct WeeksGrid {
         }
     }
 
+    /// Handles mouse up events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             if let startingTile = firstTileInSelection {
