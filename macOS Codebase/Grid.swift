@@ -82,10 +82,12 @@ struct Grid {
         }
     }
 
+    /// Returns an array of every tile which falls along the x axis.
     private func rowOfTiles(at point: CGPoint) -> [Tile] {
         return tiles.filter { point.y > ($0.position.y - $0.size.height) && point.y < $0.position.y }
     }
     
+    /// Returns the tile as a point in the grid's coordinate system.
     private func tileAt(_ point: CGPoint) -> Tile? {
         return tiles.filter({ tile in
             let halfPadding = CGFloat(tilePadding) / 2.0
