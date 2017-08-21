@@ -23,6 +23,8 @@ struct WeeksGrid {
     /// An array of tiles spanning from the `start` date to `end` date. Each tile represents a one week.
     private var tiles: [Tile] = []
     
+    private var staticYearLabels: [Label] = []
+    
     /// The point at which the grid will position itself within its parent's coordinate system.
     var position = CGPoint(x: 0, y: 0) {
         didSet {
@@ -36,19 +38,12 @@ struct WeeksGrid {
     /// A private constant number of points to put between each tile.
     private let tilePadding = 2
     
-    /// A private constant number of points to leave blank for the left side year labels
-    private let yearLabelGutterWidth = 50
+    private var firstTileInSelection: Tile? = nil
     
     /// The span of time between `start` and `end`.
     private var span: DateInterval {
         return DateInterval(start: start, end: end)
     }
-    
-    /// A private constant number of year labels that should fall along the left side of the grid.
-//    private let numberOfStaticYearLabels = 5
-
-    /// A private constant array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
-//    private let staticLabels: [Label]
 
     /// Creates a grid which shows tiles for every week between `start` and `end`.
     init(start: Date, end: Date, position: CGPoint) {
@@ -62,8 +57,9 @@ struct WeeksGrid {
         var currentSpan = DateInterval.oneWeek(startingFom: start)
         
         for yearNumber in 0...span.numberOfYearsWithin() {
+            let y = (tileSize + tilePadding) * yearNumber * -1
+
             for weekNumber in 1...52 {
-                let y = (tileSize + tilePadding) * yearNumber * -1
                 let x = (tileSize + tilePadding) * weekNumber
                 let tile = Tile(span: currentSpan)
                 
@@ -75,6 +71,12 @@ struct WeeksGrid {
                 
                 currentSpan = DateInterval.oneWeek(startingFom: currentSpan.end)
             }
+            
+            if yearNumber % 20 == 0 {
+                let label = Label(text: "test", position: CGPoint(x: 0, y: y))
+                
+                staticYearLabels.append(label)
+            }
         }
         
         node.owner = self
@@ -83,16 +85,9 @@ struct WeeksGrid {
             node.addChild(tile.node)
         }
         
-        
-        
-        // GRID STUFF
-        let n = 100
-        let onlyNthTiles = tiles.enumerated().flatMap {
-            return $0.offset % n == n - 1 ? nil : $0.element
+        for label in staticYearLabels {
+            node.addChild(label.node)
         }
-        
-        
-        
     }
 
     /// Returns an array of every tile which falls along the x axis.
@@ -122,11 +117,7 @@ struct WeeksGrid {
             return tiles.filter { $0.span.start <= start && $0.span.end >= end }
         }
     }
-
-    // MARK: Interaction handling
     
-    private var firstTileInSelection: Tile? = nil
-
     mutating func mouseDown(at point: CGPoint) {
         if let tile = tileAt(point) {
             firstTileInSelection = tile
