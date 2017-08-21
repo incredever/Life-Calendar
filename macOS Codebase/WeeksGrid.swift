@@ -56,14 +56,29 @@ struct WeeksGrid {
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
         
+        let gutterWidthForYearLabels = 50
+        
         for yearNumber in 0...span.numberOfYearsWithin() {
             let y = (tileSize + tilePadding) * yearNumber * -1
 
+            // Create the year label
+            if yearNumber % 20 == 0 {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "yyyy"
+                
+                let year = formatter.string(from: currentSpan.start)
+                
+                let label = Label(text: year, position: CGPoint(x: gutterWidthForYearLabels / 2, y: y))
+                
+                staticYearLabels.append(label)
+            }
+            
+            // Create the row of tiles
             for weekNumber in 1...52 {
                 let x = (tileSize + tilePadding) * weekNumber
                 let tile = Tile(span: currentSpan)
                 
-                tile.position = CGPoint(x: x, y: y)
+                tile.position = CGPoint(x: x + gutterWidthForYearLabels, y: y)
                 tile.size =  CGSize(width: tileSize, height: tileSize)
                 tile.color = .blankTile
                 
@@ -72,11 +87,7 @@ struct WeeksGrid {
                 currentSpan = DateInterval.oneWeek(startingFom: currentSpan.end)
             }
             
-            if yearNumber % 20 == 0 {
-                let label = Label(text: "test", position: CGPoint(x: 0, y: y))
-                
-                staticYearLabels.append(label)
-            }
+            
         }
         
         node.owner = self
