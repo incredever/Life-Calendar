@@ -10,9 +10,9 @@ import SpriteKit
 
 class GridNode: SKNode {
     
-    var owner: Grid? = nil
+    var owner: WeeksGrid? = nil
     
-    init(position: CGPoint, owner: Grid? = nil) {
+    init(position: CGPoint, owner: WeeksGrid? = nil) {
         super.init()
         
         self.position = position

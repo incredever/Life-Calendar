@@ -1,5 +1,5 @@
 //
-//  Grid.swift
+//  WeeksGrid.swift
 //  Life Calendar
 //
 //  Created by Wesley Van der Klomp on 7/27/17.
@@ -9,7 +9,7 @@ import Cocoa
 import SpriteKit
 
 /// A grid of tiles, each representing one week of a human life.
-struct Grid {
+struct WeeksGrid {
     
     /// The date for the first tile in the grid.
     let start: Date
@@ -44,19 +44,19 @@ struct Grid {
         return DateInterval(start: start, end: end)
     }
     
-//    /// A private constant number of year labels that should fall along the left side of the grid.
+    /// A private constant number of year labels that should fall along the left side of the grid.
 //    private let numberOfStaticYearLabels = 5
-//
-//    /// A private constant array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
+
+    /// A private constant array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
 //    private let staticLabels: [Label]
-//
+
     /// Creates a grid which shows tiles for every week between `start` and `end`.
     init(start: Date, end: Date, position: CGPoint) {
         self.start = start
         self.end = end
         self.position = position
         self.tiles = []
-        self.node = GridNode.init(position: position)
+        self.node = GridNode(position: position)
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
@@ -82,6 +82,17 @@ struct Grid {
         for tile in tiles {
             node.addChild(tile.node)
         }
+        
+        
+        
+        // GRID STUFF
+        let n = 100
+        let onlyNthTiles = tiles.enumerated().flatMap {
+            return $0.offset % n == n - 1 ? nil : $0.element
+        }
+        
+        
+        
     }
 
     /// Returns an array of every tile which falls along the x axis.
