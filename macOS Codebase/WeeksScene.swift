@@ -20,9 +20,7 @@ class WeeksScene: SKScene {
         let myBirth = dateFormatter.date(from: "1993-01-05")!
         let possibleDeath = dateFormatter.date(from: "2093-01-04")!
         let size = CGSize(width: 330, height: 574)
-        let gridLeftSidePadding = 90
-        let gridTopPadding = 5
-        let gridPosition = CGPoint(x: gridLeftSidePadding, y: Int(size.height) - gridTopPadding)
+        let gridPosition = CGPoint(x: 20, y: Int(size.height) - 10)
 
         let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
 
