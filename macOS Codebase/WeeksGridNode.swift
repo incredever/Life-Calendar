@@ -42,4 +42,10 @@ class WeeksGridNode: SKNode {
         }
     }
     
+    override func mouseMoved(with event: NSEvent) {
+        if owner != nil {
+            owner?.mouseMoved(at: event.location(in: self))
+        }
+    }
+    
 }

@@ -157,4 +157,9 @@ struct WeeksGrid {
         firstTileInSelection = nil
     }
     
+    /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
+    mutating func mouseMoved(at point: CGPoint) {
+        print(point)
+    }
+    
 }
