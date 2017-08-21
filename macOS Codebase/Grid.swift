@@ -39,6 +39,9 @@ struct Grid {
     /// The number of points to put between each tile.
     private let tilePadding = 2
     
+    /// The number of points to leave blank for the left side year labels
+    private let yearLabelGutterWidth = 50
+    
     /// The span of time between `start` and `end`.
     private var span: DateInterval {
         return DateInterval(start: start, end: end)
