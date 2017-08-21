@@ -159,6 +159,7 @@ struct WeeksGrid {
     
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseMoved(at point: CGPoint) {
+        let _ = rowOfTiles(at: point).map { $0.color = .blue }
         print(point)
     }
     
