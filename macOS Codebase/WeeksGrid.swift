@@ -55,7 +55,6 @@ struct WeeksGrid {
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
-        
         let gutterWidthForYearLabels = 50
         
         for yearNumber in 0...span.numberOfYearsWithin() {
@@ -86,8 +85,6 @@ struct WeeksGrid {
                 
                 currentSpan = DateInterval.oneWeek(startingFom: currentSpan.end)
             }
-            
-            
         }
         
         node.owner = self
