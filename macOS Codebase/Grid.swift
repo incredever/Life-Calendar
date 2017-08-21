@@ -23,9 +23,6 @@ struct Grid {
     /// An array of tiles spanning from the `start` date to `end` date. Each tile represents a one week.
     var tiles: [Tile] = []
     
-    /// The dimensions at which the grid will be generated.
-    let size: CGSize
-    
     /// The point at which the grid will position itself within its parent's coordinate system.
     var position = CGPoint(x: 0, y: 0) {
         didSet {
@@ -47,17 +44,16 @@ struct Grid {
         return DateInterval(start: start, end: end)
     }
     
-    /// A private constant number of year labels that should fall along the left side of the grid.
-    private let numberOfStaticYearLabels = 5
-    
-    /// A private constant array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
-    private let staticLabels: [Label]
-    
+//    /// A private constant number of year labels that should fall along the left side of the grid.
+//    private let numberOfStaticYearLabels = 5
+//
+//    /// A private constant array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
+//    private let staticLabels: [Label]
+//
     /// Creates a grid which shows tiles for every week between `start` and `end`.
-    init(start: Date, end: Date, size: CGSize, position: CGPoint) {
+    init(start: Date, end: Date, position: CGPoint) {
         self.start = start
         self.end = end
-        self.size = size
         self.position = position
         self.tiles = []
         self.node = GridNode.init(position: position)
