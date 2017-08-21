@@ -1,5 +1,5 @@
 //
-//  GridNode.swift
+//  WeeksGridNode.swift
 //  Life Calendar
 //
 //  Created by Wesley Van der Klomp on 8/17/17.
@@ -8,7 +8,7 @@
 import Foundation
 import SpriteKit
 
-class GridNode: SKNode {
+class WeeksGridNode: SKNode {
     
     var owner: WeeksGrid? = nil
     
