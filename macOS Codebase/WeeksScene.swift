@@ -27,16 +27,6 @@ class WeeksScene: SKScene {
         let grid = Grid(start: myBirth, end: possibleDeath, position: gridPosition)
 
         addChild(grid.node)
-        
-        /// A `YearLabels` instance for displaying the year spanning the human's life.
-        let labels = YearLabels()
-        
-        let labelsLeftSidePadding = 25
-        let labelsTopPadding = 5
-        
-        labels.position = CGPoint(x: labelsLeftSidePadding, y: Int(labels.ultimiteSize.height) - labelsTopPadding)
-        
-        addChild(labels)
     }
     
 }
