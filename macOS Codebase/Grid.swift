@@ -47,6 +47,12 @@ struct Grid {
         return DateInterval(start: start, end: end)
     }
     
+    /// The number of year labels that should fall along the left side of the grid.
+    private let numberOfStaticYearLabels = 5
+    
+    /// An array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
+    private let staticLabels: [Label]
+    
     /// Creates a grid which shows tiles for every week between `start` and `end`.
     init(start: Date, end: Date, size: CGSize, position: CGPoint) {
         self.start = start
