@@ -21,7 +21,7 @@ struct WeeksGrid {
     var node: GridNode
 
     /// An array of tiles spanning from the `start` date to `end` date. Each tile represents a one week.
-    var tiles: [Tile] = []
+    private var tiles: [Tile] = []
     
     /// The point at which the grid will position itself within its parent's coordinate system.
     var position = CGPoint(x: 0, y: 0) {
