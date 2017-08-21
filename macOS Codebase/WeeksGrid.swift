@@ -69,7 +69,7 @@ struct WeeksGrid {
                 
                 tile.position = CGPoint(x: x, y: y)
                 tile.size =  CGSize(width: tileSize, height: tileSize)
-                tile.color = Color.red
+                tile.color = .blankTile
                 
                 tiles.append(tile)
                 
@@ -146,7 +146,7 @@ struct WeeksGrid {
     mutating func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             if let startingTile = firstTileInSelection {
-                let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .blankTile }
+                let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .red }
             }
 
             currentTile.color = .blue
