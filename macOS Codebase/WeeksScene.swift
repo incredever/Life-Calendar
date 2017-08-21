@@ -18,7 +18,7 @@ class WeeksScene: SKScene {
         let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-mm-dd"
         let myBirth = dateFormatter.date(from: "1993-01-05")!
-        let possibleDeath = dateFormatter.date(from: "2073-01-04")!
+        let possibleDeath = dateFormatter.date(from: "2093-01-04")!
         let size = CGSize(width: 330, height: 574)
         let gridLeftSidePadding = 90
         let gridTopPadding = 5
