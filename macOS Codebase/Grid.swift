@@ -36,10 +36,10 @@ struct Grid {
     /// The size each square tile should be in points.
     private let tileSize = 4
     
-    /// The number of points to put between each tile.
+    /// A private constant number of points to put between each tile.
     private let tilePadding = 2
     
-    /// The number of points to leave blank for the left side year labels
+    /// A private constant number of points to leave blank for the left side year labels
     private let yearLabelGutterWidth = 50
     
     /// The span of time between `start` and `end`.
@@ -47,10 +47,10 @@ struct Grid {
         return DateInterval(start: start, end: end)
     }
     
-    /// The number of year labels that should fall along the left side of the grid.
+    /// A private constant number of year labels that should fall along the left side of the grid.
     private let numberOfStaticYearLabels = 5
     
-    /// An array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
+    /// A private constant array of labels that will not change. They are to be displayed in the node. There should be `numberOfStaticYearLabels` of them.
     private let staticLabels: [Label]
     
     /// Creates a grid which shows tiles for every week between `start` and `end`.
