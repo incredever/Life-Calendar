@@ -9,4 +9,10 @@ import Foundation
 
 class EventsDisplaySidebar {
     
+    var timeline: Timeline
+    
+    init(timeline: Timeline) {
+        self.timeline = timeline
+    }
+    
 }
