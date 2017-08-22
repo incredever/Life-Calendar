@@ -141,6 +141,7 @@ struct WeeksGrid {
     mutating func mouseDragged(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             createYearLabel(for: currentTile)
+            createDateLabel(for: currentTile)
             selectUpTo(tile: currentTile)
         }
     }
@@ -149,6 +150,8 @@ struct WeeksGrid {
     mutating func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             selectUpTo(tile: currentTile)
+            node.childNode(withName: "HoverYearLabel")?.removeFromParent()
+            node.childNode(withName: "HoverDateLabel")?.removeFromParent()
         }
         
         firstTileInSelection = nil
@@ -158,7 +161,11 @@ struct WeeksGrid {
     mutating func mouseMoved(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             createYearLabel(for: currentTile)
+            createDateLabel(for: currentTile)
             selectUpTo(tile: currentTile)
+        } else {
+            node.childNode(withName: "HoverYearLabel")?.removeFromParent()
+            node.childNode(withName: "HoverDateLabel")?.removeFromParent()
         }
     }
     
@@ -170,6 +177,21 @@ struct WeeksGrid {
         
         label.fontColor = .red
         label.node.name = "HoverYearLabel"
+        
+        node.addChild(label.node)
+    }
+    
+    func createDateLabel(for tile: Tile) {
+        node.childNode(withName: "HoverDateLabel")?.removeFromParent()
+        
+        let simpleMonthAndDaysDateFormatter = DateFormatter()
+        simpleMonthAndDaysDateFormatter.dateFormat = "mm/dd"
+        
+        let startDate = simpleMonthAndDaysDateFormatter.string(from: tile.span.start)
+        let label = Label(text: startDate, position: CGPoint(x: tile.position.x , y: 0))
+        
+        label.fontColor = .red
+        label.node.name = "HoverDateLabel"
         
         node.addChild(label.node)
     }
