@@ -9,7 +9,7 @@ import Foundation
 import SpriteKit
 
 /// A label for indicating the year for a particular row of the grid.
-struct Label {
+class Label {
     
     /// The text displayed by the label. Since this is a *Year*Label, it should probably be a year, as in "1900" or "2017".
     var text: String
@@ -49,12 +49,12 @@ struct Label {
     }
 
     /// Creates a year label with default styling and position.
-    init(text: String) {
+    convenience init(text: String) {
         self.init(text: text, font: .yearLabel, size: 14, color: .yearLabelBlack, position: CGPoint(x: 0, y: 0))
     }
     
     /// Creates a year label with default styling at a custom position.
-    init(text: String, position: CGPoint) {
+    convenience init(text: String, position: CGPoint) {
         self.init(text: text, font: .yearLabel, size: 14, color: .yearLabelBlack, position: position)
     }
     
