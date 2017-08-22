@@ -11,9 +11,11 @@ func makeMainMenu() -> NSMenu {
     let mainMenu = NSMenu()
     let mainAppMenuItem = NSMenuItem(title: "Application", action: nil, keyEquivalent: "")
     let mainFileMenuItem = NSMenuItem(title: "File", action: nil, keyEquivalent: "")
-    
+    let mainWindowMenuItem = NSMenuItem(title: "Window", action: nil, keyEquivalent: "")
+
     mainMenu.addItem(mainAppMenuItem)
     mainMenu.addItem(mainFileMenuItem)
+    mainMenu.addItem(mainWindowMenuItem)
 
     let appMenu = NSMenu()
     mainAppMenuItem.submenu = appMenu
@@ -39,6 +41,10 @@ func makeMainMenu() -> NSMenu {
     let fileMenu = NSMenu(title: "File")
     mainFileMenuItem.submenu = fileMenu
     fileMenu.addItem(withTitle: "New...", action: #selector(NSDocumentController.newDocument(_:)), keyEquivalent: "n")
+    
+    let windowMenu = NSMenu(title: "Window")
+    mainWindowMenuItem.submenu = windowMenu
+    windowMenu.addItem(withTitle: "Minimize", action: #selector(NSWindow.miniaturize(_:)), keyEquivalent: "m")
     
     return mainMenu
 }
