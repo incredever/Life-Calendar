@@ -12,40 +12,36 @@ import SpriteKit
 class Label {
     
     /// The text displayed by the label. Since this is a *Year*Label, it should probably be a year, as in "1900" or "2017".
-    var text: String
+    var text: String // TODO: Create setter that updates node
     
     /// The point at which the label will position itself within its parent's coordinate system.
-    var position: CGPoint
+    var position: CGPoint // TODO: Create setter that updates node
     
     /// The font to be used for displaying text.
-    var fontName: Font
+    var fontName: Font // TODO: Create setter that updates node
     
     /// The color the text should display as.
-    var fontColor: Color
+    var fontColor: Color // TODO: Create setter that updates node
     
     /// The size in points the text should display at.
-    var fontSize: Double
+    var fontSize: Double // TODO: Create setter that updates node
     
     /// An SKLabelNode for use in a SpriteKit scene.
-    var node: SKLabelNode {
-        let node = SKLabelNode(fontNamed: self.fontName.rawValue)
-        
-        node.text = self.text
-        node.fontColor = NSColor(hexString: self.fontColor.rawValue)
-        node.fontSize = CGFloat(self.fontSize)
-        node.position = self.position
-        
-        return node
-    }
+    var node: SKLabelNode
     
     /// The primary initializer, containing parameters for all pertinent variables.
     private init(text: String, font: Font, size: Double, color: Color, position: CGPoint) {
-
         self.text = text
         self.position = position
         self.fontName = font
         self.fontColor = color
         self.fontSize = size
+        
+        node = SKLabelNode(fontNamed: self.fontName.rawValue)
+        node.text = self.text
+        node.fontColor = NSColor(hexString: self.fontColor.rawValue)
+        node.fontSize = CGFloat(self.fontSize)
+        node.position = self.position
     }
 
     /// Creates a year label with default styling and position.
