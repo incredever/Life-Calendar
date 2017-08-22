@@ -159,14 +159,23 @@ struct WeeksGrid {
     
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseMoved(at point: CGPoint) {
+        node.childNode(withName: "HoverYearLabel")?.removeFromParent()
         
-        node.childNode(withName: "testLabelName")?.removeFromParent()
+        let currentTile = tileAt(point)
+        let y = currentTile?.position.y ?? point.y
+       
+        var year = "0000"
         
-//        node.childNode(withName: "testLabelName")?.removeFromParent()
+        if let tileDate = currentTile?.span.start {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy"
+            year = formatter.string(from: tileDate)
+        }
         
-        let y = tileAt(point)?.position.y ?? point.y
-        let label = Label(text: "test", position: CGPoint(x: 0, y: y))
-        label.node.name = "testLabelName"
+        
+        let label = Label(text: year, position: CGPoint(x: 0, y: y))
+
+        label.node.name = "HoverYearLabel"
         
         node.addChild(label.node)
     }
