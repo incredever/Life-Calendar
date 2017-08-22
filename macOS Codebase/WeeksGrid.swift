@@ -157,23 +157,18 @@ struct WeeksGrid {
         firstTileInSelection = nil
     }
     
-    private var hoverLabels: [Label] = []
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseMoved(at point: CGPoint) {
-        for label in hoverLabels {
-            label.node.removeFromParent()
-        }
         
-        hoverLabels = []
+        node.childNode(withName: "testLabelName")?.removeFromParent()
+        
+//        node.childNode(withName: "testLabelName")?.removeFromParent()
         
         let y = tileAt(point)?.position.y ?? point.y
         let label = Label(text: "test", position: CGPoint(x: 0, y: y))
+        label.node.name = "testLabelName"
         
-        hoverLabels.append(label)
-        
-        for label in hoverLabels {
-            node.addChild(label.node)
-        }
+        node.addChild(label.node)
     }
     
 }
