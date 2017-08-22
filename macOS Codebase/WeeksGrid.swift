@@ -138,40 +138,46 @@ struct WeeksGrid {
     }
 
     /// Handles mouse dragging events passed from some NSResponder subclass - usually GridNode.
-    func mouseDragged(at point: CGPoint) {
-        let tile = tileAt(point)
-
-        if let tile = tile {
-            tile.color = .green
+    mutating func mouseDragged(at point: CGPoint) {
+        if let currentTile = tileAt(point) {
+            createYearLabel(for: currentTile)
+            selectUpTo(tile: currentTile)
         }
     }
 
     /// Handles mouse up events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
-            if let startingTile = firstTileInSelection {
-                let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .red }
-            }
-
-            currentTile.color = .blue
+            selectUpTo(tile: currentTile)
         }
-        
-        firstTileInSelection = nil
     }
     
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseMoved(at point: CGPoint) {
-        node.childNode(withName: "HoverYearLabel")?.removeFromParent()
-
-        if let tile = tileAt(point) {
-            let year = justTheYearDateFormatter.string(from: tile.span.start)
-            
-            let label = Label(text: year, position: CGPoint(x: 0, y: tile.position.y))
-            
-            label.node.name = "HoverYearLabel"
-            
-            node.addChild(label.node)
+        if let currentTile = tileAt(point) {
+            createYearLabel(for: currentTile)
+            selectUpTo(tile: currentTile)
         }
+    }
+    
+    func createYearLabel(for tile: Tile) {
+        node.childNode(withName: "HoverYearLabel")?.removeFromParent()
+        
+        let year = justTheYearDateFormatter.string(from: tile.span.start)
+        let label = Label(text: year, position: CGPoint(x: 0, y: tile.position.y))
+        
+        label.node.name = "HoverYearLabel"
+        
+        node.addChild(label.node)
+    }
+    
+    mutating func selectUpTo(tile: Tile) {
+        if let startingTile = firstTileInSelection {
+            let _ = tilesBetween(firstTile: startingTile, secondTile: tile).map { $0.color = .red }
+        }
+        
+        
+        firstTileInSelection = nil
     }
     
 }
