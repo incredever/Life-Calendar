@@ -11,6 +11,8 @@ class EventsDisplaySidebar {
     
     var timeline: Timeline
     
+    private var eventDisplays: [EventDisplay] = []
+    
     init(timeline: Timeline) {
         self.timeline = timeline
     }
