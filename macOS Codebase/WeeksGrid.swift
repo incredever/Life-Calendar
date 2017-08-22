@@ -132,8 +132,6 @@ struct WeeksGrid {
     mutating func mouseDown(at point: CGPoint) {
         if let tile = tileAt(point) {
             firstTileInSelection = tile
-
-            tile.color = .blue
         }
     }
 
@@ -150,6 +148,8 @@ struct WeeksGrid {
         if let currentTile = tileAt(point) {
             selectUpTo(tile: currentTile)
         }
+        
+        firstTileInSelection = nil
     }
     
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
@@ -175,9 +175,6 @@ struct WeeksGrid {
         if let startingTile = firstTileInSelection {
             let _ = tilesBetween(firstTile: startingTile, secondTile: tile).map { $0.color = .red }
         }
-        
-        
-        firstTileInSelection = nil
     }
     
 }
