@@ -42,6 +42,9 @@ struct WeeksGrid {
     
     private let justTheYearDateFormatter: DateFormatter
     
+    private let gutterWidthForYearLabels = 50
+
+    
     /// The span of time between `start` and `end`.
     private var span: DateInterval {
         return DateInterval(start: start, end: end)
@@ -60,7 +63,6 @@ struct WeeksGrid {
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
-        let gutterWidthForYearLabels = 50
         
         for yearNumber in 0...span.numberOfYearsWithin() {
             let y = (tileSize + tilePadding) * yearNumber * -1
@@ -164,8 +166,9 @@ struct WeeksGrid {
         node.childNode(withName: "HoverYearLabel")?.removeFromParent()
         
         let year = justTheYearDateFormatter.string(from: tile.span.start)
-        let label = Label(text: year, position: CGPoint(x: 0, y: tile.position.y))
+        let label = Label(text: year, position: CGPoint(x: CGFloat(gutterWidthForYearLabels / 2), y: tile.position.y))
         
+        label.fontColor = .red
         label.node.name = "HoverYearLabel"
         
         node.addChild(label.node)

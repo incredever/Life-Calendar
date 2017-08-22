@@ -12,19 +12,39 @@ import SpriteKit
 class Label {
     
     /// The text displayed by the label. Since this is a *Year*Label, it should probably be a year, as in "1900" or "2017".
-    var text: String // TODO: Create setter that updates node
+    var text: String {
+        didSet {
+            node.text = text
+        }
+    }
     
     /// The point at which the label will position itself within its parent's coordinate system.
-    var position: CGPoint // TODO: Create setter that updates node
+    var position: CGPoint {
+        didSet {
+            node.position = position
+        }
+    }
     
     /// The font to be used for displaying text.
-    var fontName: Font // TODO: Create setter that updates node
+    var fontName: Font {
+        didSet {
+            node.fontName = fontName.rawValue
+        }
+    }
     
     /// The color the text should display as.
-    var fontColor: Color // TODO: Create setter that updates node
+    var fontColor: Color {
+        didSet {
+            node.fontColor = NSColor(hexString: fontColor.rawValue)
+        }
+    }
     
     /// The size in points the text should display at.
-    var fontSize: Double // TODO: Create setter that updates node
+    var fontSize: Double {
+        didSet {
+            node.fontSize = CGFloat(fontSize)
+        }
+    }
     
     /// An SKLabelNode for use in a SpriteKit scene.
     var node: SKLabelNode
