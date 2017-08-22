@@ -30,7 +30,7 @@ class Label {
     var node: SKLabelNode
     
     /// The primary initializer, containing parameters for all pertinent variables.
-    private init(text: String, font: Font, size: Double, color: Color, position: CGPoint) {
+    init(text: String, font: Font, size: Double, color: Color, position: CGPoint) {
         self.text = text
         self.position = position
         self.fontName = font
