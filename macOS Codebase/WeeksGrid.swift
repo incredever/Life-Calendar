@@ -185,12 +185,14 @@ struct WeeksGrid {
         node.childNode(withName: "HoverDateLabel")?.removeFromParent()
         
         let simpleMonthAndDaysDateFormatter = DateFormatter()
-        simpleMonthAndDaysDateFormatter.dateFormat = "mm/dd"
+        simpleMonthAndDaysDateFormatter.dateFormat = "M/d"
         
         let startDate = simpleMonthAndDaysDateFormatter.string(from: tile.span.start)
-        let label = Label(text: startDate, position: CGPoint(x: tile.position.x , y: 0))
+        let endDate = simpleMonthAndDaysDateFormatter.string(from: tile.span.end)
+        let label = Label(text: "\(startDate)–\(endDate)", position: CGPoint(x: tile.position.x , y: 10))
         
         label.fontColor = .red
+        label.fontSize = 12.0
         label.node.name = "HoverDateLabel"
         
         node.addChild(label.node)
