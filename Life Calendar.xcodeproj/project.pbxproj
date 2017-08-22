@@ -23,6 +23,7 @@
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DEF8BE241F4C64F6009F0412 /* EventsDisplaySidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8BE231F4C64F6009F0412 /* EventsDisplaySidebar.swift */; };
+		DEF8BE261F4C65F8009F0412 /* EventDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8BE251F4C65F8009F0412 /* EventDisplay.swift */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
 		DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711A1F06459500AF4373 /* Timeline.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		DEF8624B1F277C0400335DCF /* 2017-07-25 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-25 Fig 1.png"; sourceTree = "<group>"; };
 		DEF8624C1F277C3B00335DCF /* 2017-07-25.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-25.md"; sourceTree = "<group>"; };
 		DEF8BE231F4C64F6009F0412 /* EventsDisplaySidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsDisplaySidebar.swift; sourceTree = "<group>"; };
+		DEF8BE251F4C65F8009F0412 /* EventDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDisplay.swift; path = "macOS Codebase/EventDisplay.swift"; sourceTree = SOURCE_ROOT; };
 		DEFD71181F0644BD00AF4373 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DEFD711A1F06459500AF4373 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				DE740ACD1F49AC8D00D2E53A /* 2017-08-20.md */,
 				DE740ACE1F4ACD6B00D2E53A /* 2017-08-21.md */,
 				DECCA8AE1F4C0722000AEFC2 /* 2017-08-22.md */,
+				DEF8BE251F4C65F8009F0412 /* EventDisplay.swift */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */,
 				DE3444041F2C67D6001DAE8F /* TilePopup.swift in Sources */,
 				DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */,
+				DEF8BE261F4C65F8009F0412 /* EventDisplay.swift in Sources */,
 				DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */,
 				DE23A9D01F28C579002C156D /* Tile.swift in Sources */,
 				DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */,
