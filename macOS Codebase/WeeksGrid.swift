@@ -40,6 +40,8 @@ struct WeeksGrid {
     
     private var firstTileInSelection: Tile? = nil
     
+    private let justTheYearDateFormatter: DateFormatter
+    
     /// The span of time between `start` and `end`.
     private var span: DateInterval {
         return DateInterval(start: start, end: end)
@@ -52,6 +54,9 @@ struct WeeksGrid {
         self.position = position
         self.tiles = []
         self.node = WeeksGridNode(position: position)
+        self.justTheYearDateFormatter = DateFormatter()
+        
+        justTheYearDateFormatter.dateFormat = "yyyy"
         
         /// A span of seven days, incrementing by one week for every cycle in loops below.
         var currentSpan = DateInterval.oneWeek(startingFom: start)
@@ -62,10 +67,7 @@ struct WeeksGrid {
 
             // Create the year label
             if yearNumber % 20 == 0 {
-                let formatter = DateFormatter()
-                formatter.dateFormat = "yyyy"
-                
-                let year = formatter.string(from: currentSpan.start)
+                let year = justTheYearDateFormatter.string(from: currentSpan.start)
                 
                 let label = Label(text: year, position: CGPoint(x: gutterWidthForYearLabels / 2, y: y))
                 
@@ -160,24 +162,16 @@ struct WeeksGrid {
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
     mutating func mouseMoved(at point: CGPoint) {
         node.childNode(withName: "HoverYearLabel")?.removeFromParent()
-        
-        let currentTile = tileAt(point)
-        let y = currentTile?.position.y ?? point.y
-       
-        var year = "0000"
-        
-        if let tileDate = currentTile?.span.start {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy"
-            year = formatter.string(from: tileDate)
-        }
-        
-        
-        let label = Label(text: year, position: CGPoint(x: 0, y: y))
 
-        label.node.name = "HoverYearLabel"
-        
-        node.addChild(label.node)
+        if let tile = tileAt(point) {
+            let year = justTheYearDateFormatter.string(from: tile.span.start)
+            
+            let label = Label(text: year, position: CGPoint(x: 0, y: tile.position.y))
+            
+            label.node.name = "HoverYearLabel"
+            
+            node.addChild(label.node)
+        }
     }
     
 }
