@@ -29,9 +29,10 @@ class WeeksScene: SKScene {
 
         addChild(grid.node)
         
-        let sideBar = EventsDisplaySidebar(timeline: tempTimeline)
+        let sidebar = EventsDisplaySidebar(timeline: tempTimeline)
+        sidebar.position = CGPoint(x: Int(frame.width) - Int(sidebar.size.width / 2.0), y: Int(frame.height))
         
-        addChild(sideBar.node)
+        addChild(sidebar.node)
     }
     
 }

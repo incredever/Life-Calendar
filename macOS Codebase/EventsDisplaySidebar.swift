@@ -14,13 +14,26 @@ class EventsDisplaySidebar {
     
     var node: SKShapeNode
     
+    var size = CGSize(width: 200, height: 600) {
+        didSet {
+            // TODO: update the nodes dimensions
+        }
+    }
+    
+    var position = CGPoint(x: 0, y: 0) {
+        didSet {
+            node.position = position
+        }
+    }
+    
     private var eventDisplays: [EventDisplay] = []
     
     init(timeline: Timeline) {
         self.timeline = timeline
         
-        node = SKShapeNode(rectOf: CGSize(width: 100, height: 500))
+        node = SKShapeNode(rectOf: size)
         node.fillColor = NSColor.gray
+        node.position = position
 
     }
     
