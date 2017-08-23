@@ -14,6 +14,9 @@ import SpriteKit
 class WeeksScene: SKScene {
     
     override func didMove(to view: SKView) {
+        
+        let tempTimeline = Timeline(events: [], name: "temp timeline")
+        
         // Create Grid
         let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-mm-dd"
@@ -25,6 +28,10 @@ class WeeksScene: SKScene {
         let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
 
         addChild(grid.node)
+        
+        let sideBar = EventsDisplaySidebar(timeline: tempTimeline)
+        
+        addChild(sideBar.node)
     }
     
 }
