@@ -27,7 +27,7 @@ class WeeksScene: SKScene {
         addChild(grid.node)
         
         let centerOfScene = CGPoint(x: frame.width / 2, y: frame.height / 2)
-        let testDot = SKShapeNode(circleOfRadius: 7)
+        let testDot = SKShapeNode(circleOfRadius: 2)
         testDot.fillColor = .red
         testDot.position = centerOfScene
         addChild(testDot)
