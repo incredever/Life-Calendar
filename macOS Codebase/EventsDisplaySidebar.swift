@@ -43,7 +43,8 @@ class EventsDisplaySidebar {
         node.position = position
         
         // Create testing EventDisplay
-        let eventDisplay = EventDisplay(title: "test event 123")
+        let testEvent = Event(title: "Hello World", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
+        let eventDisplay = EventDisplay(event: testEvent)
         node.addChild(eventDisplay.node)
     }
     

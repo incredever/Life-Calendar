@@ -11,11 +11,11 @@ import SpriteKit
 class EventDisplay {
     
     var node: SKShapeNode
-
-    var title: String
     
-    init(title: String) {
-        self.title = title
+    let event: Event
+    
+    init(event: Event) {
+        self.event = event
         
         let size = CGSize(width: 200, height: 200)
         
@@ -23,7 +23,7 @@ class EventDisplay {
         
         node.fillColor = .white
         
-        let titleLabel = Label(text: title)
+        let titleLabel = Label(text: event.title)
         titleLabel.fontSize = 16
         titleLabel.position = CGPoint(x: -(size.width / 2) + (titleLabel.width / 2) + 5,
                                       y: (size.height / 2) - (titleLabel.height / 2) - 8)
