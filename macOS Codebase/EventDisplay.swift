@@ -6,7 +6,16 @@
 //
 
 import Foundation
+import SpriteKit
 
 class EventDisplay {
+    
+    var node: SKShapeNode
+    
+    init() {
+        node = SKShapeNode(rectOf: CGSize(width: 300, height: 300))
+        
+        node.fillColor = .blue
+    }
     
 }

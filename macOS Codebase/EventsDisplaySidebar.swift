@@ -41,6 +41,10 @@ class EventsDisplaySidebar {
         node = SKShapeNode(rectOf: size)
         node.fillColor = NSColor.gray
         node.position = position
+        
+        // Create testing EventDisplay
+        let eventDisplay = EventDisplay()
+        node.addChild(eventDisplay.node)
     }
     
 }
