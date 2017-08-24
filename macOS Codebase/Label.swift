@@ -46,6 +46,12 @@ class Label {
         }
     }
     
+    var width: CGFloat {
+        get {
+            return node.frame.width
+        }
+    }
+    
     /// An SKLabelNode for use in a SpriteKit scene.
     var node: SKLabelNode
     
