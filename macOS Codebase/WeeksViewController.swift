@@ -37,6 +37,7 @@ class WeeksViewController: NSViewController {
         
         window?.acceptsMouseMovedEvents = true
         window?.makeFirstResponder(skScene)
+        window?.setFrameAutosaveName(NSWindow.FrameAutosaveName(rawValue: "mainLifeCalendarWindow"))
     }
     
 }
