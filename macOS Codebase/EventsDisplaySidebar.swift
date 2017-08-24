@@ -16,18 +16,22 @@ class EventsDisplaySidebar {
     
     var size: CGSize {
         didSet {
-            // TODO: update the nodes dimensions
+            let rect = CGRect(x: position.x, y: position.y, width: size.width, height: size.height)
+            
+            node = SKShapeNode(rect: rect)
         }
     }
     
     var position = CGPoint(x: 0, y: 0) {
         didSet {
             // SKShapeNode's are anchored at their center. We want to set the position of the top left corner.
+//
+//            let x = node.position.x - (size.width / 2)
+//            let y = node.position.y + (size.height / 2)
+//
+//            node.position = CGPoint(x: x, y: y)
             
-            let x = node.position.x - (size.width / 2)
-            let y = node.position.y + (size.height / 2)
-            
-            node.position = CGPoint(x: x, y: y)
+            node.position = position
         }
     }
     

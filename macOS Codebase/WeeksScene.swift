@@ -27,15 +27,15 @@ class WeeksScene: SKScene {
         addChild(grid.node)
         
         let centerOfScene = CGPoint(x: frame.width / 2, y: frame.height / 2)
-        let testDot = SKShapeNode(circleOfRadius: 10)
+        let testDot = SKShapeNode(circleOfRadius: 7)
         testDot.fillColor = .red
         testDot.position = centerOfScene
         addChild(testDot)
 
-//        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: CGSize(width: 200, height: 300))
-//        sidebar.position = CGPoint(x: Int(frame.width) - Int(sidebar.size.width), y: 0)
-//
-//        addChild(sidebar.node)
+        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: CGSize(width: 200, height: 300))
+        sidebar.position = centerOfScene
+
+        addChild(sidebar.node)
     }
     
 }
