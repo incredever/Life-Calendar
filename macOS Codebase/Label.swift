@@ -52,6 +52,12 @@ class Label {
         }
     }
     
+    var height: CGFloat {
+        get {
+            return node.frame.height
+        }
+    }
+    
     /// An SKLabelNode for use in a SpriteKit scene.
     var node: SKLabelNode
     

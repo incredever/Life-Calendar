@@ -24,7 +24,8 @@ class EventDisplay {
         node.fillColor = .white
         
         let titleLabel = Label(text: title)
-        titleLabel.position = CGPoint(x: -(size.width / 2) + 30, y: (size.height / 2) - 15)
+        titleLabel.position = CGPoint(x: -(size.width / 2) + (titleLabel.width / 2) + 5,
+                                      y: (size.height / 2) - (titleLabel.height / 2) - 5)
         
         node.addChild(titleLabel.node)
     }
