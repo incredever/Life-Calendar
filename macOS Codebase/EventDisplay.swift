@@ -17,11 +17,15 @@ class EventDisplay {
     init(title: String) {
         self.title = title
         
-        node = SKShapeNode(rectOf: CGSize(width: 200, height: 200))
+        let size = CGSize(width: 200, height: 200)
+        
+        node = SKShapeNode(rectOf: size)
         
         node.fillColor = .white
         
         let titleLabel = Label(text: title)
+        titleLabel.position = CGPoint(x: -(size.width / 2) + 30, y: (size.height / 2) - 15)
+        
         node.addChild(titleLabel.node)
     }
     
