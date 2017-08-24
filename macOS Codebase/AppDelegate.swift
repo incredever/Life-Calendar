@@ -21,9 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let timeline = Timeline(events: [exampleEvent], name: "Testing ABC 1234")
         timeline.saveToDisk()
         
-        // Testing DateInterval extension
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-mm-dd"
+        let dateFormatter = TimelineDateFormatter()
         
         let myBirth = dateFormatter.date(from: "1993-01-05")!
         let possibleDeath = dateFormatter.date(from: "2073-01-04")!
