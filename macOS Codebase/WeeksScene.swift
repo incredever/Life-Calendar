@@ -18,7 +18,7 @@ class WeeksScene: SKScene {
         let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-mm-dd"
         let myBirth = dateFormatter.date(from: "1993-01-05")!
-        let possibleDeath = dateFormatter.date(from: "2093-01-04")!
+        let possibleDeath = dateFormatter.date(from: "2083-01-04")!
         let size = CGSize(width: 330, height: 574)
         let gridPosition = CGPoint(x: 20, y: Int(size.height) - 10)
 
@@ -26,10 +26,16 @@ class WeeksScene: SKScene {
 
         addChild(grid.node)
         
-        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: CGSize(width: 200, height: 300))
-        sidebar.position = CGPoint(x: Int(frame.width) - Int(sidebar.size.width / 2.0), y: Int(frame.height))
-        
-        addChild(sidebar.node)
+        let centerOfScene = CGPoint(x: frame.width / 2, y: frame.height / 2)
+        let testDot = SKShapeNode(circleOfRadius: 10)
+        testDot.fillColor = .red
+        testDot.position = centerOfScene
+        addChild(testDot)
+
+//        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: CGSize(width: 200, height: 300))
+//        sidebar.position = CGPoint(x: Int(frame.width) - Int(sidebar.size.width), y: 0)
+//
+//        addChild(sidebar.node)
     }
     
 }
