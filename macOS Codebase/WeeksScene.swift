@@ -9,12 +9,9 @@ import Cocoa
 import SpriteKit
 
 /// A SpriteKit scene that contains a grid of tiles, each representing one week of a human life.
-///
-/// Tiles have colors indicating a certain time of the human's life. Every tile is interactive, showing a small popup when the mouse hovers over it. Tiles are also selectable by clicking and dragging. The selection is turned into a new "event", which the user can choose to dismiss or fill out information for and save for posterity.
 class WeeksScene: SKScene {
     
     override func didMove(to view: SKView) {
-        
         let tempTimeline = Timeline(events: [], name: "temp timeline")
         
         // Create Grid
