@@ -11,11 +11,19 @@ import SpriteKit
 class EventDisplay {
     
     var node: SKShapeNode
+
+    var title: String
     
-    init() {
+    init(title: String) {
+        self.title = title
+        
         node = SKShapeNode(rectOf: CGSize(width: 300, height: 300))
         
         node.fillColor = .blue
+        
+        let titleLabel = Label(text: "test title")
+        
+        node.addChild(titleLabel.node)
     }
     
 }

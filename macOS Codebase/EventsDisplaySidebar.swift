@@ -43,7 +43,7 @@ class EventsDisplaySidebar {
         node.position = position
         
         // Create testing EventDisplay
-        let eventDisplay = EventDisplay()
+        let eventDisplay = EventDisplay(title: "test event")
         node.addChild(eventDisplay.node)
     }
     
