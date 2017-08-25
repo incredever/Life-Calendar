@@ -39,7 +39,11 @@ class EventsDisplaySidebar {
         self.size = size
         
         node = SKShapeNode(rectOf: size)
-        node.fillColor = NSColor.gray
+        let backgroundColor = NSColor(hexString: "EFEFEF")
+        let borderColor = NSColor(hexString: "979797")
+        node.fillColor = backgroundColor.withAlphaComponent(0.45)
+        node.strokeColor = borderColor.withAlphaComponent(0.5)
+        node.lineWidth = 0.5
         node.position = position
         
         // Create testing EventDisplay

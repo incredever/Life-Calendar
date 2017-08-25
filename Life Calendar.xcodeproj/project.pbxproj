@@ -225,11 +225,11 @@
 				DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */,
 				DED586E61F38A62E00B30888 /* Label.swift */,
 				DE7E3C611F4FED930048A115 /* Line.swift */,
-				DE9F37451F501B9800A21B51 /* NSBezierPath+cgPath.swift */,
 				DE23A9CF1F28C579002C156D /* Tile.swift */,
 				DE3444031F2C67D6001DAE8F /* TilePopup.swift */,
 				DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */,
 				DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */,
+				DE9F37451F501B9800A21B51 /* NSBezierPath+cgPath.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
 			);
