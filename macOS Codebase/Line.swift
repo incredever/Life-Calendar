@@ -17,7 +17,11 @@ class Line {
     var end: CGPoint
     
     /// The stroke width the line should be drawn width.
-    var thickness: Double
+    var thickness: Double {
+        didSet {
+            node.lineWidth = CGFloat(thickness)
+        }
+    }
     
     /// The color the line should be drawn with.
     var color: Color

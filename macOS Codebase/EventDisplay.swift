@@ -41,7 +41,7 @@ class EventDisplay {
         node.addChild(dateLabel.node)
         
         let line = Line(starting: CGPoint(x: 10, y: 10), ending: CGPoint(x: 30, y: 30))
-        
+        line.thickness = 1.0
         node.addChild(line.node)
     }
     
