@@ -20,11 +20,21 @@ class EventDisplay {
         }
     }
     
+    var size = CGSize(width: 150, height: 150) {
+        didSet {
+            setupNode()
+        }
+    }
+    
     init(event: Event) {
         self.event = event
         
-        let size = CGSize(width: 150, height: 150)
-        
+        node = SKShapeNode()
+
+        setupNode()
+    }
+    
+    private func setupNode() {
         node = SKShapeNode(rectOf: size)
         
         node.fillColor = .clear
@@ -35,7 +45,7 @@ class EventDisplay {
         titleLabel.fontSize = 12
         titleLabel.position = CGPoint(x: -(size.width / 2) + (titleLabel.width / 2) + 5,
                                       y: (size.height / 2) - (titleLabel.height / 2) - 15)
-
+        
         node.addChild(titleLabel.node)
         
         let formatter = TimelineDateFormatter()
