@@ -35,7 +35,7 @@ class Line {
         end = ending
         
         thickness = 2.0
-        color = .black
+        color = .line
         
         var points = [starting, ending]
         node = SKShapeNode(points: &points, count: points.count)

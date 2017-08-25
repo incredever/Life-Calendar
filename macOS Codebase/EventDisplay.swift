@@ -17,7 +17,7 @@ class EventDisplay {
     init(event: Event) {
         self.event = event
         
-        let size = CGSize(width: 200, height: 150)
+        let size = CGSize(width: 150, height: 150)
         
         node = SKShapeNode(rectOf: size)
         
@@ -46,7 +46,7 @@ class EventDisplay {
         let leftX = (node.frame.width / 2) * -1
         let rightX = (node.frame.width / 2)
         let line = Line(starting: CGPoint(x: leftX, y: topY), ending: CGPoint(x: rightX, y: topY))
-        line.thickness = 0.5
+        line.thickness = 0.25
         node.addChild(line.node)
     }
     

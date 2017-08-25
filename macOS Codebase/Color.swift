@@ -15,4 +15,5 @@ enum Color: String {
     case green = "00FF00"
     case blue = "0000FF"
     case black = "000001"
+    case line = "707070"
 }

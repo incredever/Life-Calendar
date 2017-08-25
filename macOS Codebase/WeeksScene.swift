@@ -32,7 +32,7 @@ class WeeksScene: SKScene {
         testDot.position = centerOfScene
         addChild(testDot)
 
-        let sidebarSize = CGSize(width: 200, height: frame.height)
+        let sidebarSize = CGSize(width: 150, height: frame.height)
         let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
         let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: sidebarSize)
         sidebar.position = sidebarPosition
