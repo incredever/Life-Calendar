@@ -10,7 +10,11 @@ import SpriteKit
 
 class EventsDisplaySidebar {
     
-    var timeline: Timeline
+    var timeline: Timeline {
+        didSet {
+            layoutEvents()
+        }
+    }
     
     var node: ScrollViewNode
     
@@ -51,6 +55,22 @@ class EventsDisplaySidebar {
         let testEvent = Event(title: "Hello World", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
         let eventDisplay = EventDisplay(event: testEvent)
         node.addChild(eventDisplay.node)
+        
+        layoutEvents()
+    }
+    
+    /// Goes through the events in `timeline` and creates an `EventDisplay` for each.
+    private func layoutEvents() {
+        var currentPosition = CGPoint(x: 0, y: 0)
+        
+        for event in timeline.events {
+            let eventDisplay = EventDisplay(event: event)
+            
+            eventDisplay.position = currentPosition
+            node.addChild(eventDisplay.node)
+            
+            // increase currentPosition
+        }
     }
     
 }
