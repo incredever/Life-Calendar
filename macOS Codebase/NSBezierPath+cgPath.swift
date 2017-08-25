@@ -18,8 +18,7 @@ extension NSBezierPath {
     /// Transforms the NSBezierPath into a CGPathRef
     ///
     /// :returns: The transformed NSBezierPath
-    private func transformToCGPath() -> CGPath
-    {
+    private func transformToCGPath() -> CGPath {
         // Create path
         let path = CGMutablePath()
         let points = UnsafeMutablePointer<NSPoint>.allocate(capacity: 3)
@@ -28,16 +27,13 @@ extension NSBezierPath {
         let cgPoint2 = CGPoint(x: points[1].x, y: points[1].y)
         let cgPoint3 = CGPoint(x: points[2].x, y: points[2].y)
         
-        if numElements > 0
-        {
+        if numElements > 0 {
             var didClosePath = true
             
-            for index in 0..<numElements
-            {
+            for index in 0..<numElements {
                 let pathType = self.element(at: index, associatedPoints: points)
                 
-                switch pathType
-                {
+                switch pathType {
                 case .moveToBezierPathElement :
                     path.move(to: cgPoint1)
                 case .lineToBezierPathElement :
@@ -52,10 +48,13 @@ extension NSBezierPath {
                 }
             }
             
-            if !didClosePath { path.closeSubpath() }
+            if !didClosePath {
+                path.closeSubpath()
+            }
         }
         
         points.deallocate(capacity: 3)
+        
         return path
     }
     
