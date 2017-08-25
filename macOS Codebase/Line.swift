@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SpriteKit
 
 class Line {
     
@@ -21,12 +22,17 @@ class Line {
     /// The color the line should be drawn with.
     var color: Color
     
+    /// An SpriteKit node for use in a SpriteKit scene.
+    var node: SKShapeNode
+    
     init(starting: CGPoint, ending: CGPoint) {
         start = starting
         end = ending
         
         thickness = 2.0
         color = .black
+        
+        node = SKShapeNode()
     }
     
 }

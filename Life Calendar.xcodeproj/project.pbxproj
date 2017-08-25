@@ -210,7 +210,6 @@
 		DED97A391EDE0C3A00F2100B /* macOS Codebase */ = {
 			isa = PBXGroup;
 			children = (
-				DE7E3C611F4FED930048A115 /* Line.swift */,
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DE7E3C5D1F4EF5A20048A115 /* TimelineDateFormatter.swift */,
@@ -226,6 +225,7 @@
 				DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */,
 				DE3443FE1F29DCF1001DAE8F /* YearLabels.swift */,
 				DED586E61F38A62E00B30888 /* Label.swift */,
+				DE7E3C611F4FED930048A115 /* Line.swift */,
 				DE23A9CF1F28C579002C156D /* Tile.swift */,
 				DE3444031F2C67D6001DAE8F /* TilePopup.swift */,
 				DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */,
