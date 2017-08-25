@@ -27,12 +27,6 @@ class WeeksScene: SKScene {
         let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
 
         addChild(grid.node)
-        
-        let centerOfScene = CGPoint(x: frame.width / 2, y: frame.height / 2)
-        let testDot = SKShapeNode(circleOfRadius: 2)
-        testDot.fillColor = .red
-        testDot.position = centerOfScene
-        addChild(testDot)
 
         let sidebarSize = CGSize(width: 150, height: frame.height)
         let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
@@ -42,10 +36,6 @@ class WeeksScene: SKScene {
         if let timeline = timeline {
             sidebar.timeline = timeline
         }
-        
-        let newTestDot = testDot.copy() as! SKShapeNode
-        newTestDot.position = CGPoint(x: 0, y: 0)
-        sidebar.node.addChild(newTestDot)
 
         addChild(sidebar.node)
     }
