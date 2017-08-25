@@ -21,7 +21,8 @@ class EventDisplay {
         
         node = SKShapeNode(rectOf: size)
         
-        node.fillColor = .white
+        node.fillColor = .clear
+        node.strokeColor = .clear
         
         let titleLabel = Label(text: event.title)
         titleLabel.fontSize = 16
