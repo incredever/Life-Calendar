@@ -51,11 +51,6 @@ class EventsDisplaySidebar {
         node.position = position
         node.isUserInteractionEnabled = true
         
-        // Create testing EventDisplay
-        let testEvent = Event(title: "Hello World", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
-        let eventDisplay = EventDisplay(event: testEvent)
-        node.addChild(eventDisplay.node)
-        
         layoutEvents()
     }
     
