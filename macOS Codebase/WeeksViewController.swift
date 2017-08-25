@@ -12,7 +12,7 @@ import SpriteKit
 class WeeksViewController: NSViewController {
     
     var skView: SKView!
-    var skScene: SKScene?
+    var skScene: WeeksScene?
     weak var window: NSWindow?
     var timeline: Timeline!
     
@@ -39,6 +39,7 @@ class WeeksViewController: NSViewController {
         skScene = WeeksScene(size: skView.frame.size)
         skScene?.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
+        skScene?.timeline = timeline
 
         skView.presentScene(skScene)
         skView.showsNodeCount = true

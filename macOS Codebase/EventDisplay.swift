@@ -32,7 +32,7 @@ class EventDisplay {
         node.position = position
         
         let titleLabel = Label(text: event.title)
-        titleLabel.fontSize = 16
+        titleLabel.fontSize = 12
         titleLabel.position = CGPoint(x: -(size.width / 2) + (titleLabel.width / 2) + 5,
                                       y: (size.height / 2) - (titleLabel.height / 2) - 15)
 
@@ -42,7 +42,8 @@ class EventDisplay {
         let start = formatter.string(from: event.span.start)
         let end = formatter.string(from: event.span.end)
         let dateLabel = Label(text: "\(start) ┄ \(end)")
-        dateLabel.fontSize = 12
+        
+        dateLabel.fontSize = 10
         dateLabel.position = CGPoint(x: -(size.width / 2) + (dateLabel.width / 2) + 5,
                                      y: (size.height / 2) - (dateLabel.height / 2) - 30 - titleLabel.height)
         

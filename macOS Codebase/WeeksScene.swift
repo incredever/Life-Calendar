@@ -11,6 +11,8 @@ import SpriteKit
 /// A SpriteKit scene that contains a grid of tiles, each representing one week of a human life.
 class WeeksScene: SKScene {
     
+    var timeline: Timeline?
+    
     override func didMove(to view: SKView) {
         let tempTimeline = Timeline(events: [], name: "temp timeline")
         
@@ -36,6 +38,10 @@ class WeeksScene: SKScene {
         let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
         let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: sidebarSize)
         sidebar.position = sidebarPosition
+        
+        if let timeline = timeline {
+            sidebar.timeline = timeline
+        }
         
         let newTestDot = testDot.copy() as! SKShapeNode
         newTestDot.position = CGPoint(x: 0, y: 0)
