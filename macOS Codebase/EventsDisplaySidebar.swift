@@ -12,13 +12,13 @@ class EventsDisplaySidebar {
     
     var timeline: Timeline
     
-    var node: SKShapeNode
+    var node: ScrollViewNode
     
     var size: CGSize {
         didSet {
             let rect = CGRect(x: position.x, y: position.y, width: size.width, height: size.height)
             
-            node = SKShapeNode(rect: rect)
+            node = ScrollViewNode(rect: rect)
         }
     }
     
@@ -38,13 +38,14 @@ class EventsDisplaySidebar {
         self.timeline = timeline
         self.size = size
         
-        node = SKShapeNode(rectOf: size)
+        node = ScrollViewNode(rectOf: size)
         let backgroundColor = NSColor(hexString: "EFEFEF")
         let borderColor = NSColor(hexString: "979797")
         node.fillColor = backgroundColor.withAlphaComponent(0.45)
         node.strokeColor = borderColor.withAlphaComponent(0.5)
         node.lineWidth = 0.5
         node.position = position
+        node.isUserInteractionEnabled = true
         
         // Create testing EventDisplay
         let testEvent = Event(title: "Hello World", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
