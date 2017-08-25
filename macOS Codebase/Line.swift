@@ -32,7 +32,8 @@ class Line {
         thickness = 2.0
         color = .black
         
-        node = SKShapeNode()
+        node = SKShapeNode(circleOfRadius: 40)
+        node.fillColor = .blue
     }
     
 }

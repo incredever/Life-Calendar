@@ -39,6 +39,10 @@ class EventDisplay {
                                      y: (size.height / 2) - (dateLabel.height / 2) - 16 - titleLabel.height)
         
         node.addChild(dateLabel.node)
+        
+        let line = Line(starting: CGPoint(x: 10, y: 10), ending: CGPoint(x: 30, y: 30))
+        
+        node.addChild(line.node)
     }
     
 }
