@@ -27,7 +27,7 @@ class EventDisplay {
         let titleLabel = Label(text: event.title)
         titleLabel.fontSize = 16
         titleLabel.position = CGPoint(x: -(size.width / 2) + (titleLabel.width / 2) + 5,
-                                      y: (size.height / 2) - (titleLabel.height / 2) - 8)
+                                      y: (size.height / 2) - (titleLabel.height / 2) - 15)
 
         node.addChild(titleLabel.node)
         
@@ -37,12 +37,16 @@ class EventDisplay {
         let dateLabel = Label(text: "\(start) ┄ \(end)")
         dateLabel.fontSize = 12
         dateLabel.position = CGPoint(x: -(size.width / 2) + (dateLabel.width / 2) + 5,
-                                     y: (size.height / 2) - (dateLabel.height / 2) - 16 - titleLabel.height)
+                                     y: (size.height / 2) - (dateLabel.height / 2) - 30 - titleLabel.height)
         
         node.addChild(dateLabel.node)
         
-        let line = Line(starting: CGPoint(x: 10, y: 10), ending: CGPoint(x: 30, y: 30))
-        line.thickness = 1.0
+        // Create the top bar line
+        let topY = node.frame.height/2
+        let leftX = (node.frame.width / 2) * -1
+        let rightX = (node.frame.width / 2)
+        let line = Line(starting: CGPoint(x: leftX, y: topY), ending: CGPoint(x: rightX, y: topY))
+        line.thickness = 0.5
         node.addChild(line.node)
     }
     
