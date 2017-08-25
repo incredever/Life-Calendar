@@ -17,6 +17,7 @@
 		DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */; };
 		DE6A83081F2607BB0088DBA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A83071F2607BB0088DBA3 /* main.swift */; };
 		DE7E3C5E1F4EF5A20048A115 /* TimelineDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E3C5D1F4EF5A20048A115 /* TimelineDateFormatter.swift */; };
+		DE7E3C621F4FED930048A115 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E3C611F4FED930048A115 /* Line.swift */; };
 		DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */; };
 		DED586E71F38A62E00B30888 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E61F38A62E00B30888 /* Label.swift */; };
 		DED586E91F38A72500B30888 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E81F38A72500B30888 /* Font.swift */; };
@@ -71,6 +72,7 @@
 		DE7E3C5D1F4EF5A20048A115 /* TimelineDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDateFormatter.swift; sourceTree = "<group>"; };
 		DE7E3C5F1F4EFAEA0048A115 /* 2017-08-24.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-24.md"; sourceTree = "<group>"; };
 		DE7E3C601F4EFB630048A115 /* 2017-08-24 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-24 Fig 1.png"; sourceTree = "<group>"; };
+		DE7E3C611F4FED930048A115 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		DE7F51CE1F4576D50096854F /* 2017-08-17.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-17.md"; sourceTree = "<group>"; };
 		DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksGridNode.swift; sourceTree = "<group>"; };
 		DE96B5931F36F6ED00B24FF3 /* 2017-08-06.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-06.md"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		DED97A391EDE0C3A00F2100B /* macOS Codebase */ = {
 			isa = PBXGroup;
 			children = (
+				DE7E3C611F4FED930048A115 /* Line.swift */,
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DE7E3C5D1F4EF5A20048A115 /* TimelineDateFormatter.swift */,
@@ -327,6 +330,7 @@
 				DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */,
 				DE3444041F2C67D6001DAE8F /* TilePopup.swift in Sources */,
 				DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */,
+				DE7E3C621F4FED930048A115 /* Line.swift in Sources */,
 				DEF8BE261F4C65F8009F0412 /* EventDisplay.swift in Sources */,
 				DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */,
 				DE7E3C5E1F4EF5A20048A115 /* TimelineDateFormatter.swift in Sources */,
