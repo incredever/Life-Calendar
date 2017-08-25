@@ -61,13 +61,13 @@ class EventsDisplaySidebar {
     
     /// Goes through the events in `timeline` and creates an `EventDisplay` for each.
     private func layoutEvents() {
-        let topY = (size.height / 2)
+        let topY = size.height / 2
         var currentPosition = CGPoint(x: 0, y: topY)
         
         for event in timeline.events {
             let eventDisplay = EventDisplay(event: event)
 
-            currentPosition = CGPoint(x: 0, y: (size.height / 2) - (eventDisplay.size.height / 2))
+            currentPosition = CGPoint(x: currentPosition.x, y: currentPosition.y - (eventDisplay.size.height / 2))
             
             eventDisplay.position = currentPosition
             
