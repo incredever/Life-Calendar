@@ -25,6 +25,7 @@ class Line {
     /// An SpriteKit node for use in a SpriteKit scene.
     var node: SKShapeNode
     
+    /// Creates an instance which draws a line from starting point to ending point.
     init(starting: CGPoint, ending: CGPoint) {
         start = starting
         end = ending
