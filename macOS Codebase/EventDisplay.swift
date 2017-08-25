@@ -14,6 +14,12 @@ class EventDisplay {
     
     let event: Event
     
+    var position = CGPoint(x: 0, y: 0) {
+        didSet {
+            node.position = position
+        }
+    }
+    
     init(event: Event) {
         self.event = event
         
@@ -23,6 +29,7 @@ class EventDisplay {
         
         node.fillColor = .clear
         node.strokeColor = .clear
+        node.position = position
         
         let titleLabel = Label(text: event.title)
         titleLabel.fontSize = 16
