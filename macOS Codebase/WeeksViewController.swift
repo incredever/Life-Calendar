@@ -14,6 +14,7 @@ class WeeksViewController: NSViewController {
     var skView: SKView!
     var skScene: SKScene?
     weak var window: NSWindow?
+    var timeline: Timeline!
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
@@ -26,6 +27,14 @@ class WeeksViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Set up testing timeline
+        let span = DateInterval(start: Date(), end: Date())
+        let exampleEvent1 = Event(title: "ABC", colorHex: "000000", span: span)
+        let exampleEvent2 = Event(title: "ABC", colorHex: "FFFFFF", span: span)
+        let timeline = Timeline(events: [exampleEvent1, exampleEvent2], name: "Testing timeline ABC 1234")
+        
+        timeline.saveToDisk()
         
         skScene = WeeksScene(size: skView.frame.size)
         skScene?.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
