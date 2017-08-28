@@ -43,7 +43,8 @@ struct WeeksGrid {
     private let justTheYearDateFormatter: DateFormatter
     
     private let gutterWidthForYearLabels = 50
-
+    
+    weak var timeline: Timeline?
     
     /// The span of time between `start` and `end`.
     private var span: DateInterval {
@@ -205,9 +206,11 @@ struct WeeksGrid {
     }
     
     private func createEvent(spanning: DateInterval) {
-        let newEvent = Event(title: "NEW EVENT!", colorHex: "FFFFFF", span: spanning)
-        
-        // add to master timeline, which will then update the sidebar on didSet?
+        if let timeline = timeline {
+            let newEvent = Event(title: "NEW EVENT!", colorHex: "FFFFFF", span: spanning)
+
+            timeline.events.append(newEvent)
+        }
     }
     
 }
