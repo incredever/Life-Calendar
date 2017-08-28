@@ -15,9 +15,10 @@ class EventDisplayNode: SKShapeNode {
     init(size: CGSize, owner: EventDisplay? = nil) {
         super.init()
         
-        let rect = CGRect(origin: CGPoint.zero, size: size)
+        let bottomLeftCorner = CGPoint(x: -(size.width / 2), y: 0)
+        let rect = CGRect(origin: bottomLeftCorner, size: size)
         self.path = CGPath(rect: rect, transform: nil)
-        self.fillColor = .red
+        self.fillColor = NSColor(calibratedRed: 1.0, green: 0.0, blue: 0.0, alpha: 0.2)
         
         self.position = position
         self.owner = owner
