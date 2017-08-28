@@ -45,6 +45,7 @@ class WeeksViewController: NSViewController, GridBasedEventCreationDelegate {
         skScene?.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
         skScene?.timeline = timeline
+        skScene?.viewController = self
 
         skView.presentScene(skScene)
         skView.showsNodeCount = true
