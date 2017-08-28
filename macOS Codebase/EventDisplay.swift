@@ -20,7 +20,7 @@ class EventDisplay {
         }
     }
     
-    var size = CGSize(width: 150, height: 150) {
+    var size = CGSize(width: 150, height: 75) {
         didSet {
             setupNode()
         }
