@@ -9,7 +9,7 @@ import Cocoa
 import SpriteKit
 
 /// A grid of tiles, each representing one week of a human life.
-struct WeeksGrid {
+class WeeksGrid {
     
     /// The date for the first tile in the grid.
     let start: Date
@@ -132,14 +132,14 @@ struct WeeksGrid {
     }
     
     /// Handles mouse down events passed from some NSResponder subclass - usually GridNode.
-    mutating func mouseDown(at point: CGPoint) {
+    func mouseDown(at point: CGPoint) {
         if let tile = tileAt(point) {
             firstTileInSelection = tile
         }
     }
 
     /// Handles mouse dragging events passed from some NSResponder subclass - usually GridNode.
-    mutating func mouseDragged(at point: CGPoint) {
+    func mouseDragged(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             createYearLabel(for: currentTile)
             createDateLabel(for: currentTile)
@@ -148,7 +148,7 @@ struct WeeksGrid {
     }
 
     /// Handles mouse up events passed from some NSResponder subclass - usually GridNode.
-    mutating func mouseUp(at point: CGPoint) {
+    func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             selectUpTo(tile: currentTile)
             node.childNode(withName: "HoverYearLabel")?.removeFromParent()
@@ -159,7 +159,7 @@ struct WeeksGrid {
     }
     
     /// Handles mouse move events passed from some NSResponder subclass - usually GridNode.
-    mutating func mouseMoved(at point: CGPoint) {
+    func mouseMoved(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             createYearLabel(for: currentTile)
             createDateLabel(for: currentTile)
@@ -199,7 +199,7 @@ struct WeeksGrid {
         node.addChild(label.node)
     }
     
-    mutating func selectUpTo(tile: Tile) {
+    func selectUpTo(tile: Tile) {
         if let startingTile = firstTileInSelection {
             let _ = tilesBetween(firstTile: startingTile, secondTile: tile).map { $0.color = .red }
         }
