@@ -10,19 +10,23 @@ import SpriteKit
 
 class EventDisplayNode: SKShapeNode {
     
-//    var owner: EventDisplay?
-//    
-//    init(position: CGPoint, owner: EventDisplay? = nil) {
-//        super.init()
-//        
-//        self.position = position
-//        self.owner = owner
-//        self.isUserInteractionEnabled = true
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    var owner: EventDisplay?
+    
+    init(size: CGSize, owner: EventDisplay? = nil) {
+        super.init()
+        
+        let rect = CGRect(origin: CGPoint.zero, size: size)
+        self.path = CGPath(rect: rect, transform: nil)
+        self.fillColor = .red
+        
+        self.position = position
+        self.owner = owner
+        self.isUserInteractionEnabled = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 //    
 //    override func mouseDown(with event: NSEvent) {
 //        if owner != nil {
@@ -42,10 +46,11 @@ class EventDisplayNode: SKShapeNode {
 //        }
 //    }
 //
-//    override func mouseMoved(with event: NSEvent) {
+    override func mouseMoved(with event: NSEvent) {
+        print("mouse moved: \(event)")
 //        if owner != nil {
 //            owner?.mouseMoved(at: event.location(in: self))
 //        }
-//    }
+    }
     
 }

@@ -10,7 +10,7 @@ import SpriteKit
 
 class EventDisplay {
     
-    var node: EventDisplayNode
+    var node: EventDisplayNode!
     
     let event: Event
     
@@ -29,15 +29,15 @@ class EventDisplay {
     init(event: Event) {
         self.event = event
         
-        node = EventDisplayNode()
+//        node = EventDisplayNode(position: position, size: size, owner: self)
 
         setupNode()
     }
     
     private func setupNode() {
-        node = EventDisplayNode(rectOf: size)
+        node = EventDisplayNode(size: size, owner: self)
         
-        node.fillColor = .clear
+//        node.fillColor = .clear
         node.strokeColor = .clear
         node.position = position
         
