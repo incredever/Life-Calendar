@@ -8,7 +8,7 @@
 import Cocoa
 
 class Timeline: Codable {
-    let events: [Event]
+    var events: [Event]
     let name: String
     
     init(events: [Event], name: String) {
