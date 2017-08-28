@@ -66,7 +66,7 @@ class EventDisplay {
         
         dateLabel.fontSize = 10
         dateLabel.position = CGPoint(x: -(size.width / 2) + (dateLabel.width / 2) + 5,
-                                     y: (size.height / 2) - (dateLabel.height / 2) - 30 - titleLabel.height)
+                                     y: (size.height / 2) - (dateLabel.height / 2) - 20 - titleLabel.height)
         
         node.addChild(dateLabel.node)
         
