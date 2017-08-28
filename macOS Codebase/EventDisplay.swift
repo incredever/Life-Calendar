@@ -42,12 +42,12 @@ class EventDisplay {
         node.position = position
         
         let topLeftPoint = CGPoint(x: -(size.width / 2), y: size.height / 2)
-        let testShape = SKShapeNode(circleOfRadius: 5)
+        let testShape = SKShapeNode(circleOfRadius: 3)
         testShape.fillColor = .red
         testShape.position = topLeftPoint
         node.addChild(testShape)
         
-        let testCenterShape = SKShapeNode(circleOfRadius: 5)
+        let testCenterShape = SKShapeNode(circleOfRadius: 3)
         testCenterShape.fillColor = .red
         testCenterShape.position = CGPoint.zero
         node.addChild(testCenterShape)
