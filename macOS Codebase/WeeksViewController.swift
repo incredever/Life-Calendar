@@ -64,8 +64,8 @@ class WeeksViewController: NSViewController {
         skScene.addChild(grid.node)
         
         // Create sidebar
-        let sidebarSize = CGSize(width: 150, height: skView.frame.height)
-        let sidebarPosition = CGPoint(x: skView.frame.width - sidebarSize.width, y: skView.frame.height)
+        let sidebarSize = CGSize(width: 150, height: skScene.frame.height)
+        let sidebarPosition = CGPoint(x: skScene.frame.width - sidebarSize.width, y: skScene.frame.height)
         let sidebar = EventsDisplaySidebar(timeline: timeline, size: sidebarSize)
         sidebar.position = sidebarPosition
         
