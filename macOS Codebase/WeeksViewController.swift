@@ -15,7 +15,6 @@ class WeeksViewController: NSViewController {
     var skScene: WeeksScene?
     weak var window: NSWindow?
     var timeline: Timeline!
-    var grid: WeeksGrid? = nil
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
@@ -28,34 +27,6 @@ class WeeksViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Create Grid
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-mm-dd"
-        let myBirth = dateFormatter.date(from: "1993-01-05")!
-        let possibleDeath = dateFormatter.date(from: "2083-01-04")!
-        let size = CGSize(width: 330, height: 574)
-        let gridPosition = CGPoint(x: 20, y: Int(size.height) - 10)
-        
-        let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
-        
-        grid.delegate = self
-
-//        addChild(grid.node)
-        
-        // Create sidebar
-//        let sidebarSize = CGSize(width: 150, height: frame.height)
-//        let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
-//        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: sidebarSize)
-//        sidebar.position = sidebarPosition
-//
-//        if let timeline = timeline {
-//            sidebar.timeline = timeline
-//            grid.timeline = timeline
-//        }
-
-        
-        // add sidebar and grid to scene
         
         // Set up testing timeline
         let span = DateInterval(start: Date(), end: Date())
@@ -79,6 +50,35 @@ class WeeksViewController: NSViewController {
         window?.acceptsMouseMovedEvents = true
         window?.makeFirstResponder(skScene)
         window?.setFrameAutosaveName(NSWindow.FrameAutosaveName(rawValue: "mainLifeCalendarWindow"))
+        
+        // Create Grid
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-mm-dd"
+        let myBirth = dateFormatter.date(from: "1993-01-05")!
+        let possibleDeath = dateFormatter.date(from: "2083-01-04")!
+        let size = CGSize(width: 330, height: 574)
+        let gridPosition = CGPoint(x: 20, y: Int(size.height) - 10)
+        
+        let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
+        
+        grid.delegate = self
+        
+        skScene?.addChild(grid.node)
+        
+        // Create sidebar
+        //        let sidebarSize = CGSize(width: 150, height: frame.height)
+        //        let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
+        //        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: sidebarSize)
+        //        sidebar.position = sidebarPosition
+        //
+        //        if let timeline = timeline {
+        //            sidebar.timeline = timeline
+        //            grid.timeline = timeline
+        //        }
+        
+        
+        // add sidebar and grid to scene
+        
     }
     
 }
