@@ -36,16 +36,16 @@ class WeeksViewController: NSViewController {
         
         timeline.saveToDisk()
         
-        let skScene = WeeksScene(size: skView.frame.size)
-        skScene.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
-        skScene.scaleMode = .aspectFill
+        let scene = WeeksScene(size: skView.frame.size)
+        scene.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
+        scene.scaleMode = .aspectFill
 
-        skView.presentScene(skScene)
+        skView.presentScene(scene)
         skView.showsNodeCount = true
         skView.showsFPS = true
         
         window?.acceptsMouseMovedEvents = true
-        window?.makeFirstResponder(skScene)
+        window?.makeFirstResponder(scene)
         window?.setFrameAutosaveName(NSWindow.FrameAutosaveName(rawValue: "mainLifeCalendarWindow"))
         
         // Create Grid
@@ -61,15 +61,15 @@ class WeeksViewController: NSViewController {
         grid.delegate = self
         grid.timeline = timeline
         
-        skScene.addChild(grid.node)
+        scene.addChild(grid.node)
         
         // Create sidebar
-        let sidebarSize = CGSize(width: 150, height: skScene.frame.height)
-        let sidebarPosition = CGPoint(x: skScene.frame.width - sidebarSize.width, y: skScene.frame.height)
+        let sidebarSize = CGSize(width: 150, height: scene.frame.height)
+        let sidebarPosition = CGPoint(x: scene.frame.width - sidebarSize.width, y: scene.frame.height)
         let sidebar = EventsDisplaySidebar(timeline: timeline, size: sidebarSize)
         sidebar.position = sidebarPosition
         
-        skScene.addChild(sidebar.node)
+        scene.addChild(sidebar.node)
     }
     
 }
