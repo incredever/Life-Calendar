@@ -8,8 +8,14 @@
 import Cocoa
 import SpriteKit
 
+protocol GridBasedEventCreationDelegate {
+    func eventCreated(spanning: DateInterval)
+}
+
 /// A grid of tiles, each representing one week of a human life.
 class WeeksGrid {
+    
+    var delegate: GridBasedEventCreationDelegate? = nil
     
     /// The date for the first tile in the grid.
     let start: Date
@@ -202,15 +208,17 @@ class WeeksGrid {
     func selectUpTo(tile: Tile) {
         if let startingTile = firstTileInSelection {
             let _ = tilesBetween(firstTile: startingTile, secondTile: tile).map { $0.color = .red }
+            
+            delegate?.eventCreated(spanning: DateInterval(start: startingTile.span.start, end: tile.span.end))
         }
     }
     
-    private func createEvent(spanning: DateInterval) {
-        if let timeline = timeline {
-            let newEvent = Event(title: "NEW EVENT!", colorHex: "FFFFFF", span: spanning)
-
-            timeline.events.append(newEvent)
-        }
-    }
+//    private func createEvent(spanning: DateInterval) {
+//        if let timeline = timeline {
+//            let newEvent = Event(title: "NEW EVENT!", colorHex: "FFFFFF", span: spanning)
+//
+//            timeline.events.append(newEvent)
+//        }
+//    }
     
 }

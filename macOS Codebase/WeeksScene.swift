@@ -11,6 +11,7 @@ import SpriteKit
 /// A SpriteKit scene that contains a grid of tiles, each representing one week of a human life.
 class WeeksScene: SKScene {
     
+    var viewController: WeeksViewController? = nil
     var timeline: Timeline?
     
     override func didMove(to view: SKView) {
@@ -26,8 +27,10 @@ class WeeksScene: SKScene {
 
         let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
 
+        grid.delegate = viewController
+        
         addChild(grid.node)
-
+        
         let sidebarSize = CGSize(width: 150, height: frame.height)
         let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
         let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: sidebarSize)
