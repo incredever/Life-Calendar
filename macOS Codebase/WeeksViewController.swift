@@ -65,12 +65,15 @@ class WeeksViewController: NSViewController {
         scene.addChild(grid.node)
         
         // Create sidebar
-        let sidebarSize = CGSize(width: 150, height: scene.frame.height)
-        let sidebarPosition = CGPoint(x: scene.frame.width - sidebarSize.width, y: scene.frame.height)
-        sidebar = EventsSidebar(events: timeline.events, size: sidebarSize)
-        sidebar.position = sidebarPosition
+//        let sidebarSize = CGSize(width: 150, height: scene.frame.height)
+//        let sidebarPosition = CGPoint(x: scene.frame.width - sidebarSize.width, y: scene.frame.height)
+//        sidebar = EventsSidebar(events: timeline.events, size: sidebarSize)
+//        sidebar.position = sidebarPosition
+//
+//        scene.addChild(sidebar.node)
         
-        scene.addChild(sidebar.node)
+//        let sidebarContainingView = NSView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
+//        
     }
     
 }
