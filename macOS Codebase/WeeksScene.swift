@@ -35,6 +35,7 @@ class WeeksScene: SKScene {
         
         if let timeline = timeline {
             sidebar.timeline = timeline
+            grid.timeline = timeline
         }
 
         addChild(sidebar.node)
