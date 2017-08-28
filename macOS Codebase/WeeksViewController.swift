@@ -62,23 +62,17 @@ class WeeksViewController: NSViewController {
         let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
         
         grid.delegate = self
+        grid.timeline = timeline
         
         skScene?.addChild(grid.node)
         
         // Create sidebar
-        //        let sidebarSize = CGSize(width: 150, height: frame.height)
-        //        let sidebarPosition = CGPoint(x: frame.width - sidebarSize.width, y: frame.height)
-        //        let sidebar = EventsDisplaySidebar(timeline: tempTimeline, size: sidebarSize)
-        //        sidebar.position = sidebarPosition
-        //
-        //        if let timeline = timeline {
-        //            sidebar.timeline = timeline
-        //            grid.timeline = timeline
-        //        }
+        let sidebarSize = CGSize(width: 150, height: skView.frame.height)
+        let sidebarPosition = CGPoint(x: skView.frame.width - sidebarSize.width, y: skView.frame.height)
+        let sidebar = EventsDisplaySidebar(timeline: timeline, size: sidebarSize)
+        sidebar.position = sidebarPosition
         
-        
-        // add sidebar and grid to scene
-        
+        skScene?.addChild(sidebar.node)
     }
     
 }
