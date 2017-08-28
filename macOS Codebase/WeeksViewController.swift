@@ -14,6 +14,7 @@ class WeeksViewController: NSViewController {
     var skView: SKView!
     weak var window: NSWindow?
     var timeline: Timeline!
+    var sidebar: EventsSidebar!
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
@@ -66,7 +67,7 @@ class WeeksViewController: NSViewController {
         // Create sidebar
         let sidebarSize = CGSize(width: 150, height: scene.frame.height)
         let sidebarPosition = CGPoint(x: scene.frame.width - sidebarSize.width, y: scene.frame.height)
-        let sidebar = EventsSidebar(events: timeline.events, size: sidebarSize)
+        sidebar = EventsSidebar(events: timeline.events, size: sidebarSize)
         sidebar.position = sidebarPosition
         
         scene.addChild(sidebar.node)
@@ -76,8 +77,11 @@ class WeeksViewController: NSViewController {
 
 extension WeeksViewController: GridBasedEventCreationDelegate {
     func eventCreated(spanning: DateInterval) {
-        print("NEW EVENT CREATED EVERYBODY")
+        let newEvent = Event(title: "testing 123", colorHex: "FFFFFF", span: spanning)
+
+        sidebar.events.append(newEvent)
         
-        // send this info to sidebar
+        // TODO: Update model too
+        
     }
 }
