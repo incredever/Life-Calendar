@@ -204,4 +204,10 @@ struct WeeksGrid {
         }
     }
     
+    private func createEvent(spanning: DateInterval) {
+        let newEvent = Event(title: "NEW EVENT!", colorHex: "FFFFFF", span: spanning)
+        
+        // add to master timeline, which will then update the sidebar on didSet?
+    }
+    
 }
