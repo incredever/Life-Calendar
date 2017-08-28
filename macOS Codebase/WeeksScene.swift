@@ -9,14 +9,4 @@ import Cocoa
 import SpriteKit
 
 /// A SpriteKit scene that contains a grid of tiles, each representing one week of a human life.
-class WeeksScene: SKScene {
-    
-    var viewController: WeeksViewController? = nil
-    var timeline: Timeline?
-    
-    override func didMove(to view: SKView) {
-        
-       
-    }
-    
-}
+typealias WeeksScene = SKScene

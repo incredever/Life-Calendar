@@ -40,8 +40,6 @@ class WeeksViewController: NSViewController {
         skScene = WeeksScene(size: skView.frame.size)
         skScene?.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         skScene?.scaleMode = .aspectFill
-        skScene?.timeline = timeline
-        skScene?.viewController = self
 
         skView.presentScene(skScene)
         skView.showsNodeCount = true
