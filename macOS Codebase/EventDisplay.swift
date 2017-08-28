@@ -47,6 +47,11 @@ class EventDisplay {
         testShape.position = topLeftPoint
         node.addChild(testShape)
         
+        let testCenterShape = SKShapeNode(circleOfRadius: 5)
+        testCenterShape.fillColor = .red
+        testCenterShape.position = CGPoint.zero
+        node.addChild(testCenterShape)
+        
         let titleLabel = Label(text: event.title)
         titleLabel.fontSize = 12
         titleLabel.position = CGPoint(x: topLeftPoint.x + (titleLabel.width / 2) + 5,
