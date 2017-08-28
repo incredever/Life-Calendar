@@ -7,9 +7,14 @@
 
 import Cocoa
 
-struct Timeline: Codable {
+class Timeline: Codable {
     let events: [Event]
     let name: String
+    
+    init(events: [Event], name: String) {
+        self.events = events
+        self.name = name
+    }
     
     func saveToDisk() {
         let encoder = JSONEncoder()
