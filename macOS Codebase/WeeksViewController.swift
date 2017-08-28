@@ -12,7 +12,6 @@ import SpriteKit
 class WeeksViewController: NSViewController {
     
     var skView: SKView!
-    var skScene: WeeksScene?
     weak var window: NSWindow?
     var timeline: Timeline!
     
@@ -37,9 +36,9 @@ class WeeksViewController: NSViewController {
         
         timeline.saveToDisk()
         
-        skScene = WeeksScene(size: skView.frame.size)
-        skScene?.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
-        skScene?.scaleMode = .aspectFill
+        let skScene = WeeksScene(size: skView.frame.size)
+        skScene.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
+        skScene.scaleMode = .aspectFill
 
         skView.presentScene(skScene)
         skView.showsNodeCount = true
@@ -62,7 +61,7 @@ class WeeksViewController: NSViewController {
         grid.delegate = self
         grid.timeline = timeline
         
-        skScene?.addChild(grid.node)
+        skScene.addChild(grid.node)
         
         // Create sidebar
         let sidebarSize = CGSize(width: 150, height: skView.frame.height)
@@ -70,7 +69,7 @@ class WeeksViewController: NSViewController {
         let sidebar = EventsDisplaySidebar(timeline: timeline, size: sidebarSize)
         sidebar.position = sidebarPosition
         
-        skScene?.addChild(sidebar.node)
+        skScene.addChild(sidebar.node)
     }
     
 }
