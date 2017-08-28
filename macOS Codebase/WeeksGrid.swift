@@ -157,6 +157,13 @@ class WeeksGrid {
     func mouseUp(at point: CGPoint) {
         if let currentTile = tileAt(point) {
             selectUpTo(tile: currentTile)
+            
+            if let startingTile = firstTileInSelection {
+                let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .red }
+                
+                delegate?.eventCreated(spanning: DateInterval(start: startingTile.span.start, end: currentTile.span.end))
+            }
+            
             node.childNode(withName: "HoverYearLabel")?.removeFromParent()
             node.childNode(withName: "HoverDateLabel")?.removeFromParent()
         }
@@ -208,8 +215,6 @@ class WeeksGrid {
     func selectUpTo(tile: Tile) {
         if let startingTile = firstTileInSelection {
             let _ = tilesBetween(firstTile: startingTile, secondTile: tile).map { $0.color = .red }
-            
-            delegate?.eventCreated(spanning: DateInterval(start: startingTile.span.start, end: tile.span.end))
         }
     }
     
