@@ -10,7 +10,7 @@ import SpriteKit
 
 class EventDisplay {
     
-    var node: SKShapeNode
+    var node: EventDisplayNode
     
     let event: Event
     
@@ -29,13 +29,13 @@ class EventDisplay {
     init(event: Event) {
         self.event = event
         
-        node = SKShapeNode()
+        node = EventDisplayNode()
 
         setupNode()
     }
     
     private func setupNode() {
-        node = SKShapeNode(rectOf: size)
+        node = EventDisplayNode(rectOf: size)
         
         node.fillColor = .clear
         node.strokeColor = .clear

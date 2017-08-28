@@ -10,20 +10,20 @@ import SpriteKit
 
 class EventDisplayNode: SKShapeNode {
     
-    var owner: EventDisplay?
-    
-    init(position: CGPoint, owner: EventDisplay? = nil) {
-        super.init()
-        
-        self.position = position
-        self.owner = owner
-        self.isUserInteractionEnabled = true
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+//    var owner: EventDisplay?
+//    
+//    init(position: CGPoint, owner: EventDisplay? = nil) {
+//        super.init()
+//        
+//        self.position = position
+//        self.owner = owner
+//        self.isUserInteractionEnabled = true
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//    
 //    override func mouseDown(with event: NSEvent) {
 //        if owner != nil {
 //            owner?.mouseDown(at: event.location(in: self))
