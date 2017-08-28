@@ -62,7 +62,7 @@ class EventsSidebar {
         for event in events {
             let eventDisplay = EventDisplay(event: event)
 
-            currentPosition = CGPoint(x: currentPosition.x, y: currentPosition.y - (eventDisplay.size.height / 2))
+            currentPosition = CGPoint(x: currentPosition.x, y: currentPosition.y - eventDisplay.size.height)
             
             eventDisplay.position = currentPosition
             
