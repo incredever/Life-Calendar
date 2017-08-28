@@ -10,7 +10,6 @@
 		DE23A9D01F28C579002C156D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE23A9CF1F28C579002C156D /* Tile.swift */; };
 		DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */; };
 		DE3444041F2C67D6001DAE8F /* TilePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3444031F2C67D6001DAE8F /* TilePopup.swift */; };
-		DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3B81271F10B8940051A3A6 /* WeeksScene.swift */; };
 		DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */; };
 		DE65D6A81F273EC000B97F22 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A71F273EC000B97F22 /* Color.swift */; };
 		DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */; };
@@ -52,7 +51,6 @@
 		DE3444011F2B570F001DAE8F /* 2017-07-28 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-28 Fig 1.png"; sourceTree = "<group>"; };
 		DE3444021F2B5711001DAE8F /* 2017-07-28 Fig 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-28 Fig 2.png"; sourceTree = "<group>"; };
 		DE3444031F2C67D6001DAE8F /* TilePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TilePopup.swift; sourceTree = "<group>"; };
-		DE3B81271F10B8940051A3A6 /* WeeksScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksScene.swift; sourceTree = "<group>"; };
 		DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-08.md"; sourceTree = "<group>"; };
 		DE3B812C1F1365280051A3A6 /* 2017-07-10.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-10.md"; sourceTree = "<group>"; };
 		DE3B812D1F13675C0051A3A6 /* 2017-07-10 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-10 Fig 1.png"; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
-				DE3B81271F10B8940051A3A6 /* WeeksScene.swift */,
 				DEFD711A1F06459500AF4373 /* Timeline.swift */,
 				DEFD71181F0644BD00AF4373 /* Event.swift */,
 				DE65D6A71F273EC000B97F22 /* Color.swift */,
@@ -346,7 +343,6 @@
 				DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */,
 				DE7E3C5E1F4EF5A20048A115 /* TimelineDateFormatter.swift in Sources */,
 				DE23A9D01F28C579002C156D /* Tile.swift in Sources */,
-				DE3B81281F10B8940051A3A6 /* WeeksScene.swift in Sources */,
 				DED586E71F38A62E00B30888 /* Label.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,

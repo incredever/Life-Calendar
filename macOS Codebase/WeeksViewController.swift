@@ -36,7 +36,7 @@ class WeeksViewController: NSViewController {
         
         timeline.saveToDisk()
         
-        let scene = WeeksScene(size: skView.frame.size)
+        let scene = SKScene(size: skView.frame.size)
         scene.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         scene.scaleMode = .aspectFill
 
