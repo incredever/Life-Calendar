@@ -67,8 +67,7 @@ class EventsSidebar {
             eventDisplay.position = currentPosition
             
             node.addChild(eventDisplay.node)
-            
         }
     }
-    
+
 }
