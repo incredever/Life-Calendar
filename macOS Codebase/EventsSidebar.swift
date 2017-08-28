@@ -10,7 +10,7 @@ import SpriteKit
 
 class EventsSidebar {
     
-    var timeline: Timeline {
+    var events: [Event] {
         didSet {
             layoutEvents()
         }
@@ -38,8 +38,8 @@ class EventsSidebar {
     
     private var eventDisplays: [EventDisplay] = []
     
-    init(timeline: Timeline, size: CGSize) {
-        self.timeline = timeline
+    init(events: [Event], size: CGSize) {
+        self.events = events
         self.size = size
         
         node = ScrollViewNode(rectOf: size)
@@ -59,7 +59,7 @@ class EventsSidebar {
         let topY = size.height / 2
         var currentPosition = CGPoint(x: 0, y: topY)
         
-        for event in timeline.events {
+        for event in events {
             let eventDisplay = EventDisplay(event: event)
 
             currentPosition = CGPoint(x: currentPosition.x, y: currentPosition.y - (eventDisplay.size.height / 2))
