@@ -1,5 +1,5 @@
 //
-//  EventsDisplaySidebar.swift
+//  EventsSidebar.swift
 //  Life Calendar
 //
 //  Created by Wesley Van der Klomp on 8/22/17.
@@ -8,7 +8,7 @@
 import Foundation
 import SpriteKit
 
-class EventsDisplaySidebar {
+class EventsSidebar {
     
     var timeline: Timeline {
         didSet {

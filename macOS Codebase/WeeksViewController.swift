@@ -66,7 +66,7 @@ class WeeksViewController: NSViewController {
         // Create sidebar
         let sidebarSize = CGSize(width: 150, height: scene.frame.height)
         let sidebarPosition = CGPoint(x: scene.frame.width - sidebarSize.width, y: scene.frame.height)
-        let sidebar = EventsDisplaySidebar(timeline: timeline, size: sidebarSize)
+        let sidebar = EventsSidebar(timeline: timeline, size: sidebarSize)
         sidebar.position = sidebarPosition
         
         scene.addChild(sidebar.node)
