@@ -9,11 +9,7 @@ import Cocoa
 import SpriteKit
 
 /// A VC that contains an NSView > SKView > SKScene hierarchy for displaying a human life in weeks. All this is setup inside the `loadView` and `viewDidLoad` methods.
-class WeeksViewController: NSViewController, GridBasedEventCreationDelegate {
-    
-    func eventCreated(spanning: DateInterval) {
-        print("NEW EVENT CREATED EVERYBODY")
-    }
+class WeeksViewController: NSViewController {
     
     var skView: SKView!
     var skScene: WeeksScene?
@@ -56,4 +52,12 @@ class WeeksViewController: NSViewController, GridBasedEventCreationDelegate {
         window?.setFrameAutosaveName(NSWindow.FrameAutosaveName(rawValue: "mainLifeCalendarWindow"))
     }
     
+}
+
+extension WeeksViewController: GridBasedEventCreationDelegate {
+    func eventCreated(spanning: DateInterval) {
+        print("NEW EVENT CREATED EVERYBODY")
+        
+        // send this info to sidebar
+    }
 }
