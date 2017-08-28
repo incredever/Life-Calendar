@@ -41,10 +41,16 @@ class EventDisplay {
         node.strokeColor = .clear
         node.position = position
         
+        let topLeftPoint = CGPoint(x: -(size.width / 2), y: size.height / 2)
+        let testShape = SKShapeNode(circleOfRadius: 5)
+        testShape.fillColor = .red
+        testShape.position = topLeftPoint
+        node.addChild(testShape)
+        
         let titleLabel = Label(text: event.title)
         titleLabel.fontSize = 12
-        titleLabel.position = CGPoint(x: -(size.width / 2) + (titleLabel.width / 2) + 5,
-                                      y: (size.height / 2) - (titleLabel.height / 2) - 15)
+        titleLabel.position = CGPoint(x: topLeftPoint.x + (titleLabel.width / 2) + 5,
+                                      y: topLeftPoint.y - (titleLabel.height / 2) - 15)
         
         node.addChild(titleLabel.node)
         

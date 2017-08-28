@@ -23,6 +23,7 @@ class EventDisplayNode: SKShapeNode {
         self.position = position
         self.owner = owner
         self.isUserInteractionEnabled = true
+        self.name = owner?.event.span.start.description
     }
     
  
@@ -49,7 +50,9 @@ class EventDisplayNode: SKShapeNode {
 //    }
 //
     override func mouseMoved(with event: NSEvent) {
-        print("mouse moved: \(event)")
+//        print("mouse moved: \(event)")
+        
+        print(self)
         
         self.fillColor = NSColor(calibratedRed: 1.0, green: 0.0, blue: 0.0, alpha: 0.3)
 
