@@ -9,4 +9,7 @@ import Cocoa
 
 class SidebarView: NSView {
     
+    // tableview
+    // table view cells
+    
 }
