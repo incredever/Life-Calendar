@@ -99,7 +99,6 @@
 		DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEDCC8A61F32FC920072F141 /* Mockups of August.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mockups of August.sketch"; sourceTree = "<group>"; };
 		DEE095481F5530E800AA4412 /* 2018-08-29.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2018-08-29.md"; sourceTree = "<group>"; };
 		DEE095491F55356C00AA4412 /* DraggableItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableItemView.swift; sourceTree = "<group>"; };
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
@@ -196,7 +195,6 @@
 			children = (
 				DE4DEF8F1F3075C70059956D /* Untitled.pcvd */,
 				DE10292C1EF4AD1A008E894E /* Early Mockups.sketch */,
-				DEDCC8A61F32FC920072F141 /* Mockups of August.sketch */,
 				DED30F071F0FC0CB00B299C9 /* 1.0 Designs and Ideas.sketch */,
 			);
 			path = "Design Files";
