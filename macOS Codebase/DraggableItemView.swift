@@ -13,9 +13,9 @@ class DraggableItemView: NSView {
     var location: NSPoint!
     var backgroundColor: NSColor!
     
-    override var isOpaque: Bool {
-        return true
-    }
+    override var isOpaque: Bool { return true }
+    
+    override var acceptsFirstResponder: Bool { return true }
     
     override init(frame: NSRect) {
         super.init(frame: frame)
