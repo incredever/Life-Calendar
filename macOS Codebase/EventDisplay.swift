@@ -11,6 +11,7 @@ import SpriteKit
 class EventDisplay {
     
     var node: EventDisplayNode!
+    var view: NSView!
     
     let event: Event
     
@@ -29,15 +30,17 @@ class EventDisplay {
     init(event: Event) {
         self.event = event
         
-//        node = EventDisplayNode(position: position, size: size, owner: self)
-
         setupNode()
+        setupView()
+    }
+    
+    private func setupView() {
+        
     }
     
     private func setupNode() {
         node = EventDisplayNode(size: size, owner: self)
         
-//        node.fillColor = .clear
         node.strokeColor = .clear
         node.position = position
         
