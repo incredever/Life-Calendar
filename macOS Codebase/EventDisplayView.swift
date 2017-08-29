@@ -12,6 +12,8 @@ class EventDisplayView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
+//        let label = NSLabel
+        
 //        setItemPropertiesToDefault(sender: self)
     }
     

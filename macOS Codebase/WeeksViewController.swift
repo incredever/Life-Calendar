@@ -76,20 +76,24 @@ class WeeksViewController: NSViewController {
 //        
 //        view.addSubview(sidebarView)
         
+//        let draggableItemView = DraggableItemView(frame: NSRect(x: 100, y: 100, width: 200, height: 200))
+//
+//        view.addSubview(draggableItemView)
+//
+//        let scrollView = NSScrollView(frame: NSRect(x: 350, y: 75, width: 200, height: 400))
+//
+//        view.addSubview(scrollView)
+//
+//        let testEventDisplayView = EventDisplayView(frame: NSRect(x: 10, y: 400, width: 150, height: 75))
+//
+//        view.addSubview(testEventDisplayView)
+//
+        let testingAddingTableView = NSTableView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
         
-        let draggableItemView = DraggableItemView(frame: NSRect(x: 100, y: 100, width: 200, height: 200))
+        testingAddingTableView.dataSource = self
         
-//        scrollView.addSubview(draggableItemView)
-        view.addSubview(draggableItemView)
+        view.addSubview(testingAddingTableView)
         
-        
-        let scrollView = NSScrollView(frame: NSRect(x: 350, y: 75, width: 200, height: 400))
-        
-        view.addSubview(scrollView)
-        
-        let testEventDisplayView = EventDisplayView(frame: NSRect(x: 10, y: 400, width: 150, height: 75))
-
-        view.addSubview(testEventDisplayView)
         
     }
     
@@ -104,4 +108,8 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
         // TODO: Update model too
         
     }
+}
+
+extension WeeksViewController: NSTableViewDataSource {
+    
 }
