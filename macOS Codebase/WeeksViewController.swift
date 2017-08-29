@@ -86,7 +86,11 @@ class WeeksViewController: NSViewController {
         let scrollView = NSScrollView(frame: NSRect(x: 350, y: 75, width: 200, height: 400))
         
         view.addSubview(scrollView)
+        
+        let testEventDisplayView = EventDisplayView(frame: NSRect(x: 10, y: 400, width: 150, height: 75))
 
+        view.addSubview(testEventDisplayView)
+        
     }
     
 }

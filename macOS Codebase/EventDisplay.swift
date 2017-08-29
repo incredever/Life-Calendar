@@ -37,6 +37,7 @@ class EventDisplay {
     private func setupView() {
         let mainView = EventDisplayView(frame: NSRect(origin: position, size: size))
 
+        
         view = mainView
     }
     
