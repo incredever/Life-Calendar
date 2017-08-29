@@ -73,12 +73,13 @@ class WeeksViewController: NSViewController {
         column1.width = 100.0
         let column2 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col2"))
         column2.width = 100.0
+        column1.headerCell.title = "test 123"
         
         tableView.addTableColumn(column1)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
-        tableView.backgroundColor = .red
+//        tableView.backgroundColor = .red
         
         tableContainer.documentView = tableView
         tableContainer.hasVerticalScroller = true
@@ -120,6 +121,7 @@ extension WeeksViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let result = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(rawValue: "MyView"), owner: self)
+        
         
         return result
     }
