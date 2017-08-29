@@ -70,6 +70,8 @@ class WeeksViewController: NSViewController {
         
         tableView = NSTableView(frame: NSRect(origin: tableViewPoint, size: tableViewSize))
         tableView.backgroundColor = .red
+        tableView.dataSource = self
+        tableView.delegate = self
         
         view.addSubview(tableView)
     }
@@ -86,5 +88,13 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
         // Add to timeline
         // Add to tableView
     }
+    
+}
+
+extension WeeksViewController: NSTableViewDataSource {
+    
+}
+
+extension WeeksViewController: NSTableViewDelegate {
     
 }
