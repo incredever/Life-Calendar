@@ -85,4 +85,28 @@ class DraggableItemView: NSView {
         }
     }
     
+    private func offsetLocationBy(x: CGFloat, y: CGFloat) {
+        // TODO: Implement this method
+    }
+    
+    override func mouseDragged(with event: NSEvent) {
+        print("\n Mouse dragged:")
+        
+        if dragging {
+            print("Dragging item in progress")
+            
+            let newDragLocation = convert(event.locationInWindow, from: nil)
+            
+            // Offset the item by the change in mouse movement in the event
+            offsetLocationBy(x: newDragLocation.x - lastDragLocation!.x,
+                             y: newDragLocation.y - lastDragLocation!.y)
+            
+            // Save the new drag location for the next drag event
+            lastDragLocation = newDragLocation
+            
+            // Support automatic scrolling during a drag by calling NSView's autoscroll method
+            autoscroll(with: event)
+        }
+    }
+    
 }
