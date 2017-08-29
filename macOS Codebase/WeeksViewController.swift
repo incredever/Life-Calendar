@@ -75,17 +75,15 @@ class WeeksViewController: NSViewController {
         tableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0),
                                               size: tableContainer.frame.size))
 
-        let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col1"))
-        column1.width = 100.0
-        let column2 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col2"))
-        column2.width = 100.0
-        column1.headerCell.title = "test 123"
+        let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Column1"))
+        column1.width = widthOfSidebar
         
         tableView.addTableColumn(column1)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
         tableView.backgroundColor = NSColor(hexString: "F3F1F0")
+        tableView.headerView = nil
         
         tableContainer.documentView = tableView
         tableContainer.hasVerticalScroller = true
