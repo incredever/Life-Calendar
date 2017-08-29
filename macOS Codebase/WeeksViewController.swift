@@ -79,7 +79,7 @@ class WeeksViewController: NSViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.reloadData()
-//        tableView.backgroundColor = .red
+        tableView.backgroundColor = .lightGray
         
         tableContainer.documentView = tableView
         tableContainer.hasVerticalScroller = true
