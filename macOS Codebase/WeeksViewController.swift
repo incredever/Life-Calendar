@@ -70,7 +70,9 @@ class WeeksViewController: NSViewController {
         tableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 200, height: 400)))
 
         let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col1"))
-        column1.width = 200.0
+        column1.width = 100.0
+        let column2 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col2"))
+        column2.width = 100.0
         
         tableView.addTableColumn(column1)
         tableView.dataSource = self
