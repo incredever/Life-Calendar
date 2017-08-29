@@ -33,7 +33,8 @@ class WeeksViewController: NSViewController {
         let exampleEvent1 = Event(title: "Hello World", colorHex: "000000", span: span)
         let exampleEvent2 = Event(title: "Test Event", colorHex: "FFFFFF", span: span)
         let exampleEvent3 = Event(title: "Blah blah blah", colorHex: "FFFFFF", span: span)
-        let timeline = Timeline(events: [exampleEvent1, exampleEvent2, exampleEvent3], name: "Testing timeline ABC 1234")
+        
+        timeline = Timeline(events: [exampleEvent1, exampleEvent2, exampleEvent3], name: "Testing timeline ABC 1234")
         
         timeline.saveToDisk()
         
