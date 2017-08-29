@@ -91,6 +91,9 @@ class WeeksViewController: NSViewController {
         view.addSubview(tableContainer)
       
         
+        let testEventDisplayView = EventDisplayView(frame: NSRect(x: 100, y: 100, width: 100, height: 50))
+        
+        view.addSubview(testEventDisplayView)
 
     }
     
@@ -124,10 +127,14 @@ extension WeeksViewController: NSTableViewDataSource {
 extension WeeksViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let result = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(rawValue: "MyView"), owner: self)
+        var eventDisplayView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(rawValue: "MyView"), owner: self)
+        
+        if eventDisplayView == nil {
+            eventDisplayView = EventDisplayView(frame: NSRect(x: 0, y: 0, width: 100, height: 30))
+        }
         
         
-        return result
+        return eventDisplayView
     }
     
 }
