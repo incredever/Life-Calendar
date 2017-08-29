@@ -72,8 +72,10 @@ class WeeksViewController: NSViewController {
 //
 //        scene.addChild(sidebar.node)
         
-//        let sidebarContainingView = NSView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
-//        
+        let sidebarView = SidebarView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
+        
+        view.addSubview(sidebarView)
+//
     }
     
 }
