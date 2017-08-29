@@ -49,7 +49,17 @@ class DraggableItemView: NSView {
     }
     
     func isPointInItem(_ testPoint: NSPoint) -> Bool {
-        return true // TODO: Fill this method out
+        var itemHit = false
+        
+        // Test first if we're in the rough bounds
+        itemHit = NSPointInRect(testPoint, itemRect())
+        
+        // yes, let's further refine the testing
+        if itemHit {
+            // if this was a non-rectangular shape, you would refine the hit testing here
+        }
+        
+        return itemHit
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -66,13 +76,13 @@ class DraggableItemView: NSView {
             
             // Flag the instance variable that indicates a drag was actually started
             dragging = true
+            
+            // Store the starting mouse down loction
+            lastDragLocation = clickLocation
+            
+            // Set the cursor to the closed hand cursor for the duration of the drag
+            NSCursor.closedHand.push()
         }
-        
-        // Store the starting mouse down loction
-        lastDragLocation = clickLocation
-        
-        // Set the cursor to the closed hand cursor for the duration of the drag
-        NSCursor.closedHand.push()
     }
     
 }
