@@ -76,12 +76,16 @@ class WeeksViewController: NSViewController {
 //        
 //        view.addSubview(sidebarView)
         
-        let scrollView = NSScrollView(frame: NSRect(x: 100, y: 100, width: 200, height: 200))
         
         let draggableItemView = DraggableItemView(frame: NSRect(x: 100, y: 100, width: 200, height: 200))
         
 //        scrollView.addSubview(draggableItemView)
         view.addSubview(draggableItemView)
+        
+        
+        let scrollView = NSScrollView(frame: NSRect(x: 350, y: 75, width: 200, height: 400))
+        
+        view.addSubview(scrollView)
 
     }
     
