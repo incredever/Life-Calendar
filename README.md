@@ -8,6 +8,16 @@ I don't know yet.
 
 If you'd like to follow along you can read the [Developer's Log](https://github.com/wvdk/Life-Calendar/tree/master/Developer's%20Log).
 
+---
+
+***Quick Update Everybody:*** Okay, I don't have time to rewrite this whole readme, but the app and the roadmap look a lot different now. Here's closer how it's looking now:
+
+![Mockups 3](./Screenshots%20and%20mockups/Mockups%203.png)
+
+***Okay, end of quick update everybody.***
+
+---
+
 ## Future Roadmap
 
 ###  Something Basic (July – August)
