@@ -63,53 +63,15 @@ class WeeksViewController: NSViewController {
         grid.timeline = timeline
         
         scene.addChild(grid.node)
-        
-        // Create sidebar
-//        let sidebarSize = CGSize(width: 150, height: scene.frame.height)
-//        let sidebarPosition = CGPoint(x: scene.frame.width - sidebarSize.width, y: scene.frame.height)
-//        sidebar = EventsSidebar(events: timeline.events, size: sidebarSize)
-//        sidebar.position = sidebarPosition
-//
-//        scene.addChild(sidebar.node)
-        
-//        let sidebarView = SidebarView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
-//        
-//        view.addSubview(sidebarView)
-        
-//        let draggableItemView = DraggableItemView(frame: NSRect(x: 100, y: 100, width: 200, height: 200))
-//
-//        view.addSubview(draggableItemView)
-//
-//        let scrollView = NSScrollView(frame: NSRect(x: 350, y: 75, width: 200, height: 400))
-//
-//        view.addSubview(scrollView)
-//
-//        let testEventDisplayView = EventDisplayView(frame: NSRect(x: 10, y: 400, width: 150, height: 75))
-//
-//        view.addSubview(testEventDisplayView)
-//
-        let testingAddingTableView = NSTableView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
-        
-        testingAddingTableView.dataSource = self
-        
-        view.addSubview(testingAddingTableView)
-        
-        
     }
     
 }
 
 extension WeeksViewController: GridBasedEventCreationDelegate {
+    
     func eventCreated(spanning: DateInterval) {
         let newEvent = Event(title: "testing 123", colorHex: "FFFFFF", span: spanning)
 
-//        sidebar.events.append(newEvent)
-        
-        // TODO: Update model too
-        
     }
-}
-
-extension WeeksViewController: NSTableViewDataSource {
     
 }
