@@ -14,7 +14,7 @@ class WeeksViewController: NSViewController {
     var skView: SKView!
     weak var window: NSWindow?
     var timeline: Timeline!
-//    var sidebar: EventsSidebar!
+    var tableView: NSTableView!
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
@@ -63,6 +63,15 @@ class WeeksViewController: NSViewController {
         grid.timeline = timeline
         
         scene.addChild(grid.node)
+        
+        // Create the table view
+        let tableViewPoint = CGPoint(x: 0, y: 0)
+        let tableViewSize = CGSize(width: 200, height: 400)
+        
+        tableView = NSTableView(frame: NSRect(origin: tableViewPoint, size: tableViewSize))
+        tableView.backgroundColor = .red
+        
+        view.addSubview(tableView)
     }
     
 }
