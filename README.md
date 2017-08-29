@@ -14,7 +14,7 @@ If you'd like to follow along you can read the [Developer's Log](https://github.
 
 ![Mockups 3](./Screenshots%20and%20mockups/Mockups%203.png)
 
-***Okay, end of quick update everybody.***
+But even that's out of date. Whatever. Follow the [dev logs](https://github.com/wvdk/Life-Calendar/tree/master/Developer's%20Log) for the latest. Okay, ***end of quick update everybody.***
 
 ---
 
