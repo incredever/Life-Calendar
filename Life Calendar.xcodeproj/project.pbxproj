@@ -22,7 +22,6 @@
 		DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */; };
 		DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */; };
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
-		DEE0954A1F55356C00AA4412 /* DraggableItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE095491F55356C00AA4412 /* DraggableItemView.swift */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
 		DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711A1F06459500AF4373 /* Timeline.swift */; };
 /* End PBXBuildFile section */
@@ -94,7 +93,6 @@
 		DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DED97A431EDE0C3A00F2100B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEE095481F5530E800AA4412 /* 2018-08-29.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2018-08-29.md"; sourceTree = "<group>"; };
-		DEE095491F55356C00AA4412 /* DraggableItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableItemView.swift; sourceTree = "<group>"; };
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
 		DEED26BF1F5408C500AE6249 /* 2017-08-28 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-28 Fig 1.png"; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 				DE9F37451F501B9800A21B51 /* NSBezierPath+cgPath.swift */,
 				DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */,
 				DED97A431EDE0C3A00F2100B /* Info.plist */,
-				DEE095491F55356C00AA4412 /* DraggableItemView.swift */,
 			);
 			path = "macOS Codebase";
 			sourceTree = "<group>";
@@ -338,7 +335,6 @@
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
 				DED97A3B1EDE0C3A00F2100B /* AppDelegate.swift in Sources */,
 				DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */,
-				DEE0954A1F55356C00AA4412 /* DraggableItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
