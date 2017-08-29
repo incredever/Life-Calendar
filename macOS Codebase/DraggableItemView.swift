@@ -125,4 +125,11 @@ class DraggableItemView: NSView {
         }
     }
     
+    override func mouseUp(with event: NSEvent) {
+        dragging = false
+        
+        // finished dragging, restore the cursor
+        NSCursor.pop()
+    }
+    
 }
