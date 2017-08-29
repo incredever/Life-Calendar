@@ -4,6 +4,8 @@
 //
 //  Created by Wesley Van der Klomp on 8/29/17.
 //
+// https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CocoaViewsGuide/SubclassingNSView/SubclassingNSView.html
+//
 
 import Cocoa
 
@@ -100,6 +102,8 @@ class DraggableItemView: NSView {
             // Offset the item by the change in mouse movement in the event
             offsetLocationBy(x: newDragLocation.x - lastDragLocation!.x,
                              y: newDragLocation.y - lastDragLocation!.y)
+            
+            // Question about above - why would you just set the location of the item directly, instead of doing things by offsets? Perhaps this will be answered when I take a look at Listing 4-10
             
             // Save the new drag location for the next drag event
             lastDragLocation = newDragLocation
