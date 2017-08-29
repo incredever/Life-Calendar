@@ -17,7 +17,6 @@
 		DE7E3C621F4FED930048A115 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E3C611F4FED930048A115 /* Line.swift */; };
 		DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */; };
 		DE9F37461F501B9800A21B51 /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F37451F501B9800A21B51 /* NSBezierPath+cgPath.swift */; };
-		DE9F37481F503EEA00A21B51 /* ScrollViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F37471F503EEA00A21B51 /* ScrollViewNode.swift */; };
 		DED586E71F38A62E00B30888 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E61F38A62E00B30888 /* Label.swift */; };
 		DED586E91F38A72500B30888 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E81F38A72500B30888 /* Font.swift */; };
 		DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */; };
@@ -76,7 +75,6 @@
 		DE9C8D891F0F838E001F05A0 /* Mockup 2 - Basic "Life In Weeks" Idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockup 2 - Basic \"Life In Weeks\" Idea.png"; sourceTree = "<group>"; };
 		DE9C8D8A1F0F86A6001F05A0 /* 2017-07-07 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-07 Fig 1.png"; sourceTree = "<group>"; };
 		DE9F37451F501B9800A21B51 /* NSBezierPath+cgPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+cgPath.swift"; sourceTree = "<group>"; };
-		DE9F37471F503EEA00A21B51 /* ScrollViewNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewNode.swift; sourceTree = "<group>"; };
 		DE9F37491F504DE400A21B51 /* 2017-08-25.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-25.md"; sourceTree = "<group>"; };
 		DEA1AD9A1F48152500A66EA3 /* 2017-08-19.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-19.md"; sourceTree = "<group>"; };
 		DEA6857C1F45AF5800E7EE02 /* 2017-08-17 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-17 Fig 1.png"; sourceTree = "<group>"; };
@@ -221,7 +219,6 @@
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
 				DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */,
 				DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */,
-				DE9F37471F503EEA00A21B51 /* ScrollViewNode.swift */,
 				DEFD711A1F06459500AF4373 /* Timeline.swift */,
 				DEFD71181F0644BD00AF4373 /* Event.swift */,
 				DE65D6A71F273EC000B97F22 /* Color.swift */,
@@ -334,7 +331,6 @@
 				DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */,
 				DE7E3C621F4FED930048A115 /* Line.swift in Sources */,
 				DE9F37461F501B9800A21B51 /* NSBezierPath+cgPath.swift in Sources */,
-				DE9F37481F503EEA00A21B51 /* ScrollViewNode.swift in Sources */,
 				DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */,
 				DE7E3C5E1F4EF5A20048A115 /* TimelineDateFormatter.swift in Sources */,
 				DE23A9D01F28C579002C156D /* Tile.swift in Sources */,
