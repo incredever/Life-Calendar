@@ -14,7 +14,7 @@ class WeeksViewController: NSViewController {
     var skView: SKView!
     weak var window: NSWindow?
     var timeline: Timeline!
-    var sidebar: EventsSidebar!
+//    var sidebar: EventsSidebar!
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
@@ -87,7 +87,7 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
     func eventCreated(spanning: DateInterval) {
         let newEvent = Event(title: "testing 123", colorHex: "FFFFFF", span: spanning)
 
-        sidebar.events.append(newEvent)
+//        sidebar.events.append(newEvent)
         
         // TODO: Update model too
         

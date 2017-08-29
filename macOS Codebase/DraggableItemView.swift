@@ -44,4 +44,8 @@ class DraggableItemView: NSView {
         NSBezierPath.fill(itemRect())
     }
     
+    override func mouseDown(with event: NSEvent) {
+        print("mouse down")
+    }
+    
 }
