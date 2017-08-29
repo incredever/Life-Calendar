@@ -66,15 +66,25 @@ class WeeksViewController: NSViewController {
         scene.addChild(grid.node)
         
         // Create the table view
-        let tableViewPoint = CGPoint(x: 0, y: 0)
-        let tableViewSize = CGSize(width: 200, height: 400)
+        let tableContainer = NSScrollView(frame: NSRect(x: 100, y: 100, width: 200, height: 300))
+        tableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 200, height: 400)))
+
+        let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col1"))
+        column1.width = 200.0
         
-        tableView = NSTableView(frame: NSRect(origin: tableViewPoint, size: tableViewSize))
-        tableView.backgroundColor = .red
+        tableView.addTableColumn(column1)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.reloadData()
+        tableView.backgroundColor = .red
         
-        view.addSubview(tableView)
+        tableContainer.documentView = tableView
+        tableContainer.hasVerticalScroller = true
+        
+        view.addSubview(tableContainer)
+      
+        
+
     }
     
 }
@@ -98,8 +108,18 @@ extension WeeksViewController: NSTableViewDataSource {
         return timeline.events.count
     }
     
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        return nil
+    }
+    
 }
 
 extension WeeksViewController: NSTableViewDelegate {
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        let result = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(rawValue: "MyView"), owner: self)
+        
+        return result
+    }
     
 }
