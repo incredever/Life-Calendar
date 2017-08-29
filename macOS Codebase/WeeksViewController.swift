@@ -66,8 +66,14 @@ class WeeksViewController: NSViewController {
         scene.addChild(grid.node)
         
         // Create the table view
-        let tableContainer = NSScrollView(frame: NSRect(x: 100, y: 100, width: 200, height: 300))
-        tableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 200, height: 400)))
+        let widthOfSidebar = CGFloat(150)
+        let tableContainer = NSScrollView(frame: NSRect(x: view.frame.width - widthOfSidebar,
+                                                        y: 0,
+                                                        width: widthOfSidebar,
+                                                        height: view.frame.height))
+        
+        tableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0),
+                                              size: tableContainer.frame.size))
 
         let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Col1"))
         column1.width = 100.0
