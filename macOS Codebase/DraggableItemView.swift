@@ -13,6 +13,10 @@ class DraggableItemView: NSView {
     var location: NSPoint!
     var backgroundColor: NSColor!
     
+    /// Indicates when a drag is in progress.
+    var dragging = false
+    var lastDragLocation: NSPoint? = nil
+    
     override var isOpaque: Bool { return true }
     
     override var acceptsFirstResponder: Bool { return true }
@@ -44,8 +48,31 @@ class DraggableItemView: NSView {
         NSBezierPath.fill(itemRect())
     }
     
+    func isPointInItem(_ testPoint: NSPoint) -> Bool {
+        return true // TODO: Fill this method out
+    }
+    
     override func mouseDown(with event: NSEvent) {
-        print("mouse down")
+        print("\nMouse down:")
+        
+        let clickLocation = convert(event.locationInWindow, from: nil)
+        let itemHit = isPointInItem(clickLocation)
+        
+        print("event.locationInWindow: \(event.locationInWindow)")
+        print("clickLocation: \(clickLocation)")
+        
+        if itemHit {
+            print("item was hit")
+            
+            // Flag the instance variable that indicates a drag was actually started
+            dragging = true
+        }
+        
+        // Store the starting mouse down loction
+        lastDragLocation = clickLocation
+        
+        // Set the cursor to the closed hand cursor for the duration of the drag
+        NSCursor.closedHand.push()
     }
     
 }
