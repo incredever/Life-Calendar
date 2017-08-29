@@ -29,10 +29,15 @@ class DraggableItemView: NSView {
         backgroundColor = NSColor.white
     }
     
+    private func itemRect() -> NSRect {
+        return NSRect(origin: location, size: CGSize(width: 60, height: 20))
+    }
+    
     override func draw(_ dirtyRect: NSRect) {
         NSColor.white.set()
         NSBezierPath.fill(dirtyRect)
         itemColor.set()
+        NSBezierPath.fill(itemRect())
     }
     
 }
