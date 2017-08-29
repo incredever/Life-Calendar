@@ -11,7 +11,7 @@ import SpriteKit
 class EventDisplay {
     
     var node: EventDisplayNode!
-    var view: NSView!
+    var view: EventDisplayView!
     
     let event: Event
     
@@ -35,7 +35,7 @@ class EventDisplay {
     }
     
     private func setupView() {
-        let mainView = NSView(frame: NSRect(origin: position, size: size))
+        let mainView = EventDisplayView(frame: NSRect(origin: position, size: size))
 
         view = mainView
     }
