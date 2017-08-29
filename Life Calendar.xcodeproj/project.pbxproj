@@ -25,7 +25,6 @@
 		DED97A3F1EDE0C3A00F2100B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED97A3E1EDE0C3A00F2100B /* Assets.xcassets */; };
 		DEE0954A1F55356C00AA4412 /* DraggableItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE095491F55356C00AA4412 /* DraggableItemView.swift */; };
 		DEE0954C1F55BD7100AA4412 /* EventDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0954B1F55BD7100AA4412 /* EventDisplayView.swift */; };
-		DEF8BE261F4C65F8009F0412 /* EventDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF8BE251F4C65F8009F0412 /* EventDisplay.swift */; };
 		DEFD71191F0644BD00AF4373 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD71181F0644BD00AF4373 /* Event.swift */; };
 		DEFD711B1F06459500AF4373 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD711A1F06459500AF4373 /* Timeline.swift */; };
 /* End PBXBuildFile section */
@@ -107,7 +106,6 @@
 		DEED26C51F54813200AE6249 /* 2017-08-28 Fig 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-28 Fig 3.png"; sourceTree = "<group>"; };
 		DEF8624B1F277C0400335DCF /* 2017-07-25 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-25 Fig 1.png"; sourceTree = "<group>"; };
 		DEF8624C1F277C3B00335DCF /* 2017-07-25.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-25.md"; sourceTree = "<group>"; };
-		DEF8BE251F4C65F8009F0412 /* EventDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventDisplay.swift; path = "macOS Codebase/EventDisplay.swift"; sourceTree = SOURCE_ROOT; };
 		DEFD71181F0644BD00AF4373 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DEFD711A1F06459500AF4373 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,7 +223,6 @@
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
 				DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */,
 				DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */,
-				DEF8BE251F4C65F8009F0412 /* EventDisplay.swift */,
 				DEE0954B1F55BD7100AA4412 /* EventDisplayView.swift */,
 				DE9F37471F503EEA00A21B51 /* ScrollViewNode.swift */,
 				DEFD711A1F06459500AF4373 /* Timeline.swift */,
@@ -342,7 +339,6 @@
 				DE7E3C621F4FED930048A115 /* Line.swift in Sources */,
 				DE9F37461F501B9800A21B51 /* NSBezierPath+cgPath.swift in Sources */,
 				DE9F37481F503EEA00A21B51 /* ScrollViewNode.swift in Sources */,
-				DEF8BE261F4C65F8009F0412 /* EventDisplay.swift in Sources */,
 				DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */,
 				DE7E3C5E1F4EF5A20048A115 /* TimelineDateFormatter.swift in Sources */,
 				DE23A9D01F28C579002C156D /* Tile.swift in Sources */,
