@@ -72,10 +72,13 @@ class WeeksViewController: NSViewController {
 //
 //        scene.addChild(sidebar.node)
         
-        let sidebarView = SidebarView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
+//        let sidebarView = SidebarView(frame: NSRect(origin: CGPoint.zero, size: CGSize(width: 150, height: scene.frame.height)))
+//        
+//        view.addSubview(sidebarView)
         
-        view.addSubview(sidebarView)
-//
+        let draggableItemView = DraggableItemView(frame: NSRect(x: 100, y: 100, width: 200, height: 200))
+        view.addSubview(draggableItemView)
+
     }
     
 }
