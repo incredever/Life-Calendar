@@ -93,6 +93,10 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
 
 extension WeeksViewController: NSTableViewDataSource {
     
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return timeline.events.count
+    }
+    
 }
 
 extension WeeksViewController: NSTableViewDelegate {
