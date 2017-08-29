@@ -218,12 +218,4 @@ class WeeksGrid {
         }
     }
     
-//    private func createEvent(spanning: DateInterval) {
-//        if let timeline = timeline {
-//            let newEvent = Event(title: "NEW EVENT!", colorHex: "FFFFFF", span: spanning)
-//
-//            timeline.events.append(newEvent)
-//        }
-//    }
-    
 }
