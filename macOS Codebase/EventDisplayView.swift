@@ -40,7 +40,7 @@ class EventDisplayView: NSView {
         title.draw(at: titlePosition, withAttributes: nil)
         
         let dates = NSString(string: "1999-2000")
-        dates.draw(at: NSPoint(x: 0, y: 5), withAttributes: nil)
+        dates.draw(at: NSPoint(x: 0, y: 10), withAttributes: nil)
     }
     
 }
