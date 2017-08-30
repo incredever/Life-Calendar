@@ -97,11 +97,10 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
     
     func eventCreated(spanning: DateInterval) {
         let newEvent = Event(title: "testing 123", colorHex: "FFFFFF", span: spanning)
-
-        print("newEvent: \(newEvent)")
         
-        // Add to timeline
-        // Add to tableView
+        timeline.events.append(newEvent)
+        
+        tableView.reloadData()
     }
     
 }
