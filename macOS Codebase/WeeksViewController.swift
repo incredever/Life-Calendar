@@ -125,15 +125,8 @@ extension WeeksViewController: NSTableViewDataSource {
 extension WeeksViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        var eventDisplayView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(rawValue: "MyView"), owner: self)
-        
         let event = timeline.events[row]
-        
-        print("event for row \(row): \(event)")
-        
-        if eventDisplayView == nil {
-            eventDisplayView = EventDisplayView(frame: NSRect(x: 0, y: 0, width: 100, height: 50))
-        }
+        let eventDisplayView = EventDisplayView(event: event, frame: NSRect(x: 0, y: 0, width: 100, height: 50))
         
         return eventDisplayView
     }

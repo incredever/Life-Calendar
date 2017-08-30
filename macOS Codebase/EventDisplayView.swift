@@ -8,6 +8,12 @@
 import Cocoa
 
 class EventDisplayView: NSView {
+
+    convenience init(event: Event, frame: NSRect) {
+        self.init(frame: frame)
+        
+        print(event)
+    }
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
