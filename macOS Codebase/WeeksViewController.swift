@@ -89,12 +89,6 @@ class WeeksViewController: NSViewController {
         tableContainer.hasVerticalScroller = true
         
         view.addSubview(tableContainer)
-      
-        
-        let testEventDisplayView = EventDisplayView(frame: NSRect(x: 100, y: 100, width: 100, height: 50))
-        
-        view.addSubview(testEventDisplayView)
-
     }
     
 }
@@ -118,6 +112,10 @@ extension WeeksViewController: NSTableViewDataSource {
         return timeline.events.count
     }
     
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return CGFloat(100)
+    }
+    
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
         return nil
     }
@@ -130,9 +128,8 @@ extension WeeksViewController: NSTableViewDelegate {
         var eventDisplayView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier.init(rawValue: "MyView"), owner: self)
         
         if eventDisplayView == nil {
-            eventDisplayView = EventDisplayView(frame: NSRect(x: 0, y: 0, width: 100, height: 30))
+            eventDisplayView = EventDisplayView(frame: NSRect(x: 0, y: 0, width: 100, height: 50))
         }
-        
         
         return eventDisplayView
     }

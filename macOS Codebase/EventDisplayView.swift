@@ -20,7 +20,7 @@ class EventDisplayView: NSView {
     override func draw(_ dirtyRect: NSRect) {
         NSColor.green.set()
         
-        let rect = NSRect(x: 0, y: 0, width: 50, height: 50)
+        let rect = NSRect(origin: CGPoint.zero, size: dirtyRect.size)
         NSBezierPath(roundedRect: rect, xRadius: 10.0, yRadius: 10.0).fill()
     }
     
