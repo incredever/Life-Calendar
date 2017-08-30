@@ -31,7 +31,7 @@ class EventDisplayView: NSView {
     
     override func draw(_ dirtyRect: NSRect) {
         NSColor.lightGray.set()
-        let topLine = NSBezierPath(rect: NSRect(x: 0, y: dirtyRect.height - 1, width: dirtyRect.size.width, height: 1))
+        let topLine = NSBezierPath(rect: NSRect(x: 0, y: dirtyRect.height - 0.5, width: dirtyRect.size.width, height: 0.5))
         topLine.fill()
         
         let topLeftPoint = CGPoint(x: 0, y: dirtyRect.height)
