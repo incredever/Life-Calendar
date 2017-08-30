@@ -39,7 +39,14 @@ class EventDisplayView: NSView {
         let title = NSString(string: event.title)
         title.draw(at: titlePosition, withAttributes: nil)
         
-        let dates = NSString(string: "1999-2000")
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        
+        let startDate = formatter.string(from: event.span.start)
+        let endDate = formatter.string(from: event.span.end)
+        
+        let dates = NSString(string: "\(startDate) - \(endDate)")
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
     }
     
