@@ -35,8 +35,13 @@ class EventDisplayView: NSView {
         let rect = NSRect(origin: CGPoint.zero, size: dirtyRect.size)
         NSBezierPath(roundedRect: rect, xRadius: 10.0, yRadius: 10.0).fill()
         
-        let titleString = NSString(string: event.title)
-        titleString.draw(at: NSPoint.zero, withAttributes: nil)
+        let topLeftPoint = CGPoint(x: 0, y: dirtyRect.height)
+        let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 30)
+        let title = NSString(string: event.title)
+        title.draw(at: titlePosition, withAttributes: nil)
+        
+        let dates = NSString(string: "1999-2000")
+        dates.draw(at: NSPoint.zero, withAttributes: nil)
     }
     
 }
