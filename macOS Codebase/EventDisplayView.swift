@@ -30,10 +30,9 @@ class EventDisplayView: NSView {
     }
     
     override func draw(_ dirtyRect: NSRect) {
-        NSColor.green.set()
-        
-        let rect = NSRect(origin: CGPoint.zero, size: dirtyRect.size)
-        NSBezierPath(roundedRect: rect, xRadius: 10.0, yRadius: 10.0).fill()
+        NSColor.lightGray.set()
+        let topLine = NSBezierPath(rect: NSRect(x: 0, y: dirtyRect.height - 1, width: dirtyRect.size.width, height: 1))
+        topLine.fill()
         
         let topLeftPoint = CGPoint(x: 0, y: dirtyRect.height)
         let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 30)
