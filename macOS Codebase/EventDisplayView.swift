@@ -9,13 +9,19 @@ import Cocoa
 
 class EventDisplayView: NSView {
 
+    private var event: Event
+    
     convenience init(event: Event, frame: NSRect) {
         self.init(frame: frame)
         
         print(event)
+        
+        self.event = event
     }
     
     override init(frame frameRect: NSRect) {
+        event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
+        
         super.init(frame: frameRect)
     }
     
@@ -28,6 +34,9 @@ class EventDisplayView: NSView {
         
         let rect = NSRect(origin: CGPoint.zero, size: dirtyRect.size)
         NSBezierPath(roundedRect: rect, xRadius: 10.0, yRadius: 10.0).fill()
+        
+        let titleString = NSString(string: event.title)
+        titleString.draw(at: NSPoint.zero, withAttributes: nil)
     }
     
 }
