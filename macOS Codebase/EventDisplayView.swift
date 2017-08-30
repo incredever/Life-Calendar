@@ -11,8 +11,8 @@ class EventDisplayView: NSView {
 
     private var event: Event
     
-    convenience init(event: Event, frame: NSRect) {
-        self.init(frame: frame)
+    convenience init(event: Event) {
+        self.init(frame: NSRect(x: 0, y: 0, width: 0, height: 0))
         
         print(event)
         
@@ -35,12 +35,12 @@ class EventDisplayView: NSView {
         topLine.fill()
         
         let topLeftPoint = CGPoint(x: 0, y: dirtyRect.height)
-        let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 30)
+        let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 20)
         let title = NSString(string: event.title)
         title.draw(at: titlePosition, withAttributes: nil)
         
         let dates = NSString(string: "1999-2000")
-        dates.draw(at: NSPoint.zero, withAttributes: nil)
+        dates.draw(at: NSPoint(x: 0, y: 5), withAttributes: nil)
     }
     
 }

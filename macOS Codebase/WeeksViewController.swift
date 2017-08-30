@@ -113,7 +113,7 @@ extension WeeksViewController: NSTableViewDataSource {
     }
     
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return CGFloat(100)
+        return CGFloat(60)
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
@@ -126,7 +126,7 @@ extension WeeksViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let event = timeline.events[row]
-        let eventDisplayView = EventDisplayView(event: event, frame: NSRect(x: 0, y: 0, width: 100, height: 50))
+        let eventDisplayView = EventDisplayView(event: event)
         
         return eventDisplayView
     }
