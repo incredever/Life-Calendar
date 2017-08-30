@@ -34,13 +34,13 @@ class EventDisplayView: NSView {
         let topLine = NSBezierPath(rect: NSRect(x: 0, y: dirtyRect.height - 0.5, width: dirtyRect.size.width, height: 0.5))
         topLine.fill()
         
-        let topLeftPoint = CGPoint(x: 0, y: dirtyRect.height)
-        let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 20)
+        let topLeftPoint = CGPoint(x: 5, y: dirtyRect.height)
+        let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 23)
         let title = NSString(string: event.title)
         title.draw(at: titlePosition, withAttributes: nil)
         
         let dates = NSString(string: "1999-2000")
-        dates.draw(at: NSPoint(x: 0, y: 10), withAttributes: nil)
+        dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
     }
     
 }
