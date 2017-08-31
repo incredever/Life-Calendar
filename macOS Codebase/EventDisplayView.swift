@@ -10,19 +10,24 @@ import Cocoa
 class EventDisplayView: NSView {
 
     private var event: Event
+    private var title: NSTextField
     
     convenience init(event: Event) {
         self.init(frame: NSRect(x: 0, y: 0, width: 0, height: 0))
         
-        print(event)
-        
         self.event = event
+        title.stringValue = event.title
     }
     
     override init(frame frameRect: NSRect) {
         event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
         
+        title = NSTextField(wrappingLabelWithString: event.title)
+        
         super.init(frame: frameRect)
+        
+        self.addSubview(title)
+
     }
     
     required init?(coder decoder: NSCoder) {
