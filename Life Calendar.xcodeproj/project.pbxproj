@@ -51,6 +51,7 @@
 		DE3B812C1F1365280051A3A6 /* 2017-07-10.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-10.md"; sourceTree = "<group>"; };
 		DE3B812D1F13675C0051A3A6 /* 2017-07-10 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-10 Fig 1.png"; sourceTree = "<group>"; };
 		DE41E4041F55F65200228A08 /* EventDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDisplayView.swift; sourceTree = "<group>"; };
+		DE41E4061F593AFD00228A08 /* 2017-09-01.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-01.md"; sourceTree = "<group>"; };
 		DE4676E31F0634BA004C7D9B /* 2017-06-30.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-30.md"; sourceTree = "<group>"; };
 		DE4DEF8F1F3075C70059956D /* Untitled.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Untitled.pcvd; sourceTree = "<group>"; };
 		DE5221AF1F4D40CC008AC71B /* 2017-08-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-23.md"; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 				DE9F37491F504DE400A21B51 /* 2017-08-25.md */,
 				DE1E2CA31F53F404007DD80D /* 2017-08-28.md */,
 				DEE095481F5530E800AA4412 /* 2018-08-29.md */,
+				DE41E4061F593AFD00228A08 /* 2017-09-01.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
