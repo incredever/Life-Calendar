@@ -27,8 +27,6 @@ class EventDisplayView: NSView {
         super.init(frame: frameRect)
         
         self.addSubview(title)
-//        self.trackingAreas.map { $0.activate }
-
     }
     
     required init?(coder decoder: NSCoder) {
@@ -55,5 +53,4 @@ class EventDisplayView: NSView {
         let dates = NSString(string: "\(startDate) - \(endDate)")
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
     }
-    
 }
