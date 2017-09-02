@@ -27,6 +27,7 @@ class EventDisplayView: NSView {
         super.init(frame: frameRect)
         
         self.addSubview(title)
+//        self.trackingAreas.map { $0.activate }
 
     }
     
@@ -53,18 +54,6 @@ class EventDisplayView: NSView {
         
         let dates = NSString(string: "\(startDate) - \(endDate)")
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
-    }
-    
-    override func mouseDown(with event: NSEvent) {
-        print("Mouse down on EventDisplayView")
-    }
-    
-    override func mouseEntered(with event: NSEvent) {
-        print("Mouse entered EventDisplayView")
-    }
-    
-    override func mouseMoved(with event: NSEvent) {
-        print("Mouse moved over EventDisplayView")
     }
     
 }
