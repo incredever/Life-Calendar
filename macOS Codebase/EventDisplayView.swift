@@ -55,4 +55,16 @@ class EventDisplayView: NSView {
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
     }
     
+    override func mouseDown(with event: NSEvent) {
+        print("Mouse down on EventDisplayView")
+    }
+    
+    override func mouseEntered(with event: NSEvent) {
+        print("Mouse entered EventDisplayView")
+    }
+    
+    override func mouseMoved(with event: NSEvent) {
+        print("Mouse moved over EventDisplayView")
+    }
+    
 }

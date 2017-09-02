@@ -89,6 +89,23 @@ class WeeksViewController: NSViewController {
         tableContainer.hasVerticalScroller = true
         
         view.addSubview(tableContainer)
+        
+        /////////////
+        
+        let rect = NSRect(x: view.frame.width - widthOfSidebar,
+                          y: 0,
+                          width: widthOfSidebar,
+                          height: view.frame.height)
+        let area = NSTrackingArea(rect: rect, options: [.activeInKeyWindow, .mouseEnteredAndExited], owner: self, userInfo: nil)
+        view.addTrackingArea(area)
+    }
+    
+    override func mouseEntered(with event: NSEvent) {
+        print("Mouse entered sidebar")
+    }
+    
+    override func mouseExited(with event: NSEvent) {
+        print("Mouse exited sidebar")
     }
     
 }
