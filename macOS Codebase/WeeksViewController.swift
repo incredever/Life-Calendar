@@ -89,6 +89,14 @@ class WeeksViewController: NSViewController {
         tableContainer.hasVerticalScroller = true
         
         view.addSubview(tableContainer)
+        
+        // Add boarder to left side of sidebar
+        let boarderRect = NSRect(x: view.frame.width - widthOfSidebar, y: 0, width: 0.5, height: view.frame.height)
+        let sidebarBoarderLine = NSBox(frame: boarderRect)
+        sidebarBoarderLine.boxType = .custom
+        sidebarBoarderLine.borderType = .noBorder
+        sidebarBoarderLine.fillColor = .lightGray
+        view.addSubview(sidebarBoarderLine)
     }
     
 }

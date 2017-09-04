@@ -46,6 +46,8 @@ class WeeksGrid {
     
     private var firstTileInSelection: Tile? = nil
     
+//    private var currentSelection:
+    
     private let justTheYearDateFormatter: DateFormatter
     
     private let gutterWidthForYearLabels = 50
