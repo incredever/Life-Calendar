@@ -21,13 +21,14 @@ class EventDisplayView: NSTableCellView {
         // Create edit button
         let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
         editButton.isBordered = false
-//        editButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20.0).isActive = true
+  
+        print(editButton.hasAmbiguousLayout)
+        addSubview(editButton)
+        
         editButton.widthAnchor.constraint(equalToConstant: 30.0).isActive = true
         editButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
         editButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10.0).isActive = true
         editButton.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        print(editButton.hasAmbiguousLayout)
-        addSubview(editButton)
     }
     
     @objc func editButtonPressed(_ sender: NSButton) {
