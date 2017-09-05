@@ -74,11 +74,10 @@ class EventDisplayView: NSTableCellView {
     }
     
     override func mouseDown(with event: NSEvent) {
-        print("[\(className) - Mouse down")
+
     }
     
     override func mouseEntered(with event: NSEvent) {
-        print("\(className) - Mouse entered")
         mouseIsHovering = true
         needsDisplay = true
     }
