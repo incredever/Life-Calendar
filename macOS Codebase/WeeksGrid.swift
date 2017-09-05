@@ -165,9 +165,6 @@ class WeeksGrid {
                 
                 delegate?.eventCreated(spanning: DateInterval(start: startingTile.span.start, end: currentTile.span.end))
             }
-            
-            node.childNode(withName: "HoverYearLabel")?.removeFromParent()
-            node.childNode(withName: "HoverDateLabel")?.removeFromParent()
         }
         
         firstTileInSelection = nil
