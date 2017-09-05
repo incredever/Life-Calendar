@@ -25,7 +25,7 @@ class EventDisplayView: NSTableCellView {
         title = NSTextField(wrappingLabelWithString: event.title)
         
         super.init(frame: frameRect)
-        
+
         self.addSubview(title)
     }
     
@@ -51,5 +51,23 @@ class EventDisplayView: NSTableCellView {
         
         let dates = NSString(string: "\(startDate) - \(endDate)")
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
+    }
+    
+    private var trackingArea: NSTrackingArea? = nil
+    
+    override func updateTrackingAreas() {
+        super.updateTrackingAreas()
+       
+        if trackingArea == nil {
+            trackingArea = NSTrackingArea(rect: NSRect.zero, options: [.inVisibleRect, .activeAlways, .mouseEnteredAndExited], owner: self, userInfo: nil)
+        }
+        
+        if !trackingAreas.contains(trackingArea!) {
+            self.addTrackingArea(trackingArea!)
+        }
+    }
+    
+    override func mouseEntered(with event: NSEvent) {
+        print("[\(self.className)] Mouse entered.")
     }
 }
