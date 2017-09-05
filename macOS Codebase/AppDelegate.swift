@@ -14,10 +14,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         setupWindow()
-        
-        let storyboard = NSStoryboard(name: NSStoryboard.Name.init(rawValue: "TestStoryboard"), bundle: nil)
-        let windowController = storyboard.instantiateInitialController() as! NSWindowController
-        window.addChildWindow(windowController.window!, ordered: NSWindow.OrderingMode.above)
     }
     
     func setupWindow() {
