@@ -20,6 +20,7 @@ class EventDisplayView: NSTableCellView {
         
         // Create edit button
         let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
+        editButton.isBordered = false
         addSubview(editButton)
     }
     
