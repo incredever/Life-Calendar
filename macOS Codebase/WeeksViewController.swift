@@ -84,6 +84,7 @@ class WeeksViewController: NSViewController {
         tableView.reloadData()
         tableView.backgroundColor = NSColor(hexString: "F3F1F0")
         tableView.headerView = nil
+        tableView.selectionHighlightStyle = .none
         
         tableContainer.documentView = tableView
         tableContainer.hasVerticalScroller = true
@@ -138,4 +139,18 @@ extension WeeksViewController: NSTableViewDelegate {
         return eventDisplayView
     }
     
+//    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+//        let v = tableView.view(atColumn: 0, row: row, makeIfNecessary: false) as? EventDisplayView
+//
+//        if let v = v {
+//            print(v.title.stringValue)
+//        }
+//
+//        return true
+//    }
+    
+//    func tableViewSelectionDidChange(_ notification: Notification) {
+//
+//
+//    }
 }

@@ -51,8 +51,14 @@ class EventDisplayView: NSTableCellView {
         
         let dates = NSString(string: "\(startDate) - \(endDate)")
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
+        
+        if mouseIsHovering {
+            NSColor.red.set()
+            NSBezierPath(rect: NSRect(x: 10, y: 10, width: 10, height: 10)).fill()
+        }
     }
     
+    private var mouseIsHovering = false
     private var trackingArea: NSTrackingArea? = nil
     
     override func updateTrackingAreas() {
@@ -73,5 +79,12 @@ class EventDisplayView: NSTableCellView {
     
     override func mouseEntered(with event: NSEvent) {
         print("\(className) - Mouse entered")
+        mouseIsHovering = true
+        needsDisplay = true
+    }
+    
+    override func mouseExited(with event: NSEvent) {
+        mouseIsHovering = false
+        needsDisplay = true
     }
 }
