@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class EventDisplayView: NSView {
+class EventDisplayView: NSTableCellView {
 
     private var event: Event
     private var title: NSTextField
@@ -42,7 +42,6 @@ class EventDisplayView: NSView {
         let titlePosition = CGPoint(x: topLeftPoint.x, y: topLeftPoint.y - 23)
         let title = NSString(string: event.title)
         title.draw(at: titlePosition, withAttributes: nil)
-        
         
         let formatter = DateFormatter()
         formatter.dateFormat = "MMM d, yyyy"
