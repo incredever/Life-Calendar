@@ -21,6 +21,7 @@ class EventDisplayView: NSTableCellView {
         // Create edit button
         let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
         editButton.isBordered = false
+        editButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 20.0).isActive = true
         addSubview(editButton)
     }
     
@@ -95,4 +96,6 @@ class EventDisplayView: NSTableCellView {
         mouseIsHovering = false
         needsDisplay = true
     }
+    
+    
 }
