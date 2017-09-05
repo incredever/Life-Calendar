@@ -17,6 +17,14 @@ class EventDisplayView: NSTableCellView {
         
         self.event = event
         title.stringValue = event.title
+        
+        // Create edit button
+        let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
+        addSubview(editButton)
+    }
+    
+    @objc func editButtonPressed(_ sender: NSButton) {
+        print("edit button pressed")
     }
     
     override init(frame frameRect: NSRect) {
