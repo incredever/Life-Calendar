@@ -142,6 +142,10 @@ extension WeeksViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
         let rowView = NSTableRowView(frame: NSRect.zero)
         
+//        rowView.interiorBackgroundStyle = NSView.BackgroundStyle.raised
+        rowView.selectionHighlightStyle = .regular
+        rowView.backgroundColor = .blue
+        
         return rowView
     }
     

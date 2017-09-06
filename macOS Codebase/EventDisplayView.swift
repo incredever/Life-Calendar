@@ -15,31 +15,27 @@ class EventDisplayView: NSTableCellView {
         self.init(frame: NSRect(x: 0, y: 0, width: 0, height: 0))
         
         self.event = event
-        
-        // Create edit button
-        let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
-        editButton.isBordered = false
-  
-        addSubview(editButton)
-        editButton.autoresizingMask = .none
-    }
-    
-    @objc func editButtonPressed(_ sender: NSButton) {
-        print("edit button pressed")
     }
     
     override init(frame frameRect: NSRect) {
         event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
         
-//        title = NSTextField(wrappingLabelWithString: event.title)
-        
         super.init(frame: frameRect)
-
-//        self.addSubview(title)
+        
+        // Create edit button
+        let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
+        editButton.isBordered = false
+        
+        addSubview(editButton)
+        editButton.autoresizingMask = .none
     }
     
     required init?(coder decoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc func editButtonPressed(_ sender: NSButton) {
+        print("edit button pressed")
     }
     
     override func draw(_ dirtyRect: NSRect) {
