@@ -126,7 +126,6 @@
 		DE63F8A21EED86DE00B2BF05 /* Developer's Log */ = {
 			isa = PBXGroup;
 			children = (
-				DE3E02CF1F5FC1F8005759DA /* 2017-09-06.md */,
 				DEA8DE5C1EF4C0170054CAF0 /* embed images */,
 				DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */,
 				DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */,
@@ -164,6 +163,7 @@
 				DE41E4061F593AFD00228A08 /* 2017-09-01.md */,
 				DE41E4071F5AE66300228A08 /* 2017-09-02.md */,
 				DEBB1C8B1F5E9BF000E3649F /* 2017-09-05.md */,
+				DE3E02CF1F5FC1F8005759DA /* 2017-09-06.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";

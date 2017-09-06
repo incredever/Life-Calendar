@@ -139,6 +139,18 @@ extension WeeksViewController: NSTableViewDelegate {
         return eventDisplayView
     }
     
+    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
+        let rowView = NSTableRowView(frame: NSRect.zero)
+        
+        return rowView
+    }
+    
+    func tableView(_ tableView: NSTableView, willDisplayCell cell: Any, for tableColumn: NSTableColumn?, row: Int) {
+        if let eventDisplayView = cell as? EventDisplayView {
+            print(eventDisplayView)
+        }
+    }
+    
 //    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
 //        let v = tableView.view(atColumn: 0, row: row, makeIfNecessary: false) as? EventDisplayView
 //
