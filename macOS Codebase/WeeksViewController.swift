@@ -8,7 +8,7 @@
 import Cocoa
 import SpriteKit
 
-/// A VC that contains an NSView > SKView > SKScene hierarchy for displaying a human life in weeks. All this is setup inside the `loadView` and `viewDidLoad` methods.
+/// A VC that contains an NSView > SKView > SKScene hierarchy for displaying a human life in weeks.
 class WeeksViewController: NSViewController {
     
     var skView: SKView!
