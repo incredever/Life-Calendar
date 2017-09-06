@@ -50,8 +50,10 @@ func makeMainMenu() -> NSMenu {
     return mainMenu
 }
 
+/// An instance of our AppDelegate class which handles, among other things, the app life cycle events.
 let delegate = AppDelegate()
 
+/// Set menu, delegate, and start the main event loop
 NSApplication.shared.mainMenu = makeMainMenu()
 NSApplication.shared.delegate = delegate
 NSApplication.shared.run()
