@@ -16,6 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         setupWindow()
     }
     
+    /// A helper function which creates a UIWindow and brings it front. It then creates an instance of WeeksViewController and sets it as the content of the window.
     func setupWindow() {
         // Create the window
         let windowSize = NSRect(x: 0, y: 0, width: 600, height: 600)
