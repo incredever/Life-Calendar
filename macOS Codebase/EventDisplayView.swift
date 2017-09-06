@@ -12,7 +12,7 @@ class EventDisplayView: NSTableCellView {
     private var event: Event
     
     convenience init(event: Event) {
-        self.init(frame: NSRect(x: 0, y: 0, width: 0, height: 0))
+        self.init(frame: NSRect.zero)
         
         self.event = event
     }
@@ -66,6 +66,7 @@ class EventDisplayView: NSTableCellView {
     private var mouseIsHovering = false
     private var trackingArea: NSTrackingArea? = nil
     
+// Manual tracking and responder stuff
 //    override func updateTrackingAreas() {
 //        super.updateTrackingAreas()
 //
@@ -77,20 +78,19 @@ class EventDisplayView: NSTableCellView {
 //            self.addTrackingArea(trackingArea!)
 //        }
 //    }
-    
-    override func mouseDown(with event: NSEvent) {
-
-    }
-    
-    override func mouseEntered(with event: NSEvent) {
-        mouseIsHovering = true
-        needsDisplay = true
-    }
-    
-    override func mouseExited(with event: NSEvent) {
-        mouseIsHovering = false
-        needsDisplay = true
-    }
-    
+//
+//    override func mouseDown(with event: NSEvent) {
+//
+//    }
+//
+//    override func mouseEntered(with event: NSEvent) {
+//        mouseIsHovering = true
+//        needsDisplay = true
+//    }
+//
+//    override func mouseExited(with event: NSEvent) {
+//        mouseIsHovering = false
+//        needsDisplay = true
+//    }
     
 }
