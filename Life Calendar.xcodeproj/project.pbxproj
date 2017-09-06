@@ -51,6 +51,7 @@
 		DE3B812B1F10E5610051A3A6 /* 2017-07-08.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-08.md"; sourceTree = "<group>"; };
 		DE3B812C1F1365280051A3A6 /* 2017-07-10.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-10.md"; sourceTree = "<group>"; };
 		DE3B812D1F13675C0051A3A6 /* 2017-07-10 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-10 Fig 1.png"; sourceTree = "<group>"; };
+		DE3E02CF1F5FC1F8005759DA /* 2017-09-06.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-06.md"; sourceTree = "<group>"; };
 		DE41E4041F55F65200228A08 /* EventDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDisplayView.swift; sourceTree = "<group>"; };
 		DE41E4061F593AFD00228A08 /* 2017-09-01.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-01.md"; sourceTree = "<group>"; };
 		DE41E4071F5AE66300228A08 /* 2017-09-02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-02.md"; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		DE63F8A21EED86DE00B2BF05 /* Developer's Log */ = {
 			isa = PBXGroup;
 			children = (
+				DE3E02CF1F5FC1F8005759DA /* 2017-09-06.md */,
 				DEA8DE5C1EF4C0170054CAF0 /* embed images */,
 				DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */,
 				DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */,
