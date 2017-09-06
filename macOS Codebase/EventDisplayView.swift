@@ -23,7 +23,8 @@ class EventDisplayView: NSTableCellView {
         editButton.isBordered = false
   
         addSubview(editButton)
-//        editButton.autoresizingMask = .none
+        editButton.autoresizingMask = .none
+        self.autoresizingMask = .none
         editButton.widthAnchor.constraint(equalToConstant: 30.0).isActive = true
         editButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
         editButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10.0).isActive = true
