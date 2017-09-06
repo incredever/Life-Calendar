@@ -14,7 +14,7 @@ class WeeksViewController: NSViewController {
     var skView: SKView!
     weak var window: NSWindow?
     var timeline: Timeline!
-    var tableView: NSTableView!
+    var sidebarTableView: NSTableView!
     private let sidebarTableViewHandler = SidebarTableViewHandler()
     
     override func loadView() {
@@ -32,9 +32,9 @@ class WeeksViewController: NSViewController {
         // Set up testing timeline
         let span = DateInterval(start: Date(), end: Date())
         let exampleEvent1 = Event(title: "Hello World", colorHex: "000000", span: span)
-        let exampleEvent2 = Event(title: "Test Event", colorHex: "FFFFFF", span: span)
-        let exampleEvent3 = Event(title: "Blah blah blah", colorHex: "FFFFFF", span: span)
-        
+//        let exampleEvent2 = Event(title: "Test Event", colorHex: "FFFFFF", span: span)
+//        let exampleEvent3 = Event(title: "Blah blah blah", colorHex: "FFFFFF", span: span)
+
         timeline = Timeline(events: [exampleEvent1], name: "Testing timeline ABC 1234")
         
         timeline.saveToDisk()
@@ -76,21 +76,21 @@ class WeeksViewController: NSViewController {
                                                         width: widthOfSidebar,
                                                         height: view.frame.height))
         
-        tableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0),
+        sidebarTableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0),
                                               size: tableContainer.frame.size))
 
         let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Column1"))
         column1.width = widthOfSidebar
         
-        tableView.addTableColumn(column1)
-        tableView.dataSource = sidebarTableViewHandler
-        tableView.delegate = sidebarTableViewHandler
-        tableView.reloadData()
-        tableView.backgroundColor = NSColor(hexString: "F3F1F0")
-        tableView.headerView = nil
-        tableView.selectionHighlightStyle = .none
+        sidebarTableView.addTableColumn(column1)
+        sidebarTableView.dataSource = sidebarTableViewHandler
+        sidebarTableView.delegate = sidebarTableViewHandler
+        sidebarTableView.reloadData()
+        sidebarTableView.backgroundColor = NSColor(hexString: "F3F1F0")
+        sidebarTableView.headerView = nil
+        sidebarTableView.selectionHighlightStyle = .none
         
-        tableContainer.documentView = tableView
+        tableContainer.documentView = sidebarTableView
         tableContainer.hasVerticalScroller = true
         
         view.addSubview(tableContainer)
@@ -113,7 +113,7 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
         
         timeline.events.append(newEvent)
         
-        tableView.reloadData()
+        sidebarTableView.reloadData()
     }
     
 }
