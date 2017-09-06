@@ -15,6 +15,7 @@ class WeeksViewController: NSViewController {
     weak var window: NSWindow?
     var timeline: Timeline!
     var tableView: NSTableView!
+    private let sidebarTableViewHandler = SidebarTableViewHandler()
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)
@@ -38,6 +39,9 @@ class WeeksViewController: NSViewController {
         
         timeline.saveToDisk()
         
+        sidebarTableViewHandler.timeline = timeline
+        
+        // Set up grid scene
         let scene = SKScene(size: skView.frame.size)
         scene.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         scene.scaleMode = .aspectFill
@@ -79,8 +83,8 @@ class WeeksViewController: NSViewController {
         column1.width = widthOfSidebar
         
         tableView.addTableColumn(column1)
-        tableView.dataSource = self
-        tableView.delegate = self
+        tableView.dataSource = sidebarTableViewHandler
+        tableView.delegate = sidebarTableViewHandler
         tableView.reloadData()
         tableView.backgroundColor = NSColor(hexString: "F3F1F0")
         tableView.headerView = nil
@@ -114,59 +118,5 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
     
 }
 
-extension WeeksViewController: NSTableViewDataSource {
-    
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return timeline.events.count
-    }
-    
-    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        return CGFloat(60)
-    }
-    
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return nil
-    }
-    
-}
 
-extension WeeksViewController: NSTableViewDelegate {
-    
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let event = timeline.events[row]
-        let eventDisplayView = EventDisplayView(event: event)
-        
-        return eventDisplayView
-    }
-    
-    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
-        let rowView = NSTableRowView(frame: NSRect.zero)
-        
-//        rowView.interiorBackgroundStyle = NSView.BackgroundStyle.raised
-        rowView.selectionHighlightStyle = .regular
-        rowView.backgroundColor = .blue
-        
-        return rowView
-    }
-    
-    func tableView(_ tableView: NSTableView, willDisplayCell cell: Any, for tableColumn: NSTableColumn?, row: Int) {
-        if let eventDisplayView = cell as? EventDisplayView {
-            print(eventDisplayView)
-        }
-    }
-    
-//    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
-//        let v = tableView.view(atColumn: 0, row: row, makeIfNecessary: false) as? EventDisplayView
-//
-//        if let v = v {
-//            print(v.title.stringValue)
-//        }
-//
-//        return true
-//    }
-    
-//    func tableViewSelectionDidChange(_ notification: Notification) {
-//
-//
-//    }
-}
+
