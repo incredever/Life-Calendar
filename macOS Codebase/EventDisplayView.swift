@@ -25,11 +25,15 @@ class EventDisplayView: NSTableCellView {
         addSubview(editButton)
         editButton.autoresizingMask = .none
         self.autoresizingMask = .none
+        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
         editButton.widthAnchor.constraint(equalToConstant: 30.0).isActive = true
+        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
         editButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
+        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
         editButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10.0).isActive = true
+        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
         editButton.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        
+        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
         print(self.constraints)
     }
     
