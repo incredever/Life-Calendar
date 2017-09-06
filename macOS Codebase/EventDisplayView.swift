@@ -10,13 +10,11 @@ import Cocoa
 class EventDisplayView: NSTableCellView {
 
     private var event: Event
-    private var title: NSTextField
     
     convenience init(event: Event) {
         self.init(frame: NSRect(x: 0, y: 0, width: 0, height: 0))
         
         self.event = event
-        title.stringValue = event.title
         
         // Create edit button
         let editButton = NSButton(image: NSImage.init(named: NSImage.Name("Edit Pencil"))!, target: self, action: #selector(self.editButtonPressed))
@@ -24,17 +22,6 @@ class EventDisplayView: NSTableCellView {
   
         addSubview(editButton)
         editButton.autoresizingMask = .none
-        self.autoresizingMask = .none
-        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
-        editButton.widthAnchor.constraint(equalToConstant: 30.0).isActive = true
-        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
-        editButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
-        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
-        editButton.topAnchor.constraint(equalTo: self.topAnchor, constant: 10.0).isActive = true
-        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
-        editButton.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        print("Has ambiguous layout: \(editButton.hasAmbiguousLayout)")
-        print(self.constraints)
     }
     
     @objc func editButtonPressed(_ sender: NSButton) {
@@ -44,11 +31,11 @@ class EventDisplayView: NSTableCellView {
     override init(frame frameRect: NSRect) {
         event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
         
-        title = NSTextField(wrappingLabelWithString: event.title)
+//        title = NSTextField(wrappingLabelWithString: event.title)
         
         super.init(frame: frameRect)
 
-        self.addSubview(title)
+//        self.addSubview(title)
     }
     
     required init?(coder decoder: NSCoder) {
@@ -83,17 +70,17 @@ class EventDisplayView: NSTableCellView {
     private var mouseIsHovering = false
     private var trackingArea: NSTrackingArea? = nil
     
-    override func updateTrackingAreas() {
-        super.updateTrackingAreas()
-       
-        if trackingArea == nil {
-            trackingArea = NSTrackingArea(rect: NSRect.zero, options: [.inVisibleRect, .activeAlways, .mouseEnteredAndExited], owner: self, userInfo: nil)
-        }
-        
-        if !trackingAreas.contains(trackingArea!) {
-            self.addTrackingArea(trackingArea!)
-        }
-    }
+//    override func updateTrackingAreas() {
+//        super.updateTrackingAreas()
+//
+//        if trackingArea == nil {
+//            trackingArea = NSTrackingArea(rect: NSRect.zero, options: [.inVisibleRect, .activeAlways, .mouseEnteredAndExited], owner: self, userInfo: nil)
+//        }
+//
+//        if !trackingAreas.contains(trackingArea!) {
+//            self.addTrackingArea(trackingArea!)
+//        }
+//    }
     
     override func mouseDown(with event: NSEvent) {
 
