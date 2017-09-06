@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE23A9D01F28C579002C156D /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE23A9CF1F28C579002C156D /* Tile.swift */; };
+		DE24C8921F5FE8C3007382A1 /* SidebarTableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE24C8911F5FE8C3007382A1 /* SidebarTableViewHandler.swift */; };
 		DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */; };
 		DE41E4051F55F65200228A08 /* EventDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41E4041F55F65200228A08 /* EventDisplayView.swift */; };
 		DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */; };
@@ -44,6 +45,7 @@
 		DE23A9CF1F28C579002C156D /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		DE23A9D11F28CB70002C156D /* Mockups 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 3.png"; sourceTree = "<group>"; };
 		DE2472901F42FA6A00F39F58 /* 2017-08-15 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-15 Fig 1.png"; sourceTree = "<group>"; };
+		DE24C8911F5FE8C3007382A1 /* SidebarTableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableViewHandler.swift; sourceTree = "<group>"; };
 		DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksViewController.swift; sourceTree = "<group>"; };
 		DE3444001F2B29A1001DAE8F /* 2017-07-28.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-28.md"; sourceTree = "<group>"; };
 		DE3444011F2B570F001DAE8F /* 2017-07-28 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-07-28 Fig 1.png"; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
+				DE24C8911F5FE8C3007382A1 /* SidebarTableViewHandler.swift */,
 				DE41E4041F55F65200228A08 /* EventDisplayView.swift */,
 				DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */,
 				DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */,
@@ -339,6 +342,7 @@
 				DE65D6A81F273EC000B97F22 /* Color.swift in Sources */,
 				DE6A83081F2607BB0088DBA3 /* main.swift in Sources */,
 				DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */,
+				DE24C8921F5FE8C3007382A1 /* SidebarTableViewHandler.swift in Sources */,
 				DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */,
 				DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */,
 				DE7E3C621F4FED930048A115 /* Line.swift in Sources */,
