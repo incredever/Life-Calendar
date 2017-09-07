@@ -35,13 +35,7 @@ class SidebarTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSou
         
         return rowView
     }
-    
-    func tableView(_ tableView: NSTableView, willDisplayCell cell: Any, for tableColumn: NSTableColumn?, row: Int) {
-        if let eventDisplayView = cell as? EventDisplayView {
-            print(eventDisplayView)
-        }
-    }
-    
+        
 }
 
 
