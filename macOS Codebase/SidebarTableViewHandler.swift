@@ -2,7 +2,7 @@ import Cocoa
 
 class SidebarTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSource {
 
-    /// An implicitly unwrapped reference to the timeline object which is usually set by the view controller.
+    /// A reference to the timeline object which contains the events which will be displayed by the table view. This property is usually set by a view controller which owns this object.
     var timeline: Timeline!
     
     // MARK: DataSource stuff
