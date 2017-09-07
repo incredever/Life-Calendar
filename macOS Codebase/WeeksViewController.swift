@@ -1,13 +1,15 @@
 import Cocoa
 import SpriteKit
 
-/// A VC that contains an NSView > SKView > SKScene hierarchy for displaying a human life in weeks.
+/// A view controller for the viewing and editing of a timeline document representing a human life in weeks.
 class WeeksViewController: NSViewController {
     
-    var skView: SKView!
+    /// A reference to the window which displays this view controller.
     weak var window: NSWindow?
-    var timeline: Timeline!
-    var sidebarTableView: NSTableView!
+
+    private var skView: SKView!
+    private var timeline: Timeline!
+    private var sidebarTableView: NSTableView!
     private let sidebarTableViewHandler = SidebarTableViewHandler()
     
     override func loadView() {
