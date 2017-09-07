@@ -17,7 +17,7 @@ class WeeksViewController: NSViewController {
     private var sidebarTableView: NSTableView!
     
     /// A reference to the handler object which provides the `sidebarTableView` with it's data source and handles it's delegation.
-    private let sidebarTableViewHandler = SidebarTableViewHandler()
+    private let sidebarTableViewHandler = EventsTableViewHandler()
     
     override func loadView() {
         let windowSize = window?.frame.size ?? CGSize(width: 0, height: 0)

@@ -1,6 +1,7 @@
 import Cocoa
 
-class SidebarTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSource {
+/// A handler object which provides the data source and delegation methods for a table view which displays the events of timeline.
+class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSource {
 
     /// A reference to the timeline object which contains the events which will be displayed by the table view. This property is usually set by a view controller which owns this object.
     var timeline: Timeline!
