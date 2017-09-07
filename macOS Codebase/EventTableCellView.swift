@@ -1,6 +1,6 @@
 import Cocoa
 
-class EventDisplayView: NSTableCellView {
+class EventTableCellView: NSTableCellView {
 
     private var event: Event
     
