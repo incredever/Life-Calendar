@@ -7,9 +7,16 @@ class WeeksViewController: NSViewController {
     /// A reference to the window which displays this view controller.
     weak var window: NSWindow?
 
+    /// A SpriteKit view which will display the scene which renders the grid of tiles.
     private var skView: SKView!
+    
+    /// An implicitly unwrapped reference to the timeline object which is the primary model of this view controller.
     private var timeline: Timeline!
+    
+    /// An implicitly unwrapped reference to the table view which displays the events in the sidebar.
     private var sidebarTableView: NSTableView!
+    
+    /// A reference to the handler object which provides the `sidebarTableView` with it's data source and handles it's delegation.
     private let sidebarTableViewHandler = SidebarTableViewHandler()
     
     override func loadView() {
