@@ -21,10 +21,6 @@ class SidebarTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSou
         return CGFloat(60)
     }
     
-    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
-        return nil
-    }
-    
     // MARK: Delegate stuff
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
