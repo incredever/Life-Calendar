@@ -1,10 +1,3 @@
-//
-//  main.swift
-//  Life Calendar
-//
-//  Created by Wesley Van der Klomp on 7/24/17.
-//
-
 import Cocoa
 
 /// Creates the main menu for the macOS menu bar. Because we are not using IB, this function manually creates all basic functionality one would expect an app to have including things like quit (⌘Q) and minimize (⌘M).

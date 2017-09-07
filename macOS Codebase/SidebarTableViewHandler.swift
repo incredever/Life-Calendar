@@ -1,10 +1,3 @@
-//
-//  SidebarTableViewHandler.swift
-//  Life Calendar
-//
-//  Created by Wesley Van der Klomp on 9/6/17.
-//
-
 import Cocoa
 
 class SidebarTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSource {
@@ -35,9 +28,5 @@ class SidebarTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSou
         
         return rowView
     }
-        
-}
-
-
     
-
+}

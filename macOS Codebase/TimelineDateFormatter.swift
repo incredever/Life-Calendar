@@ -1,10 +1,3 @@
-//
-//  TimelineDateFormatter.swift
-//  Life Calendar
-//
-//  Created by Wesley Van der Klomp on 8/24/17.
-//
-
 import Foundation
 
 class TimelineDateFormatter: DateFormatter {

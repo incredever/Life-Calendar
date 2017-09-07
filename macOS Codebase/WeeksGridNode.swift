@@ -1,10 +1,3 @@
-//
-//  WeeksGridNode.swift
-//  Life Calendar
-//
-//  Created by Wesley Van der Klomp on 8/17/17.
-//
-
 import Foundation
 import SpriteKit
 

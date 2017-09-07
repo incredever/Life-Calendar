@@ -1,10 +1,3 @@
-//
-//  DateInterval Extensions.swift
-//  Life Calendar
-//
-//  Created by Wesley Van der Klomp on 8/7/17.
-//
-
 import Foundation
 
 extension DateInterval {
