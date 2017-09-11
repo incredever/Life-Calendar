@@ -4,6 +4,7 @@ class EventTableCellView: NSTableCellView {
 
     private var event: Event
     private var mouseIsHovering = false
+    private var isSelected = false
     private var trackingArea: NSTrackingArea? = nil
     
     convenience init(event: Event) {
@@ -41,7 +42,12 @@ class EventTableCellView: NSTableCellView {
         let dates = NSString(string: "\(startDate) - \(endDate)")
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
         
-        if mouseIsHovering {
+        if isSelected {
+            NSColor(calibratedRed: 0.3, green: 0.3, blue: 1.0, alpha: 1.0).set()
+            let path = NSBezierPath(rect: dirtyRect)
+            path.lineWidth = 5
+            path.stroke()
+        } else if mouseIsHovering {
             NSColor(calibratedRed: 0.7, green: 0.7, blue: 1.0, alpha: 1.0).set()
             let path = NSBezierPath(rect: dirtyRect)
             path.lineWidth = 5
@@ -63,9 +69,11 @@ class EventTableCellView: NSTableCellView {
         }
     }
 
-//    override func mouseDown(with event: NSEvent) {
-//
-//    }
+    override func mouseDown(with event: NSEvent) {
+        print("row clicked")
+        isSelected = true
+        needsDisplay = true
+    }
 
     override func mouseEntered(with event: NSEvent) {
         mouseIsHovering = true
