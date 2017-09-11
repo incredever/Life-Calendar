@@ -45,21 +45,6 @@ class WeeksViewController: NSViewController {
         
         createGrid()
         createSidebar()
-        
-        
-        //////// TEMP //
-        //
-        // Make a date picker to see what it looks like
-        //
-        
-        let rect = NSRect(x: 500-20, y: 100, width: 100, height: 100)
-        let picker = NSDatePicker(frame: rect)
-        
-        view.addSubview(picker)
-        
-        //
-        //
-        // TEMP ///////
     }
     
     /// Called from viewDidLoad.
