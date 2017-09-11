@@ -25,10 +25,4 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
         return eventDisplayView
     }
     
-    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
-        let rowView = NSTableRowView(frame: NSRect.zero)
-        
-        return rowView
-    }
-    
 }
