@@ -99,6 +99,7 @@ class WeeksViewController: NSViewController {
         sidebarTableView.reloadData()
         sidebarTableView.backgroundColor = NSColor(hexString: "F3F1F0")
         sidebarTableView.headerView = nil
+        sidebarTableView.selectionHighlightStyle = .none
         
         tableContainer.documentView = sidebarTableView
         tableContainer.hasVerticalScroller = true
