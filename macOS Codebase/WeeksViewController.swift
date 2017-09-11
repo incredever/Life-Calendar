@@ -43,11 +43,17 @@ class WeeksViewController: NSViewController {
         
         sidebarTableViewHandler.timeline = timeline
         
-        // Set up grid scene
+        createGrid()
+        createSidebar()
+    }
+    
+    /// Called from viewDidLoad.
+    private func createGrid() {
+        // First set up the SpriteKit scene
         let scene = SKScene(size: skView.frame.size)
         scene.backgroundColor = NSColor(hexString: Color.sceneBackground.rawValue)
         scene.scaleMode = .aspectFill
-
+        
         skView.presentScene(scene)
         skView.showsNodeCount = true
         skView.showsFPS = true
@@ -56,7 +62,7 @@ class WeeksViewController: NSViewController {
         window?.makeFirstResponder(scene)
         window?.setFrameAutosaveName(NSWindow.FrameAutosaveName(rawValue: "mainLifeCalendarWindow"))
         
-        // Create Grid
+        // Now create the grid
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-mm-dd"
         let myBirth = dateFormatter.date(from: "1993-01-05")!
@@ -70,7 +76,10 @@ class WeeksViewController: NSViewController {
         grid.timeline = timeline
         
         scene.addChild(grid.node)
-        
+    }
+    
+    /// Called from viewDidLoad.
+    private func createSidebar() {
         // Create the table view
         let widthOfSidebar = CGFloat(150)
         let tableContainer = NSScrollView(frame: NSRect(x: view.frame.width - widthOfSidebar,
@@ -79,8 +88,8 @@ class WeeksViewController: NSViewController {
                                                         height: view.frame.height))
         
         sidebarTableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0),
-                                              size: tableContainer.frame.size))
-
+                                                     size: tableContainer.frame.size))
+        
         let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Column1"))
         column1.width = widthOfSidebar
         
