@@ -3,6 +3,8 @@ import Cocoa
 class EventTableCellView: NSTableCellView {
 
     private var event: Event
+    private var mouseIsHovering = false
+    private var trackingArea: NSTrackingArea? = nil
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
@@ -40,39 +42,39 @@ class EventTableCellView: NSTableCellView {
         dates.draw(at: NSPoint(x: 5, y: 20), withAttributes: nil)
         
         if mouseIsHovering {
-            NSColor.red.set()
-            NSBezierPath(rect: NSRect(x: 10, y: 10, width: 10, height: 10)).fill()
+            NSColor(calibratedRed: 0.7, green: 0.7, blue: 1.0, alpha: 1.0).set()
+            let path = NSBezierPath(rect: dirtyRect)
+            path.lineWidth = 5
+            path.stroke()
         }
     }
     
-    private var mouseIsHovering = false
-    private var trackingArea: NSTrackingArea? = nil
+    // Area tracking and responder stuff
     
-// Manual tracking and responder stuff
-//    override func updateTrackingAreas() {
-//        super.updateTrackingAreas()
-//
-//        if trackingArea == nil {
-//            trackingArea = NSTrackingArea(rect: NSRect.zero, options: [.inVisibleRect, .activeAlways, .mouseEnteredAndExited], owner: self, userInfo: nil)
-//        }
-//
-//        if !trackingAreas.contains(trackingArea!) {
-//            self.addTrackingArea(trackingArea!)
-//        }
-//    }
-//
+    override func updateTrackingAreas() {
+        super.updateTrackingAreas()
+
+        if trackingArea == nil {
+            trackingArea = NSTrackingArea(rect: NSRect.zero, options: [.inVisibleRect, .activeAlways, .mouseEnteredAndExited], owner: self, userInfo: nil)
+        }
+
+        if !trackingAreas.contains(trackingArea!) {
+            self.addTrackingArea(trackingArea!)
+        }
+    }
+
 //    override func mouseDown(with event: NSEvent) {
 //
 //    }
-//
-//    override func mouseEntered(with event: NSEvent) {
-//        mouseIsHovering = true
-//        needsDisplay = true
-//    }
-//
-//    override func mouseExited(with event: NSEvent) {
-//        mouseIsHovering = false
-//        needsDisplay = true
-//    }
+
+    override func mouseEntered(with event: NSEvent) {
+        mouseIsHovering = true
+        needsDisplay = true
+    }
+
+    override func mouseExited(with event: NSEvent) {
+        mouseIsHovering = false
+        needsDisplay = true
+    }
     
 }
