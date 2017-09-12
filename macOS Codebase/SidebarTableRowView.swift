@@ -7,8 +7,10 @@ class SidebarTableRowView: NSTableRowView {
     private var mouseIsHovering = false
 
     override func draw(_ dirtyRect: NSRect) {
+        super.draw(dirtyRect)
+
         if mouseIsHovering {
-            NSColor(calibratedRed: 0.7, green: 0.7, blue: 1.0, alpha: 1.0).set()
+            NSColor(calibratedRed: 0.4, green: 0.4, blue: 1.0, alpha: 1.0).set()
             let path = NSBezierPath(rect: dirtyRect)
             path.lineWidth = 5
             path.stroke()
