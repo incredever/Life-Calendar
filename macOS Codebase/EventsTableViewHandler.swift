@@ -20,7 +20,7 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let event = timeline.events[row]
-        let eventDisplayView = EventTableCellView(event: event)
+        let eventDisplayView = EventView(event: event)
         
         return eventDisplayView
     }

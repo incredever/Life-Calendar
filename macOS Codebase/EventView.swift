@@ -1,6 +1,6 @@
 import Cocoa
 
-class EventTableCellView: NSTableCellView {
+class EventView: NSView {
 
     private var event: Event
     private var mouseIsHovering = false
