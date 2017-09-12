@@ -81,7 +81,7 @@ class WeeksViewController: NSViewController {
     /// Called from viewDidLoad.
     private func createSidebar() {
         // Create the table view
-        let widthOfSidebar = CGFloat(150)
+        let widthOfSidebar = CGFloat(200)
         let tableContainer = NSScrollView(frame: NSRect(x: view.frame.width - widthOfSidebar,
                                                         y: 0,
                                                         width: widthOfSidebar,
@@ -99,7 +99,6 @@ class WeeksViewController: NSViewController {
         sidebarTableView.reloadData()
         sidebarTableView.backgroundColor = NSColor(hexString: "F3F1F0")
         sidebarTableView.headerView = nil
-        sidebarTableView.selectionHighlightStyle = .none
         
         tableContainer.documentView = sidebarTableView
         tableContainer.hasVerticalScroller = true
