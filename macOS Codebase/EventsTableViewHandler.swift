@@ -25,4 +25,10 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
         return eventDisplayView
     }
     
+    func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
+        let sidebarTableRowView = SidebarTableRowView(frame: NSRect.zero)
+        
+        return sidebarTableRowView
+    }
+    
 }
