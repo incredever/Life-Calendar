@@ -1,7 +1,7 @@
 import Cocoa
 
 /// An NSTableRowView which displays an EventView in the sidebar table view.
-class SidebarTableRowView: NSTableRowView {
+class EventsTableRowView: NSTableRowView {
 
     private var trackingArea: NSTrackingArea? = nil
     private var mouseIsHovering = false

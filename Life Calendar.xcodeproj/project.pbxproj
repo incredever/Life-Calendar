@@ -19,7 +19,7 @@
 		DE7E3C621F4FED930048A115 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E3C611F4FED930048A115 /* Line.swift */; };
 		DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F51CF1F45A9110096854F /* WeeksGridNode.swift */; };
 		DE9F37461F501B9800A21B51 /* NSBezierPath+cgPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9F37451F501B9800A21B51 /* NSBezierPath+cgPath.swift */; };
-		DEB2BC081F680A7C007402C3 /* SidebarTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2BC071F680A7C007402C3 /* SidebarTableRowView.swift */; };
+		DEB2BC081F680A7C007402C3 /* EventsTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2BC071F680A7C007402C3 /* EventsTableRowView.swift */; };
 		DED586E71F38A62E00B30888 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E61F38A62E00B30888 /* Label.swift */; };
 		DED586E91F38A72500B30888 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED586E81F38A72500B30888 /* Font.swift */; };
 		DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED5FFDF1F38DD4B00B219CE /* DateInterval Extensions.swift */; };
@@ -93,7 +93,7 @@
 		DEA8DE5F1EF4C01A0054CAF0 /* 2017-06-16.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-16.md"; sourceTree = "<group>"; };
 		DEA8DE601EF4C01C0054CAF0 /* 2017-06-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-11.md"; sourceTree = "<group>"; };
 		DEA938501F46C39100089539 /* 2017-08-18.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-18.md"; sourceTree = "<group>"; };
-		DEB2BC071F680A7C007402C3 /* SidebarTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarTableRowView.swift; sourceTree = "<group>"; };
+		DEB2BC071F680A7C007402C3 /* EventsTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableRowView.swift; sourceTree = "<group>"; };
 		DEB7601A1F16758A009B742F /* 2017-07-13 Supplemental.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-13 Supplemental.md"; sourceTree = "<group>"; };
 		DEBB1C8B1F5E9BF000E3649F /* 2017-09-05.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-05.md"; sourceTree = "<group>"; };
 		DECCA8AE1F4C0722000AEFC2 /* 2017-08-22.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-22.md"; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
-				DEB2BC071F680A7C007402C3 /* SidebarTableRowView.swift */,
+				DEB2BC071F680A7C007402C3 /* EventsTableRowView.swift */,
 				DE46B3301F613EA30064F01A /* EventsTableViewHandler.swift */,
 				DE41E4041F55F65200228A08 /* EventView.swift */,
 				DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */,
@@ -351,7 +351,7 @@
 				DE46B3311F613EA30064F01A /* EventsTableViewHandler.swift in Sources */,
 				DE31CDEA1F0FFE2E00623166 /* WeeksViewController.swift in Sources */,
 				DE7F51D01F45A9110096854F /* WeeksGridNode.swift in Sources */,
-				DEB2BC081F680A7C007402C3 /* SidebarTableRowView.swift in Sources */,
+				DEB2BC081F680A7C007402C3 /* EventsTableRowView.swift in Sources */,
 				DED5FFE01F38DD4B00B219CE /* DateInterval Extensions.swift in Sources */,
 				DE7E3C621F4FED930048A115 /* Line.swift in Sources */,
 				DE9F37461F501B9800A21B51 /* NSBezierPath+cgPath.swift in Sources */,
