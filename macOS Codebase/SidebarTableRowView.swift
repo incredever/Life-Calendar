@@ -17,8 +17,6 @@ class SidebarTableRowView: NSTableRowView {
         }
     }
     
-    // Area tracking and responder stuff
-    
     override func updateTrackingAreas() {
         super.updateTrackingAreas()
         
