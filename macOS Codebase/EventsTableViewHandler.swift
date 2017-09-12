@@ -12,11 +12,11 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
         return timeline.events.count
     }
     
+    // MARK: Delegate stuff
+    
     func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
         return CGFloat(60)
     }
-    
-    // MARK: Delegate stuff
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let event = timeline.events[row]
