@@ -9,7 +9,7 @@ class EventsTableRowView: NSTableRowView {
     override func drawSelection(in dirtyRect: NSRect) {
         NSColor(hexString: Color.selectionBorder.rawValue).set()
         let path = NSBezierPath(rect: dirtyRect)
-        path.lineWidth = 5
+        path.lineWidth = 4
         path.stroke()
     }
     
