@@ -82,16 +82,16 @@ class WeeksViewController: NSViewController {
     private func createSidebar() {
         // Create the table view
         let widthOfSidebar = CGFloat(200)
-        let tableContainer = NSScrollView(frame: NSRect(x: view.frame.width - widthOfSidebar,
+        let xPositionOfSidebar = view.frame.width - widthOfSidebar
+        let tableContainer = NSScrollView(frame: NSRect(x: xPositionOfSidebar,
                                                         y: 0,
                                                         width: widthOfSidebar,
                                                         height: view.frame.height))
         
-        sidebarTableView = NSTableView(frame: NSRect(origin: CGPoint(x: 0, y: 0),
-                                                     size: tableContainer.frame.size))
+        sidebarTableView = NSTableView(frame: NSRect.zero)
         
         let column1 = NSTableColumn(identifier: NSUserInterfaceItemIdentifier.init(rawValue: "Column1"))
-        column1.width = widthOfSidebar
+        column1.width = widthOfSidebar - 5
         
         sidebarTableView.addTableColumn(column1)
         sidebarTableView.dataSource = sidebarTableViewHandler
@@ -106,7 +106,7 @@ class WeeksViewController: NSViewController {
         view.addSubview(tableContainer)
         
         // Add boarder to left side of sidebar
-        let boarderRect = NSRect(x: view.frame.width - widthOfSidebar, y: 0, width: 0.5, height: view.frame.height)
+        let boarderRect = NSRect(x: xPositionOfSidebar, y: 0, width: 0.5, height: view.frame.height)
         let sidebarBoarderLine = NSBox(frame: boarderRect)
         sidebarBoarderLine.boxType = .custom
         sidebarBoarderLine.borderType = .noBorder
