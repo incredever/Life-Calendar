@@ -7,7 +7,7 @@ class EventsTableRowView: NSTableRowView {
     private var mouseIsHovering = false
 
     override func drawSelection(in dirtyRect: NSRect) {
-        NSColor(calibratedRed: 0.4, green: 0.4, blue: 1.0, alpha: 1.0).set()
+        NSColor(hexString: Color.selectionBorder.rawValue).set()
         let path = NSBezierPath(rect: dirtyRect)
         path.lineWidth = 5
         path.stroke()
@@ -16,8 +16,8 @@ class EventsTableRowView: NSTableRowView {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
-        if mouseIsHovering {
-            NSColor(calibratedRed: 0.4, green: 0.4, blue: 1.0, alpha: 1.0).set()
+        if mouseIsHovering && !isSelected {
+            NSColor(hexString: Color.hoverBorder.rawValue).set()
             let path = NSBezierPath(rect: dirtyRect)
             path.lineWidth = 5
             path.stroke()
