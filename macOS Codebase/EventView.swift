@@ -13,14 +13,14 @@ class EventView: NSView {
         let titleTextField = NSTextField(string: "\(event.title)")
         addSubview(titleTextField)
         
-//        let layoutConstraint = NSLayoutConstraint(item: titleTextField,
-//                                                  attribute: .top,
-//                                                  relatedBy: NSLayoutConstraint.Relation.equal,
-//                                                  toItem: self,
-//                                                  attribute: .top,
-//                                                  multiplier: 1.0,
-//                                                  constant: 0.0)
-//        layoutConstraint.isActive = true
+        let layoutConstraint = NSLayoutConstraint(item: titleTextField,
+                                                  attribute: .bottom,
+                                                  relatedBy: NSLayoutConstraint.Relation.equal,
+                                                  toItem: self,
+                                                  attribute: .bottom,
+                                                  multiplier: 1.0,
+                                                  constant: 0.0)
+        layoutConstraint.isActive = true
         
     }
     
