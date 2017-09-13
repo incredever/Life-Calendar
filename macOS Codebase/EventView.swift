@@ -14,10 +14,10 @@ class EventView: NSView {
         addSubview(titleTextField)
         
         let layoutConstraint = NSLayoutConstraint(item: titleTextField,
-                                                  attribute: .bottom,
+                                                  attribute: .top,
                                                   relatedBy: NSLayoutConstraint.Relation.equal,
                                                   toItem: self,
-                                                  attribute: .bottom,
+                                                  attribute: .top,
                                                   multiplier: 1.0,
                                                   constant: 0.0)
         layoutConstraint.isActive = true
