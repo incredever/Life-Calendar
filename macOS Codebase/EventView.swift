@@ -2,17 +2,17 @@ import Cocoa
 
 class EventView: NSView {
 
-    private var event: Event
+    private var event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
         
         self.event = event
+        
+        // test adding a textfield-based title
     }
     
     override init(frame frameRect: NSRect) {
-        event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
-        
         super.init(frame: frameRect)
     }
     
