@@ -7,9 +7,15 @@ class EventView: NSView {
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
         
-        translatesAutoresizingMaskIntoConstraints = false
-        
         self.event = event
+        
+        // TODO: Update the title textfield and other stuff to display values from event.
+    }
+    
+    override init(frame frameRect: NSRect) {
+        super.init(frame: frameRect)
+        
+        translatesAutoresizingMaskIntoConstraints = false
         
         // test adding a textfield-based title
         let titleTextField = NSTextField(string: "\(event.title)")
@@ -23,11 +29,6 @@ class EventView: NSView {
                                                   multiplier: 1.0,
                                                   constant: 0.0)
         layoutConstraint.isActive = true
-        
-    }
-    
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
     }
     
     required init?(coder decoder: NSCoder) {
