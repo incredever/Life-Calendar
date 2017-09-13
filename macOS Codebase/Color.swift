@@ -9,4 +9,6 @@ enum Color: String {
     case blue = "0000FF"
     case black = "000001"
     case line = "707070"
+    case hoverBorder = "37A3FF"
+    case selectionBorder = "64B8FF"
 }
