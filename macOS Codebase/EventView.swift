@@ -7,6 +7,8 @@ class EventView: NSView {
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
         
+        translatesAutoresizingMaskIntoConstraints = false
+        
         self.event = event
         
         // test adding a textfield-based title
