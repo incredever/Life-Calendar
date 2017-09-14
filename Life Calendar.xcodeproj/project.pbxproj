@@ -61,6 +61,7 @@
 		DE46B3301F613EA30064F01A /* EventsTableViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewHandler.swift; sourceTree = "<group>"; };
 		DE4DEF8F1F3075C70059956D /* Untitled.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Untitled.pcvd; sourceTree = "<group>"; };
 		DE4FC9961F6929A500008505 /* 2017-09-13.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-13.md"; sourceTree = "<group>"; };
+		DE4FC9971F6A647100008505 /* 2017-09-14.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-14.md"; sourceTree = "<group>"; };
 		DE5221AF1F4D40CC008AC71B /* 2017-08-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-23.md"; sourceTree = "<group>"; };
 		DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksGrid.swift; sourceTree = "<group>"; };
 		DE603A2F1F0B8C0800C8C88D /* 2017-07-04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-04.md"; sourceTree = "<group>"; };
@@ -175,6 +176,7 @@
 				DE6219A41F66CB9D00E938EB /* 2017-09-11.md */,
 				DE612AA21F67CE9F00C17A41 /* 2017-09-12.md */,
 				DE4FC9961F6929A500008505 /* 2017-09-13.md */,
+				DE4FC9971F6A647100008505 /* 2017-09-14.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
