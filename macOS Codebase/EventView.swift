@@ -3,20 +3,18 @@ import Cocoa
 class EventView: NSView {
 
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
+    let titleTextField = NSTextField(string: "Event Title")
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
         
         self.event = event
         
-        // TODO: Update the title textfield and other stuff to display values from event.
+        titleTextField.stringValue = event.title
     }
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
-        
-        // test adding a textfield-based title
-        let titleTextField = NSTextField(string: "\(event.title)")
         
         titleTextField.translatesAutoresizingMaskIntoConstraints = false
         
