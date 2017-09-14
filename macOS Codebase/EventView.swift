@@ -2,7 +2,7 @@ import Cocoa
 
 class EventView: NSView {
 
-    private var event = Event(title: "Default Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
+    private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
@@ -15,10 +15,11 @@ class EventView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
-        translatesAutoresizingMaskIntoConstraints = false
-        
         // test adding a textfield-based title
         let titleTextField = NSTextField(string: "\(event.title)")
+        
+        titleTextField.translatesAutoresizingMaskIntoConstraints = false
+        
         addSubview(titleTextField)
         
         let layoutConstraint = NSLayoutConstraint(item: titleTextField,
@@ -29,6 +30,10 @@ class EventView: NSView {
                                                   multiplier: 1.0,
                                                   constant: 0.0)
         layoutConstraint.isActive = true
+        
+        titleTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        titleTextField.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
+        titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
     }
     
     required init?(coder decoder: NSCoder) {
