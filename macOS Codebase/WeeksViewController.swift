@@ -105,6 +105,8 @@ class WeeksViewController: NSViewController {
         
         view.addSubview(tableContainer)
         
+        sidebarTableViewHandler.tableView = sidebarTableView
+        
         // Add boarder to left side of sidebar
         let boarderRect = NSRect(x: xPositionOfSidebar, y: 0, width: 0.5, height: view.frame.height)
         let sidebarBoarderLine = NSBox(frame: boarderRect)
