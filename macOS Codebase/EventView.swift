@@ -1,9 +1,14 @@
 import Cocoa
 
+protocol EventDetailsChangeDelegate {
+    func titleChange(to: String)
+}
+
 class EventView: NSView {
 
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     let titleTextField = NSTextField(string: "Event Title")
+    let eventCshangeDelegate: EventDetailsChangeDelegate? = nil
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
@@ -41,7 +46,7 @@ class EventView: NSView {
     }
     
     @objc func titleChange() {
-        print(titleTextField.stringValue)
+        
     }
     
     required init?(coder decoder: NSCoder) {

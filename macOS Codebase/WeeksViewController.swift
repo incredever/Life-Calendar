@@ -122,7 +122,6 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
         let newEvent = Event(title: "testing 123", colorHex: "FFFFFF", span: spanning)
         
         timeline.events.append(newEvent)
-//        sidebarTableView.insertRows(at: IndexSet(integer: timeline.events.count - 1), withAnimation: .effectFade)
 
         sidebarTableView.reloadData()
     }
