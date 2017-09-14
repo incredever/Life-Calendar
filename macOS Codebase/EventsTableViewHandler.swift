@@ -39,7 +39,8 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
 
 extension EventsTableViewHandler: EventDetailsChangeDelegate {
     
-    func titleChange(to: String) {
+    func titleChange(to: String, textField: NSTextField) {
+        // get row number
         print("title changed to: \(to)")
     }
     

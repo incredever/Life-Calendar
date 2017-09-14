@@ -1,7 +1,7 @@
 import Cocoa
 
 protocol EventDetailsChangeDelegate {
-    func titleChange(to: String)
+    func titleChange(to: String, textField: NSTextField)
 }
 
 class EventView: NSView {
@@ -46,7 +46,7 @@ class EventView: NSView {
     }
     
     @objc func titleChange() {
-        
+        eventChangeDelegate?.titleChange(to: titleTextField.stringValue, textField: titleTextField)
     }
     
     required init?(coder decoder: NSCoder) {
