@@ -21,6 +21,8 @@ class EventView: NSView {
         titleTextField.isBezeled = false
         titleTextField.isBordered = false
         titleTextField.drawsBackground = false
+        titleTextField.target = self
+        titleTextField.action = #selector(titleChange)
         
         addSubview(titleTextField)
         
@@ -38,8 +40,12 @@ class EventView: NSView {
         titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
     }
     
+    @objc func titleChange() {
+        print(titleTextField.stringValue)
+    }
+    
     required init?(coder decoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: decoder)
     }
     
     override func draw(_ dirtyRect: NSRect) {
