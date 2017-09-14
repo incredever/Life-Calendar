@@ -1,10 +1,6 @@
 import Cocoa
 import SpriteKit
 
-protocol GridBasedEventCreationDelegate {
-    func eventCreated(spanning: DateInterval)
-}
-
 /// A grid of tiles, each representing one week of a human life.
 class WeeksGrid {
     
