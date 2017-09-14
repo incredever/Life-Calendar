@@ -42,10 +42,10 @@ extension EventsTableViewHandler: EventDetailsChangeDelegate {
     
     func titleChange(to: String, textField: NSTextField) {
         if let tableView = tableView {
-            print("Row for view: \(tableView.row(for: textField))")
+            let index = tableView.row(for: textField)
+            
+            timeline.events[index].title = to
         }
-
-        print("title changed to: \(to)")
     }
     
 }
