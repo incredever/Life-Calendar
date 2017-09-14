@@ -8,7 +8,7 @@ class EventView: NSView {
 
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     let titleTextField = NSTextField(string: "Event Title")
-    let eventCshangeDelegate: EventDetailsChangeDelegate? = nil
+    var eventChangeDelegate: EventDetailsChangeDelegate? = nil
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
