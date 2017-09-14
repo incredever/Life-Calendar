@@ -6,7 +6,7 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
     /// A reference to the timeline object which contains the events which will be displayed by the table view. This property is usually set by a view controller which owns this object.
     var timeline: Timeline!
     
-    weak var owner: WeeksViewController? = nil
+//    weak var owner: WeeksViewController? = nil
     
     // MARK: DataSource stuff
     
@@ -24,10 +24,8 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
         let event = timeline.events[row]
         let eventDisplayView = EventView(event: event)
         
-        if let owner = owner {
-            eventDisplayView.eventChangeDelegate = owner
-        }
-        
+        eventDisplayView.eventChangeDelegate = self
+
         return eventDisplayView
     }
     
@@ -35,6 +33,14 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
         let sidebarTableRowView = EventsTableRowView(frame: NSRect.zero)
         
         return sidebarTableRowView
+    }
+    
+}
+
+extension EventsTableViewHandler: EventDetailsChangeDelegate {
+    
+    func titleChange(to: String) {
+        print("title changed to: \(to)")
     }
     
 }
