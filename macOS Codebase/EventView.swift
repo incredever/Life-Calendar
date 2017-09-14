@@ -1,9 +1,5 @@
 import Cocoa
 
-protocol EventDetailsChangeDelegate {
-    func titleChange(to: String, textField: NSTextField)
-}
-
 class EventView: NSView {
 
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
