@@ -17,6 +17,10 @@ class EventView: NSView {
         super.init(frame: frameRect)
         
         titleTextField.translatesAutoresizingMaskIntoConstraints = false
+        if #available(OSX 10.12.2, *) { titleTextField.allowsCharacterPickerTouchBarItem = true }
+        titleTextField.isBezeled = false
+        titleTextField.isBordered = false
+        titleTextField.drawsBackground = false
         
         addSubview(titleTextField)
         
