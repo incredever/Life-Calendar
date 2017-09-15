@@ -17,4 +17,7 @@ class Timeline: Codable {
         try? FileManager.default.createDirectory(atPath: dir, withIntermediateDirectories: true, attributes: nil)
         FileManager.default.createFile(atPath: "\(dir)\(name).txt", contents: json, attributes: nil)
     }
+    
+    
+    
 }
