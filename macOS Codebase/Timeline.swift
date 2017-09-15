@@ -18,6 +18,7 @@ class Timeline: Codable {
         FileManager.default.createFile(atPath: "\(dir)\(name).txt", contents: json, attributes: nil)
     }
     
+    /// Returns the event, if any, whith has the same UUID.
     func event(for id: UUID) -> Event? {
         for event in events {
             if event.id == id {
