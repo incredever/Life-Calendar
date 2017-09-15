@@ -13,12 +13,13 @@ class EventView: NSView {
         self.event = event
         
         titleTextField.stringValue = event.title
+        startDatePicker.dateValue = event.span.start
     }
     
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
-        // Title
+        // Title text field
         if #available(OSX 10.12.2, *) { titleTextField.allowsCharacterPickerTouchBarItem = true }
         titleTextField.isBezeled = false
         titleTextField.isBordered = false
@@ -32,7 +33,7 @@ class EventView: NSView {
         titleTextField.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
 
-        // Start date
+        // Start date picker
         addSubview(startDatePicker)
         startDatePicker.translatesAutoresizingMaskIntoConstraints = false
         startDatePicker.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
