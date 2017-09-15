@@ -18,6 +18,8 @@ class Timeline: Codable {
         FileManager.default.createFile(atPath: "\(dir)\(name).txt", contents: json, attributes: nil)
     }
     
-    
+    func event(for id: UUID) -> Event? {
+        return nil
+    }
     
 }
