@@ -40,17 +40,15 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
 
 extension EventsTableViewHandler: EventDetailsChangeDelegate {
     
-    func change(startDate: Date, forEventId: UUID) {
+    func change(title: String, forEventId: UUID) {
         if let event = timeline.event(for: forEventId) {
-            event.span = DateInterval(start: startDate, end: event.span.end)
+            event.title = title
         }
     }
     
-    func titleChange(to: String, textField: NSTextField) {
-        if let tableView = tableView {
-            let index = tableView.row(for: textField)
-            
-            timeline.events[index].title = to
+    func change(startDate: Date, forEventId: UUID) {
+        if let event = timeline.event(for: forEventId) {
+            event.span = DateInterval(start: startDate, end: event.span.end)
         }
     }
     

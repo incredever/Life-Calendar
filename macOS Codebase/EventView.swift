@@ -45,7 +45,7 @@ class EventView: NSView {
     }
     
     @objc func titleChange() {
-        eventChangeDelegate?.titleChange(to: titleTextField.stringValue, textField: titleTextField)
+        eventChangeDelegate?.change(title: titleTextField.stringValue, forEventId: event.id)
     }
     
     @objc func startDateChange() {
