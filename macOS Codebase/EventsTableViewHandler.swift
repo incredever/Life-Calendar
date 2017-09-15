@@ -38,7 +38,7 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
     
 }
 
-extension EventsTableViewHandler: EventDetailsChangeDelegate {
+extension EventsTableViewHandler: EventEventsDelegate {
     
     func change(title: String, forEventId: UUID) {
         if let event = timeline.event(for: forEventId) {
