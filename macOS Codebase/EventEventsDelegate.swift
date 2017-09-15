@@ -1,5 +1,6 @@
 import Cocoa
 
+/// Called by things which create or change an event.
 protocol EventEventsDelegate {
     
     func change(title: String, forEventId: UUID)
