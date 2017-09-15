@@ -4,6 +4,7 @@ class EventView: NSView {
 
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     let titleTextField = NSTextField(string: "Event Title")
+    let startDatePicker = NSDatePicker()
     var eventChangeDelegate: EventDetailsChangeDelegate? = nil
     
     convenience init(event: Event) {
@@ -34,6 +35,20 @@ class EventView: NSView {
         titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
         
         // Start date
+        
+        // dev note: Let's just try adding the startDatePicker and see what happens
+        addSubview(startDatePicker)
+        
+        // dev note: Okay. Of course it's not showing up - it has no constraints.
+        startDatePicker.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        
+        // dev note: Actually it would seem it does. The AutoresizingMaskLayoutConstraints. Let's turn those off.
+        startDatePicker.translatesAutoresizingMaskIntoConstraints = false
+        
+        // dev note: Cool. It's showing up now. But I should finish adding constraints.
+        startDatePicker.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        startDatePicker.trailingAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        startDatePicker.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
         
     }
     
