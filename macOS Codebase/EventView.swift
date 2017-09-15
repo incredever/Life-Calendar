@@ -19,37 +19,26 @@ class EventView: NSView {
         super.init(frame: frameRect)
         
         // Title
-        titleTextField.translatesAutoresizingMaskIntoConstraints = false
         if #available(OSX 10.12.2, *) { titleTextField.allowsCharacterPickerTouchBarItem = true }
         titleTextField.isBezeled = false
         titleTextField.isBordered = false
         titleTextField.drawsBackground = false
         titleTextField.target = self
         titleTextField.action = #selector(titleChange)
-        
         addSubview(titleTextField)
-        
+        titleTextField.translatesAutoresizingMaskIntoConstraints = false
         titleTextField.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         titleTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         titleTextField.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
-        
+
         // Start date
-        
-        // dev note: Let's just try adding the startDatePicker and see what happens
         addSubview(startDatePicker)
-        
-        // dev note: Okay. Of course it's not showing up - it has no constraints.
-        startDatePicker.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        
-        // dev note: Actually it would seem it does. The AutoresizingMaskLayoutConstraints. Let's turn those off.
         startDatePicker.translatesAutoresizingMaskIntoConstraints = false
-        
-        // dev note: Cool. It's showing up now. But I should finish adding constraints.
+        startDatePicker.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
         startDatePicker.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         startDatePicker.trailingAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         startDatePicker.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
-        
     }
     
     @objc func titleChange() {
