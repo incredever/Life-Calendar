@@ -22,11 +22,11 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let event = timeline.events[row]
-        let eventDisplayView = EventView(event: event)
+        let eventView = EventView(event: event)
         
-        eventDisplayView.eventEventsDelegate = viewController
+        eventView.eventEventsDelegate = viewController
 
-        return eventDisplayView
+        return eventView
     }
     
     func tableView(_ tableView: NSTableView, rowViewForRow row: Int) -> NSTableRowView? {
