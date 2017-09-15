@@ -5,7 +5,7 @@ class EventView: NSView {
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     let titleTextField = NSTextField(string: "Event Title")
     let startDatePicker = NSDatePicker()
-    var eventChangeDelegate: EventEventsDelegate? = nil
+    var eventEventsDelegate: EventEventsDelegate? = nil
     
     convenience init(event: Event) {
         self.init(frame: NSRect.zero)
@@ -45,11 +45,11 @@ class EventView: NSView {
     }
     
     @objc func titleChange() {
-        eventChangeDelegate?.change(title: titleTextField.stringValue, forEventId: event.id)
+        eventEventsDelegate?.change(title: titleTextField.stringValue, forEventId: event.id)
     }
     
     @objc func startDateChange() {
-        eventChangeDelegate?.change(startDate: startDatePicker.dateValue, forEventId: event.id)
+        eventEventsDelegate?.change(startDate: startDatePicker.dateValue, forEventId: event.id)
     }
     
     required init?(coder decoder: NSCoder) {
