@@ -6,8 +6,7 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
     /// A reference to the timeline object which contains the events which will be displayed by the table view. This property is usually set by a view controller which owns this object.
     var timeline: Timeline!
     
-    weak var tableView: NSTableView? = nil
-//    weak var owner: WeeksViewController? = nil
+    weak var viewController: WeeksViewController? = nil
     
     // MARK: DataSource stuff
     
@@ -25,7 +24,7 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
         let event = timeline.events[row]
         let eventDisplayView = EventView(event: event)
         
-        eventDisplayView.eventChangeDelegate = self
+        eventDisplayView.eventEventsDelegate = viewController
 
         return eventDisplayView
     }

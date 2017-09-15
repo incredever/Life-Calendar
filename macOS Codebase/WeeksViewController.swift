@@ -105,7 +105,7 @@ class WeeksViewController: NSViewController {
         
         view.addSubview(tableContainer)
         
-        sidebarTableViewHandler.tableView = sidebarTableView
+        sidebarTableViewHandler.viewController = self
         
         // Add boarder to left side of sidebar
         let boarderRect = NSRect(x: xPositionOfSidebar, y: 0, width: 0.5, height: view.frame.height)
@@ -133,7 +133,7 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
 extension WeeksViewController: EventEventsDelegate {
     
     func new(event: Event) {
-        <#code#>
+        //
     }
     
     func change(title: String, forEventId: UUID) {
