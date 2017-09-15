@@ -2,7 +2,7 @@ import Cocoa
 
 protocol EventDetailsChangeDelegate {
     
-    func titleChange(to: String, textField: NSTextField)
+    func change(title: String, forEventId: UUID)
     func change(startDate: Date, forEventId: UUID)
     
 }
