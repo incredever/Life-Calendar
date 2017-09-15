@@ -17,6 +17,7 @@ class EventView: NSView {
     override init(frame frameRect: NSRect) {
         super.init(frame: frameRect)
         
+        // Title
         titleTextField.translatesAutoresizingMaskIntoConstraints = false
         if #available(OSX 10.12.2, *) { titleTextField.allowsCharacterPickerTouchBarItem = true }
         titleTextField.isBezeled = false
@@ -27,18 +28,13 @@ class EventView: NSView {
         
         addSubview(titleTextField)
         
-        let layoutConstraint = NSLayoutConstraint(item: titleTextField,
-                                                  attribute: .top,
-                                                  relatedBy: NSLayoutConstraint.Relation.equal,
-                                                  toItem: self,
-                                                  attribute: .top,
-                                                  multiplier: 1.0,
-                                                  constant: 0.0)
-        layoutConstraint.isActive = true
-        
+        titleTextField.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         titleTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         titleTextField.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
         titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
+        
+        // Start date
+        
     }
     
     @objc func titleChange() {
