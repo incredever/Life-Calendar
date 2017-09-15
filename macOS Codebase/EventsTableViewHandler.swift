@@ -40,6 +40,14 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
 
 extension EventsTableViewHandler: EventDetailsChangeDelegate {
     
+    func startDateChange(to: Date, datePicker: NSDatePicker) {
+//        if let tableView = tableView {
+//            let index = tableView.row(for: NSDatePicker)
+//
+//            timeline.events[index].span.start = to
+//        }
+    }
+    
     func titleChange(to: String, textField: NSTextField) {
         if let tableView = tableView {
             let index = tableView.row(for: textField)

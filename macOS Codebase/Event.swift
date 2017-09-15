@@ -7,5 +7,6 @@ struct Event: Codable {
     var title: String
     var colorHex: String // TODO: Create encode-ability and make this property Color type
     let span: DateInterval
+    let id: UUID = UUID()
     
 }
