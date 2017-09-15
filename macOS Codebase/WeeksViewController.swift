@@ -130,5 +130,23 @@ extension WeeksViewController: GridBasedEventCreationDelegate {
     
 }
 
-
+extension WeeksViewController: EventEventsDelegate {
+    
+    func new(event: Event) {
+        <#code#>
+    }
+    
+    func change(title: String, forEventId: UUID) {
+        if let event = timeline.event(for: forEventId) {
+            event.title = title
+        }
+    }
+    
+    func change(startDate: Date, forEventId: UUID) {
+        if let event = timeline.event(for: forEventId) {
+            event.span = DateInterval(start: startDate, end: event.span.end)
+        }
+    }
+    
+}
 

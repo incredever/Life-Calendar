@@ -38,18 +38,4 @@ class EventsTableViewHandler: NSObject, NSTableViewDelegate, NSTableViewDataSour
     
 }
 
-extension EventsTableViewHandler: EventEventsDelegate {
-    
-    func change(title: String, forEventId: UUID) {
-        if let event = timeline.event(for: forEventId) {
-            event.title = title
-        }
-    }
-    
-    func change(startDate: Date, forEventId: UUID) {
-        if let event = timeline.event(for: forEventId) {
-            event.span = DateInterval(start: startDate, end: event.span.end)
-        }
-    }
-    
-}
+
