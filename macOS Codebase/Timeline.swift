@@ -19,6 +19,12 @@ class Timeline: Codable {
     }
     
     func event(for id: UUID) -> Event? {
+        for event in events {
+            if event.id == id {
+                return event
+            }
+        }
+        
         return nil
     }
     
