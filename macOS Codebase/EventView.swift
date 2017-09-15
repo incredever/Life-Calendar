@@ -34,6 +34,8 @@ class EventView: NSView {
         titleTextField.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
 
         // Start date picker
+        startDatePicker.target = self
+        startDatePicker.action = #selector(startDateChange)
         addSubview(startDatePicker)
         startDatePicker.translatesAutoresizingMaskIntoConstraints = false
         startDatePicker.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
@@ -44,6 +46,10 @@ class EventView: NSView {
     
     @objc func titleChange() {
         eventChangeDelegate?.titleChange(to: titleTextField.stringValue, textField: titleTextField)
+    }
+    
+    @objc func startDateChange() {
+        eventChangeDelegate?.startDateChange(to: startDatePicker.dateValue, datePicker: startDatePicker)
     }
     
     required init?(coder decoder: NSCoder) {
