@@ -64,7 +64,7 @@ class EventView: NSView {
     }
     
     @objc func endDateChange() {
-        
+        eventEventsDelegate?.change(endDate: endDatePicker.dateValue, forEventId: event.id)
     }
     
     required init?(coder decoder: NSCoder) {
