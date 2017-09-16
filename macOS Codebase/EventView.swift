@@ -45,7 +45,10 @@ class EventView: NSView {
         startDatePicker.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
         
         // End date picker
-        
+        endDatePicker.target = self
+        endDatePicker.action = #selector(endDateChange)
+        addSubview(endDatePicker)
+        endDatePicker.translatesAutoresizingMaskIntoConstraints = false
     }
     
     @objc func titleChange() {
@@ -54,6 +57,10 @@ class EventView: NSView {
     
     @objc func startDateChange() {
         eventEventsDelegate?.change(startDate: startDatePicker.dateValue, forEventId: event.id)
+    }
+    
+    @objc func endDateChange() {
+        
     }
     
     required init?(coder decoder: NSCoder) {
