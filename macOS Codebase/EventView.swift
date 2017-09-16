@@ -5,6 +5,7 @@ class EventView: NSView {
     private var event = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
     let titleTextField = NSTextField(string: "Event Title")
     let startDatePicker = NSDatePicker()
+    var endDatePicker = NSDatePicker()
     var eventEventsDelegate: EventEventsDelegate? = nil
     
     convenience init(event: Event) {
@@ -42,6 +43,9 @@ class EventView: NSView {
         startDatePicker.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         startDatePicker.trailingAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         startDatePicker.heightAnchor.constraint(equalToConstant: 20.0).isActive = true
+        
+        // End date picker
+        
     }
     
     @objc func titleChange() {
