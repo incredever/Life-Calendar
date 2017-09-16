@@ -15,6 +15,7 @@ class EventView: NSView {
         
         titleTextField.stringValue = event.title
         startDatePicker.dateValue = event.span.start
+        endDatePicker.dateValue = event.span.end
     }
     
     override init(frame frameRect: NSRect) {
