@@ -138,5 +138,11 @@ extension WeeksViewController: EventEventsDelegate {
         }
     }
     
+    func change(endDate: Date, forEventId: UUID) {
+        if let event = timeline.event(for: forEventId) {
+            event.span = DateInterval(start: event.span.start, end: endDate)
+        }
+    }
+    
 }
 
