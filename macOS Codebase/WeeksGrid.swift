@@ -4,7 +4,7 @@ import SpriteKit
 /// A grid of tiles, each representing one week of a human life.
 class WeeksGrid {
     
-    var delegate: GridBasedEventCreationDelegate? = nil
+    var delegate: EventEventsDelegate? = nil
     
     /// The date for the first tile in the grid.
     let start: Date
@@ -152,7 +152,7 @@ class WeeksGrid {
             if let startingTile = firstTileInSelection {
                 let _ = tilesBetween(firstTile: startingTile, secondTile: currentTile).map { $0.color = .red }
                 
-                delegate?.eventCreated(spanning: DateInterval(start: startingTile.span.start, end: currentTile.span.end))
+                delegate?.new(event: Event(title: "new event", colorHex: "FFFFFF", span: currentTile.span))
             }
         }
         
