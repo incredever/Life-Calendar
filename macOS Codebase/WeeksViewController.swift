@@ -118,18 +118,6 @@ class WeeksViewController: NSViewController {
     
 }
 
-//extension WeeksViewController: GridBasedEventCreationDelegate {
-//
-//    func eventCreated(spanning: DateInterval) {
-//        let newEvent = Event(title: "testing 123", colorHex: "FFFFFF", span: spanning)
-//
-//        timeline.events.append(newEvent)
-//
-//        sidebarTableView.reloadData()
-//    }
-//
-//}
-
 extension WeeksViewController: EventEventsDelegate {
     
     func new(event: Event) {
