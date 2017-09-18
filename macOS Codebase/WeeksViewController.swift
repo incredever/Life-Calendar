@@ -34,6 +34,14 @@ class WeeksViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Add menu bar item
+        let eventItem = NSMenuItem(title: "Event", action: nil, keyEquivalent: "")
+        let eventSubmenu = NSMenu(title: "Event")
+        let newEventItem = NSMenuItem(title: "New Event", action: nil, keyEquivalent: "")
+        eventSubmenu.addItem(newEventItem)
+        eventItem.submenu = eventSubmenu
+        NSApplication.shared.mainMenu?.addItem(eventItem)
+        
         // Set up testing timeline
         let span = DateInterval(start: Date(), end: Date())
         let exampleEvent1 = Event(title: "Hello World", colorHex: "000000", span: span)
