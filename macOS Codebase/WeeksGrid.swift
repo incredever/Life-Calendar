@@ -1,7 +1,7 @@
 import Cocoa
 import SpriteKit
 
-/// A grid of tiles, each representing one week of a human life.
+/// A grid of tiles, each representing one week of a human life. In an MVC pattern, this would be a V.
 class WeeksGrid {
     
     var delegate: EventEventsDelegate? = nil
