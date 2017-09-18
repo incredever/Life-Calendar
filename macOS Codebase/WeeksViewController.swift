@@ -128,6 +128,13 @@ class WeeksViewController: NSViewController {
         sidebarBoarderLine.fillColor = .lightGray
         view.addSubview(sidebarBoarderLine)
     }
+   
+    private func createNewEvent() {
+        // TODO:
+        // 1. Create item in timeline
+        // 2. Send new event notification
+        // 3. Select the new even in sidebar and make the title text field first responder
+    }
     
 }
 
