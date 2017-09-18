@@ -132,10 +132,9 @@ class WeeksViewController: NSViewController {
     @objc private func createNewEvent() {
         let newEvent = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
         timeline.events.append(newEvent)
+
+//        NotificationCenter.default.post(name: <#T##NSNotification.Name#>, object: <#T##Any?#>, userInfo: <#T##[AnyHashable : Any]?#>)
         
-        
-        // TODO:
-        // 1. Create new Event and add to the timeline model
         // 2. Send new event notification
         // 3. Select the new even in sidebar and make the title text field first responder
     }

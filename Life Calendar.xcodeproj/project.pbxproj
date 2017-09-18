@@ -13,6 +13,7 @@
 		DE46B3311F613EA30064F01A /* EventsTableViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46B3301F613EA30064F01A /* EventsTableViewHandler.swift */; };
 		DE4FC9991F6AD85300008505 /* EventEventsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4FC9981F6AD85300008505 /* EventEventsDelegate.swift */; };
 		DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */; };
+		DE5F68CE1F6FFB80002A0943 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5F68CD1F6FFB80002A0943 /* NotificationName.swift */; };
 		DE65D6A81F273EC000B97F22 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A71F273EC000B97F22 /* Color.swift */; };
 		DE65D6AA1F27439500B97F22 /* NSColor+init(hexString).swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65D6A91F27439500B97F22 /* NSColor+init(hexString).swift */; };
 		DE6A83081F2607BB0088DBA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6A83071F2607BB0088DBA3 /* main.swift */; };
@@ -69,6 +70,7 @@
 		DE5221AF1F4D40CC008AC71B /* 2017-08-23.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-23.md"; sourceTree = "<group>"; };
 		DE52C9811F29C4BC00BA1143 /* WeeksGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeksGrid.swift; sourceTree = "<group>"; };
 		DE5F68CC1F6FB752002A0943 /* 2017-09-18.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-18.md"; sourceTree = "<group>"; };
+		DE5F68CD1F6FFB80002A0943 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		DE603A2F1F0B8C0800C8C88D /* 2017-07-04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-07-04.md"; sourceTree = "<group>"; };
 		DE612AA21F67CE9F00C17A41 /* 2017-09-12.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-12.md"; sourceTree = "<group>"; };
 		DE6219A41F66CB9D00E938EB /* 2017-09-11.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-11.md"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				DE6A83071F2607BB0088DBA3 /* main.swift */,
 				DED97A3A1EDE0C3A00F2100B /* AppDelegate.swift */,
 				DE31CDE91F0FFE2E00623166 /* WeeksViewController.swift */,
+				DE5F68CD1F6FFB80002A0943 /* NotificationName.swift */,
 				DE46B3301F613EA30064F01A /* EventsTableViewHandler.swift */,
 				DEB2BC071F680A7C007402C3 /* EventsTableRowView.swift */,
 				DE41E4041F55F65200228A08 /* EventView.swift */,
@@ -372,6 +375,7 @@
 				DE52C9821F29C4BC00BA1143 /* WeeksGrid.swift in Sources */,
 				DE41E4051F55F65200228A08 /* EventView.swift in Sources */,
 				DE7E3C5E1F4EF5A20048A115 /* TimelineDateFormatter.swift in Sources */,
+				DE5F68CE1F6FFB80002A0943 /* NotificationName.swift in Sources */,
 				DE23A9D01F28C579002C156D /* WeekTile.swift in Sources */,
 				DED586E71F38A62E00B30888 /* Label.swift in Sources */,
 				DEFD71191F0644BD00AF4373 /* Event.swift in Sources */,
