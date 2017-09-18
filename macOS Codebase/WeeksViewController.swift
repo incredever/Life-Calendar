@@ -130,6 +130,10 @@ class WeeksViewController: NSViewController {
     }
    
     @objc private func createNewEvent() {
+        let newEvent = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
+        timeline.events.append(newEvent)
+        
+        
         // TODO:
         // 1. Create new Event and add to the timeline model
         // 2. Send new event notification
