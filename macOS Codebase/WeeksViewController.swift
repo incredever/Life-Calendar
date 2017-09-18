@@ -103,10 +103,7 @@ class WeeksViewController: NSViewController {
         sidebarTableView.backgroundColor = NSColor(hexString: "F3F1F0")
         sidebarTableView.headerView = nil
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.init("newEvent"), object: nil, queue: nil) { (notification) in
-            print("newEvent notification: \(notification)")
-        }
-        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.init("newEvent"), object: nil, queue: nil) { _ in self.sidebarTableView.reloadData() }
         
         tableContainer.documentView = sidebarTableView
         tableContainer.hasVerticalScroller = true
@@ -131,10 +128,9 @@ extension WeeksViewController: EventEventsDelegate {
     func new(event: Event) {
         timeline.events.append(event)
         
-        sidebarTableView.reloadData()
-        
-        let notification = Notification(name: Notification.Name.init("newEvent"))
-        NotificationCenter.default.post(notification)
+        NotificationCenter.default.post(Notification(name: Notification.Name.init("newEvent"),
+                                                     object: nil,
+                                                     userInfo: ["eventId": event.id]))
     }
     
     func change(title: String, forEventId: UUID) {
