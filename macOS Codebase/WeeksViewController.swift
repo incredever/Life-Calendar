@@ -84,7 +84,6 @@ class WeeksViewController: NSViewController {
         weeksGrid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
         
         weeksGrid.delegate = self
-        weeksGrid.timeline = timeline
         
         scene.addChild(weeksGrid.node)
     }
@@ -133,9 +132,12 @@ class WeeksViewController: NSViewController {
         let newEvent = Event(title: "New Event", colorHex: "FFFFFF", span: DateInterval(start: Date(), end: Date()))
         timeline.events.append(newEvent)
 
-//        NotificationCenter.default.post(name: <#T##NSNotification.Name#>, object: <#T##Any?#>, userInfo: <#T##[AnyHashable : Any]?#>)
+        NotificationCenter.default.post(name: NSNotification.Name.init(NotificationName.newEvent.rawValue),
+                                        object: nil,
+                                        userInfo: ["eventId" : newEvent.id])
         
-        // 2. Send new event notification
+        
+        
         // 3. Select the new even in sidebar and make the title text field first responder
     }
     
@@ -146,7 +148,7 @@ extension WeeksViewController: EventEventsDelegate {
     func new(event: Event) {
         timeline.events.append(event)
         
-        NotificationCenter.default.post(Notification(name: Notification.Name.init("newEvent"),
+        NotificationCenter.default.post(Notification(name: Notification.Name.init(NotificationName.newEvent.rawValue),
                                                      object: nil,
                                                      userInfo: ["eventId": event.id]))
     }

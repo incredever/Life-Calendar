@@ -41,8 +41,6 @@ class WeeksGrid {
     
     private let gutterWidthForYearLabels = 50
     
-    weak var timeline: Timeline?
-    
     /// The span of time between `start` and `end`.
     private var span: DateInterval {
         return DateInterval(start: start, end: end)
