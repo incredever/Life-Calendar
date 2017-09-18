@@ -99,10 +99,6 @@ class WeeksGrid {
             node.addChild(label.node)
         }
     }
-    
-    func reload() {
-        // refresh the display to reflect current timeline
-    }
 
     /// Returns an array of every tile which falls along the x axis.
     private func rowOfTiles(at point: CGPoint) -> [WeekTile] {
