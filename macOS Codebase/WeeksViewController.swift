@@ -124,6 +124,8 @@ extension WeeksViewController: EventEventsDelegate {
         timeline.events.append(event)
         
         sidebarTableView.reloadData()
+        
+        // reload grid
     }
     
     func change(title: String, forEventId: UUID) {
@@ -135,12 +137,16 @@ extension WeeksViewController: EventEventsDelegate {
     func change(startDate: Date, forEventId: UUID) {
         if let event = timeline.event(for: forEventId) {
             event.span = DateInterval(start: startDate, end: event.span.end)
+            
+            // reload grid
         }
     }
     
     func change(endDate: Date, forEventId: UUID) {
         if let event = timeline.event(for: forEventId) {
             event.span = DateInterval(start: event.span.start, end: endDate)
+            
+            // reload grid
         }
     }
     
