@@ -37,7 +37,7 @@ class WeeksViewController: NSViewController {
         // Add menu bar item
         let eventItem = NSMenuItem(title: "Event", action: nil, keyEquivalent: "")
         let eventSubmenu = NSMenu(title: "Event")
-        let newEventItem = NSMenuItem(title: "New Event", action: nil, keyEquivalent: "")
+        let newEventItem = NSMenuItem(title: "New Event", action: #selector(createNewEvent), keyEquivalent: "")
         eventSubmenu.addItem(newEventItem)
         eventItem.submenu = eventSubmenu
         NSApplication.shared.mainMenu?.addItem(eventItem)
@@ -129,9 +129,9 @@ class WeeksViewController: NSViewController {
         view.addSubview(sidebarBoarderLine)
     }
    
-    private func createNewEvent() {
+    @objc private func createNewEvent() {
         // TODO:
-        // 1. Create item in timeline
+        // 1. Create new Event and add to the timeline model
         // 2. Send new event notification
         // 3. Select the new even in sidebar and make the title text field first responder
     }
