@@ -16,6 +16,9 @@ class WeeksViewController: NSViewController {
     /// An implicitly unwrapped reference to the table view which displays the events in the sidebar.
     private var sidebarTableView: NSTableView!
     
+    /// An implicitly unwrapped reference to the WeeksGrid instance.
+    private var weeksGrid: WeeksGrid!
+    
     /// A reference to the handler object which provides the `sidebarTableView` with it's data source and handles it's delegation.
     private let sidebarTableViewHandler = EventsTableViewHandler()
     
@@ -70,12 +73,12 @@ class WeeksViewController: NSViewController {
         let size = CGSize(width: 330, height: 574)
         let gridPosition = CGPoint(x: 20, y: Int(size.height) - 10)
         
-        let grid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
+        weeksGrid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
         
-        grid.delegate = self
-        grid.timeline = timeline
+        weeksGrid.delegate = self
+        weeksGrid.timeline = timeline
         
-        scene.addChild(grid.node)
+        scene.addChild(weeksGrid.node)
     }
     
     /// Called from viewDidLoad.
@@ -124,8 +127,7 @@ extension WeeksViewController: EventEventsDelegate {
         timeline.events.append(event)
         
         sidebarTableView.reloadData()
-        
-        // reload grid
+
     }
     
     func change(title: String, forEventId: UUID) {
