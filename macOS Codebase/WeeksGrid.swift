@@ -16,7 +16,7 @@ class WeeksGrid {
     var node: WeeksGridNode
 
     /// An array of tiles spanning from the `start` date to `end` date. Each tile represents a one week.
-    private var tiles: [Tile] = []
+    private var tiles: [WeekTile] = []
     
     private var staticYearLabels: [Label] = []
     
@@ -33,7 +33,7 @@ class WeeksGrid {
     /// A private constant number of points to put between each tile.
     private let tilePadding = 2
     
-    private var firstTileInSelection: Tile? = nil
+    private var firstTileInSelection: WeekTile? = nil
     
 //    private var currentSelection:
     
@@ -77,7 +77,7 @@ class WeeksGrid {
             // Create the row of tiles
             for weekNumber in 1...52 {
                 let x = (tileSize + tilePadding) * weekNumber
-                let tile = Tile(span: currentSpan)
+                let tile = WeekTile(span: currentSpan)
                 
                 tile.position = CGPoint(x: x + gutterWidthForYearLabels, y: y)
                 tile.size =  CGSize(width: tileSize, height: tileSize)
@@ -105,12 +105,12 @@ class WeeksGrid {
     }
 
     /// Returns an array of every tile which falls along the x axis.
-    private func rowOfTiles(at point: CGPoint) -> [Tile] {
+    private func rowOfTiles(at point: CGPoint) -> [WeekTile] {
         return tiles.filter { point.y > ($0.position.y - $0.size.height) && point.y < $0.position.y }
     }
     
     /// Returns the tile as a point in the grid's coordinate system.
-    private func tileAt(_ point: CGPoint) -> Tile? {
+    private func tileAt(_ point: CGPoint) -> WeekTile? {
         return tiles.filter({ tile in
             let halfPadding = CGFloat(tilePadding) / 2.0
             let yRange = (tile.position.y - tile.size.height)-halfPadding...tile.position.y+halfPadding
@@ -121,7 +121,7 @@ class WeeksGrid {
     }
     
     /// Returns an array of tiles that fall between the `firstTile`'s start date and the `secondTile`'s end date. `firstTile` may come before or after `secondTile` - it will return the tiles within the range, regardless of order.
-    private func tilesBetween(firstTile: Tile, secondTile: Tile) -> [Tile] {
+    private func tilesBetween(firstTile: WeekTile, secondTile: WeekTile) -> [WeekTile] {
         let start = firstTile.span.start
         let end = secondTile.span.end
         
@@ -175,7 +175,7 @@ class WeeksGrid {
         }
     }
     
-    func createYearLabel(for tile: Tile) {
+    func createYearLabel(for tile: WeekTile) {
         node.childNode(withName: "HoverYearLabel")?.removeFromParent()
         
         let year = justTheYearDateFormatter.string(from: tile.span.start)
@@ -187,7 +187,7 @@ class WeeksGrid {
         node.addChild(label.node)
     }
     
-    func createDateLabel(for tile: Tile) {
+    func createDateLabel(for tile: WeekTile) {
         node.childNode(withName: "HoverDateLabel")?.removeFromParent()
         
         let simpleMonthAndDaysDateFormatter = DateFormatter()
@@ -204,7 +204,7 @@ class WeeksGrid {
         node.addChild(label.node)
     }
     
-    func selectUpTo(tile: Tile) {
+    func selectUpTo(tile: WeekTile) {
         if let startingTile = firstTileInSelection {
             let _ = tilesBetween(firstTile: startingTile, secondTile: tile).map { $0.color = .red }
         }

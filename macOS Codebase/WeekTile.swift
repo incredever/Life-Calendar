@@ -2,7 +2,7 @@ import Cocoa
 import SpriteKit
 
 /// A small square that represents one week of a human life.
-class Tile {
+class WeekTile {
     
     /// The event that has been set for this tile; Effects the appearance and selection behavior.
     var associatedEvent: Event?
