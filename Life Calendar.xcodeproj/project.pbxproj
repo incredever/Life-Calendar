@@ -118,6 +118,7 @@
 		DEE095481F5530E800AA4412 /* 2017-08-29.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-08-29.md"; sourceTree = "<group>"; };
 		DEE136801EF9E08200F2BFE9 /* 2017-06-20.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-06-20.md"; sourceTree = "<group>"; };
 		DEE136861EF9ECA300F2BFE9 /* Mockups 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mockups 1.png"; sourceTree = "<group>"; };
+		DEEC21641F739C1E00F2FE42 /* 2017-09-21.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "2017-09-21.md"; sourceTree = "<group>"; };
 		DEED26BF1F5408C500AE6249 /* 2017-08-28 Fig 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-28 Fig 1.png"; sourceTree = "<group>"; };
 		DEED26C01F54297B00AE6249 /* 2017-08-28 Fig 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "2017-08-28 Fig 2.gif"; sourceTree = "<group>"; };
 		DEED26C51F54813200AE6249 /* 2017-08-28 Fig 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2017-08-28 Fig 3.png"; sourceTree = "<group>"; };
@@ -187,6 +188,7 @@
 				DE4FC99C1F6BC56100008505 /* 2017-09-15.md */,
 				DE4FC99D1F6D55B000008505 /* 2017-09-16.md */,
 				DE5F68CC1F6FB752002A0943 /* 2017-09-18.md */,
+				DEEC21641F739C1E00F2FE42 /* 2017-09-21.md */,
 			);
 			path = "Developer's Log";
 			sourceTree = "<group>";
