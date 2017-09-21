@@ -81,7 +81,7 @@ class WeeksViewController: NSViewController {
         let size = CGSize(width: 330, height: 574)
         let gridPosition = CGPoint(x: 20, y: Int(size.height) - 10)
         
-        weeksGrid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition)
+        weeksGrid = WeeksGrid(start: myBirth, end: possibleDeath, position: gridPosition, events: timeline.events)
         
         weeksGrid.delegate = self
         

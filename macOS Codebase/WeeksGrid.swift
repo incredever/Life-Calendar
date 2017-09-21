@@ -45,7 +45,7 @@ class WeeksGrid {
     }
 
     /// Creates a grid which shows tiles for every week between `start` and `end`.
-    init(start: Date, end: Date, position: CGPoint) {
+    init(start: Date, end: Date, position: CGPoint, events: [Event]) {
         self.start = start
         self.end = end
         self.position = position
@@ -94,6 +94,8 @@ class WeeksGrid {
         for label in staticYearLabels {
             node.addChild(label.node)
         }
+        
+        
     }
 
     /// Returns an array of every tile which falls along the x axis.
