@@ -12,7 +12,6 @@ struct Cell: View {
     
     var body: some View {
         Text("Wow")
-//            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
     
 }
