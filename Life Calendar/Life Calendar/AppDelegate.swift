@@ -21,11 +21,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
             styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
             backing: .buffered, defer: false)
-        window.center()
+        
         window.setFrameAutosaveName("Main Window")
-
         window.contentView = NSHostingView(rootView: ContentView())
-
+        window.titlebarAppearsTransparent = true
+        window.isMovableByWindowBackground = true
+        window.titleVisibility = .visible
+        window.title = "Life Calendar"
+        window.backgroundColor = NSColor(deviceRed: 246/255, green: 244/255, blue: 241/255, alpha: 1.0)
+        
         window.makeKeyAndOrderFront(nil)
     }
 
