@@ -19,11 +19,7 @@ public struct FlowStack<Content>: View where Content: View {
     
     public let content: (Int, CGFloat) -> Content
     
-    public init(
-        columns: Int,
-        numItems: Int,
-        alignment: HorizontalAlignment?,
-        @ViewBuilder content: @escaping (Int, CGFloat) -> Content) {
+    public init(columns: Int, numItems: Int, alignment: HorizontalAlignment?, @ViewBuilder content: @escaping (Int, CGFloat) -> Content) {
         self.content = content
         self.columns = columns
         self.numItems = numItems
@@ -33,17 +29,17 @@ public struct FlowStack<Content>: View where Content: View {
     public var body : some View {
         // A GeometryReader is required to size items in the scroll view
         GeometryReader { geometry in
-            
+
             // Assume a vertical scrolling orientation for the grid
             ScrollView(Axis.Set.vertical) {
-                
+
                 // VStacks are our rows
-                VStack(alignment: self.alignment, spacing: 0) {
-                    ForEach(0 ..< (self.numItems / self.columns)) { row in
-                        
+                VStack(alignment: self.alignment, spacing: CGFloat(0.0)) {
+                    ForEach(0..<self.numItems / self.columns) { row in
+
                         // HStacks are our columns
                         HStack(spacing: 0) {
-                            ForEach(0 ... (self.columns - 1)) { column in
+                            ForEach(0..<self.columns) { column in
                                 self.content(
                                     // Pass the index to the content
                                     (row * self.columns) + column,
@@ -55,21 +51,21 @@ public struct FlowStack<Content>: View where Content: View {
                             }
                         }
                     }
-                    
+
                     // Last row
                     // HStacks are our columns
-                    HStack(spacing: 0) {
-                        ForEach(0 ..< (self.numItems % self.columns)) { column in
-                            self.content(
-                                // Pass the index to the content
-                                ((self.numItems / self.columns) * self.columns) + column,
-                                // Pass the column width to the content
-                                (geometry.size.width/CGFloat(self.columns))
-                            )
-                                // Size the content to frame to fill the column
-                                .frame(width: geometry.size.width/CGFloat(self.columns))
-                        }
-                    }
+//                    HStack(spacing: 0) {
+//                        ForEach(0..<self.numItems % self.columns) { column in
+//                            self.content(
+//                                // Pass the index to the content
+//                                ((self.numItems / self.columns) * self.columns) + column,
+//                                // Pass the column width to the content
+//                                (geometry.size.width/CGFloat(self.columns))
+//                            )
+//                                // Size the content to frame to fill the column
+//                                .frame(width: geometry.size.width/CGFloat(self.columns))
+//                        }
+//                    }
                 }
             }
         }
