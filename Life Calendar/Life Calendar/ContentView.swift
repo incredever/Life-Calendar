@@ -10,14 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
     var body: some View {
         VStack {
             Text("A Lifetime")
             Timeline()
-            
         }
+        .background(Color(red: 246/255, green: 244/255, blue: 241/255))
+        .frame(width: 658, height: 658, alignment: .center)
     }
+    
 }
 
 

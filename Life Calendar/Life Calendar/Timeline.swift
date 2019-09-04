@@ -8,48 +8,27 @@
 
 import SwiftUI
 
-struct Item {
-    var image: String
-    var label: String
-}
-
-
 struct Timeline: View {
     
     @State private var weeks: [Week] = {
         var weeks: [Week] = []
         var previousWeek = Week(start: Date())
-        for i in 0...100 {
+        for i in 0...4500 {
             weeks.append(previousWeek)
             let newWeek = Week(start: previousWeek.end)
             previousWeek = newWeek
         }
         return weeks
     }()
-    
-    
-    let items = [
-        Item(image: "hand.thumbsup", label: "Up"),
-        Item(image: "tortoise", label: "Tortoise"),
-        Item(image: "forward", label: "Forward"),
-        Item(image: "hand.thumbsdown", label: "Down"),
-        Item(image: "hare", label: "Hare"),
-        Item(image: "backward", label: "Backward")
-    ]
-    
+        
     var body: some View {
-        
-        FlowStack(columns: 3, numItems: items.count, alignment: .leading) { index, colWidth in
-            Button(action: {
-                print("Tap \(index)!")
-            }) {
-                Image(self.items[index].image)
-                Text(self.items[index].label).font(Font.caption)
-            }
-            .padding()
-            .frame(width: colWidth)
+        FlowStack(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
+            Color(red: 148/255, green: 148/255, blue: 148/255)
+            .opacity(0.3)
+            .frame(width: colWidth - 2.4, height: 4, alignment: .center)
+            .padding(.top, 2.4)
         }
-        
+        .frame(width: 330, height: 568, alignment: .center)
     }
     
 }
