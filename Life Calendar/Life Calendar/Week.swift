@@ -8,12 +8,12 @@
 
 import SwiftUI
 
-struct Week {
+struct Week: Identifiable {
     
+    let id: String = UUID().uuidString
     let start: Date
     var end: Date {
-        // Generate one week from now
-        return Date()
+        return start.advanced(by: 604800) // one week from start
     }
     let defaultColor: Color = .gray
     

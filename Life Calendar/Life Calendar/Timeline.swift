@@ -10,7 +10,16 @@ import SwiftUI
 
 struct Timeline: View {
     
-    var weeks: [Week] = []
+    @State private var weeks: [Week] = {
+        var weeks: [Week] = []
+        var previousWeek = Week(start: Date())
+        for i in 0...100 {
+            weeks.append(previousWeek)
+            let newWeek = Week(start: previousWeek.end)
+            previousWeek = newWeek
+        }
+        return weeks
+    }()
     
     var happenings: [Happening] = [
     
@@ -26,6 +35,9 @@ struct Timeline: View {
         VStack {
             List(happenings) { happening in
                 Text("Happening: \(happening.title)")
+            }
+            List(weeks) { week in
+                Text("Week: \(week.start)")
             }
             Text("The END")
         }
