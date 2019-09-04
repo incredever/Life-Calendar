@@ -16,7 +16,7 @@
 		DE8D0771231FF4EC00E9CE13 /* Happening.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0770231FF4EC00E9CE13 /* Happening.swift */; };
 		DE8D0773231FF56300E9CE13 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0772231FF56300E9CE13 /* Timeline.swift */; };
 		DE8D0775231FF72A00E9CE13 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0774231FF72A00E9CE13 /* Week.swift */; };
-		DE9B7F292320262100130DC7 /* FlowStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B7F282320262100130DC7 /* FlowStack.swift */; };
+		DE9B7F292320262100130DC7 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B7F282320262100130DC7 /* Grid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		DE8D0770231FF4EC00E9CE13 /* Happening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happening.swift; sourceTree = "<group>"; };
 		DE8D0772231FF56300E9CE13 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		DE8D0774231FF72A00E9CE13 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
-		DE9B7F282320262100130DC7 /* FlowStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowStack.swift; sourceTree = "<group>"; };
+		DE9B7F282320262100130DC7 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 				DE8D076E231F6C7500E9CE13 /* Cell.swift */,
 				DE8D0770231FF4EC00E9CE13 /* Happening.swift */,
 				DE8D0772231FF56300E9CE13 /* Timeline.swift */,
-				DE9B7F282320262100130DC7 /* FlowStack.swift */,
+				DE9B7F282320262100130DC7 /* Grid.swift */,
 				DE8D0774231FF72A00E9CE13 /* Week.swift */,
 				DE713E1F231F3CBE0004DD17 /* Assets.xcassets */,
 				DE713E24231F3CBE0004DD17 /* Main.storyboard */,
@@ -166,7 +166,7 @@
 				DE8D0773231FF56300E9CE13 /* Timeline.swift in Sources */,
 				DE8D076F231F6C7500E9CE13 /* Cell.swift in Sources */,
 				DE8D0775231FF72A00E9CE13 /* Week.swift in Sources */,
-				DE9B7F292320262100130DC7 /* FlowStack.swift in Sources */,
+				DE9B7F292320262100130DC7 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

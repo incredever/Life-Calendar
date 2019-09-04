@@ -22,7 +22,7 @@ struct Timeline: View {
     }()
         
     var body: some View {
-        FlowStack(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
+        Grid(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
             Cell(width: colWidth)
         }
         .frame(width: 330, height: 568, alignment: .center)

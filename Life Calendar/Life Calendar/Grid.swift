@@ -1,14 +1,6 @@
-//
-//  FlowStack.swift
-//
-//  Created by John Susek on 6/25/19.
-//  Copyright © 2019 John Susek. All rights reserved.
-//
-
 import SwiftUI
 
-@available(iOS 13.0, OSX 10.15, tvOS 13.0, watchOS 6.0, *)
-public struct FlowStack<Content>: View where Content: View {
+public struct Grid<Content>: View where Content: View {
     // The number of columns we want to display
     var columns: Int
     // The total number of items in the stack
@@ -51,21 +43,6 @@ public struct FlowStack<Content>: View where Content: View {
                             }
                         }
                     }
-
-                    // Last row
-                    // HStacks are our columns
-//                    HStack(spacing: 0) {
-//                        ForEach(0..<self.numItems % self.columns) { column in
-//                            self.content(
-//                                // Pass the index to the content
-//                                ((self.numItems / self.columns) * self.columns) + column,
-//                                // Pass the column width to the content
-//                                (geometry.size.width/CGFloat(self.columns))
-//                            )
-//                                // Size the content to frame to fill the column
-//                                .frame(width: geometry.size.width/CGFloat(self.columns))
-//                        }
-//                    }
                 }
             }
         }
