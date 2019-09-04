@@ -20,28 +20,13 @@ struct Timeline: View {
         }
         return weeks
     }()
-    
-    var happenings: [Happening] = [
-    
-    
-        Happening(id: 0, start: Date(), end: Date(), color: .red, title: "Birth"),
-        Happening(id: 1, start: Date(), end: Date(), color: .red, title: "School"),
-        Happening(id: 2, start: Date(), end: Date(), color: .red, title: "Death")
-        
-    ]
 
     var body: some View {
-        
-        VStack {
-            List(happenings) { happening in
-                Text("Happening: \(happening.title)")
-            }
-            List(weeks) { week in
-                Text("Week: \(week.start)")
-            }
-            Text("The END")
+
+        FlowStack(columns: 3, numItems: 27, alignment: .leading) { index, colWidth in
+          Text(" \(index) ").frame(width: colWidth)
         }
-        
+    
     }
     
 }
