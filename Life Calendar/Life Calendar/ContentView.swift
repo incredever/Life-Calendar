@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("A Lifetime")
+            Text("The Life of John Doe")
             Timeline()
         }
         .frame(width: 658, height: 658, alignment: .center)
