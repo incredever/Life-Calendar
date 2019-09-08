@@ -15,7 +15,7 @@ struct Timeline: View {
         
     var body: some View {
         Grid(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
-            Cell(width: colWidth)
+            GridCell(width: colWidth)
         }
         .frame(width: 330, height: 568, alignment: .center)
     }

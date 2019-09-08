@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Cell: View {
+struct GridCell: View {
     
     let width: CGFloat
     

@@ -12,8 +12,8 @@
 		DE713E20231F3CBE0004DD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE713E1F231F3CBE0004DD17 /* Assets.xcassets */; };
 		DE713E23231F3CBE0004DD17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE713E22231F3CBE0004DD17 /* Preview Assets.xcassets */; };
 		DE713E26231F3CBE0004DD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE713E24231F3CBE0004DD17 /* Main.storyboard */; };
-		DE8D076F231F6C7500E9CE13 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D076E231F6C7500E9CE13 /* Cell.swift */; };
-		DE8D0771231FF4EC00E9CE13 /* Happening.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0770231FF4EC00E9CE13 /* Happening.swift */; };
+		DE8D076F231F6C7500E9CE13 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D076E231F6C7500E9CE13 /* GridCell.swift */; };
+		DE8D0771231FF4EC00E9CE13 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0770231FF4EC00E9CE13 /* Event.swift */; };
 		DE8D0773231FF56300E9CE13 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0772231FF56300E9CE13 /* Timeline.swift */; };
 		DE8D0775231FF72A00E9CE13 /* Week.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D0774231FF72A00E9CE13 /* Week.swift */; };
 		DE9B7F292320262100130DC7 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B7F282320262100130DC7 /* Grid.swift */; };
@@ -28,8 +28,8 @@
 		DE713E25231F3CBE0004DD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE713E27231F3CBE0004DD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE713E28231F3CBE0004DD17 /* Life_Calendar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Life_Calendar.entitlements; sourceTree = "<group>"; };
-		DE8D076E231F6C7500E9CE13 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		DE8D0770231FF4EC00E9CE13 /* Happening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Happening.swift; sourceTree = "<group>"; };
+		DE8D076E231F6C7500E9CE13 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
+		DE8D0770231FF4EC00E9CE13 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DE8D0772231FF56300E9CE13 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		DE8D0774231FF72A00E9CE13 /* Week.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week.swift; sourceTree = "<group>"; };
 		DE9B7F282320262100130DC7 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
@@ -67,9 +67,9 @@
 			children = (
 				DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */,
 				DE713E1D231F3CBC0004DD17 /* ContentView.swift */,
-				DE8D076E231F6C7500E9CE13 /* Cell.swift */,
-				DE8D0770231FF4EC00E9CE13 /* Happening.swift */,
+				DE8D0770231FF4EC00E9CE13 /* Event.swift */,
 				DE8D0772231FF56300E9CE13 /* Timeline.swift */,
+				DE8D076E231F6C7500E9CE13 /* GridCell.swift */,
 				DE9B7F282320262100130DC7 /* Grid.swift */,
 				DE8D0774231FF72A00E9CE13 /* Week.swift */,
 				DE713E1F231F3CBE0004DD17 /* Assets.xcassets */,
@@ -160,11 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE8D0771231FF4EC00E9CE13 /* Happening.swift in Sources */,
+				DE8D0771231FF4EC00E9CE13 /* Event.swift in Sources */,
 				DE713E1E231F3CBC0004DD17 /* ContentView.swift in Sources */,
 				DE713E1C231F3CBC0004DD17 /* AppDelegate.swift in Sources */,
 				DE8D0773231FF56300E9CE13 /* Timeline.swift in Sources */,
-				DE8D076F231F6C7500E9CE13 /* Cell.swift in Sources */,
+				DE8D076F231F6C7500E9CE13 /* GridCell.swift in Sources */,
 				DE8D0775231FF72A00E9CE13 /* Week.swift in Sources */,
 				DE9B7F292320262100130DC7 /* Grid.swift in Sources */,
 			);
