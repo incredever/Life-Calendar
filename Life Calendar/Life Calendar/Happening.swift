@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Happening: Identifiable {
+struct Event: Identifiable {
     
     let id: Int
     let start: Date
