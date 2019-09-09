@@ -12,8 +12,6 @@ struct ContentView: View {
     
     var body: some View {
         HStack {
-            
-            
             VStack {
                 Text("The Life of John Doe")
                 Timeline()
@@ -22,13 +20,7 @@ struct ContentView: View {
             
             Divider()
             
-            List(events) { event in
-                event.color
-            }
-            .background(Color.green)
-            .frame(width: widthOfSidebar, height: nil, alignment: .center)
-//            .background(Color(red: 243/255, green: 241/255, blue: 240/255))
-
+            Sidebar(events: events).frame(width: Sidebar.width, height: nil, alignment: .center)
         }
         .background(Color(red: 246/255, green: 244/255, blue: 241/255))
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE3590F02325B162000AC8AE /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3590EF2325B162000AC8AE /* Sidebar.swift */; };
 		DE713E1C231F3CBC0004DD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */; };
 		DE713E1E231F3CBC0004DD17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713E1D231F3CBC0004DD17 /* ContentView.swift */; };
 		DE713E20231F3CBE0004DD17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE713E1F231F3CBE0004DD17 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE3590EF2325B162000AC8AE /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		DE713E18231F3CBC0004DD17 /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE713E1D231F3CBC0004DD17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */,
 				DE713E1D231F3CBC0004DD17 /* ContentView.swift */,
+				DE3590EF2325B162000AC8AE /* Sidebar.swift */,
 				DE8D0770231FF4EC00E9CE13 /* Event.swift */,
 				DE8D0772231FF56300E9CE13 /* Timeline.swift */,
 				DE8D076E231F6C7500E9CE13 /* GridCell.swift */,
@@ -162,6 +165,7 @@
 			files = (
 				DE8D0771231FF4EC00E9CE13 /* Event.swift in Sources */,
 				DE713E1E231F3CBC0004DD17 /* ContentView.swift in Sources */,
+				DE3590F02325B162000AC8AE /* Sidebar.swift in Sources */,
 				DE713E1C231F3CBC0004DD17 /* AppDelegate.swift in Sources */,
 				DE8D0773231FF56300E9CE13 /* Timeline.swift in Sources */,
 				DE8D076F231F6C7500E9CE13 /* GridCell.swift in Sources */,
