@@ -12,7 +12,7 @@ struct Sidebar: View {
             event.color
         }
         .background(Color.green)
-        .frame(width: widthOfSidebar, height: nil, alignment: .center)
+        .frame(width: Sidebar.width, height: nil, alignment: .center)
 
         
     }
