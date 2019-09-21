@@ -2,6 +2,18 @@ import SwiftUI
 
 struct ContentView: View {
     
+    
+    @State private var weeks: [Week] = {
+        var weeks: [Week] = []
+        var previousWeek = Week(start: Date())
+        for i in 0...4500 {
+            weeks.append(previousWeek)
+            let newWeek = Week(start: previousWeek.end)
+            previousWeek = newWeek
+        }
+        return weeks
+    }()
+    
     let events = [
         Event(id: 0, start: Date(), end: Date(), color: .blue, title: "Birth")
     ]
@@ -14,7 +26,12 @@ struct ContentView: View {
         HStack {
             VStack {
                 Text("The Life of John Doe")
-                Timeline()
+                
+                Grid(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
+                    GridCell(width: colWidth)
+                }
+                .frame(width: 330, height: 568, alignment: .center)
+
             }
             .frame(width: totalWidthOfWindow - widthOfSidebar, height: totalHeightOfWindow, alignment: .center)
             
