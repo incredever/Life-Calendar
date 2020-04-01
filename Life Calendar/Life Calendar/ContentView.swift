@@ -25,7 +25,7 @@ struct ContentView: View {
     var body: some View {
         HStack {
             VStack {
-                Text("The Life of John Doe")
+                Text("Your Life")
                 
                 Grid(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
                     GridCell(width: colWidth)

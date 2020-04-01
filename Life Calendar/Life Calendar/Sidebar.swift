@@ -11,7 +11,6 @@ struct Sidebar: View {
         List(events) { event in
             event.color
         }
-        .background(Color.green)
         .frame(width: Sidebar.width, height: nil, alignment: .center)
 
         
