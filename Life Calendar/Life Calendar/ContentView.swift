@@ -2,7 +2,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    
     @State private var weeks: [Week] = {
         var weeks: [Week] = []
         var previousWeek = Week(start: Date())
@@ -15,7 +14,8 @@ struct ContentView: View {
     }()
     
     let events = [
-        Event(id: 0, start: Date(), end: Date(), color: .blue, title: "Birth")
+        Event(id: UUID(), start: Date(), end: Date(), color: .blue, title: "Birth"),
+        Event(id: UUID(), start: Date(), end: Date(), color: .red, title: "Death")
     ]
     
     private let widthOfSidebar = CGFloat(185)
