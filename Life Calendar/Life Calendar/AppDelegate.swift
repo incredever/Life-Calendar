@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: ContentView())
         window.titlebarAppearsTransparent = true
-        window.isMovableByWindowBackground = true
+        window.isMovableByWindowBackground = false
         window.titleVisibility = .visible
         window.backgroundColor = NSColor(deviceRed: 246/255, green: 244/255, blue: 241/255, alpha: 1.0)
         
