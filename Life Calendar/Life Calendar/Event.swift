@@ -8,4 +8,9 @@ struct Event: Identifiable {
     let color: Color
     let title: String
     
+    func isDuring(_ week: Week) -> Bool {
+        #warning("TODO")
+        return false
+    }
+    
 }
