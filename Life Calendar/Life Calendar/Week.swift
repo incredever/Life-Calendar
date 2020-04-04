@@ -10,8 +10,7 @@ struct Week: Identifiable {
     let defaultColor: Color = .gray
     
     func isDuring(_ event: Event) -> Bool {
-        #warning("TODO")
-        return false
+        return start < event.start || end > event.end
     }
     
 }

@@ -19,7 +19,18 @@
 		DE9B7F292320262100130DC7 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9B7F282320262100130DC7 /* Grid.swift */; };
 		DEB2979124393BB200DD3800 /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2979024393BB200DD3800 /* Life.swift */; };
 		DEB29793243941F100DD3800 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB29792243941F100DD3800 /* DesignConstants.swift */; };
+		DEB2979D243944EF00DD3800 /* Life_Calendar_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2979C243944EF00DD3800 /* Life_Calendar_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEB2979F243944EF00DD3800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE713E10231F3CBC0004DD17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE713E17231F3CBC0004DD17;
+			remoteInfo = "Life Calendar";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DE593E2124355937006814F1 /* NewEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventButton.swift; sourceTree = "<group>"; };
@@ -37,10 +48,20 @@
 		DE9B7F282320262100130DC7 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		DEB2979024393BB200DD3800 /* Life.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life.swift; sourceTree = "<group>"; };
 		DEB29792243941F100DD3800 /* DesignConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConstants.swift; sourceTree = "<group>"; };
+		DEB2979A243944EF00DD3800 /* Life Calendar Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Life Calendar Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB2979C243944EF00DD3800 /* Life_Calendar_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life_Calendar_Tests.swift; sourceTree = "<group>"; };
+		DEB2979E243944EF00DD3800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DE713E15231F3CBC0004DD17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB29797243944EF00DD3800 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				DE713E1A231F3CBC0004DD17 /* Life Calendar */,
+				DEB2979B243944EF00DD3800 /* Life Calendar Tests */,
 				DE713E19231F3CBC0004DD17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				DE713E18231F3CBC0004DD17 /* Life Calendar.app */,
+				DEB2979A243944EF00DD3800 /* Life Calendar Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +118,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DEB2979B243944EF00DD3800 /* Life Calendar Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DEB2979C243944EF00DD3800 /* Life_Calendar_Tests.swift */,
+				DEB2979E243944EF00DD3800 /* Info.plist */,
+			);
+			path = "Life Calendar Tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,18 +147,40 @@
 			productReference = DE713E18231F3CBC0004DD17 /* Life Calendar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DEB29799243944EF00DD3800 /* Life Calendar Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB297A1243944EF00DD3800 /* Build configuration list for PBXNativeTarget "Life Calendar Tests" */;
+			buildPhases = (
+				DEB29796243944EF00DD3800 /* Sources */,
+				DEB29797243944EF00DD3800 /* Frameworks */,
+				DEB29798243944EF00DD3800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB297A0243944EF00DD3800 /* PBXTargetDependency */,
+			);
+			name = "Life Calendar Tests";
+			productName = "Life Calendar Tests";
+			productReference = DEB2979A243944EF00DD3800 /* Life Calendar Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DE713E10231F3CBC0004DD17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = wes;
 				TargetAttributes = {
 					DE713E17231F3CBC0004DD17 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					DEB29799243944EF00DD3800 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = DE713E17231F3CBC0004DD17;
 					};
 				};
 			};
@@ -144,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				DE713E17231F3CBC0004DD17 /* Life Calendar */,
+				DEB29799243944EF00DD3800 /* Life Calendar Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +211,13 @@
 				DE713E26231F3CBE0004DD17 /* Main.storyboard in Resources */,
 				DE713E23231F3CBE0004DD17 /* Preview Assets.xcassets in Resources */,
 				DE713E20231F3CBE0004DD17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB29798243944EF00DD3800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +240,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEB29796243944EF00DD3800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB2979D243944EF00DD3800 /* Life_Calendar_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEB297A0243944EF00DD3800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE713E17231F3CBC0004DD17 /* Life Calendar */;
+			targetProxy = DEB2979F243944EF00DD3800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DE713E24231F3CBE0004DD17 /* Main.storyboard */ = {
@@ -351,6 +429,48 @@
 			};
 			name = Release;
 		};
+		DEB297A2243944EF00DD3800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B2HHR6H4K6;
+				INFOPLIST_FILE = "Life Calendar Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "wes.Life-Calendar-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Life Calendar.app/Contents/MacOS/Life Calendar";
+			};
+			name = Debug;
+		};
+		DEB297A3243944EF00DD3800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B2HHR6H4K6;
+				INFOPLIST_FILE = "Life Calendar Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "wes.Life-Calendar-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Life Calendar.app/Contents/MacOS/Life Calendar";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -368,6 +488,15 @@
 			buildConfigurations = (
 				DE713E2C231F3CBE0004DD17 /* Debug */,
 				DE713E2D231F3CBE0004DD17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB297A1243944EF00DD3800 /* Build configuration list for PBXNativeTarget "Life Calendar Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB297A2243944EF00DD3800 /* Debug */,
+				DEB297A3243944EF00DD3800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
