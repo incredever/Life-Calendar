@@ -3,10 +3,7 @@ import SwiftUI
 struct ContentView: View {
     
     let yourLife = Life()
-    
-    private let totalWidthOfWindow = CGFloat(658)
-    private let totalHeightOfWindow = CGFloat(658)
-    
+        
     var body: some View {
         HStack {
             VStack {
