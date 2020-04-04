@@ -9,7 +9,7 @@ struct DesignConstants {
     static let windowBackgroundColor = NSColor(deviceRed: 246/255, green: 244/255, blue: 241/255, alpha: 1.0)
     
     // Grid styling
-    static let gridFrameWidth = 330
-    static let gridFrameHeight = 568
+    static let gridFrameWidth = CGFloat(330)
+    static let gridFrameHeight = CGFloat(568)
     
 }
