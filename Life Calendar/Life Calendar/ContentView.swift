@@ -15,7 +15,7 @@ struct ContentView: View {
                 .frame(width: 330, height: 568, alignment: .center)
 
             }
-            .frame(width: totalWidthOfWindow, height: totalHeightOfWindow, alignment: .center)
+            .frame(width: DesignConstants.totalWidthOfWindow, height: DesignConstants.totalHeightOfWindow, alignment: .center)
             
         }
         .background(Color(red: 246/255, green: 244/255, blue: 241/255))
