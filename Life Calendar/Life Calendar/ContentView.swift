@@ -23,13 +23,14 @@ struct ContentView: View {
             
         }
         .background(Color(red: 246/255, green: 244/255, blue: 241/255))
-
     }
+    
 }
 
-
 struct ContentView_Previews: PreviewProvider {
+    
     static var previews: some View {
         ContentView()
     }
+    
 }
