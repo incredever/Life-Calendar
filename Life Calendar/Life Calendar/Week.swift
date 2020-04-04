@@ -10,7 +10,10 @@ struct Week: Identifiable {
     let defaultColor: Color = .gray
     
     func isDuring(_ event: Event) -> Bool {
-        return start < event.start || end > event.end
+        let startsDuring = start > event.start && start < event.end
+        let endsDuring = end > event.start && end < event.end
+        
+        return (startsDuring || endsDuring)
     }
     
 }

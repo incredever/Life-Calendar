@@ -22,23 +22,31 @@ class Life_Calendar_Tests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssert(true)
     }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        measure {
+        //measure {
             // Put the code you want to measure the time of here.
-        }
+        //}
     }
     
     func testEventIsDuring() throws {
         
-        let event = Event(id: UUID(), start: Date(), end: Date(), color: .red, title: "Testing")
-        let week = Week(start: Date())
+        let calendar = Calendar.current
+
+        let fourteenDaysAgo = calendar.date(byAdding: .day, value: -14, to: Date())!
+        let lastWeek = Week(start: fourteenDaysAgo)
+
         
-        XCTAssert(event.isDuring(week) == false) // Because event was created before (although extremely slightly) week. Event does not fall inside of week.
+        let today = calendar.date(byAdding: .day, value: 0, to: Date())!
+        let yesterday = calendar.date(byAdding: .day, value: -1, to: Date())!
+        let thePastDay = Event(id: UUID(), start: yesterday, end: today, color: .red, title: "Testing")
         
-        XCTAssert(week.isDuring(event) == false) // Because week's start is after event's end date.
+        XCTAssert(thePastDay.isDuring(lastWeek) == false) // Because event was created before (although extremely slightly) week. Event does not fall inside of week.
+        
+        XCTAssert(lastWeek.isDuring(thePastDay) == false) // Because lastWeek was not during the during oneDayAgo and twoDaysAgo.
         
     }
 

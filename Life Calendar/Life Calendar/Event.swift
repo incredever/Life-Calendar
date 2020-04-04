@@ -9,7 +9,10 @@ struct Event: Identifiable {
     let title: String
     
     func isDuring(_ week: Week) -> Bool {
-        return start < week.start || end > week.end
+        let startsDuring = start > week.start && start < week.end
+        let endsDuring = end > week.start && end < week.end
+        
+        return (startsDuring || endsDuring)
     }
     
 }
