@@ -2,21 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var weeks: [Week] = {
-        var weeks: [Week] = []
-        var previousWeek = Week(start: Date())
-        for i in 0...4500 {
-            weeks.append(previousWeek)
-            let newWeek = Week(start: previousWeek.end)
-            previousWeek = newWeek
-        }
-        return weeks
-    }()
-    
-    let events = [
-        Event(id: UUID(), start: Date(), end: Date(), color: .blue, title: "Birth"),
-        Event(id: UUID(), start: Date(), end: Date(), color: .red, title: "Death")
-    ]
+    let yourLife = Life()
     
     private let widthOfSidebar = CGFloat(185)
     private let totalWidthOfWindow = CGFloat(658)
@@ -27,7 +13,7 @@ struct ContentView: View {
             VStack {
                 Text("Your Life")
                 
-                Grid(columns: 52, numItems: weeks.count, alignment: .center) { index, colWidth in
+                Grid(columns: 52, numItems: yourLife.weeks.count, alignment: .center) { index, colWidth in
                     GridCell(width: colWidth)
                 }
                 .frame(width: 330, height: 568, alignment: .center)
