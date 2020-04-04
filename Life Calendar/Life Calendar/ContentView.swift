@@ -35,9 +35,6 @@ struct ContentView: View {
             }
             .frame(width: totalWidthOfWindow - widthOfSidebar, height: totalHeightOfWindow, alignment: .center)
             
-            Divider()
-            
-            Sidebar(events: events).frame(width: Sidebar.width, height: nil, alignment: .center)
         }
         .background(Color(red: 246/255, green: 244/255, blue: 241/255))
 

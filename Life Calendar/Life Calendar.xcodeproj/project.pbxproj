@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE3590F02325B162000AC8AE /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3590EF2325B162000AC8AE /* Sidebar.swift */; };
 		DE593E2224355937006814F1 /* NewEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE593E2124355937006814F1 /* NewEventButton.swift */; };
 		DE713E1C231F3CBC0004DD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */; };
 		DE713E1E231F3CBC0004DD17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE713E1D231F3CBC0004DD17 /* ContentView.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DE3590EF2325B162000AC8AE /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		DE593E2124355937006814F1 /* NewEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventButton.swift; sourceTree = "<group>"; };
 		DE713E18231F3CBC0004DD17 /* Life Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			children = (
 				DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */,
 				DE713E1D231F3CBC0004DD17 /* ContentView.swift */,
-				DE3590EF2325B162000AC8AE /* Sidebar.swift */,
 				DE8D0770231FF4EC00E9CE13 /* Event.swift */,
 				DE8D076E231F6C7500E9CE13 /* GridCell.swift */,
 				DE9B7F282320262100130DC7 /* Grid.swift */,
@@ -165,7 +162,6 @@
 			files = (
 				DE8D0771231FF4EC00E9CE13 /* Event.swift in Sources */,
 				DE713E1E231F3CBC0004DD17 /* ContentView.swift in Sources */,
-				DE3590F02325B162000AC8AE /* Sidebar.swift in Sources */,
 				DE713E1C231F3CBC0004DD17 /* AppDelegate.swift in Sources */,
 				DE8D076F231F6C7500E9CE13 /* GridCell.swift in Sources */,
 				DE8D0775231FF72A00E9CE13 /* Week.swift in Sources */,
