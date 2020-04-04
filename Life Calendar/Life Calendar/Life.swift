@@ -2,6 +2,18 @@ import Foundation
 
 struct Life {
     
+    /// All the weeks which this "Life" is likely to live.
+    let weeks: [Week] = {
+        var weeks: [Week] = []
+        var previousWeek = Week(start: Date())
+        for i in 0...4500 {
+            weeks.append(previousWeek)
+            let newWeek = Week(start: previousWeek.end)
+            previousWeek = newWeek
+        }
+        return weeks
+    }()
+    
     var events: [Event]
     
     /// <#Description#>
