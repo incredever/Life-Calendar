@@ -8,7 +8,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: DesignConstants.totalWidthOfWindow, height: DesignConstants.totalHeightOfWindow),
+            contentRect: NSRect(x: 0, y: 0, width: DesignConstants.windowFrameWidth, height: DesignConstants.windowFrameHeight),
             styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
             backing: .buffered, defer: false)
         
