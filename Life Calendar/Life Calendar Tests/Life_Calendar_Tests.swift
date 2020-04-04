@@ -36,10 +36,9 @@ class Life_Calendar_Tests: XCTestCase {
         let event = Event(id: UUID(), start: Date(), end: Date(), color: .red, title: "Testing")
         let week = Week(start: Date())
         
-        assert(event.isDuring(week) == false) // Because event was created before (although extremely slightly) week. Event does not fall inside of week.
+        XCTAssert(event.isDuring(week) == false) // Because event was created before (although extremely slightly) week. Event does not fall inside of week.
         
-        
-        assert(week.isDuring(event) == false) // Because week's start is after event's end date.
+        XCTAssert(week.isDuring(event) == false) // Because week's start is after event's end date.
         
     }
 
