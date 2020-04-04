@@ -9,8 +9,7 @@ struct Event: Identifiable {
     let title: String
     
     func isDuring(_ week: Week) -> Bool {
-        #warning("TODO")
-        return false
+        return start < week.start || end > week.end
     }
     
 }

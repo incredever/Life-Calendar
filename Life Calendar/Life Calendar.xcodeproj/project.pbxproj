@@ -71,8 +71,8 @@
 			children = (
 				DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */,
 				DE713E1D231F3CBC0004DD17 /* ContentView.swift */,
-				DEB2979024393BB200DD3800 /* Life.swift */,
 				DEB29792243941F100DD3800 /* DesignConstants.swift */,
+				DEB2979024393BB200DD3800 /* Life.swift */,
 				DE8D0770231FF4EC00E9CE13 /* Event.swift */,
 				DE8D0774231FF72A00E9CE13 /* Week.swift */,
 				DE9B7F282320262100130DC7 /* Grid.swift */,
