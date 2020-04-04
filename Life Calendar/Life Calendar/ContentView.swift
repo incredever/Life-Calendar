@@ -12,7 +12,7 @@ struct ContentView: View {
                 Grid(columns: 52, numItems: yourLife.weeks.count, alignment: .center) { index, colWidth in
                     GridCell(width: colWidth)
                 }
-                .frame(width: 330, height: 568, alignment: .center)
+                .frame(width: DesignConstants.gridFrameWidth, height: DesignConstants.gridFrameHeight, alignment: .center)
 
             }
             .frame(width: DesignConstants.totalWidthOfWindow, height: DesignConstants.totalHeightOfWindow, alignment: .center)
