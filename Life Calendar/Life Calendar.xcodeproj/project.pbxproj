@@ -20,6 +20,7 @@
 		DEB2979124393BB200DD3800 /* Life.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2979024393BB200DD3800 /* Life.swift */; };
 		DEB29793243941F100DD3800 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB29792243941F100DD3800 /* DesignConstants.swift */; };
 		DEB2979D243944EF00DD3800 /* Life_Calendar_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2979C243944EF00DD3800 /* Life_Calendar_Tests.swift */; };
+		DEB297A52439506E00DD3800 /* TimeSpan.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB297A42439506E00DD3800 /* TimeSpan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DEB2979A243944EF00DD3800 /* Life Calendar Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Life Calendar Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB2979C243944EF00DD3800 /* Life_Calendar_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Life_Calendar_Tests.swift; sourceTree = "<group>"; };
 		DEB2979E243944EF00DD3800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB297A42439506E00DD3800 /* TimeSpan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeSpan.swift; path = "Life Calendar Tests/TimeSpan.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		DE713E1A231F3CBC0004DD17 /* Life Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				DEB297A42439506E00DD3800 /* TimeSpan.swift */,
 				DE713E1B231F3CBC0004DD17 /* AppDelegate.swift */,
 				DE713E1D231F3CBC0004DD17 /* ContentView.swift */,
 				DEB29792243941F100DD3800 /* DesignConstants.swift */,
@@ -236,6 +239,7 @@
 				DE8D0775231FF72A00E9CE13 /* Week.swift in Sources */,
 				DEB2979124393BB200DD3800 /* Life.swift in Sources */,
 				DE9B7F292320262100130DC7 /* Grid.swift in Sources */,
+				DEB297A52439506E00DD3800 /* TimeSpan.swift in Sources */,
 				DE593E2224355937006814F1 /* NewEventButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

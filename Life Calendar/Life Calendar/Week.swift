@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct Week: Identifiable {
+struct Week: Identifiable, TimeSpan {
     
     let id: String = UUID().uuidString
     let start: Date
@@ -8,12 +8,5 @@ struct Week: Identifiable {
         return start.advanced(by: 604800) // one week from start
     }
     let defaultColor: Color = .gray
-    
-    func isDuring(_ event: Event) -> Bool {
-        let startsDuring = start > event.start && start < event.end
-        let endsDuring = end > event.start && end < event.end
         
-        return (startsDuring || endsDuring)
-    }
-    
 }
