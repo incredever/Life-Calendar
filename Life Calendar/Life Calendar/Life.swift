@@ -10,7 +10,7 @@ struct Life {
     ///   - end: <#end description#>
     /// - Returns: Array of all the `Event`s within the provided time span. Empty if none found.
     func events(for week: Week) -> [Event] {
-        return events.map { $0.isDuring(week) }
+        return events.filter { $0.isDuring(week) }
     }
     
 }
