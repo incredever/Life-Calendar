@@ -10,15 +10,6 @@ struct Life {
         
     var events: [Event]
     
-    /// <#Description#>
-    /// - Parameters:
-    ///   - start: <#start description#>
-    ///   - end: <#end description#>
-    /// - Returns: Array of all the `Event`s within the provided time span. Empty if none found.
-    func events(for week: Week) -> [Event] {
-        return events.filter { $0.isDuring(week) }
-    }
-    
     init() {
         events = []
         
@@ -29,6 +20,14 @@ struct Life {
             let newWeek = Week(start: previousWeek.end)
             previousWeek = newWeek
         }
+    }
+    
+    /// Returns the all `Events` that fall within a given `Week`, ordered by the length of time each event spans (first being the longest).
+    /// - Parameters:
+    ///   - week: The `Week` for which to find every event.
+    /// - Returns: Array of all the `Event`s within the provided time span. Empty if none found.
+    func events(for week: Week) -> [Event] {
+        return events.filter { $0.isDuring(week) }
     }
     
 }
