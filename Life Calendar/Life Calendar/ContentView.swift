@@ -4,7 +4,6 @@ struct ContentView: View {
     
     let yourLife = Life()
     
-    private let widthOfSidebar = CGFloat(185)
     private let totalWidthOfWindow = CGFloat(658)
     private let totalHeightOfWindow = CGFloat(658)
     
@@ -19,7 +18,7 @@ struct ContentView: View {
                 .frame(width: 330, height: 568, alignment: .center)
 
             }
-            .frame(width: totalWidthOfWindow - widthOfSidebar, height: totalHeightOfWindow, alignment: .center)
+            .frame(width: totalWidthOfWindow, height: totalHeightOfWindow, alignment: .center)
             
         }
         .background(Color(red: 246/255, green: 244/255, blue: 241/255))
